@@ -238,6 +238,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
 
+# Reduce system server verbosity.
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+
 # SystemUI
 PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
