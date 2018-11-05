@@ -178,7 +178,12 @@ PRODUCT_PACKAGES += \
     QStileCircleTrim \
     QStileDefault \
     QStileDualToneCircle \
-    QStileSquircleTrim
+    QStileSquircleTrim \
+    QStileAttemptMountain \
+    QStileDottedCircle \
+    QStileNinja \
+    QStilePokesign \
+    QStileWavey
 
 # Navbar
 PRODUCT_PACKAGES += \
