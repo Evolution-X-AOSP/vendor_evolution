@@ -1,0 +1,8 @@
+android_app {
+    name: "HideCutout",
+    resource_dirs: ["res"],
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    manifest: "AndroidManifest.xml",
+}
