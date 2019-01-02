@@ -164,3 +164,8 @@ include vendor/pixelstyle/config.mk
 include packages/apps/Plugins/plugins.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Disable Java debug info
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
