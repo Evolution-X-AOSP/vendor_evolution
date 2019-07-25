@@ -132,9 +132,9 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/Vendor_045e_Product_0719.kl \
     vendor/evolution/misc/keylayout/Vendor_2dc8_Product_6006.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/Vendor_2dc8_Product_6006.kl
 
-# Enable transitional log for Privileged permissions
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.control_privapp_permissions=log
+# Enforce privapp-permissions whitelist
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.control_privapp_permissions=enforce
 
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
