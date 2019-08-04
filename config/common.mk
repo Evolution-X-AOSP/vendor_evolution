@@ -112,6 +112,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-sysconfig.xml
 
+# Evolution X-specific init rc file
+PRODUCT_COPY_FILES += \
+    vendor/evolution/prebuilt/common/etc/init/init.evolution-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-system_ext.rc
+
 # Copy all Evolution X-specific init rc files
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
