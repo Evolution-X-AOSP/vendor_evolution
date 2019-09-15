@@ -50,9 +50,9 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/evolution/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/evolution/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
+    vendor/evolution/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.sh \
+    vendor/evolution/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.functions \
+    vendor/evolution/prebuilt/common/bin/50-base.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-base.sh
 
 # OTA
 ifneq ($(TARGET_BUILD_VARIANT),user)
@@ -62,23 +62,23 @@ endif
 
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/evolution/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/evolution/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/evolution/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/evolution/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/evolution/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:system/etc/permissions/privapp-permissions-evolution.xml
+    vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
+    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-evolution.xml
 
 # Copy all custom init rc files
 $(foreach f,$(wildcard vendor/evolution/prebuilt/common/etc/init/*.rc),\
-    $(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
+    $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/evolution/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_SYSTEM)/lib/content-types.properties
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -86,11 +86,11 @@ PRODUCT_COPY_FILES += \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
 
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_045e_Product_0719.kl
 
 # TEMP: Enable transitional log for Privileged permissions
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -98,7 +98,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
+    vendor/evolution/config/permissions/custom-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/custom-power-whitelist.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
