@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2018 The PixelExperience Project
+     Copyright (C) 2019 The Evolution X Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
 -->
 
 <permissions>
-    <privapp-permissions package="org.pixelexperience.ota">
+    <privapp-permissions package="org.evolution.ota">
         <permission name="android.permission.RECOVERY"/>
         <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
         <permission name="android.permission.REBOOT"/>

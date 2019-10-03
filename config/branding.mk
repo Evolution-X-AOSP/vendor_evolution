@@ -1,3 +1,7 @@
+# Versioning System
+EVO_BASE_VERSION = 3.0
+EVO_CODENAME := Ten
+
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
 
@@ -13,14 +17,17 @@ CUSTOM_PLATFORM_VERSION := 10.0
 
 TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
 
-CUSTOM_VERSION := PixelExperience_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-BETA-$(CUSTOM_BUILD_TYPE)
+EVO_VERSION := $(EVO_CODENAME)-v$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+
+CUSTOM_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := 10
-ROM_FINGERPRINT := PixelExperience/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
+ROM_FINGERPRINT := EvolutionX/$(EVO_CODENAME)/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
 
 CUSTOM_PROPERTIES := \
-    org.pixelexperience.version=$(CUSTOM_VERSION_PROP) \
-    org.pixelexperience.version.display=$(CUSTOM_VERSION) \
-    org.pixelexperience.build_date=$(CUSTOM_BUILD_DATE) \
-    org.pixelexperience.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.pixelexperience.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.pixelexperience.fingerprint=$(ROM_FINGERPRINT)
+    org.evolution.version=$(EVO_VERSION) \
+    org.evolution.version.display=$(CUSTOM_VERSION) \
+    org.evolution.build_version=$(EVO_BASE_VERSION) \
+    org.evolution.build_date=$(CUSTOM_BUILD_DATE) \
+    org.evolution.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
+    org.evolution.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.evolution.fingerprint=$(ROM_FINGERPRINT)

@@ -46,8 +46,8 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/pixel.xml"
 custom_default_revision = "ten"
 custom_dependencies = "aosp.dependencies"
-org_manifest = "pixel-devices"  # leave empty if org is provided in manifest
-org_display = "PixelExperience-Devices"  # needed for displaying
+org_manifest = "evo-devices"  # leave empty if org is provided in manifest
+org_display = "Evolution-X-Devices"  # needed for displaying
 
 github_auth = None
 
