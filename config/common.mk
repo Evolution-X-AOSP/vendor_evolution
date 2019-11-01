@@ -143,6 +143,7 @@ include vendor/pixelstyle/config.mk
 
 # Non-Evo packages
 PRODUCT_PACKAGES += \
+    EvolutionThemesStub \
     Seedvault \
     Terminal
 
