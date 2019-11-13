@@ -660,7 +660,7 @@ function pixelrebase() {
 }
 
 function mka() {
-    m -j "$@"
+    m -j$(nproc --all) "$@"
 }
 
 function cmka() {
