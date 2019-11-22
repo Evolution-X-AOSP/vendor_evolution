@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright 2016 The ??? Project
+     Copyright (C) 2019 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -29,4 +29,11 @@
 
     <!-- Manufacturer backup settings label -->
     <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
+
+    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
+    <string name="config_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
+
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
 </resources>
