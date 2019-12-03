@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 3.3
-EVO_CODENAME := Wicked
+EVO_BASE_VERSION = 3.4
+EVO_CODENAME := Storm
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
