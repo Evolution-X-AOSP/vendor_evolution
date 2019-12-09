@@ -150,4 +150,8 @@ include vendor/gapps/config.mk
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+#Terminal
+PRODUCT_PACKAGES += \
+    Terminal
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
