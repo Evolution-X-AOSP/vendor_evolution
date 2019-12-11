@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 3.4
-EVO_CODENAME := Storm
+EVO_BASE_VERSION = 3.5
+EVO_CODENAME := Wonderland
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
