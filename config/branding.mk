@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 3.5
-EVO_CODENAME := Wonderland
+EVO_BASE_VERSION = 3.69
+EVO_CODENAME := 2020
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
