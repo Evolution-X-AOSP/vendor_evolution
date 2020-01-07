@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 3.69
-EVO_CODENAME := 2020
+EVO_BASE_VERSION = 4.0
+EVO_CODENAME := NewLeaf
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
