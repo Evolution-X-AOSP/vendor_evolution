@@ -17,4 +17,12 @@
 <resources>
     <!-- Flag to enable VVM3 visual voicemail. VVM3 is used by Verizon Wireless. -->
     <bool name="vvm3_enabled">true</bool>
+
+    <color name="homepage_card_dismissal_background">@*android:color/notification_material_background_color</color>
+    <color name="contextual_card_background">@*android:color/notification_material_background_color</color>
+    <color name="search_bar_background">@*android:color/notification_material_background_color</color>
+
+    <!-- Dialog background color -->
+    <color name="dialog_background">@*android:color/notification_material_background_color</color>
+
 </resources>
