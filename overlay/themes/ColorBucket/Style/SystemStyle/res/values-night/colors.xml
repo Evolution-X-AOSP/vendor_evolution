@@ -17,6 +17,10 @@
  */
 -->
 <resources>
-    <attr name="colorBackgroundFloating" format="color" />
-    <attr name="panelColorBackground" format="color" />
+
+     <!-- The background color of a notification card. -->
+    <color name="notification_material_background_color">#FF202833</color>
+
+    <color name="theme_generic_semi_transparent_color">#EA202833</color>
+
 </resources>
