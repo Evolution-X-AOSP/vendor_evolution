@@ -164,7 +164,11 @@ PRODUCT_PACKAGES += \
     SystemSolarizedDarkOverlay \
     SystemUISolarizedDarkOverlay \
     SystemMaterialOceanOverlay \
-    SystemUIMaterialOceanOverlay
+    SystemUIMaterialOceanOverlay \
+    SystemBakedGreenOverlay \
+    SystemUIBakedGreenOverlay \
+    SystemChocoXOverlay \
+    SystemUIChocoXOverlay
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
