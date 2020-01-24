@@ -180,6 +180,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 #    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 #endif
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
