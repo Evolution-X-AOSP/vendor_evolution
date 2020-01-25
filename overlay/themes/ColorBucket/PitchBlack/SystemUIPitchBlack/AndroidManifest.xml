@@ -19,7 +19,7 @@
     package="com.android.dark.pitchblackExt"
     android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="android" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
 
     <application android:hasCode="false"/>
 </manifest>
