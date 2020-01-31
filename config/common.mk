@@ -117,7 +117,11 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
 # OmniStyle
 PRODUCT_PACKAGES += \
-    OmniStyle \
+    OmniStyle
+
+# TouchGestures
+PRODUCT_PACKAGES += \
+    TouchGestures
 
 # PixelSetupWizard overlay
 PRODUCT_PACKAGES += \
