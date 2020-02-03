@@ -21,7 +21,6 @@ EVO_VERSION := $(EVO_CODENAME)-v$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(CU
 
 CUSTOM_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
 CUSTOM_VERSION_PROP := 10
-ROM_FINGERPRINT := EvolutionX/$(EVO_CODENAME)/$(CUSTOM_PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(CUSTOM_BUILD_DATE)
 
 CUSTOM_PROPERTIES := \
     org.evolution.version=$(EVO_VERSION) \
@@ -30,5 +29,4 @@ CUSTOM_PROPERTIES := \
     org.evolution.build_version=$(EVO_BASE_VERSION) \
     org.evolution.build_date=$(CUSTOM_BUILD_DATE) \
     org.evolution.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.evolution.build_type=$(CUSTOM_BUILD_TYPE) \
-    org.evolution.fingerprint=$(ROM_FINGERPRINT)
+    org.evolution.build_type=$(CUSTOM_BUILD_TYPE)
