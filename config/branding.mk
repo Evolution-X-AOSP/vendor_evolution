@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 4.0
-EVO_CODENAME := NewLeaf
+EVO_BASE_VERSION = 4.1
+EVO_CODENAME := Horizon
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
