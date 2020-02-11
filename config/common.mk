@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2019-2020 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -11,6 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
 PRODUCT_BRAND ?= EvolutionX
 
@@ -188,6 +190,13 @@ PRODUCT_PACKAGES += \
 #ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
 #PRODUCT_PACKAGES += NoCutoutOverlay
 #endif
+
+# Enable Google Play system updates support
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/evolution/apex
+
+PRODUCT_PACKAGES += \
+    ModuleMetadataGooglePrebuilt
 
 # Branding
 include vendor/evolution/config/branding.mk
