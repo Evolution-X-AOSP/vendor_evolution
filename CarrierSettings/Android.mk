@@ -35,6 +35,7 @@ include $$(CLEAR_VARS)
 LOCAL_MODULE := $(notdir $(1))
 LOCAL_MODULE_STEM := $(notdir $(1))
 LOCAL_SRC_FILES := $1
+LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := google
 LOCAL_MODULE_PATH := $$(TARGET_OUT_PRODUCT)/etc/CarrierSettings
