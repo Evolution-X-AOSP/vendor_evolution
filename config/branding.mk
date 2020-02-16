@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 4.1
-EVO_CODENAME := Horizon
+EVO_BASE_VERSION = 4.1.420
+EVO_CODENAME := TheReturn
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
@@ -29,4 +29,5 @@ CUSTOM_PROPERTIES := \
     org.evolution.build_version=$(EVO_BASE_VERSION) \
     org.evolution.build_date=$(CUSTOM_BUILD_DATE) \
     org.evolution.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.evolution.build_type=$(CUSTOM_BUILD_TYPE)
+    org.evolution.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.evolution.build_codename=$(EVO_CODENAME)
