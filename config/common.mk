@@ -49,9 +49,11 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Offline charger
+ifeq ($(TARGET_PIXEL_CHARGE_ANIM),true)
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
