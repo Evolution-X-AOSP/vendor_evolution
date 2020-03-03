@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 4.1.420
-EVO_CODENAME := TheReturn
+EVO_BASE_VERSION = 4.1.69
+EVO_CODENAME := MarchMadness
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
