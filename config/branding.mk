@@ -24,7 +24,7 @@ CUSTOM_VERSION_PROP := 10
 
 CUSTOM_PROPERTIES := \
     org.evolution.version=$(EVO_VERSION) \
-    org.evolution.version.prop=$(CUSTOM_PLATFORM_VERSION) \
+    org.evolution.version.prop=$(CUSTOM_VERSION_PROP) \
     org.evolution.version.display=$(CUSTOM_VERSION) \
     org.evolution.build_version=$(EVO_BASE_VERSION) \
     org.evolution.build_date=$(CUSTOM_BUILD_DATE) \
