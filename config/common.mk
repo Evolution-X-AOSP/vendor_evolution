@@ -141,8 +141,9 @@ endif
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
-#Terminal
+# Non-Evo packages
 PRODUCT_PACKAGES += \
+    Seedvault \
     Terminal
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
