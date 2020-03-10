@@ -21,4 +21,5 @@ PRODUCT_PACKAGES += \
     Papers \
     ParallelSpace \
     RepainterServicePriv \
+    Seedvault \
     TouchGestures
