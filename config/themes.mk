@@ -39,9 +39,14 @@ PRODUCT_PACKAGES += \
     GesturalNavigationRadiusLow \
     GesturalNavigationRadiusVeryLow \
     GesturalNavigationRadiusHidden \
+    AndroidNavbarOverlay \
     AsusNavbarOverlay \
+    MotoNavbarOverlay \
+    NexusNavbarOverlay \
+    OldNavbarOverlay \
     OnePlusNavbarOverlay \
     OneUiNavbarOverlay \
+    SammyNavbarOverlay \
     TecnoCamonNavbarOverlay
 
 # QS Color Overlay
