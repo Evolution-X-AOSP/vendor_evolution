@@ -150,6 +150,8 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Seedvault \
     SimpleDeviceConfig \
+    StitchImage \
+    StitchImageService \
     ThemePicker \
     Terminal \
     TouchGestures
