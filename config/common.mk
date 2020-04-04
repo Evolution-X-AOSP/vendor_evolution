@@ -201,7 +201,9 @@ include vendor/evolution/config/ota.mk
 $(call inherit-product, vendor/evolution/config/apex.mk)
 
 # Inherit from GMS product config
+ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gms/gms_full.mk)
+endif
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
