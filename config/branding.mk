@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 4.1.69
-EVO_CODENAME := MarchMadness
+EVO_BASE_VERSION = 4.20
+EVO_CODENAME := Ganja
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
