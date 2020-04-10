@@ -23,10 +23,15 @@ k=$(expr $i - 1)
 	echo '=======================' >> $Changelog;
 	echo >> $Changelog;
 
-	# Cycle through every repo to find commits between 2 dates
-        CURRENT_PATH="$(realpath `pwd`)"
-        repo forall -c "GIT_LOG=\`git log --oneline --after=$After_Date --until=$Until_Date\` ; if [ ! -z \"\$GIT_LOG\" ]; then printf '\n * '; realpath \`pwd\` | sed 's|^$CURRENT_PATH/||' ; echo \"\$GIT_LOG\"; fi" >> $Changelog
-	echo >> $Changelog;
+while read path;
+do
+    Git_log=`git --git-dir ./${path}/.git log --after=$After_Date --until=$Until_Date --pretty=tformat:"%h  %s  [%an]" --abbrev-commit --abbrev=7`
+    if [ ! -z "${Git_log}" ]; then
+        echo "\n* ${path}\n${Git_log}\n" >> $Changelog;
+    fi
+done < ./.repo/project.list;
+
+echo "" >> $Changelog;
 done
 
 sed -i 's/project/   */g' $Changelog
