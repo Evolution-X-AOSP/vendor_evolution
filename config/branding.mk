@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION = 4.20
-EVO_CODENAME := Ganja
+EVO_BASE_VERSION = 4.20.1
+EVO_CODENAME := InstantClassic
 
 # Set all versions
 CUSTOM_BUILD_TYPE ?= UNOFFICIAL
