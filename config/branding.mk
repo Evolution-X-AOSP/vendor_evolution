@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 4.20.2
-EVO_CODENAME := Homecoming
+EVO_BASE_VERSION := 4.3
+EVO_CODENAME := Undisputed
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
