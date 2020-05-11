@@ -20,7 +20,7 @@ try:
     for res in data:
         for version in res['supported_versions']:
             if version['version_code'] == 'ten':
-                print (res['codename'])
+                print(res['codename'])
                 break
 except:
-    print ("")
+    print("")
