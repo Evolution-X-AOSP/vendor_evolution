@@ -9,7 +9,4 @@ CUSTOM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Updates
 
-PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/org.evolution.ota.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.evolution.ota.xml
-
 endif
