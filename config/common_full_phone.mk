@@ -3,7 +3,8 @@ $(call inherit-product, vendor/evolution/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
-    NavigationBarMode2ButtonOverlay
+    NavigationBarMode2ButtonOverlay \
+    NavigationBarNoHintOverlay
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
