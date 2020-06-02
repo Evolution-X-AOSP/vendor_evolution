@@ -20,4 +20,5 @@ PRODUCT_PACKAGES += \
     GameSpace \
     Papers \
     ParallelSpace \
-    RepainterServicePriv
+    RepainterServicePriv \
+    TouchGestures
