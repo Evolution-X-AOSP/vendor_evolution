@@ -3818,4 +3818,8 @@
   <apn carrier="Claro MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" proxy="" port="" mmsc="http://mms.ctimovil.com.uy" user="" password="" type="mms" />
   <apn carrier="Claro UY" mcc="748" mnc="10" apn="gprs.claro.com.uy" user="ctigpr" password="ctigpr999" type="default,supl" />
   <apn carrier="Claro UY MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.uy" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
+  <apn carrier="VSBLINTERNET" mcc="311" mnc="480" apn="VSBLINTERNET" type="default,dun" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE1000000000000" />
+  <apn carrier="VSBLADMIN" mcc="311" mnc="480" apn="VSBLADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE1000000000000" />
+  <apn carrier="VSBLAPP" mcc="311" mnc="480" apn="VSBLAPP" type="cbs,mms" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE1000000000000" />
+  <apn carrier="VSBLIMS" mcc="311" mnc="480" apn="VSBLIMS" type="ims,ia" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="gid" mvno_match_data="BAE1000000000000" />
 </apns>
