@@ -141,6 +141,9 @@ endif
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+# Plugins
+include packages/apps/Plugins/plugins.mk
+
 # Non-Evo packages
 PRODUCT_PACKAGES += \
     EvolutionThemesStub \
