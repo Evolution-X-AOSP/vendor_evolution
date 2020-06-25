@@ -187,6 +187,9 @@ include vendor/gapps/config.mk
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+# Plugins
+include packages/apps/PotatoPlugins/plugins.mk
+
 #Terminal
 PRODUCT_PACKAGES += \
     Terminal
