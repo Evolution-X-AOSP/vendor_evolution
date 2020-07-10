@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     freedommobile_ca.pb \
     h3_at.pb \
     h3_gb.pb \
+    h3_se.pb \
     idea_in.pb \
     idmobile_gb.pb \
     kddi_jp.pb \
@@ -75,6 +76,7 @@ PRODUCT_PACKAGES += \
     rjio_in.pb \
     rogers_ca.pb \
     sfr_fr.pb \
+    shaw_ca.pb \
     singtel_sg.pb \
     softbank_jp.pb \
     solomobile_ca.pb \
@@ -94,6 +96,7 @@ PRODUCT_PACKAGES += \
     telia_se.pb \
     telstra_au.pb \
     telus_ca.pb \
+    three_dk.pb \
     tim_it.pb \
     tmobile_nl.pb \
     tmobile_us.pb \
