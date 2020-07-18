@@ -155,7 +155,9 @@ PRODUCT_PACKAGES += \
     SystemBakedGreenOverlay \
     SystemUIBakedGreenOverlay \
     SystemChocoXOverlay \
-    SystemUIChocoXOverlay
+    SystemUIChocoXOverlay \
+    SystemDarkAubergineOverlay \
+    SystemUIDarkAubergineOverlay
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
