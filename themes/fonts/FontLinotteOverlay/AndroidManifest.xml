@@ -16,17 +16,16 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.theme.font.linottesource">
-
-    <overlay
+    package="com.android.theme.font.linotte"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="android"
         android:category="android.theme.customization.font"
-        android:priority="600"
-        android:targetPackage="android" />
+        android:priority="1"/>
 
-    <application
-        android:label="@string/font_linotte_source_overlay">
+    <application android:label="@string/font_linotte_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="linotte,linotte-semi-bold,linotte-bold" />
+            android:value="linotte,linotte-semi-bold,linotte-bold,linotte-light,linotte-medium" />
     </application>
 </manifest>

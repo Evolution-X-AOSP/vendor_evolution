@@ -16,8 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Headline / Body font Aclonica overlay -->
-    <string name="font_linotte_source_overlay" translatable="false">Linotte</string>
-
+    <!-- Headline / Body font Linotte overlay -->
+    <string name="font_linotte_overlay" translatable="false">Linotte</string>
 </resources>
