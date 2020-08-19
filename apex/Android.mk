@@ -18,9 +18,9 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ModuleMetadataGooglePrebuilt
+LOCAL_MODULE := ModuleMetadataGoogle
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := ModuleMetadataGooglePrebuilt/ModuleMetadataGooglePrebuilt.apk
+LOCAL_SRC_FILES := ModuleMetadataGoogle/ModuleMetadataGoogle.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true

@@ -196,7 +196,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/evolution/apex
 
 PRODUCT_PACKAGES += \
-    ModuleMetadataGooglePrebuilt
+    ModuleMetadataGoogle
 
 # Branding
 include vendor/evolution/config/branding.mk
