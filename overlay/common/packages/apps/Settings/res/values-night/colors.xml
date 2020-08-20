@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017 The LineageOS Project
+<!-- Copyright (C) 2018 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,6 +15,10 @@
 -->
 
 <resources>
-    <!-- Flag to enable VVM3 visual voicemail. VVM3 is used by Verizon Wireless. -->
-    <bool name="vvm3_enabled">true</bool>
+    <color name="homepage_card_dismissal_background">@*android:color/notification_material_background_color</color>
+    <color name="contextual_card_background">@*android:color/notification_material_background_color</color>
+    <color name="search_bar_background">@*android:color/notification_material_background_color</color>
+
+    <!-- Dialog background color -->
+    <color name="dialog_background">@*android:color/notification_material_background_color</color>
 </resources>
