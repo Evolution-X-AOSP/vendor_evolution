@@ -172,8 +172,9 @@ PRODUCT_PACKAGES += \
     StitchImage
 
 # Cutout control overlay
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
+PRODUCT_PACKAGES += NoCutoutOverlay
+endif
 
 # Branding
 include vendor/aosp/config/branding.mk
