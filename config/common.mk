@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     StitchImage
 
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Cutout control overlay
 ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
 PRODUCT_PACKAGES += NoCutoutOverlay
