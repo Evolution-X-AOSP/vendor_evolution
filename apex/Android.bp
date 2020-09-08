@@ -44,7 +44,7 @@ prebuilt_apex {
 // Google com.android.extservices
 prebuilt_apex {
     name: "com.android.extservices",
-    src: "com.google.android.extservices",
+    src: "com.google.android.extservices.apex",
     owner: "google",
     prefer: true,
 }
@@ -113,7 +113,7 @@ prebuilt_apex {
     prefer: true,
 }
 
-// Google com.google.android.sdkext
+// Google com.android.sdkext
 prebuilt_apex {
     name: "com.android.sdkext",
     src: "com.google.android.sdkext.apex",
@@ -129,7 +129,7 @@ prebuilt_apex {
     prefer: true,
 }
 
-// Google com.google.android.tethering
+// Google com.android.tethering
 prebuilt_apex {
     name: "com.android.tethering",
     src: "com.google.android.tethering.apex",
