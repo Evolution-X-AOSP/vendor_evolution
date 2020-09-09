@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 4.6
-EVO_CODENAME := Franklin
+EVO_BASE_VERSION := 4.7
+EVO_CODENAME := Quantum
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
