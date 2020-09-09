@@ -966,8 +966,6 @@
   <apn carrier="Open Market: E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" mmsproxy="212.23.97.153" mmsport="5080" mmsc="http://mms/eplus/" user="mms" password="eplus" authtype="3" type="mms" />
   <apn carrier="blau DE" mcc="262" mnc="03" apn="internet.eplus.de" user="blau" password="blau" type="default,supl" />
   <apn carrier="blau DE MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
-  <apn carrier="E-Plus Internet" mcc="262" mnc="03" apn="internet.eplus.de" user="eplus" password="internet" type="default,supl" />
-  <apn carrier="E-Plus MMS" mcc="262" mnc="03" apn="mms.eplus.de" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" type="mms" />
   <apn carrier="Sipgate" mcc="262" mnc="03" apn="sipgate" user="sipgate" password="sipgate" type="default,supl,mms" authtype="2" />
   <apn carrier="DE - Blauworld Web" mcc="262" mnc="03" apn="internet.eplus.de" proxy="" port="" user="blauworld" password="blauworld" mmsc="" mvno_type="spn" mvno_match_data="blauworld" authtype="1" type="default,supl" />
   <apn carrier="Aldi Talk MMS" mcc="262" mnc="03" apn="mms.eplus.de" proxy="" port="" user="mms" password="eplus" mmsc="http://mms/eplus/" mmsproxy="212.23.97.153" mmsport="5080" mvno_type="spn" mvno_match_data="Aldi Talk" authtype="1" type="mms" />
@@ -981,13 +979,19 @@
   <apn carrier="o2 Internet" mcc="262" mnc="07" apn="internet" user="" password="" type="default,supl" />
   <apn carrier="o2 Internet prepaid" mcc="262" mnc="07" apn="pinternet.interkom.de" user="" password="" type="default,supl" />
   <apn carrier="o2 MMS" mcc="262" mnc="07" apn="internet" proxy="" port="" mmsproxy="82.113.100.5" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" />
-  <apn carrier="o2" mcc="262" mnc="07" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
   <apn carrier="O2 DE" mcc="262" mnc="07" apn="surfo2" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
-  <apn carrier="o2 Prepaid" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tchibo Internet" mcc="262" mnc="07" apn="wapmobil2" user="" password="" type="default,supl" />
   <apn carrier="Tchibo MMS" mcc="262" mnc="07" apn="wapmobil2" proxy="" port="" mmsproxy="82.113.100.8" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" spn="Tchibo" />
   <apn carrier="Freenet Web GPRS" mcc="262" mnc="07" apn="internet.online" user="" password="" type="default,supl" />
   <apn carrier="Freenet MMS" mcc="262" mnc="07" apn="internet" proxy="" port="" mmsproxy="82.113.100.45" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" spn="Freenet" />
+  <apn carrier="O2 DE Internet" carrier_id = "1456" mcc="262" mnc="03" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="O2 DE IMS" carrier_id = "1456" mcc="262" mnc="03" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" user_visible="false" />
+  <apn carrier="O2 DE Internet" carrier_id = "1456" mcc="262" mnc="07" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" mvno_match_data="262072" mvno_type="imsi" />
+  <apn carrier="O2 DE IMS" carrier_id = "1456" mcc="262" mnc="07" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="262072" mvno_type="imsi" user_visible="false" />
+  <apn carrier="O2 DE Internet" carrier_id = "1456" mcc="262" mnc="07" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" mvno_match_data="2620739" mvno_type="imsi" />
+  <apn carrier="O2 DE IMS" carrier_id = "1456" mcc="262" mnc="07" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620739" mvno_type="imsi" user_visible="false" />
+  <apn carrier="O2 DE Internet Prepaid" carrier_id = "10003" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" mvno_match_data="2620749" mvno_type="imsi" />
+  <apn carrier="O2 DE IMS" carrier_id = "10003" mcc="262" mnc="07" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620749" mvno_type="imsi" user_visible="false" />
   <apn carrier="Alice Web" mcc="262" mnc="07" apn="internet.partner1" user="" password="" type="default,supl" />
   <apn carrier="Alice MMS" mcc="262" mnc="07" apn="internet.partner1" proxy="" port="" mmsproxy="82.113.100.41" mmsport="8080" mmsc="http://10.81.0.7:8002" user="" password="" type="mms" spn="Alice Mobile" />
   <apn carrier="Alice MMS" mcc="262" mnc="07" apn="internet.partner1" proxy="" port="" user="" password="" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.41" mmsport="8080" mvno_type="spn" mvno_match_data="Alice" type="mms" />
