@@ -1,9 +1,9 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2019 The LineageOS Project
-#           (C) 2018 The PixelExperience Project
-#           (C) 2019 The Evolution X Project
+#               2017-2020 The LineageOS Project
+#               2018 The PixelExperience Project
+#               2019-2020 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -408,6 +408,7 @@ function write_blueprint_packages() {
             if [ "$EXTRA" != "none" ]; then
                 printf '\tcompile_multilib: "%s",\n' "$EXTRA"
             fi
+            printf '\tcheck_elf_files: false,\n'
         elif [ "$CLASS" = "APPS" ]; then
             printf 'android_app_import {\n'
             printf '\tname: "%s",\n' "$PKGNAME"
