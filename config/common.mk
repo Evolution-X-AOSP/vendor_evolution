@@ -191,18 +191,14 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += NoCutoutOverlay
 #endif
 
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/evolution/apex
-
-PRODUCT_PACKAGES += \
-    ModuleMetadataGoogle
-
 # Branding
 include vendor/evolution/config/branding.mk
 
 # OTA
 include vendor/evolution/config/ota.mk
+
+# Inherit from apex config
+$(call inherit-product, vendor/evolution/config/apex.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)

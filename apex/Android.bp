@@ -17,138 +17,155 @@
 soong_namespace {
 }
 
-// Google com.android.adbd
+// Google com.google.android.adbd
 prebuilt_apex {
-    name: "com.android.adbd",
+    name: "com.google.android.adbd",
     src: "com.google.android.adbd.apex",
+    overrides: ["com.android.adbd"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.cellbroadcast
+// Google com.google.android.cellbroadcast
 prebuilt_apex {
-    name: "com.android.cellbroadcast",
+    name: "com.google.android.cellbroadcast",
     src: "com.google.android.cellbroadcast.apex",
+    overrides: ["com.android.cellbroadcast"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.conscrypt
+// Google com.google.android.conscrypt
 prebuilt_apex {
-    name: "com.android.conscrypt",
+    name: "com.google.android.conscrypt",
     src: "com.google.android.conscrypt.apex",
+    overrides: ["com.android.conscrypt"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.extservices
+// Google com.google.android.extservices
 prebuilt_apex {
-    name: "com.android.extservices",
+    name: "com.google.android.extservices",
     src: "com.google.android.extservices.apex",
+    overrides: ["com.android.extservices"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.ipsec
+// Google com.google.android.ipsec
 prebuilt_apex {
-    name: "com.android.ipsec",
+    name: "com.google.android.ipsec",
     src: "com.google.android.ipsec.apex",
+    overrides: ["com.android.ipsec"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.media
+// Google com.google.android.media
 prebuilt_apex {
-    name: "com.android.media",
+    name: "com.google.android.media",
     src: "com.google.android.media.apex",
+    overrides: ["com.android.media"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.media.swcodec
+// Google com.google.android.media.swcodec
 prebuilt_apex {
-    name: "com.android.media.swcodec",
+    name: "com.google.android.media.swcodec",
     src: "com.google.android.media.swcodec.apex",
+    overrides: ["com.android.media.swcodec"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.mediaprovider
+// Google com.google.android.mediaprovider
 prebuilt_apex {
-    name: "com.android.mediaprovider",
+    name: "com.google.android.mediaprovider",
     src: "com.google.android.mediaprovider.apex",
+    overrides: ["com.android.mediaprovider"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.neuralnetworks
+// Google com.google.android.neuralnetworks
 prebuilt_apex {
-    name: "com.android.neuralnetworks",
+    name: "com.google.android.neuralnetworks",
     src: "com.google.android.neuralnetworks.apex",
+    overrides: ["com.android.neuralnetworks"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.os.statsd
+// Google com.google.android.os.statsd
 prebuilt_apex {
-    name: "com.android.os.statsd",
+    name: "com.google.android.os.statsd",
     src: "com.google.android.os.statsd.apex",
+    overrides: ["com.android.os.statsd"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.permission
+// Google com.google.android.permission
 prebuilt_apex {
-    name: "com.android.permission",
+    name: "com.google.android.permission",
     src: "com.google.android.permission.apex",
+    overrides: ["com.android.permission"],
     owner: "google",
     prefer: true,
 }
 
 // Google com.google.android.resolv
 prebuilt_apex {
-    name: "com.android.resolv",
+    name: "com.google.android.resolv",
     src: "com.google.android.resolv.apex",
+    overrides: ["com.android.resolv"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.sdkext
+// Google com.google.android.sdkext
 prebuilt_apex {
-    name: "com.android.sdkext",
+    name: "com.google.android.sdkext",
     src: "com.google.android.sdkext.apex",
+    overrides: ["com.android.sdkext"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.telephony
+// Google com.google.android.telephony
 prebuilt_apex {
     name: "com.google.android.telephony",
     src: "com.google.android.telephony.apex",
+    overrides: ["com.android.telephony"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.tethering
+// Google com.google.android.tethering
 prebuilt_apex {
-    name: "com.android.tethering",
+    name: "com.google.android.tethering",
     src: "com.google.android.tethering.apex",
+    overrides: ["com.android.tethering"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.tzdata2
+// Google com.google.android.tzdata2
 prebuilt_apex {
-    name: "com.android.tzdata2",
+    name: "com.google.android.tzdata2",
     src: "com.google.android.tzdata2.apex",
+    overrides: ["com.android.tzdata"],
     owner: "google",
     prefer: true,
 }
 
-// Google com.android.wifi
+// Google com.google.android.wifi
 prebuilt_apex {
-    name: "com.android.wifi",
+    name: "com.google.android.wifi",
     src: "com.google.android.wifi.apex",
+    overrides: ["com.android.wifi"],
     owner: "google",
     prefer: true,
 }
