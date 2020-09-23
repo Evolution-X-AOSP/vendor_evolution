@@ -339,4 +339,8 @@
 
     <!-- the number of the max cached processes in the system. -->
     <integer name="config_customizedMaxCachedProcesses">48</integer>
+
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
 </resources>
