@@ -182,8 +182,8 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
         # Use the default version of clang if TARGET_KERNEL_CLANG_VERSION hasn't been set by the device config
         KERNEL_CLANG_VERSION := $(LLVM_PREBUILTS_VERSION)
     endif
-    TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_OS)-x86/$(KERNEL_CLANG_VERSION)
-    KBUILD_COMPILER_STRING := $(shell $(TARGET_KERNEL_CLANG_PATH)/bin/clang --version | head -n 1 | $(BUILD_TOP)/prebuilts/tools-custom/$(HOST_OS)-x86/bin/perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')
+    TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
+    KBUILD_COMPILER_STRING := $(shell $(TARGET_KERNEL_CLANG_PATH)/bin/clang --version | head -n 1 | $(BUILD_TOP)/prebuilts/tools-evolution/$(HOST_OS)-x86/bin/perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g')
     export KBUILD_COMPILER_STRING
     ifeq ($(KERNEL_ARCH),arm64)
         KERNEL_CLANG_TRIPLE ?= CLANG_TRIPLE=aarch64-linux-gnu-
