@@ -17,10 +17,8 @@
  */
 -->
 <resources>
-
-     <!-- The background color of a notification card. -->
+    <color name="primary_dark_device_default_dark">#FF202833</color>
+    <color name="primary_dark_device_default_settings">#FF202833</color>
     <color name="notification_material_background_color">#FF202833</color>
-
     <color name="theme_generic_semi_transparent_color">#EA202833</color>
-
 </resources>

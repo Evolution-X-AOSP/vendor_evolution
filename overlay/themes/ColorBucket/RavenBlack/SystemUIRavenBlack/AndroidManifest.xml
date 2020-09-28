@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * Copyright (c) 2019, ArrowOS
+ * Copyright (c) 2018, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +15,11 @@
  * limitations under the License.
  */
 -->
-<resources>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.dark.ravenblackExt"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
 
-     <!-- The background color of a notification card. -->
-    <color name="notification_material_background_color">#FF000000</color>
-
-    <color name="theme_generic_semi_transparent_color">#EA000000</color>
-
-</resources>
+    <application android:hasCode="false"/>
+</manifest>

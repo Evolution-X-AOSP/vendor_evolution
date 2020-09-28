@@ -15,7 +15,6 @@
 -->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-
     <style name="ScreenRecord" parent="@*android:style/Theme.DeviceDefault.Dialog.NoActionBar">
         <item name="android:colorPrimary">@*android:color/primary_dark_device_default_settings</item>
         <item name="android:colorPrimaryDark">@*android:color/primary_device_default_settings</item>
@@ -33,5 +32,4 @@
         <item name="android:topRightRadius">@*android:dimen/config_dialogCornerRadius</item>
         <item name="android:topLeftRadius">@*android:dimen/config_dialogCornerRadius</item>
     </style>
-
 </resources>

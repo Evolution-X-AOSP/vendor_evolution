@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * Copyright (c) 2018, The Android Open Source Project
+ * Copyright (c) 2019, ArrowOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +16,9 @@
  * limitations under the License.
  */
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.dark.pitchblack"
-    android:versionCode="1"
-    android:versionName="1.0">
-    <overlay android:targetPackage="android" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
-
-    <application android:label="Pitch Black" android:hasCode="false"/>
-</manifest>
+<resources>
+    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
+        <item name="android:colorBackgroundFloating">#FF000000</item>
+        <item name="android:panelColorBackground">#FF000000</item>
+    </style>
+</resources>

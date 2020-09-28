@@ -151,4 +151,18 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     Terminal
 
+# Custom Overlays
+# Settings
+PRODUCT_PACKAGES += \
+    SystemRavenBlackOverlay \
+    SystemUIRavenBlackOverlay \
+    SystemDarkGrayOverlay \
+    SystemUIDarkGrayOverlay \
+    SystemStyleOverlay \
+    SystemUIStyleOverlay \
+    SystemNightOverlay \
+    SystemUINightOverlay \
+    SystemSolarizedDarkOverlay \
+    SystemUISolarizedDarkOverlay
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
