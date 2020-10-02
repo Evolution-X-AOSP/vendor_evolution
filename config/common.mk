@@ -165,11 +165,9 @@ PRODUCT_PACKAGES += \
     SystemSolarizedDarkOverlay \
     SystemUISolarizedDarkOverlay
 
-# NavigationBar Gestural Mode No Pill Overlays
+# Navbar
 PRODUCT_PACKAGES += \
-    NavBarGesturalNoPillOverlay \
-    NavBarGesturalNarrowBackNoPillOverlay \
-    NavBarGesturalWideBackNoPillOverlay \
-    NavBarGesturalExtraWideBackNoPillOverlay
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk

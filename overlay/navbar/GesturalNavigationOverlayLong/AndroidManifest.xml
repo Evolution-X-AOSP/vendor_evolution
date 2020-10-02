@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
- * Copyright (c) 2019, ArrowOS
+ * Copyright (c) 2018, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,13 +15,13 @@
  * limitations under the License.
  */
 -->
-<resources>
-    <integer name="config_navBarInteractionMode">2</integer>
-    <integer name="config_navBarOpacityMode">2</integer>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.custom.overlay.systemui.gestural.long"
+        android:versionCode="1"
+        android:versionName="1.0">
+    <overlay android:targetPackage="com.android.systemui"
+        android:category="android.customization.navbar_length"
+        android:priority="1"/>
 
-    <bool name="config_allowSeamlessRotationDespiteNavBarMoving">true</bool>
-    <bool name="config_navBarAlwaysShowOnSideEdgeGesture">true</bool>
-    <bool name="config_navBarCanMove">false</bool>
-    <bool name="config_navBarNeedsScrim">false</bool>
-    <bool name="config_navBarTapThrough">true</bool>
-</resources>
+    <application android:label="@string/navigation_bar_length_long" android:hasCode="false"/>
+</manifest>
