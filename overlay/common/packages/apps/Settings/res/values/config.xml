@@ -24,4 +24,9 @@
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
 
+    <!-- Manufacturer backup settings to launch -->
+    <string name="config_backup_settings_intent" translatable="false">settings://com.android.settings.backup.transport</string>
+
+    <!-- Manufacturer backup settings label -->
+    <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
 </resources>
