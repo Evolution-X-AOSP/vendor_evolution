@@ -6,4 +6,11 @@
 <resources>
     <!-- Whether memory from app_info_settings is available or not. -->
     <bool name="config_show_app_info_settings_memory">true</bool>
+
+    <!-- Manufacturer backup settings to launch -->
+    <string name="config_backup_settings_intent" translatable="false">settings://com.android.settings.backup.transport</string>
+
+    <!-- Manufacturer backup settings label -->
+    <string name="config_backup_settings_label" translatable="true">@string/backup_transport_setting_label</string>
+
 </resources>
