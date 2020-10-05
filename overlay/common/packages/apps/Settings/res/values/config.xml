@@ -39,4 +39,7 @@
 
     <!-- Whether to display Cloned Apps page in Settings (Settings > Apps > Cloned Apps).-->
     <bool name="config_cloned_apps_page_enabled">true</bool>
+
+    <!-- Whether memory from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
 </resources>
