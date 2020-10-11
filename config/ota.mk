@@ -1,9 +1,9 @@
-ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
+ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
 
-CUSTOM_OTA_VERSION_CODE := ten
+EVO_OTA_VERSION_CODE := eleven
 
 PRODUCT_GENERIC_PROPERTIES += \
-    org.evolution.ota.version_code=$(CUSTOM_OTA_VERSION_CODE) \
+    org.evolution.ota.version_code=$(EVO_OTA_VERSION_CODE) \
     sys.ota.disable_uncrypt=1
 
 PRODUCT_PACKAGES += \

@@ -1,38 +1,38 @@
 # Versioning System
-EVO_BASE_VERSION := 4.7
-EVO_CODENAME := Quantum
+EVO_BASE_VERSION := 5.0
+EVO_CODENAME := Elle
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
 
 # Set all versions
-CUSTOM_BUILD_TYPE ?= UNOFFICIAL
+EVO_BUILD_TYPE ?= UNOFFICIAL
 
-CUSTOM_DATE_YEAR := $(shell date -u +%Y)
-CUSTOM_DATE_MONTH := $(shell date -u +%m)
-CUSTOM_DATE_DAY := $(shell date -u +%d)
-CUSTOM_DATE_HOUR := $(shell date -u +%H)
-CUSTOM_DATE_MINUTE := $(shell date -u +%M)
-CUSTOM_BUILD_DATE_UTC := $(shell date -d '$(CUSTOM_DATE_YEAR)-$(CUSTOM_DATE_MONTH)-$(CUSTOM_DATE_DAY) $(CUSTOM_DATE_HOUR):$(CUSTOM_DATE_MINUTE) UTC' +%s)
-CUSTOM_BUILD_DATE := $(CUSTOM_DATE_YEAR)$(CUSTOM_DATE_MONTH)$(CUSTOM_DATE_DAY)-$(CUSTOM_DATE_HOUR)$(CUSTOM_DATE_MINUTE)
+EVO_DATE_YEAR := $(shell date -u +%Y)
+EVO_DATE_MONTH := $(shell date -u +%m)
+EVO_DATE_DAY := $(shell date -u +%d)
+EVO_DATE_HOUR := $(shell date -u +%H)
+EVO_DATE_MINUTE := $(shell date -u +%M)
+EVO_BUILD_DATE_UTC := $(shell date -d '$(EVO_DATE_YEAR)-$(EVO_DATE_MONTH)-$(EVO_DATE_DAY) $(EVO_DATE_HOUR):$(EVO_DATE_MINUTE) UTC' +%s)
+EVO_BUILD_DATE := $(EVO_DATE_YEAR)$(EVO_DATE_MONTH)$(EVO_DATE_DAY)-$(EVO_DATE_HOUR)$(EVO_DATE_MINUTE)
 
-CUSTOM_PLATFORM_VERSION := 10.0
+EVO_PLATFORM_VERSION := 11.0
 
-TARGET_PRODUCT_SHORT := $(subst aosp_,,$(CUSTOM_BUILD))
+TARGET_PRODUCT_SHORT := $(subst evolution_,,$(EVOLUTION_BUILD))
 
-EVO_VERSION := $(EVO_CODENAME)-v$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
+EVO_VERSION_DISPLAY := $(EVO_CODENAME)-v$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)
 
-CUSTOM_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(CUSTOM_BUILD)-$(CUSTOM_PLATFORM_VERSION)-$(CUSTOM_BUILD_DATE)-$(CUSTOM_BUILD_TYPE)
-CUSTOM_VERSION_PROP := 10
+EVO_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(EVOLUTION_BUILD)-$(EVO_PLATFORM_VERSION)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)
+EVO_VERSION_PROP := 11
 
 PRODUCT_GENERIC_PROPERTIES += \
     org.evolution.version=$(EVO_VERSION) \
-    org.evolution.version.prop=$(CUSTOM_VERSION_PROP) \
-    org.evolution.version.display=$(CUSTOM_VERSION) \
+    org.evolution.version.prop=$(EVO_VERSION_PROP) \
+    org.evolution.version.display=$(EVO_VERSION_DISPLAY) \
     org.evolution.build_version=$(EVO_BASE_VERSION) \
-    org.evolution.build_date=$(CUSTOM_BUILD_DATE) \
-    org.evolution.build_date_utc=$(CUSTOM_BUILD_DATE_UTC) \
-    org.evolution.build_type=$(CUSTOM_BUILD_TYPE) \
+    org.evolution.build_date=$(EVO_BUILD_DATE) \
+    org.evolution.build_date_utc=$(EVO_BUILD_DATE_UTC) \
+    org.evolution.build_type=$(EVO_BUILD_TYPE) \
     org.evolution.build_donate_url=$(EVO_DONATE_URL) \
     org.evolution.build_maintainer=$(EVO_MAINTAINER) \
     org.evolution.build_support_url=$(EVO_SUPPORT_URL) \

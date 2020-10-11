@@ -1,4 +1,4 @@
 # Inherit common Evolution X stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 PRODUCT_SIZE := full

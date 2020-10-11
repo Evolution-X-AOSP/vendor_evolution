@@ -12,13 +12,13 @@ EXPORT_TO_SOONG := \
     TARGET_KERNEL_SOURCE \
     TARGET_KERNEL_HEADERS
 
-SOONG_CONFIG_NAMESPACES += customVarsPlugin
+SOONG_CONFIG_NAMESPACES += evolutionVarsPlugin
 
-SOONG_CONFIG_customVarsPlugin :=
+SOONG_CONFIG_evolutionVarsPlugin :=
 
 define addVar
-  SOONG_CONFIG_customVarsPlugin += $(1)
-  SOONG_CONFIG_customVarsPlugin_$(1) := $$(subst ",\",$$($1))
+  SOONG_CONFIG_evolutionVarsPlugin += $(1)
+  SOONG_CONFIG_evolutionVarsPlugin_$(1) := $$(subst ",\",$$($1))
 endef
 
 $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))

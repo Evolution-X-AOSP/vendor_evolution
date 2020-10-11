@@ -56,20 +56,20 @@ endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/aosp/config/permissions/privapp-permissions-evolution.xml:system/etc/permissions/privapp-permissions-evolution.xml
+    vendor/evolution/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:system/etc/permissions/privapp-permissions-evolution.xml
 
 # Copy all custom init rc files
-$(foreach f,$(wildcard vendor/aosp/prebuilt/common/etc/init/*.rc),\
+$(foreach f,$(wildcard vendor/evolution/prebuilt/common/etc/init/*.rc),\
     $(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/evolution/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
+    vendor/evolution/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -85,7 +85,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
+    vendor/evolution/config/permissions/custom-power-whitelist.xml:system/etc/sysconfig/custom-power-whitelist.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -116,16 +116,16 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosp/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
 
 # OmniStyle
-PRODUCT_PACKAGES += \
-    OmniStyle
+#PRODUCT_PACKAGES += \
+#    OmniStyle
 
 # TouchGestures
-PRODUCT_PACKAGES += \
-    TouchGestures
+#PRODUCT_PACKAGES += \
+#    TouchGestures
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -133,31 +133,31 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease
 
 # PixelSetupWizard overlay
-PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlay \
-    PixelSetupWizardAodOverlay
+#PRODUCT_PACKAGES += \
+#    PixelSetupWizardOverlay \
+#    PixelSetupWizardAodOverlay
 
 # Custom Overlays
 # Settings
-PRODUCT_PACKAGES += \
-    SystemPitchBlackOverlay \
-    SystemUIPitchBlackOverlay \
-    SystemDarkGrayOverlay \
-    SystemUIDarkGrayOverlay \
-    SystemStyleOverlay \
-    SystemUIStyleOverlay \
-    SystemNightOverlay \
-    SystemUINightOverlay \
-    SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay \
-    SystemMaterialOceanOverlay \
-    SystemUIMaterialOceanOverlay \
-    SystemBakedGreenOverlay \
-    SystemUIBakedGreenOverlay \
-    SystemChocoXOverlay \
-    SystemUIChocoXOverlay \
-    SystemDarkAubergineOverlay \
-    SystemUIDarkAubergineOverlay
+#PRODUCT_PACKAGES += \
+#    SystemPitchBlackOverlay \
+#    SystemUIPitchBlackOverlay \
+#    SystemDarkGrayOverlay \
+#    SystemUIDarkGrayOverlay \
+#    SystemStyleOverlay \
+#    SystemUIStyleOverlay \
+#    SystemNightOverlay \
+#    SystemUINightOverlay \
+#    SystemSolarizedDarkOverlay \
+#    SystemUISolarizedDarkOverlay \
+#    SystemMaterialOceanOverlay \
+#    SystemUIMaterialOceanOverlay \
+#    SystemBakedGreenOverlay \
+#    SystemUIBakedGreenOverlay \
+#    SystemChocoXOverlay \
+#    SystemUIChocoXOverlay \
+#    SystemDarkAubergineOverlay \
+#    SystemUIDarkAubergineOverlay
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
@@ -168,34 +168,34 @@ PRODUCT_PACKAGES += \
     themed_bootanimation
 
 # Long Screenshot
-PRODUCT_PACKAGES += \
-    StitchImage
+#PRODUCT_PACKAGES += \
+#    StitchImage
 
 # Cutout control overlay
-ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
-PRODUCT_PACKAGES += NoCutoutOverlay
-endif
+#ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
+#PRODUCT_PACKAGES += NoCutoutOverlay
+#endif
 
 # Branding
-include vendor/aosp/config/branding.mk
+include vendor/evolution/config/branding.mk
 
 # OTA
-include vendor/aosp/config/ota.mk
+include vendor/evolution/config/ota.mk
 
-# GApps
-include vendor/gapps/config.mk
+# Inherit from GMS product config
+$(call inherit-product, vendor/gms/gms_full.mk)
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
 # Plugins
-include packages/apps/PotatoPlugins/plugins.mk
+#include packages/apps/PotatoPlugins/plugins.mk
 
 #Terminal
 PRODUCT_PACKAGES += \
     Terminal
 
 # Customization
-include vendor/google-customization/config.mk
+#include vendor/google-customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk

@@ -1,6 +1,6 @@
-function __print_custom_functions_help() {
+function __print_evo_functions_help() {
 cat <<EOF
-Additional functions:
+Additional Evolution X functions:
 - cout:            Changes directory to out.
 - mmp:             Builds all of the modules in the current directory and pushes them to the device.
 - mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
@@ -82,7 +82,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch aosp_$target-$variant
+            lunch evolution_$target-$variant
         fi
     fi
     return $?
@@ -101,13 +101,13 @@ function eat()
         echo "Waiting for device..."
         adb wait-for-device-recovery
         echo "Found device"
-        if (adb shell getprop org.evolution.device | grep -q "$CUSTOM_BUILD"); then
+        if (adb shell getprop org.evolution.device | grep -q "$EVOLUTION_BUILD"); then
             echo "Rebooting to sideload for install"
             adb reboot sideload-auto-reboot
             adb wait-for-sideload
             adb sideload $ZIPPATH
         else
-            echo "The connected device does not appear to be $CUSTOM_BUILD, run away!"
+            echo "The connected device does not appear to be $EVOLUTION_BUILD, run away!"
         fi
         return $?
     else
@@ -322,14 +322,14 @@ function installboot()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop org.evolution.device | grep -q "$CUSTOM_BUILD");
+    if (adb shell getprop org.evolution.device | grep -q "$EVOLUTION_BUILD");
     then
         adb push $OUT/boot.img /cache/
         adb shell dd if=/cache/boot.img of=$PARTITION
         adb shell rm -rf /cache/boot.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $CUSTOM_BUILD, run away!"
+        echo "The connected device does not appear to be $EVOLUTION_BUILD, run away!"
     fi
 }
 
@@ -360,14 +360,14 @@ function installrecovery()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop org.evolution.device | grep -q "$CUSTOM_BUILD");
+    if (adb shell getprop org.evolution.device | grep -q "$EVOLUTION_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
         adb shell rm -rf /cache/recovery.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $CUSTOM_BUILD, run away!"
+        echo "The connected device does not appear to be $EVOLUTION_BUILD, run away!"
     fi
 }
 
@@ -384,7 +384,7 @@ function pixelgerrit() {
     local user=`git config --get review.gerrit.pixelexperience.org.username`
     local review=`git config --get remote.pixel.review`
     local project=`git config --get remote.pixel.projectname`
-    local remote_branch=ten
+    local remote_branch=elle
     local command=$1
     shift
     case $command in
@@ -715,7 +715,7 @@ function dopush()
         echo "Device Found."
     fi
 
-    if (adb shell getprop org.evolution.device | grep -q "$CUSTOM_BUILD") || [ "$FORCE_PUSH" = "true" ];
+    if (adb shell getprop org.evolution.device | grep -q "$EVOLUTION_BUILD") || [ "$FORCE_PUSH" = "true" ];
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
@@ -834,7 +834,7 @@ EOF
     rm -f $OUT/.log
     return 0
     else
-        echo "The connected device does not appear to be $CUSTOM_BUILD, run away!"
+        echo "The connected device does not appear to be $EVOLUTION_BUILD, run away!"
     fi
 }
 
@@ -847,7 +847,7 @@ alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/aosp/build/tools/repopick.py $@
+    $T/vendor/evolution/build/tools/repopick.py $@
 }
 
 function fixup_common_out_dir() {

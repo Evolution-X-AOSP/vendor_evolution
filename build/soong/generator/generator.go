@@ -29,7 +29,7 @@ import (
 )
 
 func init() {
-	android.RegisterModuleType("custom_generator", GeneratorFactory)
+	android.RegisterModuleType("evolution_generator", GeneratorFactory)
 
 	pctx.HostBinToolVariable("sboxCmd", "sbox")
 }
@@ -213,12 +213,12 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	if depRoot == "" {
 		depRoot = ctx.ModuleDir()
 	} else {
-		depRoot = customExpandVariables(ctx, depRoot)
+		depRoot = evolutionExpandVariables(ctx, depRoot)
 	}
 
 	// Glob dep_files property
 	for _, dep_file := range g.properties.Dep_files {
-		dep_file = customExpandVariables(ctx, dep_file)
+		dep_file = evolutionExpandVariables(ctx, dep_file)
 		globPath := filepath.Join(depRoot, dep_file)
 		paths, err := ctx.GlobWithDeps(globPath, nil)
 		if err != nil {
@@ -230,7 +230,7 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		}
 	}
 
-	cmd := customExpandVariables(ctx, String(g.properties.Cmd))
+	cmd := evolutionExpandVariables(ctx, String(g.properties.Cmd))
 
 	rawCommand, err := android.Expand(cmd, func(name string) (string, error) {
 		switch name {
