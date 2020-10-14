@@ -1,13 +1,4 @@
 bootstrap_go_package {
-    name: "soong-evolution",
-    pkgPath: "evolution/soong/android",
-    srcs: [
-        "android/config.go",
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-evolution-generator",
     pkgPath: "evolution/soong/generator",
     deps: [
