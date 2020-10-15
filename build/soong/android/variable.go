@@ -18,9 +18,6 @@ type Product_variables struct {
 		Cflags []string
 		Header_libs []string
 	}
-	Recovery_skip_ev_rel_input struct {
-		Cflags []string
-	}
 	Should_wait_for_qsee struct {
 		Cflags []string
 	}
