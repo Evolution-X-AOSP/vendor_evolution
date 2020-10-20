@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Exports
+DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
+out=./out/target/product/$DEVICE
+
 export Changelog=Changelog.txt
 
 if [ -f $Changelog ];
@@ -7,15 +11,18 @@ then
 	rm -f $Changelog
 fi
 
+export formatter_script=$(realpath vendor/evolution/tools/changelog_repo_formatter.sh)
+
 touch $Changelog
 
+# Print something to build output
 echo "Generating changelog..."
 
 for i in $(seq 14);
 do
-export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+export After_Date=`date --date="$i days ago" +%Y/%m/%d`
 k=$(expr $i - 1)
-	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+	export Until_Date=`date --date="$k days ago" +%Y/%m/%d`
 
 	# Line with after --- until was too long for a small ListView
 	echo '=======================' >> $Changelog;
@@ -23,19 +30,10 @@ k=$(expr $i - 1)
 	echo '=======================' >> $Changelog;
 	echo >> $Changelog;
 
-while read path;
-do
-    Git_log=`git --git-dir ./${path}/.git log --after=$After_Date --until=$Until_Date --pretty=tformat:"%h  %s  [%an]" --abbrev-commit --abbrev=7`
-    if [ ! -z "${Git_log}" ]; then
-        echo "\n* ${path}\n${Git_log}\n" >> $Changelog;
-    fi
-done < ./.repo/project.list;
-
-echo "" >> $Changelog;
+	# Cycle through every repo to find commits between 2 dates
+	repo forall -c '. $formatter_script' >> $Changelog
+	echo >> $Changelog;
 done
 
-sed -i 's/project/   */g' $Changelog
-
-cp $Changelog $OUT/system/etc/
-cp $Changelog $OUT/
-rm -rf $Changelog
+cp $Changelog $out/system/etc/
+cp $Changelog $out/
