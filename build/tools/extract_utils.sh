@@ -1277,6 +1277,10 @@ function oat2dex() {
         export CDEXCONVERTER="$EVO_ROOT"/prebuilts/tools-evolution/${HOST}-x86/bin/compact_dex_converter
     fi
 
+    if [ -z "$PATCHELF" ]; then
+        export PATCHELF="$EVO_ROOT"/prebuilts/tools-evolution/${HOST}-x86/bin/patchelf
+    fi
+
     # Extract existing boot.oats to the temp folder
     if [ -z "$ARCHES" ]; then
         echo "Checking if system is odexed and locating boot.oats..."
@@ -1783,7 +1787,7 @@ function extract2() {
     local FIXUP_HASHLIST=( ${PRODUCT_COPY_FILES_FIXUP_HASHES[@]} ${PRODUCT_PACKAGES_FIXUP_HASHES[@]} )
     local PRODUCT_COPY_FILES_COUNT=${#PRODUCT_COPY_FILES_LIST[@]}
     local COUNT=${#FILELIST[@]}
-    local OUTPUT_ROOT="$LINEAGE_ROOT"/"$OUTDIR"/proprietary
+    local OUTPUT_ROOT="$EVO_ROOT"/"$OUTDIR"/proprietary
     local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
 
     if [ "$ADB" = true ]; then
