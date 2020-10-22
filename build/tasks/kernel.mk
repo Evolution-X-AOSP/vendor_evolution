@@ -64,7 +64,6 @@
 #                                          modules in vendor_overlay instead of vendor
 
 ifneq ($(TARGET_NO_KERNEL),true)
-ifeq ($(LOCAL_KERNEL),)
 
 ## Externally influenced variables
 KERNEL_SRC := $(TARGET_KERNEL_SOURCE)
@@ -376,5 +375,4 @@ dtboimage: $(INSTALLED_DTBOIMAGE_TARGET)
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
 
-endif # LOCAL_KERNEL
 endif # TARGET_NO_KERNEL
