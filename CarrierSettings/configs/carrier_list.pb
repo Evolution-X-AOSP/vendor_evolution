@@ -1529,8 +1529,8 @@ tmobile_us
 !
 310260GID1=2801
 310260"2801
-%
-consumercellular_us
+(
+consumercellulartmo_us
 310260"2AC9
 !
 redpockettmo_us
@@ -1564,8 +1564,8 @@ tmobile_us
 
 tmobile_us
 310270
-
-attmvnos_us
+(
+consumercellularatt_us
 310280"2AC9
 
 attmvnos_us
@@ -1644,8 +1644,8 @@ tmobile_us
 
 310390
 310390
-
-attmvnos_us
+(
+consumercellularatt_us
 310410"2AC9
 
 attmvnos_us
@@ -3178,9 +3178,6 @@ OPENMOBILE
 
 41007
 41007
-!
-410310GID1=2AC9
-410310"2AC9
 
 41201
 41201
@@ -4788,4 +4785,4 @@ $
 74810
 
 bics_be
-90158∑¶ ùN
+90158∏¶ ùN
