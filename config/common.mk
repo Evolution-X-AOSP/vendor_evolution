@@ -18,25 +18,11 @@ PRODUCT_BRAND ?= EvolutionX
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google
-else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
-
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.debug.alloc=0 \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.error.receiver.system.apps=com.google.android.gms \
-    ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dataroaming=false \
-    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.com.android.dateformat=MM-dd-yyyy \
     persist.sys.disable_rescue=true \
-    ro.setupwizard.rotation_locked=true
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
@@ -45,10 +31,6 @@ else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
-
-# Ambient Play
-#PRODUCT_PACKAGES += \
-#    AmbientPlayHistoryProvider
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -71,8 +53,7 @@ endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
-    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-evolution.xml
+    vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
 # Copy all custom init rc files
 $(foreach f,$(wildcard vendor/evolution/prebuilt/common/etc/init/*.rc),\
@@ -110,10 +91,6 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
@@ -134,45 +111,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
 
-# OmniStyle
-#PRODUCT_PACKAGES += \
-#    OmniStyle
-
-# TouchGestures
-#PRODUCT_PACKAGES += \
-#    TouchGestures
-
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
-
-# PixelSetupWizard overlay
-#PRODUCT_PACKAGES += \
-#    PixelSetupWizardOverlay \
-#    PixelSetupWizardAodOverlay
-
-# Custom Overlays
-# Settings
-#PRODUCT_PACKAGES += \
-#    SystemPitchBlackOverlay \
-#    SystemUIPitchBlackOverlay \
-#    SystemDarkGrayOverlay \
-#    SystemUIDarkGrayOverlay \
-#    SystemStyleOverlay \
-#    SystemUIStyleOverlay \
-#    SystemNightOverlay \
-#    SystemUINightOverlay \
-#    SystemSolarizedDarkOverlay \
-#    SystemUISolarizedDarkOverlay \
-#    SystemMaterialOceanOverlay \
-#    SystemUIMaterialOceanOverlay \
-#    SystemBakedGreenOverlay \
-#    SystemUIBakedGreenOverlay \
-#    SystemChocoXOverlay \
-#    SystemUIChocoXOverlay \
-#    SystemDarkAubergineOverlay \
-#    SystemUIDarkAubergineOverlay
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
@@ -181,15 +123,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     misc_writer_system \
     themed_bootanimation
-
-# Long Screenshot
-#PRODUCT_PACKAGES += \
-#    StitchImage
-
-# Cutout control overlay
-#ifneq ($(filter true, $(TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY)),)
-#PRODUCT_PACKAGES += NoCutoutOverlay
-#endif
 
 # Branding
 include vendor/evolution/config/branding.mk
@@ -208,14 +141,8 @@ endif
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
-# Plugins
-#include packages/apps/PotatoPlugins/plugins.mk
-
 #Terminal
 PRODUCT_PACKAGES += \
     Terminal
-
-# Customization
-#include vendor/google-customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
