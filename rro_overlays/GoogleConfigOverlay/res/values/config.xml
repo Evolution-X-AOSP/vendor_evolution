@@ -69,7 +69,7 @@
     <string name="config_defaultSms" translatable="false">com.google.android.apps.messaging</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
+    <!--string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>-->
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
