@@ -145,6 +145,7 @@ include vendor/pixelstyle/config.mk
 PRODUCT_PACKAGES += \
     EvolutionThemesStub \
     Seedvault \
+    ThemePicker \
     Terminal
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
