@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
     GVM-PGM-PURP \
     GVM-PGM-ROSE
 
+# Immersive Navigation
+PRODUCT_PACKAGES += \
+    ImmersiveNavigationOverlay
+
 # Navbar Styles
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
