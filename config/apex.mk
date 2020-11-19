@@ -13,8 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-ifeq ($(TARGET_FLATTEN_APEX),false)
-
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/evolution/apex/overlay
@@ -47,5 +45,3 @@ PRODUCT_PACKAGES += \
     com.google.android.sdkext \
     com.google.android.telephony \
     com.google.android.tzdata2
-
-endif
