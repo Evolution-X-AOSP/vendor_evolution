@@ -36,4 +36,6 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
-    PixelTetheringOverlay
+    PixelDocumentsUIGoogleOverlay \
+    PixelTetheringOverlay \
+    SystemUIGoogleOverlay
