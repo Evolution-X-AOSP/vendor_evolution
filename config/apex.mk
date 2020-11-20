@@ -13,12 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/evolution/apex/overlay
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/evolution/apex/overlay/common
+ifeq ($(TARGET_FLATTEN_APEX),false)
+# Overlay
+PRODUCT_PACKAGES += \
+    ApexOverlay
 
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/evolution/apex/NetworkStack
@@ -43,10 +41,10 @@ PRODUCT_PACKAGES += \
     com.google.android.mediaprovider \
     com.google.android.neuralnetworks \
     com.google.android.os.statsd \
-    com.google.android.permission \
     com.google.android.resolv \
     com.google.android.sdkext \
     com.google.android.telephony \
     com.google.android.tethering \
     com.google.android.tzdata2 \
     com.google.android.wifi
+endif

@@ -123,20 +123,10 @@ include vendor/evolution/config/ota.mk
 $(call inherit-product, vendor/evolution/config/common_telephony.mk)
 
 # Inherit from GMS product config
-ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gms/gms_full.mk)
-# Inherit from apex config
-ifeq ($(TARGET_FLATTEN_APEX),false)
-$(call inherit-product, vendor/evolution/config/apex.mk)
-else
-# Hide "Google Play System Updates" if Apex disabled
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/evolution/overlay_apex_disabled
 
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/evolution/overlay_apex_disabled/common
-endif
-endif
+# Inherit from apex config
+$(call inherit-product, vendor/evolution/config/apex.mk)
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
