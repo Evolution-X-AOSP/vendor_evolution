@@ -9,6 +9,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Stk
 
+ifneq ($(filter blueline crosshatch,$(TARGET_DEVICE)),)
+ifneq ($(TARGET_BUILD_VARIANT),user)
+# Ignore neverallows to allow Smart Charging sepolicies
+SELINUX_IGNORE_NEVERALLOWS := true
+
+# Inherit from our vendor sepolicy config
+$(call inherit-product, vendor/evolution/configs/vendor_sepolicy.mk)
+
+# Include Smart Charging overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/evolution/overlay-smartcharging
+endif
+endif
+
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
