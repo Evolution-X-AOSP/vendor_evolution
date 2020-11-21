@@ -28,62 +28,59 @@
 static int __rtio_cgroup_supported = -1;
 static pthread_once_t __rtio_init_once = PTHREAD_ONCE_INIT;
 
-static void __initialize_rtio(void) {
-    if (!access("/dev/bfqio/tasks", W_OK) || !access("/dev/bfqio/rt-display/tasks", W_OK)) {
-        __rtio_cgroup_supported = 1;
-    } else {
-        __rtio_cgroup_supported = 0;
-    }
+static void __initialize_rtio(void)
+{
+	if (!access("/dev/bfqio/tasks", W_OK) || !access("/dev/bfqio/rt-display/tasks", W_OK))
+		__rtio_cgroup_supported = 1;
+	else
+		__rtio_cgroup_supported = 0;
 }
 
-int android_set_rt_ioprio(int tid, int rt) {
-    int fd = -1, rc = -1;
+int android_set_rt_ioprio(int tid, int rt)
+{
+	int fd = -1, rc = -1;
 
-    pthread_once(&__rtio_init_once, __initialize_rtio);
-    if (__rtio_cgroup_supported != 1) {
-        return -1;
-    }
+	pthread_once(&__rtio_init_once, __initialize_rtio);
+	if (__rtio_cgroup_supported != 1)
+		return -1;
 
-    if (rt) {
-        fd = open("/dev/bfqio/rt-display/tasks", O_WRONLY | O_CLOEXEC);
-    } else {
-        fd = open("/dev/bfqio/tasks", O_WRONLY | O_CLOEXEC);
-    }
+	if (rt)
+		fd = open("/dev/bfqio/rt-display/tasks", O_WRONLY | O_CLOEXEC);
+	else
+		fd = open("/dev/bfqio/tasks", O_WRONLY | O_CLOEXEC);
 
-    if (fd < 0) {
-        return -1;
-    }
+	if (fd < 0)
+		return -1;
 
 #ifdef HAVE_GETTID
-    if (tid == 0) {
-        tid = gettid();
-    }
+	if (tid == 0)
+		tid = gettid();
 #endif
 
-    // specialized itoa -- works for tid > 0
-    char text[22];
-    char *end = text + sizeof(text) - 1;
-    char *ptr = end;
-    *ptr = '\0';
-    while (tid > 0) {
-        *--ptr = '0' + (tid % 10);
-        tid = tid / 10;
-    }
+	// specialized itoa -- works for tid > 0
+	char text[22];
+	char *end = text + sizeof(text) - 1;
+	char *ptr = end;
+	*ptr = '\0';
+	while (tid > 0) {
+		*--ptr = '0' + (tid % 10);
+		tid = tid / 10;
+	}
 
-    rc = write(fd, ptr, end - ptr);
-    if (rc < 0) {
-        /*
-         * If the thread is in the process of exiting,
-         * don't flag an error
-         */
-        if (errno == ESRCH) {
-            rc = 0;
-        } else {
-            SLOGV("android_set_rt_ioprio failed to write '%s' (%s); fd=%d\n",
-                  ptr, strerror(errno), fd);
-        }
-    }
+	rc = write(fd, ptr, end - ptr);
+	if (rc < 0) {
+		/*
+		 * If the thread is in the process of exiting,
+		 * don't flag an error
+		 */
+		if (errno == ESRCH) {
+			rc = 0;
+		} else {
+			SLOGV("android_set_rt_ioprio failed to write '%s' (%s); fd=%d\n",
+				  ptr, strerror(errno), fd);
+		}
+	}
 
-    close(fd);
-    return rc;
+	close(fd);
+	return rc;
 }
