@@ -1,0 +1,2 @@
+# Smart Charging
+allow init sysfs_batteryinfo:file { setattr };
