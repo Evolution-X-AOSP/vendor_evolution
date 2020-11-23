@@ -128,9 +128,6 @@ PRODUCT_PACKAGES += \
 # Branding
 include vendor/evolution/config/branding.mk
 
-# Flipendo
-include vendor/evolution/config/system_sepolicy.mk
-
 # OTA
 include vendor/evolution/config/ota.mk
 
