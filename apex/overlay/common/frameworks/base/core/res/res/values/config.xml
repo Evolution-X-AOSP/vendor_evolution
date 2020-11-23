@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The name of the package that will hold the assistant role by default. -->
+    <string name="config_defaultAssistantAccessComponent">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
+
+    <!-- The package name for the OEM custom system textclassifier service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.textclassifier"
+         If this is empty, the default textclassifier service (i.e. config_servicesExtensionPackage)
+         will be used.
+         See android.view.textclassifier.TextClassificationManager.
+    -->
+    <string name="config_servicesExtensionPackage">com.google.android.ext.services</string>
+
+    <!-- Component name for the default module metadata provider on this device -->
+    <string name="config_defaultModuleMetadataProvider">com.google.android.modulemetadata</string>
+</resources>
