@@ -147,7 +147,8 @@ PRODUCT_PACKAGES += \
     EvolutionThemesStub \
     Seedvault \
     ThemePicker \
-    Terminal
+    Terminal \
+    TouchGestures
 
 # Custom Overlays
 # Settings
