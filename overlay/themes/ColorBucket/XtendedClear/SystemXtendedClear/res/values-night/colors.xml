@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  NOTE: You might also want to edit: core/res/res/values-night/*.xml
+  -->
+<resources>
+    <color name="primary_dark_device_default_dark">#66000000</color>
+    <color name="primary_dark_device_default_settings">#66000000</color>
+    <color name="notification_material_background_color">@*android:color/primary_dark_device_default_settings</color>
+    <color name="theme_generic_semi_transparent_color">@*android:color/primary_dark_device_default_settings</color>
+    <color name="resolver_list_bg">@*android:color/primary_dark_device_default_settings</color>
+    <color name="chooser_service_row_background_color">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_grey_900">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_grey_850">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_grey_800">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_grey_600">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_blue_grey_700">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_blue_grey_800">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_blue_grey_900">@*android:color/primary_dark_device_default_settings</color>
+    <color name="material_blue_grey_950">@*android:color/primary_dark_device_default_settings</color>
+    <color name="toast_bg_color">@*android:color/primary_dark_device_default_settings</color>
+</resources>
