@@ -17,7 +17,6 @@
   NOTE: You might also want to edit: core/res/res/values-night/*.xml
   -->
 <resources>
-
     <!-- The color of the material notification background -->
     <color name="notification_material_background_color">#FF2C001E</color>
 
@@ -36,5 +35,4 @@
 
     <!-- The color of the background in the grid of the Global Actions menu -->
     <color name="global_actions_grid_background">#FF2C001E</color>
-
 </resources>

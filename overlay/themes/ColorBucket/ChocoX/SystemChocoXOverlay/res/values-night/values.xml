@@ -16,13 +16,8 @@
   -->
 
 <resources>
-
     <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
-        <!-- QS panel background -->
         <item name="android:colorBackgroundFloating">#ff100808</item>
-
-        <!-- volume background -->
         <item name="android:panelColorBackground">#ff100808</item>
     </style>
-
 </resources>
