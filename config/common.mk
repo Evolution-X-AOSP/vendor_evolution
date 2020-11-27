@@ -139,7 +139,9 @@ include vendor/evolution/config/ota.mk
 $(call inherit-product, vendor/evolution/config/apex.mk)
 
 # Inherit from CarrierSettings
+ifeq ($(USE_CS),true)
 $(call inherit-product, vendor/evolution/config/common_telephony.mk)
+endif
 
 # Now Playing
 $(call inherit-product, vendor/evolution/config/pixel.mk)
