@@ -18,8 +18,8 @@
 <resources>
     <color name="primary_dark_device_default_dark">#66000000</color>
     <color name="primary_dark_device_default_settings">#66000000</color>
-    <color name="notification_material_background_color">@*android:color/primary_dark_device_default_settings</color>
-    <color name="theme_generic_semi_transparent_color">@*android:color/primary_dark_device_default_settings</color>
+    <color name="notification_material_background_color">#80000000</color>
+    <color name="theme_generic_semi_transparent_color">#80000000</color>
     <color name="resolver_list_bg">@*android:color/primary_dark_device_default_settings</color>
     <color name="chooser_service_row_background_color">@*android:color/primary_dark_device_default_settings</color>
     <color name="material_grey_900">@*android:color/primary_dark_device_default_settings</color>

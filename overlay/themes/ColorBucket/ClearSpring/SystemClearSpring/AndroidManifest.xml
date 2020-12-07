@@ -16,10 +16,10 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.dark.xtendedclear"
+    package="com.android.dark.clearspring"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="android" android:category="android.theme.customization.custom_overlays" android:priority="1"/>
 
-    <application android:label="Xtended Clear" android:hasCode="false"/>
+    <application android:label="Clear Spring" android:hasCode="false"/>
 </manifest>
