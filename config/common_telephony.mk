@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     bell_ca.pb \
     bluegrass_us.pb \
     boost_us.pb \
+    boosttmo_us.pb \
     bouygues_fr.pb \
     btb_gb.pb \
     btc_gb.pb \

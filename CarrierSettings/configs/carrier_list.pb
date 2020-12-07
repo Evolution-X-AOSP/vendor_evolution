@@ -530,6 +530,10 @@ telekom_at
 
 telering_at
 23207
+$
+lycamobile_ch
+23208
+Lycamobile
 
 fi_us
 23210"0306
@@ -572,6 +576,10 @@ $
 
 o2prepaid_gb
 23410"99
+"
+travelfy_zz
+23410
+2341040991
  
 giffgaff_gb
 23410GIFFGAFF
@@ -984,6 +992,9 @@ telenor_no
 
 25020
 25020
+%
+sberbanktelecom_ru
+25050"FA3207
 
 
 tinkoff_ru
@@ -1512,6 +1523,9 @@ tmobile_us
 
 tmobile_us
 310230
+
+boosttmo_us
+310240"6230
 
 metropcs_us
 310240"6D38
@@ -2185,6 +2199,15 @@ OPENMOBILE
 
 334090
 334090
+
+altan_mx
+334140ALTAN
+ 
+altanientc_mx
+334140IENTC
+ 
+altannewww_mx
+334140NeWWW
 
 33805
 33805
@@ -3849,6 +3872,10 @@ singtel_sg
 /
 52505IMSI=525053095XXXXXX
 52505	525053095
+"
+travelfy_zz
+52505
+5250530996
 
 giga_sg
 52505giga
@@ -4702,6 +4729,10 @@ $
 
 73212
 73212
+#
+travelfy_zz
+732123
+7321232010
 2
 732123SPN=VIRGIN MOBILE
 732123VIRGIN MOBILE
@@ -4785,4 +4816,4 @@ $
 74810
 
 bics_be
-90158∏¶ ùN
+90158º∫µ˙Q
