@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 5.1
-EVO_CODENAME := Eleanor
+EVO_BASE_VERSION := 5.2
+EVO_CODENAME := Emerald
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
