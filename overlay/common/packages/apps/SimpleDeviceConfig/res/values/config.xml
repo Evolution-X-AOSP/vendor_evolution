@@ -24,6 +24,9 @@
         <item>privacy/permissions_hub_2_enabled=true</item>
         <item>privacy/permissions_hub_enabled=true</item>
 
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
         <!-- Adaptive Sound (Pixel 2020) -->
         <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
         <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
