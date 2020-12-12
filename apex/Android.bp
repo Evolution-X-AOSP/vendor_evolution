@@ -26,6 +26,15 @@ prebuilt_apex {
     prefer: true,
 }
 
+// Google com.google.android.cellbroadcast
+prebuilt_apex {
+    name: "com.google.android.cellbroadcast",
+    src: "com.google.android.cellbroadcast.apex",
+    overrides: ["com.android.cellbroadcast"],
+    owner: "google",
+    prefer: true,
+}
+
 // Google com.google.android.conscrypt
 prebuilt_apex {
     name: "com.google.android.conscrypt",
@@ -139,6 +148,15 @@ prebuilt_apex {
     name: "com.google.android.tzdata2",
     src: "com.google.android.tzdata2.apex",
     overrides: ["com.android.tzdata"],
+    owner: "google",
+    prefer: true,
+}
+
+// Google com.google.android.wifi
+prebuilt_apex {
+    name: "com.google.android.wifi",
+    src: "com.google.android.wifi.apex",
+    overrides: ["com.android.wifi"],
     owner: "google",
     prefer: true,
 }
