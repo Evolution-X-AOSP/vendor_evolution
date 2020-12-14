@@ -144,9 +144,6 @@ ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/gms/gms_full.mk)
 endif
 
-# Inherit from rro_overlays config
-$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
-
 # Pixel Style
 include vendor/pixelstyle/config.mk
 

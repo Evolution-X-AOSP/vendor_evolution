@@ -15,7 +15,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Inherit from our vendor sepolicy config
-$(call inherit-product, vendor/evolution/configs/vendor_sepolicy.mk)
+$(call inherit-product, vendor/evolution/config/vendor_sepolicy.mk)
 
 # Include Smart Charging overlays
 DEVICE_PACKAGE_OVERLAYS += \
