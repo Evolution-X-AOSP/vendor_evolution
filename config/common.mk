@@ -146,6 +146,7 @@ include vendor/pixelstyle/config.mk
 PRODUCT_PACKAGES += \
     EvolutionThemesStub \
     Seedvault \
+    SimpleDeviceConfig \
     ThemePicker \
     Terminal \
     TouchGestures
