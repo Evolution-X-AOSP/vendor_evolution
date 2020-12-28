@@ -119,6 +119,12 @@ include vendor/evolution/config/branding.mk
 # OTA
 include vendor/evolution/config/ota.mk
 
+# Inherit from CarrierSettings
+$(call inherit-product, vendor/evolution/config/common_telephony.mk)
+
+# Inherit from GMS product config
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product, vendor/gms/gms_full.mk)
 # Inherit from apex config
 ifeq ($(TARGET_FLATTEN_APEX),false)
 $(call inherit-product, vendor/evolution/config/apex.mk)
@@ -130,13 +136,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/evolution/overlay_apex_disabled/common
 endif
-
-# Inherit from CarrierSettings
-$(call inherit-product, vendor/evolution/config/common_telephony.mk)
-
-# Inherit from GMS product config
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gms/gms_full.mk)
 endif
 
 # Pixel Style
@@ -152,7 +151,6 @@ PRODUCT_PACKAGES += \
     TouchGestures
 
 # Custom Overlays
-# Settings
 PRODUCT_PACKAGES += \
     SystemRavenBlackOverlay \
     SystemUIRavenBlackOverlay \
