@@ -144,6 +144,7 @@ include vendor/pixelstyle/config.mk
 # Non-Evo packages
 PRODUCT_PACKAGES += \
     EvolutionThemesStub \
+    OmniStyle \
     Seedvault \
     SimpleDeviceConfig \
     ThemePicker \
