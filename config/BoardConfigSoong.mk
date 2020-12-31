@@ -9,8 +9,7 @@ EXPORT_TO_SOONG := \
     KERNEL_MAKE_FLAGS \
     PATH_OVERRIDE_SOONG \
     TARGET_KERNEL_CONFIG \
-    TARGET_KERNEL_SOURCE \
-    TARGET_KERNEL_HEADERS
+    TARGET_KERNEL_SOURCE
 
 SOONG_CONFIG_NAMESPACES += evolutionVarsPlugin
 
@@ -40,17 +39,10 @@ SOONG_CONFIG_evolutionGlobalVars += \
     uses_camera_parameter_lib \
     uses_egl_display_array
 
-SOONG_CONFIG_NAMESPACES += evolutionNvidiaVars
-SOONG_CONFIG_evolutionNvidiaVars += \
-    uses_nvidia_enhancements
-
 SOONG_CONFIG_NAMESPACES += evolutionQcomVars
 SOONG_CONFIG_evolutionQcomVars += \
-    legacy_hw_disk_encryption \
     should_wait_for_qsee \
     supports_extended_compress_format \
-    supports_hw_fde \
-    supports_hw_fde_perf \
     uses_pre_uplink_features_netmgrd \
     uses_qti_camera_device
 
@@ -69,12 +61,8 @@ SOONG_CONFIG_evolutionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_C
 SOONG_CONFIG_evolutionGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
 SOONG_CONFIG_evolutionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
-SOONG_CONFIG_evolutionNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
-SOONG_CONFIG_evolutionQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
 SOONG_CONFIG_evolutionQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_evolutionQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
-SOONG_CONFIG_evolutionQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
-SOONG_CONFIG_evolutionQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_PERF)
 SOONG_CONFIG_evolutionQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_evolutionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 

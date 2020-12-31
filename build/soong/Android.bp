@@ -21,7 +21,7 @@ evolution_generator {
     name: "generated_kernel_includes",
 
     // The headers make command
-    cmd: "$(PATH_OVERRIDE_SOONG) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(TARGET_KERNEL_HEADERS) O=$(KERNEL_BUILD_OUT_PREFIX)$(genDir) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) headers_install",
+    cmd: "$(PATH_OVERRIDE_SOONG) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(TARGET_KERNEL_SOURCE) O=$(KERNEL_BUILD_OUT_PREFIX)$(genDir) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) headers_install",
 
     // Directories that can be imported by a cc_* module generated_headers property
     export_include_dirs: [
@@ -33,7 +33,7 @@ evolution_generator {
     ],
 
     // Sources for dependency tracking
-    dep_root: "$(TARGET_KERNEL_HEADERS)",
+    dep_root: "$(TARGET_KERNEL_SOURCE)",
     dep_files: [
         "Makefile",
         "include/**/*",
@@ -235,23 +235,6 @@ camera_needs_client_info_lib {
 }
 
 soong_config_module_type {
-    name: "legacy_hw_disk_encryption",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionQcomVars",
-    bool_variables: ["legacy_hw_disk_encryption"],
-    properties: ["cppflags"],
-}
-
-legacy_hw_disk_encryption {
-    name: "legacy_hw_disk_encryption_defaults",
-    soong_config_variables: {
-        legacy_hw_disk_encryption: {
-            cppflags: ["-DLEGACY_HW_DISK_ENCRYPTION"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "no_cameraserver",
     module_type: "cc_defaults",
     config_namespace: "evolutionGlobalVars",
@@ -336,24 +319,6 @@ egl_display_array {
     },
 }
 
-// NVIDIA specific config modules
-soong_config_module_type {
-    name: "nvidia_enhancements",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionNvidiaVars",
-    bool_variables: ["uses_nvidia_enhancements"],
-    properties: ["cppflags"],
-}
-
-nvidia_enhancements {
-    name: "nvidia_enhancements_defaults",
-    soong_config_variables: {
-        uses_nvidia_enhancements: {
-            cppflags: ["-DNV_ANDROID_FRAMEWORK_ENHANCEMENTS"],
-        },
-    },
-}
-
 // QCOM specific config modules
 soong_config_module_type {
     name: "librmnetctl_pre_uplink",
@@ -406,67 +371,6 @@ extended_compress_format {
     soong_config_variables: {
         supports_extended_compress_format: {
             cflags: ["-DENABLE_EXTENDED_COMPRESS_FORMAT"],
-        },
-    },
-}
-
-soong_config_module_type {
-    name: "vold_hw_fde",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionQcomVars",
-    bool_variables: ["supports_hw_fde"],
-    properties: [
-        "cflags",
-        "header_libs",
-        "shared_libs",
-    ],
-}
-
-vold_hw_fde {
-    name: "vold_hw_fde_defaults",
-    soong_config_variables: {
-        supports_hw_fde: {
-            cflags: ["-DCONFIG_HW_DISK_ENCRYPTION"],
-            header_libs: ["libcryptfs_hw_headers"],
-            shared_libs: ["libcryptfs_hw"],
-        },
-    },
-}
-
-soong_config_module_type {
-    name: "vold_hw_fde_perf",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionQcomVars",
-    bool_variables: ["supports_hw_fde_perf"],
-    properties: [
-        "cflags",
-        "shared_libs",
-    ],
-}
-
-vold_hw_fde_perf {
-    name: "vold_hw_fde_perf_defaults",
-    soong_config_variables: {
-        supports_hw_fde_perf: {
-            cflags: ["-DCONFIG_HW_DISK_ENCRYPT_PERF"],
-            shared_libs: ["libcryptfs_hw"],
-        },
-    },
-}
-
-soong_config_module_type {
-    name: "qti_cryptfshw_qsee",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionQcomVars",
-    bool_variables: ["should_wait_for_qsee"],
-    properties: ["cflags"],
-}
-
-qti_cryptfshw_qsee {
-    name: "qti_cryptfshw_qsee_defaults",
-    soong_config_variables: {
-        should_wait_for_qsee: {
-            cflags: ["-DWAIT_FOR_QSEE"],
         },
     },
 }

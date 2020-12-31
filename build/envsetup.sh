@@ -6,7 +6,7 @@ Additional Evolution X functions:
 - mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
 - mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
 - aospremote:      Add git remote for matching AOSP repository.
-- cafremote:       Add git remote for matching CodeAurora repository.
+- cloremote:       Add git remote for matching CodeLinaro repository.
 - githubremote:    Add git remote for Evolution X Github.
 - mka:             Builds using SCHED_BATCH on all processors.
 - mkap:            Builds the module(s) using mka and pushes them to the device.
@@ -251,30 +251,36 @@ function aospremote()
     echo "Remote 'aosp' created"
 }
 
-function cafremote()
+function cloremote()
 {
     if ! git rev-parse --git-dir &> /dev/null
     then
         echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
-    git remote rm caf 2> /dev/null
-    local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
-     # Google moved the repo location in Oreo
-    if [ $PROJECT = "build/make" ]
-    then
-        PROJECT="build"
+    git remote rm clo 2> /dev/null
+
+    if [ -f ".gitupstream" ]; then
+        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
+        git remote add clo ${REMOTE}
+    else
+        local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+        # Google moved the repo location in Oreo
+        if [ $PROJECT = "build/make" ]
+        then
+            PROJECT="build"
+        fi
+        if [[ $PROJECT =~ "qcom/opensource" ]];
+        then
+            PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
+        fi
+        if (echo $PROJECT | grep -qv "^device")
+        then
+            local PFX="platform/"
+        fi
+        git remote add clo https://git.codelinaro.org/clo/la/$PFX$PROJECT
     fi
-    if [[ $PROJECT =~ "qcom/opensource" ]];
-    then
-        PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
-    fi
-    if (echo $PROJECT | grep -qv "^device")
-    then
-        local PFX="platform/"
-    fi
-    git remote add caf https://source.codeaurora.org/quic/la/$PFX$PROJECT
-    echo "Remote 'caf' created"
+    echo "Remote 'clo' created"
 }
 
 function githubremote()
@@ -285,7 +291,12 @@ function githubremote()
         return 1
     fi
     git remote rm github 2> /dev/null
-    local REMOTE=$(git config --get remote.evolution.projectname)
+    local REMOTE=$(git config --get remote.aosp.projectname)
+
+    if [ -z "$REMOTE" ]
+    then
+        REMOTE=$(git config --get remote.clo.projectname)
+    fi
 
     local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
@@ -295,7 +306,7 @@ function githubremote()
 
 function installboot()
 {
-    if [ ! -e "$OUT/recovery/root/etc/recovery.fstab" ];
+    if [ ! -e "$OUT/recovery/root/system/etc/recovery.fstab" ];
     then
         echo "No recovery.fstab found. Build recovery first."
         return 1
@@ -305,12 +316,12 @@ function installboot()
         echo "No boot.img found. Run make bootimage first."
         return 1
     fi
-    PARTITION=`grep "^\/boot" $OUT/recovery/root/etc/recovery.fstab | awk {'print $3'}`
+    PARTITION=`grep "^\/boot" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
     if [ -z "$PARTITION" ];
     then
         # Try for RECOVERY_FSTAB_VERSION = 2
-        PARTITION=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/etc/recovery.fstab | awk {'print $1'}`
-        PARTITION_TYPE=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/etc/recovery.fstab | awk {'print $3'}`
+        PARTITION=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'}`
+        PARTITION_TYPE=`grep "[[:space:]]\/boot[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
         if [ -z "$PARTITION" ];
         then
             echo "Unable to determine boot partition."
@@ -333,7 +344,7 @@ function installboot()
 
 function installrecovery()
 {
-    if [ ! -e "$OUT/recovery/root/etc/recovery.fstab" ];
+    if [ ! -e "$OUT/recovery/root/system/etc/recovery.fstab" ];
     then
         echo "No recovery.fstab found. Build recovery first."
         return 1
@@ -343,12 +354,12 @@ function installrecovery()
         echo "No recovery.img found. Run make recoveryimage first."
         return 1
     fi
-    PARTITION=`grep "^\/recovery" $OUT/recovery/root/etc/recovery.fstab | awk {'print $3'}`
+    PARTITION=`grep "^\/recovery" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
     if [ -z "$PARTITION" ];
     then
         # Try for RECOVERY_FSTAB_VERSION = 2
-        PARTITION=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/etc/recovery.fstab | awk {'print $1'}`
-        PARTITION_TYPE=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/etc/recovery.fstab | awk {'print $3'}`
+        PARTITION=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $1'}`
+        PARTITION_TYPE=`grep "[[:space:]]\/recovery[[:space:]]" $OUT/recovery/root/system/etc/recovery.fstab | awk {'print $3'}`
         if [ -z "$PARTITION" ];
         then
             echo "Unable to determine recovery partition."
@@ -506,7 +517,7 @@ function dopush()
         CHKPERM="/data/local/tmp/chkfileperm.sh"
 (
 cat <<'EOF'
-#!/system/xbin/sh
+#!/system/bin/sh
 FILE=$@
 if [ -e $FILE ]; then
     ls -l $FILE | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/)*2^(8-i));if(k)printf("%0o ",k);print}' | cut -d ' ' -f1
@@ -552,7 +563,7 @@ EOF
                 fi
                 adb shell restorecon "$TARGET"
             ;;
-            /system/priv-app/SystemUI/SystemUI.apk|/system/framework/*)
+            */SystemUI*.apk|*/framework/*)
                 # Only need to stop services once
                 if ! $stop_n_start; then
                     adb shell stop

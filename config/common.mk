@@ -1,19 +1,3 @@
-#
-# Copyright (C) 2019-2022 The Evolution X Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
 PRODUCT_BRAND ?= EvolutionX
 
 # Gboard configuration
@@ -60,33 +44,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     media.mediadrmservice.enable=true
 
-# Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
-# on supported devices with Deep Press input classifier HALs and models
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.input.video_enabled=false
-
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=adb
 else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=none
-endif
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
-
-# Media
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.recorder.show_manufacturer_and_model=true
-
-# Disable async MTE on system_server
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    arm64.memtag.process.system_server=off
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -119,22 +86,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
-# Power whitelist
-PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/custom-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/custom-power-whitelist.xml
-
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Do not include art debug targets
-USE_DEX2OAT_DEBUG := false
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Disable vendor restrictions
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -170,9 +135,9 @@ TARGET_USES_MINI_GAPPS ?= false
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI \
-    NexusLauncherRelease
+    NexusLauncherRelease \
+    SettingsGoogle \
+    SystemUIGoogle
 
 # SystemUI
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -186,14 +151,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Inherit from apex config
 $(call inherit-product, vendor/evolution/config/apex.mk)
 
-# Inherit from apps config
-$(call inherit-product, vendor/evolution/config/apps.mk)
-
 # Inherit from audio config
 $(call inherit-product, vendor/evolution/config/audio.mk)
-
-# Inherit from our branding
-$(call inherit-product, vendor/evolution/config/branding.mk)
 
 # Inherit from bootanimation config
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
@@ -207,6 +166,9 @@ $(call inherit-product, vendor/evolution/config/gfonts.mk)
 # Inherit from our ota config
 $(call inherit-product, vendor/evolution/config/ota.mk)
 
+# Inherit from packages config
+$(call inherit-product, vendor/evolution/config/packages.mk)
+
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
 
@@ -215,6 +177,9 @@ $(call inherit-product, vendor/evolution/config/textclassifier.mk)
 
 # Inherit from themes config
 $(call inherit-product, vendor/evolution/config/themes.mk)
+
+# Inherit from our version config
+$(call inherit-product, vendor/evolution/config/version.mk)
 
 # Inherit from GMS product config
 ifeq ($(TARGET_USES_MINI_GAPPS),true)
