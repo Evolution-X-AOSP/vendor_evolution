@@ -2,8 +2,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
 #               2017-2020 The LineageOS Project
-#               2018 The PixelExperience Project
-#               2019-2020 The Evolution X Project
+#               2019-2021 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -482,7 +481,7 @@ function write_blueprint_packages() {
         fi
         if [ "$CLASS" = "ETC" ] ; then
             if [ "$DIRNAME" != "." ]; then
-                printf '\trelative_install_path: "%s",\n' "$DIRNAME"
+                printf '\tsub_dir: "%s",\n' "$DIRNAME"
             fi
         fi
         if [ "$CLASS" = "SHARED_LIBRARIES" ] || [ "$CLASS" = "EXECUTABLES" ] ; then
@@ -936,25 +935,19 @@ function write_blueprint_header() {
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
 
     printf "/**\n" > $1
-    if [[ $INITIAL_COPYRIGHT_YEAR -lt 2019 ]]; then
+    NUM_REGEX='^[0-9]+$'
+    if [[ ! $INITIAL_COPYRIGHT_YEAR =~ $NUM_REGEX ]] || [ $INITIAL_COPYRIGHT_YEAR -lt 2019 ]; then
         BLUEPRINT_INITIAL_COPYRIGHT_YEAR=2019
     else
         BLUEPRINT_INITIAL_COPYRIGHT_YEAR=$INITIAL_COPYRIGHT_YEAR
     fi
 
-    NUM_REGEX='^[0-9]+$'
-    if [[ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -eq $YEAR ]]; then
-        printf " * Copyright (C) $YEAR The Evolution X Project\n" >> $1
+    if [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
         printf " * Copyright (C) $YEAR The LineageOS Project\n" >> $1
-        printf " * Copyright (C) $YEAR The PixelExperience Project\n" >> $1
-    elif [[ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -le 2019 ]]; then
-        printf " * Copyright (C) 2019-$YEAR The Evolution X Project\n" >> $1
+    elif [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -le 2019 ]; then
         printf " * Copyright (C) 2019-$YEAR The LineageOS Project\n" >> $1
-        printf " * Copyright (C) 2019-$YEAR The PixelExperience Project\n" >> $1
     else
-        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The Evolution X Project\n" >> $1
         printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
-        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The PixelExperience Project\n" >> $1
     fi
 
     cat << EOF >> $1
@@ -1002,22 +995,17 @@ function write_makefile_header() {
         elif [ $INITIAL_COPYRIGHT_YEAR -eq 2016 ]; then
             printf "# Copyright (C) 2016 The CyanogenMod Project\n" > $1
         fi
-        if [ $YEAR -eq 2019 ]; then
-            printf "# Copyright (C) 2017 The Evolution X Project\n" >> $1
+        if [ $YEAR -eq 2017 ]; then
             printf "# Copyright (C) 2017 The LineageOS Project\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
-            printf "# Copyright (C) $YEAR The Evolution X Project\n" >> $1
             printf "# Copyright (C) $YEAR The LineageOS Project\n" >> $1
-        elif [ $INITIAL_COPYRIGHT_YEAR -le 2019 ]; then
-            printf "# Copyright (C) 2017-$YEAR The Evolution X Project\n" >> $1
+        elif [ $INITIAL_COPYRIGHT_YEAR -le 2017 ]; then
             printf "# Copyright (C) 2017-$YEAR The LineageOS Project\n" >> $1
         else
-            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The Evolution X Project\n" >> $1
             printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
         fi
     else
-        printf "# Copyright (C) $YEAR The Evolution X Project\n" >> $1
-        printf "# Copyright (C) $YEAR The LineageOS Project\n" >> $1
+        printf "# Copyright (C) $YEAR The LineageOS Project\n" > $1
     fi
 
     cat << EOF >> $1
