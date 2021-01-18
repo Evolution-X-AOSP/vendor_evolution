@@ -107,15 +107,6 @@ prebuilt_apex {
     prefer: true,
 }
 
-// Google com.google.android.permission
-prebuilt_apex {
-    name: "com.google.android.permission",
-    src: "com.google.android.permission.apex",
-    overrides: ["com.android.permission"],
-    owner: "google",
-    prefer: true,
-}
-
 // Google com.google.android.resolv
 prebuilt_apex {
     name: "com.google.android.resolv",
