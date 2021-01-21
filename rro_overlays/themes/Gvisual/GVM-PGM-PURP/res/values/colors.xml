@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="navigation_bar_home_handle_light_color">#800080</color>
+    <color name="navigation_bar_home_handle_dark_color">#800080</color>
+</resources>
