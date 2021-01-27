@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     Seedvault \
     SimpleDeviceConfig \
     Snap \
+    SoftAPManager \
     StitchImage \
     StitchImageService \
     TouchGestures
