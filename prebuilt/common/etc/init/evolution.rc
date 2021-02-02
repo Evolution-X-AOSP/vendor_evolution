@@ -1,12 +1,5 @@
-on init
-    export TERMINFO /system/etc/terminfo
-
 on post-fs-data
     mkdir /cache/recovery 0770 system cache
-
-    # Change permissions on fsck log so it can be added to the dropbox
-    chown root log /dev/fscklogs/log
-    chmod 0640 /dev/fscklogs/log
 
     #Smart charging
     chown system system /sys/class/power_supply/battery/battery_charging_enabled
@@ -20,9 +13,3 @@ on property:sys.boot_completed=1
     # Restrict permissions to socket file
     # to hide Magisk & co.
     chmod 440 /proc/net/unix
-
-# bugreport is triggered by holding down volume down, volume up and power
-service bugreport /system/bin/dumpstate -d -p -z
-    oneshot
-    disabled
-    keycodes 114 115 116
