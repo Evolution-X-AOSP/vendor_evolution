@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 5.3
-EVO_CODENAME := Lightning
+EVO_BASE_VERSION := 5.4
+EVO_CODENAME := Boombastic
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
