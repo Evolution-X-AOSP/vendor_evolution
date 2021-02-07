@@ -46,4 +46,15 @@
     <item android:drawable="@drawable/gxzw_light_recognizing_anim_27" android:duration="6" />
     <item android:drawable="@drawable/gxzw_light_recognizing_anim_28" android:duration="6" />
     <item android:drawable="@drawable/gxzw_light_recognizing_anim_29" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_30" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_31" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_32" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_33" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_34" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_35" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_36" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_37" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_38" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_39" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_light_recognizing_anim_40" android:duration="6" />
 </animation-list>

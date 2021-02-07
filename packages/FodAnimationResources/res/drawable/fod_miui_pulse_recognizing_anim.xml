@@ -42,4 +42,6 @@
     <item android:drawable="@drawable/gxzw_pulse_recognizing_anim_23" android:duration="6" />
     <item android:drawable="@drawable/gxzw_pulse_recognizing_anim_24" android:duration="6" />
     <item android:drawable="@drawable/gxzw_pulse_recognizing_anim_25" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_pulse_recognizing_anim_26" android:duration="6" />
+    <item android:drawable="@drawable/gxzw_pulse_recognizing_anim_27" android:duration="6" />
 </animation-list>
