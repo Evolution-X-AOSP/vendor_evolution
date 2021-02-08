@@ -194,7 +194,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayHidden \
     GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationRadiusLow \
+    GesturalNavigationRadiusVeryLow \
+    GesturalNavigationRadiusHidden
 
 ifeq ($(EXTRA_FOD_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
