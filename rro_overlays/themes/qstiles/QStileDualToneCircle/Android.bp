@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "QStileDualToneCircle",
+    theme: "QStileDualToneCircle",
+    sdk_version: "current",
+    product_specific: true
+}

@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "QStileWavey",
+    theme: "QStileWavey",
+    sdk_version: "current",
+    product_specific: true
+}

@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "QStileDefault",
+    theme: "QStileDefault",
+    sdk_version: "current",
+    product_specific: true
+}
