@@ -26,9 +26,11 @@ PRODUCT_PACKAGES += \
     GVM-URM-M \
     GVM-URM-L \
     GVM-URM-R \
+    GVM-PGM-BLUE \
     GVM-PGM-ORCD \
     GVM-PGM-OPRD \
-    GVM-PGM-PURP
+    GVM-PGM-PURP \
+    GVM-PGM-ROSE
 
 # Navbar Styles
 PRODUCT_PACKAGES += \
