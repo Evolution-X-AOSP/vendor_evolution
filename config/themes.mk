@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
     SwitchContained \
     SwitchTelegram \
     SwitchRetro \
-    SwitchMD2
+    SwitchMD2 \
+    SwitchOOS
 
 # SystemUI Dark Styles
 PRODUCT_PACKAGES += \
