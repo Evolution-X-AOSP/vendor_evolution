@@ -41,6 +41,11 @@ PRODUCT_PACKAGES += \
     GesturalNavigationRadiusVeryLow \
     GesturalNavigationRadiusHidden
 
+# QS Header size
+PRODUCT_PACKAGES += \
+    HeaderLarge \
+    HeaderXLarge
+
 # QS Tile Styles
 PRODUCT_PACKAGES += \
     QStileCircleTrim \
