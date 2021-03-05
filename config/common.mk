@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2020 The Evolution X Project
+# Copyright (C) 2019-2021 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,6 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Inherit vendor submodules
+$(call inherit-product, vendor/evolution/config/apex.mk)
+$(call inherit-product, vendor/evolution/config/apps.mk)
+$(call inherit-product, vendor/evolution/config/bootanimation.mk)
+$(call inherit-product, vendor/evolution/config/common_telephony.mk)
+$(call inherit-product, vendor/evolution/config/themes.mk)
+$(call inherit-product, vendor/gms/gms_full.mk)
 
 PRODUCT_BRAND ?= EvolutionX
 
@@ -49,7 +57,8 @@ endif
 
 # Some permissions
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
+    vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
+    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-evolution.xml
 
 # Copy all custom init rc files
 $(foreach f,$(wildcard vendor/evolution/prebuilt/common/etc/init/*.rc),\
@@ -134,98 +143,10 @@ include vendor/evolution/config/branding.mk
 # OTA
 include vendor/evolution/config/ota.mk
 
-# Inherit from CarrierSettings
-$(call inherit-product, vendor/evolution/config/common_telephony.mk)
-
-# Inherit from GMS product config
-$(call inherit-product, vendor/gms/gms_full.mk)
-
-# Inherit from apex config
-$(call inherit-product, vendor/evolution/config/apex.mk)
-
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
 # Plugins
 include packages/apps/Plugins/plugins.mk
-
-# Non-Evo packages
-PRODUCT_PACKAGES += \
-    EvolutionThemesStub \
-    OmniStyle \
-    Seedvault \
-    SimpleDeviceConfig \
-    StitchImage \
-    StitchImageService \
-    ThemePicker \
-    Terminal \
-    TouchGestures
-
-# GVM
-PRODUCT_PACKAGES += \
-    GVM-SBH-L \
-    GVM-SBH-M \
-    GVM-SBH-XL \
-    GVM-URM-M \
-    GVM-URM-L \
-    GVM-URM-R
-
-# Custom Overlays
-PRODUCT_PACKAGES += \
-    SystemRavenBlackOverlay \
-    SystemUIRavenBlackOverlay \
-    SystemDarkGrayOverlay \
-    SystemUIDarkGrayOverlay \
-    SystemStyleOverlay \
-    SystemUIStyleOverlay \
-    SystemNightOverlay \
-    SystemUINightOverlay \
-    SystemSolarizedDarkOverlay \
-    SystemUISolarizedDarkOverlay \
-    SystemMaterialOceanOverlay \
-    SystemUIMaterialOceanOverlay \
-    SystemBakedGreenOverlay \
-    SystemUIBakedGreenOverlay \
-    SystemChocoXOverlay \
-    SystemUIChocoXOverlay \
-    SystemDarkAubergineOverlay \
-    SystemUIDarkAubergineOverlay \
-    SystemClearSpringOverlay \
-    SystemUIClearSpringOverlay
-
-# QS tile styles
-PRODUCT_PACKAGES += \
-    QStileCircleTrim \
-    QStileDefault \
-    QStileDualToneCircle \
-    QStileSquircleTrim \
-    QStileAttemptMountain \
-    QStileDottedCircle \
-    QStileNinja \
-    QStilePokesign \
-    QStileWavey \
-    QStileCookie \
-    QStileInkDrop \
-    QStileSquaremedo \
-    QStileCosmos \
-    QStileDividedCircle \
-    QStileNeonLight \
-    QStileOxygen \
-    QStileTriangles \
-    QStileCircleOutline
-
-# Navbar
-PRODUCT_PACKAGES += \
-    GesturalNavigationOverlayHidden \
-    GesturalNavigationOverlayLong \
-    GesturalNavigationOverlayMedium \
-    GesturalNavigationRadiusLow \
-    GesturalNavigationRadiusVeryLow \
-    GesturalNavigationRadiusHidden
-
-ifeq ($(EXTRA_FOD_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    FodAnimationResources
-endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
