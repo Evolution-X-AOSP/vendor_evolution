@@ -30,6 +30,19 @@
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
+        <!--
+            Device Personalization Services (AiAi)
+        -->
+
+        <!-- Live Captions (Pixel 2017 + OEM) -->
+        <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
+        <item>device_personalization_services/Captions__model_version_v1=20190613</item>
+        <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
+        <item>device_personalization_services/Captions__speech_threshold=0.2</item>
+        <item>device_personalization_services/Captions__surface_sound_events=true</item>
+        <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
+        <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
+
         <!-- Adaptive Sound (Pixel 2020) -->
         <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
         <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
