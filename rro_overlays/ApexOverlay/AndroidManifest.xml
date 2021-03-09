@@ -1,7 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.overlay.apex"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.android.overlay.apex">
     <overlay android:targetPackage="android" android:priority="1" android:isStatic="true" />
 
     <application android:label="ApexOverlay" android:hasCode="false"/>
