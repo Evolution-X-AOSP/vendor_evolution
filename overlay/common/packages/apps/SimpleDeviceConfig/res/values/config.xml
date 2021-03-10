@@ -46,8 +46,22 @@
         <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
         <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
 
+        <!-- Now Playing (Pixel 2017) -->
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=159:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20201207-000000/manifest.json</item>
+
         <!-- Adaptive Sound (Pixel 2020) -->
         <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
         <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
+
+        <!-- Enable AiAi features -->
+        <item>device_personalization_services/Autofill__enable=true</item>
+        <item>device_personalization_services/Autofill__enable_fa=true</item>
+        <item>device_personalization_services/NotificationAssistant__enable_service=true</item>
+        <item>device_personalization_services/Overview__enable_overview=true</item>
+
+        <!-- Disable unused AiAi features -->
+        <item>device_personalization_services/Fedex__enable_fedex=false</item>
+        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
+        <item>device_personalization_services/VisualCortex__enable=false</item>
     </string-array>
 </resources>
