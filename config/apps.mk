@@ -14,6 +14,7 @@
 
 # Apps
 PRODUCT_PACKAGES += \
+    OPScreenRecord \
     Seedvault \
     StitchImage \
     StitchImageService \
