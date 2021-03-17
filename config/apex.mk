@@ -13,10 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-ifeq ($(TARGET_FLATTEN_APEX),false)
-# Overlay
-PRODUCT_PACKAGES += \
-    ApexOverlay
 
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/evolution/apex/NetworkStack
@@ -47,4 +43,3 @@ PRODUCT_PACKAGES += \
     com.google.android.tethering \
     com.google.android.tzdata2 \
     com.google.android.wifi
-endif

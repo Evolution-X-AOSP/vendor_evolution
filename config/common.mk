@@ -14,12 +14,17 @@
 # limitations under the License.
 #
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit vendor submodules
 $(call inherit-product, vendor/evolution/config/apex.mk)
 $(call inherit-product, vendor/evolution/config/apps.mk)
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 $(call inherit-product, vendor/evolution/config/common_telephony.mk)
 $(call inherit-product, vendor/evolution/config/themes.mk)
+
+# Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
 
 PRODUCT_BRAND ?= EvolutionX
