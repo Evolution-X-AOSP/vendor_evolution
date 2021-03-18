@@ -59,6 +59,8 @@ PRODUCT_PACKAGES += \
 
 # SystemUI Dark Styles
 PRODUCT_PACKAGES += \
+    SystemDark12Overlay \
+    SystemUIDark12Overlay \
     SystemRavenBlackOverlay \
     SystemUIRavenBlackOverlay \
     SystemDarkGrayOverlay \
