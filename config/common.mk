@@ -33,7 +33,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.debug.alloc=0 \
     ro.com.android.dataroaming=false \
     ro.com.android.dateformat=MM-dd-yyyy \
-    persist.sys.disable_rescue=true \
+    persist.sys.disable_rescue=true
 
 # IORap app launch prefetching using Perfetto traces and madvise
 PRODUCT_PRODUCT_PROPERTIES += \

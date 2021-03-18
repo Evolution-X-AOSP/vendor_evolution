@@ -16,7 +16,7 @@
 PRODUCT_PACKAGES += \
     EvolutionThemesStub \
     OmniStyle \
-    ThemePicker \
+    ThemePicker
 
 # GVM
 PRODUCT_PACKAGES += \

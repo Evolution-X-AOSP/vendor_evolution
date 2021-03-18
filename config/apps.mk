@@ -18,12 +18,11 @@ PRODUCT_PACKAGES += \
     Seedvault \
     StitchImage \
     StitchImageService \
-    Terminal \
     TouchGestures
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
+    SimpleDeviceConfig
 
 # FOD
 ifeq ($(EXTRA_FOD_ANIMATIONS),true)
@@ -33,4 +32,4 @@ endif
 
 # Wallpapers
 PRODUCT_PACKAGES += \
-    Papers \
+    Papers
