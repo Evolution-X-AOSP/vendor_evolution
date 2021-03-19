@@ -67,6 +67,14 @@ PRODUCT_PACKAGES += \
     QStileTriangles \
     QStileCircleOutline
 
+# Switch themes
+PRODUCT_PACKAGES += \
+    SwitchAOSP \
+    SwitchContained \
+    SwitchTelegram \
+    SwitchRetro \
+    SwitchMD2
+
 # SystemUI Dark Styles
 PRODUCT_PACKAGES += \
     SystemRavenBlackOverlay \

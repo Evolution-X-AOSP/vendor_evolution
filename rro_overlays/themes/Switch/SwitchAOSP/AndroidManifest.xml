@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.system.switch.aosp"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="android"/>
+
+    <application android:label="AOSP Switch" android:hasCode="false"/>
+</manifest>
