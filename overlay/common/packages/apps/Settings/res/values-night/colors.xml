@@ -15,10 +15,10 @@
 -->
 
 <resources>
-    <color name="homepage_card_dismissal_background">@*android:color/notification_material_background_color</color>
-    <color name="contextual_card_background">@*android:color/notification_material_background_color</color>
-    <color name="search_bar_background">@*android:color/notification_material_background_color</color>
+    <color name="homepage_card_dismissal_background">@*android:color/material_grey_900</color>
+    <color name="contextual_card_background">#ff202124</color>
+    <color name="search_bar_background">#ff303134</color>
 
     <!-- Dialog background color -->
-    <color name="dialog_background">@*android:color/notification_material_background_color</color>
+    <color name="dialog_background">#ff3c4043</color>
 </resources>

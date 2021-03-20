@@ -1,5 +1,5 @@
 # Versioning System
-EVO_BASE_VERSION := 5.5.1
+EVO_BASE_VERSION := 5.5.2
 EVO_CODENAME := Tremor
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
