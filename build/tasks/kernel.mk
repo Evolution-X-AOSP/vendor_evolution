@@ -155,21 +155,8 @@ else
         $(warning **********************************************************)
         $(error "NO KERNEL CONFIG")
     else
-        ifneq ($(TARGET_FORCE_PREBUILT_KERNEL),)
-            $(warning **********************************************************)
-            $(warning * Kernel source found and configuration was defined      *)
-            $(warning * but prebuilt kernel is being enforced.                 *)
-            $(warning * While there may be a good reason for this,             *)
-            $(warning * THIS IS NOT ADVISED.                                   *)
-            $(warning * Please configure your device to build the kernel       *)
-            $(warning * from source by unsetting TARGET_FORCE_PREBUILT_KERNEL  *)
-            $(warning **********************************************************)
-            FULL_KERNEL_BUILD := false
-            KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
-        else
-            FULL_KERNEL_BUILD := true
-            KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
-        endif
+        FULL_KERNEL_BUILD := true
+        KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
     endif
 endif
 
