@@ -16,6 +16,7 @@
 PRODUCT_PACKAGES += \
     OPScreenRecord \
     Seedvault \
+    Snap \
     StitchImage \
     StitchImageService \
     TouchGestures
