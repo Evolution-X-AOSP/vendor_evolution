@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     GesturalNavigationRadiusVeryLow \
     GesturalNavigationRadiusHidden
 
+# QS Color Overlay
+PRODUCT_PACKAGES += \
+    QsColor
+
 # QS Header size
 PRODUCT_PACKAGES += \
     HeaderLarge \

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="qs_panel_theme" parent="@*android:style/Theme.DeviceDefault.QuickSettings">
+        <item name="android:colorAccent">@android:color/white</item>
+        <item name="android:colorBackgroundFloating">@android:color/white</item>
+        <item name="android:colorControlNormal">@android:color/white</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:colorPrimary">@android:color/transparent</item>
+        <item name="android:colorPrimaryDark">@android:color/white</item>
+        <item name="android:colorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_mode_qs_icon_color_single_tone">@android:color/white</color>
+</resources>
