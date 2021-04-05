@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 5.5.2
-EVO_CODENAME := Tremor
+EVO_BASE_VERSION := 5.6
+EVO_CODENAME := Passion
 EVO_DONATE_URL ?= Unknown
 EVO_MAINTAINER ?= Unknown
 EVO_SUPPORT_URL ?= https://t.me/EvolutionX
