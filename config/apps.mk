@@ -14,6 +14,7 @@
 
 # Apps
 PRODUCT_PACKAGES += \
+    GamingMode \
     Papers \
     Seedvault \
     SimpleDeviceConfig \
