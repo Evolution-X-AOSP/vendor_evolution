@@ -1,9 +1,6 @@
 # Versioning System
 EVO_BASE_VERSION := 5.6
 EVO_CODENAME := Passion
-EVO_DONATE_URL ?= Unknown
-EVO_MAINTAINER ?= Unknown
-EVO_SUPPORT_URL ?= https://t.me/EvolutionX
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
@@ -35,7 +32,4 @@ PRODUCT_GENERIC_PROPERTIES += \
     org.evolution.build_date=$(EVO_BUILD_DATE) \
     org.evolution.build_date_utc=$(EVO_BUILD_DATE_UTC) \
     org.evolution.build_type=$(EVO_BUILD_TYPE) \
-    org.evolution.build_donate_url=$(EVO_DONATE_URL) \
-    org.evolution.build_maintainer=$(EVO_MAINTAINER) \
-    org.evolution.build_support_url=$(EVO_SUPPORT_URL) \
     org.evolution.build_codename=$(EVO_CODENAME)
