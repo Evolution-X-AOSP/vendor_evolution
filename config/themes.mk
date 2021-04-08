@@ -14,9 +14,8 @@
 
 # Customization
 PRODUCT_PACKAGES += \
-    EvolutionThemesStub \
     OmniStyle \
-    ThemePicker
+    WallpaperPicker2
 
 # GVM
 PRODUCT_PACKAGES += \
