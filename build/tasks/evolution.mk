@@ -40,6 +40,8 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 .PHONY: evolution
 evolution: otatools brillo_update_payload checkvintf $(OTA_PACKAGE_TARGET)
 
+	$(hide) ./vendor/evolution/build/tasks/ascii_output.sh
+
 endif
 
 ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
