@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     Snap \
     StitchImage \
     StitchImageService \
-    TouchGestures
+    TouchGestures \
+    RetroMusic
 
 # Config
 PRODUCT_PACKAGES += \
