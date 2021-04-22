@@ -19,7 +19,7 @@
 <resources>
 
     <!-- The background color of a notification card. -->
-    <color name="notification_material_background_color">@*android:color/system_primary_800</color>
+    <color name="notification_material_background_color">@*android:color/system_neutral1_800</color>
 
     <color name="background_floating_material_dark">@*android:color/notification_material_background_color</color>
 

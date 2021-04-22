@@ -1,5 +1,5 @@
 # Versioning System
-EVO_BASE_VERSION := 5.6
+EVO_BASE_VERSION := 5.6.1
 EVO_CODENAME := Passion
 
 # Set all versions

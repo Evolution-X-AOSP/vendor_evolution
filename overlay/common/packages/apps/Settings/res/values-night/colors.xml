@@ -17,7 +17,7 @@
 <resources>
     <color name="homepage_card_dismissal_background">@*android:color/material_grey_900</color>
     <color name="contextual_card_background">#ff202124</color>
-    <color name="search_bar_background">#ff303134</color>
+    <color name="search_bar_background">@color/contextual_card_background</color>
 
     <!-- Dialog background color -->
     <color name="dialog_background">#ff3c4043</color>
