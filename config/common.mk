@@ -27,7 +27,7 @@ $(call inherit-product, vendor/evolution/config/fonts.mk)
 $(call inherit-product, vendor/evolution/config/gfonts.mk)
 $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
 $(call inherit-product, vendor/evolution/config/textclassifier.mk)
-#$(call inherit-product, vendor/evolution/config/themes.mk)
+$(call inherit-product, vendor/evolution/config/themes.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
