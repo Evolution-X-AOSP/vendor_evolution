@@ -14,8 +14,8 @@
   ~ limitations under the License.
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tenx.systemui.signalbar_c"    android:versionCode="1"
+    package="com.tenx.systemui.wifibar_h" android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="android" android:category="android.theme.customization.signal_icon" android:priority="1"/>
-    <application android:label="Xperia" android:hasCode="false"/>
+    <overlay android:targetPackage="android" android:category="android.theme.customization.wifi_icon" android:priority="1"/>
+    <application android:label="Bars" android:hasCode="false"/>
 </manifest>
