@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 5.6.1
-EVO_CODENAME := Passion
+EVO_BASE_VERSION := 5.7
+EVO_CODENAME := Daylight
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
