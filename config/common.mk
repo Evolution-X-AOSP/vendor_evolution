@@ -76,6 +76,10 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
     vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-evolution.xml
 
+# Font service Permissions
+PRODUCT_COPY_FILES += \
+    vendor/evolution/config/permissions/privapp-permissions-evolution-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-evolution-system_ext.xml \
+
 # Copy all custom init rc files
 $(foreach f,$(wildcard vendor/evolution/prebuilt/common/etc/init/*.rc),\
     $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
