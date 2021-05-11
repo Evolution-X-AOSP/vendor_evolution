@@ -101,3 +101,7 @@ PRODUCT_PACKAGES += \
     SystemUIDarkAubergineOverlay \
     SystemClearSpringOverlay \
     SystemUIClearSpringOverlay
+
+# Fonts
+PRODUCT_PACKAGES += \
+    Custom-Fonts
