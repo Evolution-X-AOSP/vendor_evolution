@@ -20,6 +20,11 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlayEvolutionX \
     SettingsGoogleOverlayEvolutionX
 
+# Custom Overlays
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
+
 # Google Overlays
 PRODUCT_PACKAGES += \
     CaptivePortalLoginOverlay \
