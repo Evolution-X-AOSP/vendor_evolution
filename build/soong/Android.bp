@@ -226,18 +226,18 @@ needs_netd_direct_connect_rule {
 }
 
 soong_config_module_type {
-    name: "target_camera_needs_client_info",
+    name: "camera_needs_client_info",
     module_type: "cc_defaults",
     config_namespace: "evolutionGlobalVars",
-    bool_variables: ["target_camera_needs_client_info"],
+    bool_variables: ["camera_needs_client_info"],
     properties: ["cppflags"],
 }
 
-target_camera_needs_client_info {
-    name: "target_camera_needs_client_info_defaults",
+camera_needs_client_info {
+    name: "camera_needs_client_info_defaults",
     soong_config_variables: {
-        target_camera_needs_client_info: {
-            cppflags: ["-DTARGET_NEEDS_CLIENT_INFO"],
+        camera_needs_client_info: {
+            cppflags: ["-DCAMERA_NEEDS_CLIENT_INFO"],
         },
     },
 }
