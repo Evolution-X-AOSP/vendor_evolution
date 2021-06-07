@@ -1,6 +1,6 @@
 # Versioning System
-EVO_BASE_VERSION := 5.7
-EVO_CODENAME := Daylight
+EVO_BASE_VERSION := 5.8
+EVO_CODENAME := Pinnacle
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
