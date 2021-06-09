@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     HarmonyOS-Sans-ThinItalic.ttf \
     HarmonyOS-Sans-Thin.ttf \
     Lexend-VF.ttf \
-    Manrope-VF.ttf
+    Manrope-VF.ttf \
+    RobotoFallback-VF.ttf
 
 # Customization overlays
 PRODUCT_PACKAGES += \
