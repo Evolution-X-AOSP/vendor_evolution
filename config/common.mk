@@ -116,10 +116,8 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
-    fsck.exfat \
     fsck.ntfs \
     mke2fs \
-    mkfs.exfat \
     mkfs.ntfs \
     mount.ntfs
 
