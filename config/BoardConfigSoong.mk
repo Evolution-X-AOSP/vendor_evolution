@@ -33,6 +33,7 @@ SOONG_CONFIG_evolutionGlobalVars += \
     gralloc_handle_has_reserved_size \
     has_hh_vsync_issue \
     has_legacy_camera_hal1 \
+    needs_camera_boottime \
     camera_needs_client_info \
     camera_needs_client_info_lib \
     uses_oplus_camera \
@@ -71,6 +72,7 @@ SOONG_CONFIG_evolutionGlobalVars_target_alternative_futex_waiters := $(TARGET_AL
 SOONG_CONFIG_evolutionGlobalVars_has_hh_vsync_issue := $(TARGET_HAS_HH_VSYNC_ISSUE)
 SOONG_CONFIG_evolutionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
 SOONG_CONFIG_evolutionGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
+SOONG_CONFIG_evolutionGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_evolutionGlobalVars_needs_oplus_tag := $(TARGET_NEEDS_OPLUS_VENDOR_TAG)
 SOONG_CONFIG_evolutionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
