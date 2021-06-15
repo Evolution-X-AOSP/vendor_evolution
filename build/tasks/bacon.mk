@@ -33,7 +33,7 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(EVO_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(EVO_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(EVO_TARGET_PACKAGE).md5sum
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(EVO_TARGET_PACKAGE)
-	
+
 	@echo "${cya}Building ${bldcya}Evolution...! ${txtrst}";
 	@echo -e""
 	@echo -e ${CL_GRN}"==========================================================="${CL_GRN}
