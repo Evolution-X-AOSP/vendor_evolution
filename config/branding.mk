@@ -30,7 +30,6 @@ EVO_DATE_HOUR := $(shell date -u +%H)
 EVO_DATE_MINUTE := $(shell date -u +%M)
 EVO_BUILD_DATE_UTC := $(shell date -d '$(EVO_DATE_YEAR)-$(EVO_DATE_MONTH)-$(EVO_DATE_DAY) $(EVO_DATE_HOUR):$(EVO_DATE_MINUTE) UTC' +%s)
 EVO_BUILD_DATE := $(EVO_DATE_YEAR)$(EVO_DATE_MONTH)$(EVO_DATE_DAY)-$(EVO_DATE_HOUR)$(EVO_DATE_MINUTE)
-BUILD_DATE_TIME := $(BUILD_TIME)$(BUILD_DATE)
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
@@ -44,7 +43,6 @@ EVO_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(EVOLUTION_BUILD)-$(EVO_PLATFORM_
 EVO_VERSION_PROP := $(PLATFORM_VERSION)
 
 PRODUCT_GENERIC_PROPERTIES += \
-    ro.build.datetime=$(BUILD_DATE_TIME) \
     ro.build.stock_fingerprint=$(TARGET_FORCE_BUILD_FINGERPRINT) \
     org.evolution.version=$(EVO_VERSION) \
     org.evolution.version.prop=$(EVO_VERSION_PROP) \

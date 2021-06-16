@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
 
 # Navbar Styles
 PRODUCT_PACKAGES += \
-    GesturalNavigationOverlayHidden \
     GesturalNavigationOverlayLong \
     GesturalNavigationOverlayMedium \
     GesturalNavigationRadiusLow \
