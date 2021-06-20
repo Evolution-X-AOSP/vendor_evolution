@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
 # Switch themes
 PRODUCT_PACKAGES += \
     SwitchAOSP \
+    SwitchAndroid12 \
     SwitchContained \
     SwitchTelegram \
     SwitchRetro \
