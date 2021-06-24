@@ -16,10 +16,7 @@
 #
 
 import sys
-
-def is_apn(line):
-    return line.lstrip().startswith('<apn ')
-
+from xml.dom.minidom import parseString
 
 def main(argv):
     reload(sys)
@@ -32,21 +29,34 @@ def main(argv):
     else:
         raise ValueError("Wrong number of arguments %s" % len(argv))
 
+    custom_apn_names = []
     with open(custom_override_file, 'r') as f:
-        custom_apn_lines = [line.strip() for line in f if is_apn(line)]
+        for line in f:
+            xmltree = parseString(line)
+            carrier = xmltree.getElementsByTagName('apn')[0].getAttribute('carrier')
+            custom_apn_names.append('"' + carrier + '"')
 
     with open(original_file, 'r') as input_file:
         with open(output_file_path, 'w') as output_file:
             for line in input_file:
-                writeOriginalLine = not is_apn(line) or line.strip() not in custom_apn_lines
-                if writeOriginalLine:
-                    if "</apns>" in line:
+                writeOriginalLine = True
+                for apn in custom_apn_names:
+                    if apn in line:
                         with open(custom_override_file, 'r') as custom_file:
                             for override_line in custom_file:
-                                if is_apn(override_line):
+                                if apn in override_line:
                                     output_file.write(override_line)
+                                    writeOriginalLine = False
+                                    custom_apn_names.remove(apn)
+                if writeOriginalLine:
+                    if "</apns>" in line:
+                        if custom_apn_names:
+                            for apn in custom_apn_names:
+                                with open(custom_override_file, 'r') as custom_file:
+                                    for override_line in custom_file:
+                                        if apn in override_line:
+                                            output_file.write(override_line)
                     output_file.write(line)
-
 
 if __name__ == '__main__':
     main(sys.argv)
