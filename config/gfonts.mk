@@ -69,4 +69,11 @@ PRODUCT_PACKAGES += \
 
 # Customization overlays
 PRODUCT_PACKAGES += \
-    FontNotoSerifSource
+    FontGInterOverlay \
+    FontGoogleSansOverlay \
+    FontHarmonySansOverlay \
+    FontLinotteSourceOverlay \
+    FontManropeOverlay \
+    FontNotoSerifSource \
+    FontOnePlusSansOverlay \
+    FontOneplusSlateSourceOverlay

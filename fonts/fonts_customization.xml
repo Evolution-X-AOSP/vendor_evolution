@@ -16,6 +16,16 @@
 -->
 <fonts-modification version="1">
     <family customizationType="new-named-family" name="google-sans">
+        <font weight="400" style="normal">GoogleSans-Regular.ttf</font>
+        <font weight="400" style="italic">GoogleSans-Italic.ttf</font>
+        <font weight="500" style="normal">GoogleSans-Medium.ttf</font>
+        <font weight="500" style="italic">GoogleSans-MediumItalic.ttf</font>
+        <font weight="700" style="normal">GoogleSans-Bold.ttf</font>
+        <font weight="700" style="italic">GoogleSans-BoldItalic.ttf</font>
+    </family>
+    <alias name="google-sans-medium" to="google-sans" weight="500" />
+
+    <family customizationType="new-named-family" name="google-sans-inter">
       <font weight="400" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
@@ -58,7 +68,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-medium">
+    <family customizationType="new-named-family" name="google-sans-medium-inter">
       <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
@@ -66,7 +76,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-bold">
+    <family customizationType="new-named-family" name="google-sans-bold-inter">
       <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
@@ -74,7 +84,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text">
+    <family customizationType="new-named-family" name="google-sans-text-inter">
       <font weight="400" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -117,7 +127,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text-medium">
+    <family customizationType="new-named-family" name="google-sans-text-medium-inter">
       <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -125,7 +135,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text-bold">
+    <family customizationType="new-named-family" name="google-sans-text-bold-inter">
       <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -133,7 +143,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text-italic">
+    <family customizationType="new-named-family" name="google-sans-text-italic-inter">
       <font weight="400" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -141,7 +151,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text-medium-italic">
+    <family customizationType="new-named-family" name="google-sans-text-medium-italic-inter">
       <font weight="500" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -149,7 +159,7 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="google-sans-text-bold-italic">
+    <family customizationType="new-named-family" name="google-sans-text-bold-italic-inter">
       <font weight="700" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
@@ -241,4 +251,54 @@
     </family>
     <alias name="barlow-bold" to="barlow" weight="700"/>
     <alias name="barlow-medium" to="barlow" weight="500"/>
+
+    <family customizationType="new-named-family" name="manrope">
+    <font weight="500" style="normal">Manrope-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="600" style="normal">Manrope-VF.ttf
+        <axis tag="wght" stylevalue="600"/>
+    </font>
+    <font weight="700" style="normal">Manrope-VF.ttf
+        <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="800" style="normal">Manrope-VF.ttf
+        <axis tag="wght" stylevalue="800"/>
+    </font>
+    </family>
+    <alias name="manrope-medium" to="manrope" weight="600" />
+
+    <family customizationType="new-named-family" name="linotte">
+    <font weight="300" style="normal">Linotte.ttf</font>
+    </family>
+    <alias name="linotte-semi-bold" to="linotte" weight="600" />
+    <alias name="linotte-bold" to="linotte" weight="700" />
+
+    <family customizationType="new-named-family" name="oneplusslate">
+    <font weight="300" style="normal">SlateFromOP-Light.ttf</font>
+    <font weight="400" style="normal">SlateFromOP-Regular.ttf</font>
+    </family>
+    <alias name="oneplusslate-bold" to="oneplusslate" weight="600" />
+
+    <family customizationType="new-named-family" name="op-sans">
+        <font weight="100" style="normal">OnePlusSans-Thin.ttf</font>
+        <font weight="100" style="italic">OnePlusSans-ThinItalic.ttf</font>
+        <font weight="300" style="normal">OnePlusSans-Light.ttf</font>
+        <font weight="300" style="italic">OnePlusSans-LightItalic.ttf</font>
+        <font weight="400" style="normal">OnePlusSans-Regular.ttf</font>
+        <font weight="400" style="italic">OnePlusSans-Italic.ttf</font>
+        <font weight="500" style="normal">OnePlusSans-Medium.ttf</font>
+        <font weight="500" style="italic">OnePlusSans-MediumItalic.ttf</font>
+        <font weight="900" style="normal">OnePlusSans-Black.ttf</font>
+        <font weight="900" style="italic">OnePlusSans-BlackItalic.ttf</font>
+        <font weight="700" style="normal">OnePlusSans-Bold.ttf</font>
+        <font weight="700" style="italic">OnePlusSans-BoldItalic.ttf</font>
+    </family>
+    <alias name="op-sans-thin" to="op-sans" weight="100" />
+    <alias name="op-sans-light" to="op-sans" weight="300" />
+    <alias name="op-sans-book" to="op-sans" weight="400" />
+    <alias name="op-sans-regular" to="op-sans" weight="400" />
+    <alias name="op-sans-medium" to="op-sans" weight="500" />
+    <alias name="op-sans-bold" to="op-sans" weight="700" />
+    <alias name="op-sans-black" to="op-sans" weight="900" />
 </fonts-modification>

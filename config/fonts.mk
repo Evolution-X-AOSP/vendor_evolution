@@ -37,4 +37,6 @@ PRODUCT_PACKAGES += \
     Manrope-VF.ttf \
 
 # Register vendor fonts
-PRODUCT_COPY_FILES += vendor/evolution/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/evolution/fonts/prebuilt,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/evolution/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
