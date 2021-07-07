@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 5.8
-EVO_CODENAME := Pinnacle
+EVO_BASE_VERSION := 5.9
+EVO_CODENAME := Immortal
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
