@@ -2,7 +2,7 @@
 
 # Exports
 DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
-out=./out/target/product/$DEVICE
+out=$OUT_DIR/target/product/$DEVICE
 
 export Changelog=Changelog.txt
 
