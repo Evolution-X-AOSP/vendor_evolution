@@ -17,11 +17,31 @@
 # limitations under the License.
 #
 
+OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_VERSION)-unsigned.zip
+
+$(OTA_PACKAGE_TARGET): $(BRO)
+
+$(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
+		build/tools/releasetools/ota_from_target_files
+	@echo "evolution: $@"
+	    ./build/tools/releasetools/ota_from_target_files --verbose \
+	    --block \
+	    -p $(OUT_DIR)/host/linux-x86 \
+	    $(BUILT_TARGET_FILES_PACKAGE) $@
+
+	$(hide) $(MD5SUM) $(OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(OTA_PACKAGE_TARGET).md5sum
+	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(OTA_PACKAGE_TARGET)
+
+.PHONY: evolution
+evolution: $(OTA_PACKAGE_TARGET)
+
+ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
+
 SIGNED_TARGET_FILES_PACKAGE := $(PRODUCT_OUT)/$(TARGET_DEVICE)-target_files-$(BUILD_ID_LC).zip
 
 $(SIGNED_TARGET_FILES_PACKAGE): $(BUILT_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/sign_target_files_apks
-	@echo "Signed target files package: $@"
+	@echo "Package signed target files: $@"
 	    ./build/tools/releasetools/sign_target_files_apks --verbose \
 	    -o \
 	    -p $(OUT_DIR)/host/linux-x86 \
@@ -54,7 +74,7 @@ evolution-prod: $(PROD_OTA_PACKAGE_TARGET)
 
 ifneq ($(PREVIOUS_TARGET_FILES_PACKAGE),)
 
-INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/incremental-$(EVO_VERSION).zip
+INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_DELTA_VERSION).zip
 
 $(INCREMENTAL_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(PROD_CERTS)/releasekey
 
@@ -75,5 +95,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 
 .PHONY: incremental-ota
 incremental-ota: $(INCREMENTAL_OTA_PACKAGE_TARGET)
+
+endif
 
 endif

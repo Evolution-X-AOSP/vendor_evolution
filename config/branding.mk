@@ -38,8 +38,14 @@ EVO_PLATFORM_VERSION := $(PLATFORM_VERSION)
 TARGET_PRODUCT_SHORT := $(subst evolution_,,$(EVOLUTION_BUILD))
 
 EVO_VERSION_DISPLAY := $(EVO_CODENAME)-v$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)
+ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
+    EVO_VERSION := $(TARGET_PRODUCT)-ota-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)
+    EVO_DELTA_VERSION := $(TARGET_PRODUCT)-delta-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)
+else
+    EVO_VERSION := $(TARGET_PRODUCT)-ota-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)-$(shell echo "$(EVO_BUILD_TYPE)" | tr '[:upper:]' '[:lower:]')
+    EVO_DELTA_VERSION := $(TARGET_PRODUCT)-delta-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)-$(shell echo "$(EVO_BUILD_TYPE)" | tr '[:upper:]' '[:lower:]')
+endif
 
-EVO_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(EVOLUTION_BUILD)-$(EVO_PLATFORM_VERSION)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)
 EVO_VERSION_PROP := $(PLATFORM_VERSION)
 
 PRODUCT_GENERIC_PROPERTIES += \
