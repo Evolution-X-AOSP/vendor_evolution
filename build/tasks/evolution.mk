@@ -34,7 +34,7 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(OTA_PACKAGE_TARGET)
 
 .PHONY: evolution
-evolution: $(OTA_PACKAGE_TARGET)
+evolution: brillo_update_payload checkvintf $(OTA_PACKAGE_TARGET)
 
 ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
 
@@ -72,7 +72,7 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(PROD_OTA_PACKAGE_TARGET)
 
 .PHONY: evolution-prod
-evolution-prod: $(PROD_OTA_PACKAGE_TARGET)
+evolution-prod: brillo_update_payload checkvintf $(PROD_OTA_PACKAGE_TARGET)
 
 ifneq ($(PREVIOUS_TARGET_FILES_PACKAGE),)
 
@@ -96,7 +96,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(INCREMENTAL_OTA_PACKAGE_TARGET)
 
 .PHONY: incremental-ota
-incremental-ota: $(INCREMENTAL_OTA_PACKAGE_TARGET)
+incremental-ota: brillo_update_payload checkvintf $(INCREMENTAL_OTA_PACKAGE_TARGET)
 
 endif
 
