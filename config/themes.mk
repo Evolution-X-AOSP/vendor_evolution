@@ -111,9 +111,7 @@ PRODUCT_PACKAGES += \
     SystemChocoXOverlay \
     SystemUIChocoXOverlay \
     SystemDarkAubergineOverlay \
-    SystemUIDarkAubergineOverlay \
-    SystemClearSpringOverlay \
-    SystemUIClearSpringOverlay
+    SystemUIDarkAubergineOverlay
 
 # Fonts
 PRODUCT_PACKAGES += \
