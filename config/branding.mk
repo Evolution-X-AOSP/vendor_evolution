@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 5.9
-EVO_CODENAME := Immortal
+EVO_BASE_VERSION := 5.9.1
+EVO_CODENAME := Infinity
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
