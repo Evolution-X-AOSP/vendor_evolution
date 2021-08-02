@@ -208,8 +208,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/evolution/overlay/common
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/evolution/config/device_framework_matrix.xml
-
 # Plugins
 #include packages/apps/Plugins/plugins.mk
 
