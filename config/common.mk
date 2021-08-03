@@ -143,7 +143,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
 
 # Inherit art options
 include vendor/evolution/config/art.mk
