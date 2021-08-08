@@ -84,7 +84,7 @@ evolution-prod: otatools brillo_update_payload checkvintf $(PROD_OTA_PACKAGE_TAR
 
 ifneq ($(PREVIOUS_TARGET_FILES_PACKAGE),)
 
-INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_DELTA_VERSION).zip
+INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_DELTA_VERSION)-dev.zip
 
 $(INCREMENTAL_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(PROD_CERTS)/releasekey
 
@@ -105,6 +105,32 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 
 .PHONY: incremental-ota
 incremental-ota: otatools brillo_update_payload checkvintf $(INCREMENTAL_OTA_PACKAGE_TARGET)
+
+endif
+
+ifneq ($(PREVIOUS_STABLE_TARGET_FILES_PACKAGE),)
+
+INCREMENTAL_STABLE_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_DELTA_VERSION).zip
+
+$(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(PROD_CERTS)/releasekey
+
+$(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET): $(BRO)
+
+$(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
+		build/tools/releasetools/ota_from_target_files
+	@echo "evolution stable incremental production: $@"
+	    $(OTA_FROM_TARGET_FILES) --verbose \
+	    --block \
+	    -p $(OUT_DIR)/host/linux-x86 \
+	    -k $(KEY_CERT_PAIR) \
+	    -i $(PREVIOUS_STABLE_TARGET_FILES_PACKAGE) \
+	    $(SIGNED_TARGET_FILES_PACKAGE) $@
+
+	$(hide) $(MD5SUM) $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET).md5sum
+	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET)
+
+.PHONY: stable-ota
+stable-ota: brillo_update_payload checkvintf $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET)
 
 endif
 
