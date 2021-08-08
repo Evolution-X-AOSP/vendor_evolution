@@ -22,9 +22,6 @@ PRODUCT_PACKAGES += \
     GVM-SBH-L \
     GVM-SBH-M \
     GVM-SBH-XL \
-    GVM-URM-M \
-    GVM-URM-L \
-    GVM-URM-R \
     GVM-PGM-BLUE \
     GVM-PGM-ORCD \
     GVM-PGM-OPRD \
@@ -118,3 +115,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     HideCutout \
     StatusBarStock
+
+# Rounded Styles
+PRODUCT_PACKAGES += \
+    StockRounded \
+    NoneRounded \
+    SlightRounded \
+    MediumRounded \
+    HighRounded \
+    ExtremeRounded
