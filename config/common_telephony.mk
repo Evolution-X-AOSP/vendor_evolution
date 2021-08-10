@@ -15,7 +15,7 @@
 #
 
 # CarrierSettings, replace CarrierConfig
-ifneq ($(filter blueline bonito bramble coral crosshatch flame redfin sargo sunfish taimen walleye, $(TARGET_DEVICE)),)
+ifeq ($(TARGET_CARRIER_SETTINGS), true)
 PRODUCT_PACKAGES += \
     CarrierSettings
 
