@@ -191,22 +191,4 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_DEVICE_CONFIG"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />
     </privapp-permissions>
-
-    <privapp-permissions package="com.oneplus.screenrecord">
-        <permission name="android.permission.INTERNET"/>
-        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
-        <permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
-        <permission name="android.permission.FOREGROUND_SERVICE"/>
-        <permission name="android.permission.WAKE_LOCK"/>
-        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-        <permission name="android.permission.READ_EXTERNAL_STORAGE"/>
-        <permission name="android.permission.WRITE_SETTINGS"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-        <permission name="android.permission.RECORD_AUDIO"/>
-        <permission name="android.permission.VIBRATE"/>
-        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-        <permission name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
-        <permission name="android.permission.INSTALL_PACKAGES"/>
-        <permission name="android.permission.READ_PHONE_STATE"/>
-    </privapp-permissions>
 </permissions>
