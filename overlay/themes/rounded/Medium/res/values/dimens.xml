@@ -5,4 +5,9 @@
     <dimen name="rounded_corner_radius_bottom">0dp</dimen>
     <dimen name="config_dialogCornerRadius">8.0dp</dimen>
     <dimen name="config_bottomDialogCornerRadius">8.0dp</dimen>
+    <dimen name="config_buttonCornerRadius">8.0dp</dimen>
+    <dimen name="control_corner_material">8.0dp</dimen>
+    <dimen name="corner_size">8.0dp</dimen>
+    <dimen name="dialog_corner_radius">8.0dp</dimen>
+    <dimen name="tooltip_corner_radius">8.0dp</dimen>
 </resources>
