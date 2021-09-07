@@ -1,5 +1,5 @@
 # Safetynet
-TARGET_FORCE_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys
+TARGET_FORCE_BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys
 
 include vendor/evolution/config/BoardConfigKernel.mk
 
