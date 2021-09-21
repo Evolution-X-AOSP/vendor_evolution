@@ -14,6 +14,7 @@
 
 # Apps
 PRODUCT_PACKAGES += \
+    EvoEgg \
     GamingMode \
     Papers \
     Seedvault \
