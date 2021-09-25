@@ -41,10 +41,6 @@ SOONG_CONFIG_evolutionGlobalVars += \
     target_uses_prebuilt_dynamic_partitions \
     uses_camera_parameter_lib
 
-ifneq ($(TARGET_FORCE_BUILD_FINGERPRINT),)
-SOONG_CONFIG_evolutionGlobalVars += force_build_fingerprint
-endif
-
 SOONG_CONFIG_NAMESPACES += evolutionNvidiaVars
 SOONG_CONFIG_evolutionNvidiaVars += \
     uses_nv_enhancements
@@ -103,11 +99,6 @@ SOONG_CONFIG_evolutionGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TAR
 SOONG_CONFIG_evolutionGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_evolutionGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)
 SOONG_CONFIG_evolutionGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
-
-ifneq ($(TARGET_FORCE_BUILD_FINGERPRINT),)
-SOONG_CONFIG_evolutionGlobalVars_force_build_fingerprint := $(TARGET_FORCE_BUILD_FINGERPRINT)
-endif
-
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_evolutionQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
