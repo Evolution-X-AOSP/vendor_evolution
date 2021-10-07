@@ -111,11 +111,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Custom-Fonts
 
-# Cutout control overlays
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
-
 # Rounded Styles
 PRODUCT_PACKAGES += \
     StockRounded \
