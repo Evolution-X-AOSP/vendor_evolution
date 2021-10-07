@@ -61,12 +61,5 @@ PRODUCT_GENERIC_PROPERTIES += \
 $(call inherit-product-if-exists, vendor/evolution/build/target/product/security/evolution_security.mk)
 
 PRODUCT_HOST_PACKAGES += \
-    signapk \
-    avbtool \
-    brotli \
-    aapt2 \
-    deapexer \
-    debugfs \
-    zipalign \
-    apexer \
-    brillo_update_payload
+    sign_target_files_apks \
+    ota_from_target_files
