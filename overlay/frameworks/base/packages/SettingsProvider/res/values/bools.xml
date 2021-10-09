@@ -26,4 +26,6 @@
 
     <!-- Default for Settings.System.VIBRATE_WHEN_RINGING -->
     <bool name="def_vibrate_when_ringing">true</bool>
+
+    <bool name="def_one_handed_mode_enabled">true</bool>
 </resources>
