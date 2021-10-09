@@ -23,6 +23,9 @@
         <!-- Use new privacy indicators for location -->
         <item>privacy/location_indicators_enabled=true</item>
 
+        <!-- Keep up to 7 days of permission usage history -->
+        <item>privacy/discrete_history_cutoff_millis=604800000</item>
+
         <!-- Machine learning back gesture (requires TensorFlow model) -->
         <item>systemui/use_back_gesture_ml_model=true</item>
         <item>systemui/back_gesture_ml_model_name=backgesture</item>
