@@ -15,4 +15,5 @@
 
 # Apps
 PRODUCT_PACKAGES += \
-    EvoEgg
+    EvoEgg \
+    SimpleDeviceConfig
