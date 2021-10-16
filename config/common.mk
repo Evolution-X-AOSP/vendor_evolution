@@ -113,6 +113,10 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
+# Disable async MTE on system_server
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    arm64.memtag.process.system_server=off
+
 # Evolution X-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/evolution-sysconfig.xml
