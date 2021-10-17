@@ -204,6 +204,7 @@ include vendor/evolution/config/branding.mk
 include vendor/evolution/config/ota.mk
 
 # Plugins
+TARGET_SUPPORTS_QUICK_TAP ?= false
 #include packages/apps/Plugins/plugins.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
