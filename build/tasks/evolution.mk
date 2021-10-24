@@ -26,7 +26,6 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 	@echo "evolution: $@"
 	    ./build/tools/releasetools/ota_from_target_files --verbose \
 	    --block \
-	    --backup true \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    $(BUILT_TARGET_FILES_PACKAGE) $@
 
