@@ -15,17 +15,17 @@
 #
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit vendor submodules
-$(call inherit-product, vendor/evolution/config/apex.mk)
-$(call inherit-product, vendor/evolution/config/apps.mk)
+#$(call inherit-product, vendor/evolution/config/apex.mk)
+#$(call inherit-product, vendor/evolution/config/apps.mk)
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 $(call inherit-product, vendor/evolution/config/common_telephony.mk)
-$(call inherit-product, vendor/evolution/config/themes.mk)
+#$(call inherit-product, vendor/evolution/config/themes.mk)
 
 # Inherit from GMS product config
-$(call inherit-product, vendor/gms/gms_full.mk)
+#$(call inherit-product, vendor/gms/gms_full.mk)
 
 PRODUCT_BRAND ?= EvolutionX
 
@@ -134,15 +134,15 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
+#TARGET_FACE_UNLOCK_SUPPORTED ?= true
+#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+#PRODUCT_PACKAGES += \
+#    FaceUnlockService
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+#endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -150,8 +150,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease
 
 # Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
+#PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
+#PRODUCT_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
 
 # Inherit art options
 include vendor/evolution/config/art.mk
@@ -163,10 +163,10 @@ include vendor/evolution/config/branding.mk
 include vendor/evolution/config/ota.mk
 
 # Pixel Style
-include vendor/pixelstyle/config.mk
+#include vendor/pixelstyle/config.mk
 
 # Plugins
-include packages/apps/Plugins/plugins.mk
+#include packages/apps/Plugins/plugins.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
