@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">لتعديل العرض ديناميكيًا استنادًا إلى مستويات الإضاءة المحيطة</string>
+    <string name="display_white_balance_title">تعديل ألوان الشاشة التلقائي</string>
+    <string name="fingerprint_unlock_set_unlock_password">‏Pixel Imprint + كلمة مرور</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">‏Pixel Imprint + نقش</string>
+    <string name="fingerprint_unlock_set_unlock_pin">‏Pixel Imprint + رقم تعريف شخصي</string>
+    <string name="fingerprint_unlock_skip_fingerprint">‏المتابعة بدون استخدام Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">‏من خلال Pixel Imprint، يمكنك فتح قفل هاتفك باستخدام بصمة إصبعك. ولأغراض تتعلق بالأمان، يتطلب هذا الخيار قفل شاشة احتياطيًا.</string>
+    <string name="lock_settings_picker_fingerprint_message">‏يمكنك اختيار قفل شاشة احتياطي لاستخدامه مع Pixel Imprint.</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">‏بالإضافة إلى فتح قفل هاتفك، يمكنك أيضًا استخدام Pixel Imprint للسماح بعمليات الشراء والوصول إلى التطبيقات. <annotation id="url">مزيد من المعلومات</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"يمكنك استخدام بصمة الإصبع لفتح هاتفك أو الموافقة على عمليات الشراء.
+
+ملاحظة: قد تكون بصمة إصبعك أقل أمانًا من استخدام نقش أو رقم تعريف شخصي شديد الأمان."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏من خلال ميزة Pixel Imprint، يمكنك استخدام بصمة إصبعك لمنح إذن بعمليات الشراء أو تسجيل الدخول إلى التطبيقات.
+
+ويرجى توخي الحذر بخصوص بصمات الإصبع التي تضيفها. أي بصمات إصبع تتم إضافتها ستتيح لصاحبها تنفيذ الإجراءات السابق ذكرها.
+
+ملاحظة: لا يمكنك استخدام بصمة الإصبع لفتح قفل هذا الجهاز. للحصول على مزيد من المعلومات، يمكنك التواصل مع مشرف مؤسستك."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">‏فتح القفل باستخدام Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">‏يمكنك لمس زر استشعار Pixel Imprint لتنشيط هاتفك وفتح قفله.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">‏يمكنك استخدام Pixel Imprint لفتح قفل هاتفك.</string>
+</resources>

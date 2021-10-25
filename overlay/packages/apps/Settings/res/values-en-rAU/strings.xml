@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Dynamically adjusts the display based on surrounding light levels</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Password</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Pattern</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continue without Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">With Pixel Imprint, you can unlock your phone using your fingerprint. For security, this option requires a backup screen lock.</string>
+    <string name="lock_settings_picker_fingerprint_message">Choose a backup screen lock to use with Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">In addition to unlocking your phone, you can also use Pixel Imprint to authorise purchases and app access. <annotation id="url">Find out more</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Use your fingerprint to unlock your phone or approve purchases.
+
+Note: Your fingerprint may be less secure than a strong pattern or PIN."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"With Pixel Imprint, you can use your fingerprint to authorise purchases or sign into apps.
+
+Be careful whose fingerprints you add. Any fingerprints added will be able to do these things.
+
+Note: You can’t use your fingerprint to unlock this device. For more information, contact your organisation’s admin."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Unlock with Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Just touch the Pixel Imprint sensor to wake and unlock your phone.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Use Pixel Imprint to unlock your phone</string>
+</resources>

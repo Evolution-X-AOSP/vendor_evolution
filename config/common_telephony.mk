@@ -33,9 +33,12 @@ PRODUCT_PACKAGES += \
 # Carriers Databases
 PRODUCT_PACKAGES += \
     a1_at.pb \
+    ahamo_jp.pb \
     airtel_in.pb \
     apt_tw.pb \
+    assurance_us.pb \
     att5g_us.pb \
+    att5gsa_us.pb \
     att_us.pb \
     bell_ca.pb \
     bluegrass_us.pb \
@@ -53,6 +56,7 @@ PRODUCT_PACKAGES += \
     cricket_us.pb \
     cspire_us.pb \
     docomo_jp.pb \
+    docomomvno_jp.pb \
     ee_gb.pb \
     eplus_de.pb \
     esn_gb.pb \
@@ -78,12 +82,15 @@ PRODUCT_PACKAGES += \
     kena_it.pb \
     koodo_ca.pb \
     kpn_nl.pb \
+    linemo_jp.pb \
     luckymobile_ca.pb \
+    metropcs_us.pb \
     movistar_es.pb \
     o2_de.pb \
     o2postpaid_gb.pb \
     o2prepaid_de.pb \
     o2prepaid_gb.pb \
+    onecall_no.pb \
     optus_au.pb \
     orange_es.pb \
     orange_fr.pb \
@@ -91,6 +98,7 @@ PRODUCT_PACKAGES += \
     povo_jp.pb \
     rakuten_jp.pb \
     rjio_in.pb \
+    rogers5g_ca.pb \
     rogers_ca.pb \
     sfr_fr.pb \
     shaw_ca.pb \

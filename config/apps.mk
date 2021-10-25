@@ -1,3 +1,4 @@
+#
 # Copyright (C) 2021 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,19 +15,4 @@
 
 # Apps
 PRODUCT_PACKAGES += \
-    EvoEgg \
-    GamingMode \
-    Papers \
-    Seedvault \
-    SimpleDeviceConfig \
-    Snap \
-    SoftAPManager \
-    StitchImage \
-    StitchImageService \
-    TouchGestures
-
-# FOD
-ifeq ($(EXTRA_FOD_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    FodAnimationResources
-endif
+    EvoEgg

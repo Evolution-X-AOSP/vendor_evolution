@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Yorqinlik darajasiga muvofiq ekrandagi oq rang balansini avtomatik tuzatadi</string>
+    <string name="display_white_balance_title">Moslashuvchan yorqinlik</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + parol</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + grafik kalit</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN kod</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint sensorisiz davom ettirish</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint sensori yordamida telefonni barmoq izi orqali qulfdan chiqarish mumkin. Xavfsizlik maqsadida bu parametr qoʻshimcha ekran qulfi bilan ishlaydi.</string>
+    <string name="lock_settings_picker_fingerprint_message">Ekran qulfini ochish uchun Pixel Imprintdan tashqari yana biror usulni tanlang</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Pixel Imprint yordamida nafaqat telefonni qulfdan chiqarish, balki xaridlarni tasdiqlash va ilovalarga kirish ham mumkin. <annotation id="url">Batafsil</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Telefonni qulfdan chiqarish yoki xaridlarni tasdiqlash uchun barmoq izingizdan foydalaning.
+
+Eslatma: Barmoq izingiz himoya darajasi grafik kalit yoki PIN kod kabi mustahkam emas."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint yordamida barmoq izi bilan ilovalarga kirish yoki xaridlarni tasdiqlash mumkin.
+
+Qaysi barmoq izlari qayd qilinishiga diqqat qiling. Qayd qilingan barmoq izlari ushbu amallarni bajara oladi.
+
+Eslatma: Barmoq izi orqali bu qurilmani qulfdan chiqara olmaysiz. Batafsil axborot uchun tashkilot administratoriga murojaat qiling."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint orqali oching</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Telefon ekranini yoqish yoki qulfdan chiqarish uchun Pixel Imprint sensoriga barmoq bilan teginish kifoya.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Pixel Imprint yordamida telefonni qulfdan chiqaring</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">[Ðýñåḿîçåļļý åðĵûšţš ţĥé ðîšþļåý ɓåšéð öñ šûŕŕöûñðîñĝ ļîĝĥţ ļéVéļš one two three four five six seven]</string>
+    <string name="display_white_balance_title">[Åḿɓîéñţ Éq one two]</string>
+    <string name="fingerprint_unlock_set_unlock_password">[Þîхéļ Îḿþŕîñţ + Þåššŵöŕð one two three]</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">[Þîхéļ Îḿþŕîñţ + Þåţţéŕñ one two three]</string>
+    <string name="fingerprint_unlock_set_unlock_pin">[Þîхéļ Îḿþŕîñţ + ÞÎÑ one two three]</string>
+    <string name="fingerprint_unlock_skip_fingerprint">[Çöñţîñûé ŵîţĥöûţ Þîхéļ Îḿþŕîñţ one two three four]</string>
+    <string name="fingerprint_unlock_title">[Ŵîţĥ Þîхéļ Îḿþŕîñţ, ýöû çåñ ûñļöçķ ýöûŕ þĥöñé ûšîñĝ ýöûŕ ƒîñĝéŕþŕîñţ. Föŕ šéçûŕîţý, ţĥîš öþţîöñ ŕéQûîŕéš å ɓåçķûþ šçŕééñ ļöçķ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one]</string>
+    <string name="lock_settings_picker_fingerprint_message">[Çĥööšé å ɓåçķûþ šçŕééñ ļöçķ ţö ûšé ŵîţĥ Þîхéļ Îḿþŕîñţ one two three four five six]</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">[Îñ åððîţîöñ ţö ûñļöçķîñĝ ýöûŕ þĥöñé, ýöû çåñ åļšö ûšé Þîхéļ Îḿþŕîñţ ţö åûţĥöŕîžé þûŕçĥåšéš åñð åþþ åççéšš. <annotation id="url">Ļéåŕñ ḿöŕé</annotation> one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"[Ûšé ýöûŕ ƒîñĝéŕþŕîñţ ţö ûñļöçķ ýöûŕ þĥöñé öŕ åþþŕöVé þûŕçĥåšéš.
+
+Ñöţé: Ýöûŕ ƒîñĝéŕþŕîñţ ḿåý ɓé ļéšš šéçûŕé ţĥåñ å šţŕöñĝ þåţţéŕñ öŕ ÞÎÑ. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"[Ŵîţĥ Þîхéļ Îḿþŕîñţ, ýöû çåñ ûšé ýöûŕ ƒîñĝéŕþŕîñţ ţö åûţĥöŕîžé þûŕçĥåšéš öŕ šîĝñ îñ ţö åþþš.
+
+βé çåŕéƒûļ ŵĥöšé ƒîñĝéŕþŕîñţš ýöû åðð. Åñý ƒîñĝéŕþŕîñţš åððéð ŵîļļ ɓé åɓļé ţö ðö ţĥéšé ţĥîñĝš.
+
+Ñöţé: Ýöû çåñ’ţ ûšé ýöûŕ ƒîñĝéŕþŕîñţ ţö ûñļöçķ ţĥîš ðéVîçé. Föŕ ḿöŕé îñƒöŕḿåţîöñ, çöñţåçţ ýöûŕ öŕĝåñîžåţîöñ’š åðḿîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve]"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">[Ûñļöçķ ŵîţĥ Þîхéļ Îḿþŕîñţ one two three]</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">[Þîхéļ Îḿþŕîñţ one two]</string>
+    <string name="security_settings_fingerprint_preference_title">[Þîхéļ Îḿþŕîñţ one two]</string>
+    <string name="setup_fingerprint_enroll_finish_message">[Ĵûšţ ţöûçĥ ţĥé Þîхéļ Îḿþŕîñţ šéñšöŕ ţö ŵåķé åñð ûñļöçķ ýöûŕ þĥöñé. one two three four five six seven eight]</string>
+    <string name="suggested_fingerprint_lock_settings_summary">[Ûšé Þîхéļ Îḿþŕîñţ ţö ûñļöçķ ýöûŕ þĥöñé one two three four five]</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Автоматически изменять баланс белого на экране в зависимости от уровня освещенности</string>
+    <string name="display_white_balance_title">Адаптивная яркость</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint и пароль</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint и графический ключ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint и PIN-код</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Продолжить без Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Благодаря Pixel Imprint вы можете разблокировать телефон с помощью отпечатка пальца. В целях безопасности вам потребуется установить запасной способ разблокировки.</string>
+    <string name="lock_settings_picker_fingerprint_message">Выберите способ разблокировки экрана в дополнение к Pixel Imprint.</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">С помощью Pixel Imprint можно не только разблокировать экран, но и подтверждать покупки, а также получать доступ к приложениям. <annotation id="url">Подробнее…</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Разблокируйте телефон и подтверждайте покупки, используя отпечатки пальцев.
+
+Помните, что защита с помощью отпечатков не так надежна, как графический ключ или PIN-код."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint позволяет подтверждать покупки и входить в приложения с помощью отпечатка пальца.
+
+Эти возможности будут доступны всем пользователям, чьи отпечатки пальцев вы сохраните на устройстве.
+
+Обратите внимание, что отпечаток пальца нельзя использовать для разблокировки этого устройства. За подробной информацией обратитесь к системному администратору."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Разблокировка с помощью Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Чтобы разблокировать телефон, коснитесь датчика Pixel Imprint.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Снимайте блокировку экрана с помощью Pixel Imprint.</string>
+</resources>

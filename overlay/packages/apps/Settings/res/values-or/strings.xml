@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ପାରିପାର୍ଶ୍ୱିକ ଆଲୋକ ସ୍ତରଗୁଡ଼ିକ ଆଧାରରେ ଡିସ୍‌ପ୍ଲେକୁ ଡାଇନାମିକ୍ ଭାବେ ଆଡ୍‌ଜଷ୍ଟ କରେ</string>
+    <string name="display_white_balance_title">ଆମ୍ବିଏଣ୍ଟ୍ EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel ଇମ୍‍‍ପ୍ରିଣ୍ଟ + ପାସୱାର୍ଡ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ + ପାଟର୍ନ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ବିନା ଜାରି ରଖନ୍ତୁ</string>
+    <string name="fingerprint_unlock_title">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ସହ, ଆପଣ ଆପଣଙ୍କର ଟିପଚିହ୍ନ ବ୍ୟବହାର କରି ଆପଣଙ୍କର ଫୋନ୍‍ ଅନ୍‍ଲକ୍‍ କରିପାରିବେ। ସୁରକ୍ଷା ପାଇଁ, ଏହି ବିକଳ୍ପ ଏକ ବ୍ୟାକ୍‍‍ଅପ୍ ସ୍କ୍ରି‍ନ୍ ଲକ୍ ଆବଶ୍ଯକ କରେ।</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel ଇମ୍‍ପ୍ରିଣ୍ଟ ସହ ବ୍ୟବହାର କରିବାକୁ ଏକ ବ୍ୟାକ୍‍‍ଅପ୍ ସ୍କ୍ରିନ୍ ଲକ୍ ବାଛନ୍ତୁ</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">ଆପଣଙ୍କର ଫୋନ୍ ଅନ୍‍ଲକ୍‍ କରିବାକୁ, ଆପଣ କ୍ରୟ ସ୍ବୀକୃତ ଏବଂ ଆପ୍‍ ଆକ୍ସେସ୍‍ କରିବାକୁ Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ବ୍ୟବହାର କରିପାରିବେ। <annotation id="url">ଅଧିକ ଜାଣନ୍ତୁ</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ଆପଣଙ୍କର ଫୋନ୍‌କୁ ଅନ୍‍‍ଲକ୍‌ କିମ୍ୱା କିଣାକିଣିକୁ ଅନୁମୋଦନ କରିବା ପାଇଁ ନିଜ ଟିପଚିହ୍ନ ବ୍ୟବହାର କରନ୍ତୁ।
+
+ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଏକ ଦୃଢ଼ ପାଟର୍ନ କିମ୍ବା PIN ଠାରୁ ଆପଣଙ୍କର ଟିପଚିହ୍ନ କମ୍‍ ସୁରକ୍ଷିତ ହୋଇପାରେ।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"କିଣାକିଣିକୁ ସ୍ୱୀକୃତି ଦେବାକୁ, କିମ୍ବା ଆପ୍‍‍ରେ ସାଇନ୍ ଇନ୍ କରିବାକୁ Pixel ଇମ୍‍ପ୍ରିଣ୍ଟରେ ଆପଣଙ୍କ  ଟିପଚିହ୍ନ ବ୍ୟବହାର କରିପାରିବେ।
+
+କାହାର ଟିପଚିହ୍ନ ଯୋଗ କରୁୁଛନ୍ତି ସେଥିପ୍ରତି ଧ୍ୟାନ ଦିଅନ୍ତୁ। ଯୋଗ କରାଯାଇଥିବା ଯେ କୌଣସି ଟିପଚିହ୍ନ ଏଗୁଡ଼ିକ କରିବାକୁ ସକ୍ଷମ ହେବ।
+
+ଧ୍ୟାନ ଦିଅନ୍ତୁ: ଆପଣ ଏହି ଡିଭାଇସ୍ ଅନଲକ୍ କରିବାକୁ ଆପଣଙ୍କର ଟିପଚିହ୍ନ ବ୍ୟବହାର କରିପାରିବେ ନାହିଁ। ଅଧିକ ସୂଚନା ପାଇଁ, ଆପଣଙ୍କର ସଂସ୍ଥାର ଆଡମିନଙ୍କ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ଦ୍ବାରା ଅନ୍‍ଲକ୍ କରନ୍ତୁ</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ</string>
+    <string name="setup_fingerprint_enroll_finish_message">ଆପଣଙ୍କର ଫୋନ୍ ଅନ୍‍ଲକ୍‍ କରିବାକୁ ଏବଂ ସକ୍ରିୟ କରିବାକୁ କେବଳ Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ସେନ୍‍‍ସର୍‍କୁ ସ୍ପର୍ଶ କରନ୍ତୁ।</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ଫୋନ୍ ଅନ୍‍ଲକ୍ କରିବାକୁ Pixel ଇମ୍‌ପ୍ରିଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ</string>
+</resources>

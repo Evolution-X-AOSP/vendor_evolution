@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">កែតម្រូវ​ផ្ទាំងអេក្រង់​ជានិច្ច ដោយផ្អែកតាម​កម្រិត​ពន្លឺ​ជុំវិញ</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + ពាក្យសម្ងាត់</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + លំនាំ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + កូដ PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">បន្តដោយគ្មាន Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">ជាមួយ Pixel Imprint អ្នក​អាច​ដោះសោ​ទូរសព្ទ​​ដោយ​ប្រើ​ស្នាមម្រាម​ដៃ​របស់​អ្នក។ ដើម្បី​សុវត្ថិភាព ជម្រើស​នេះ​តម្រូវឱ្យមាន​ការ​ចាក់សោ​អេក្រង់​បម្រុងទុក។</string>
+    <string name="lock_settings_picker_fingerprint_message">ជ្រើសរើស​ការចាក់សោ​អេក្រង់​បម្រុងទុក ដើម្បី​ប្រើជាមួយ Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">បន្ថែម​ពី​លើ​ការ​ដោះសោ​ទូរសព្ទ​របស់អ្នក អ្នក​ក៏​អាចប្រើ Pixel Imprint ដើម្បីផ្ដល់​សិទ្ធិក្នុងការទិញ និងការ​ចូលប្រើប្រាស់​កម្មវិធី​ផងដែរ។ <annotation id="url">ស្វែងយល់​បន្ថែម</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ប្រើស្នាម​ម្រាម​ដៃ​របស់អ្នក​ ដើម្បី​ដោះសោ​ទូរសព្ទ​ ឬ​យល់ព្រម​លើ​ការ​ទិញ។
+
+ចំណាំ៖ ស្នាម​ម្រាម​ដៃ​របស់អ្នក​អាច​មិនសូវ​មាន​សុវត្ថិភាព​ដូច​ការប្រើ​លំនាំ ឬកូដ PIN ដែល​រឹងមាំ​នោះទេ។"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"ជាមួយ Pixel Imprint អ្នក​អាចប្រើ​ស្នាម​ម្រាមដៃ​របស់អ្នក ​ដើម្បីផ្តល់សិទ្ធិក្នុងការ​ទិញ ឬ​ចូល​កម្មវិធី។
+
+សូមប្រុង​ប្រយ័ត្ន​ចំពោះ​ស្នាមម្រាមដៃ​ដែល​អ្នកបញ្ចូល។ ​រាល់ស្នាម​ម្រាមដៃ​ដែល​បានបញ្ចូល​នឹងអាចធ្វើ​សកម្មភាព​ទាំងនេះបាន។
+
+ចំណាំ៖ អ្នកមិនអាចប្រើស្នាមម្រាមដៃរបស់អ្នក ដើម្បីដោះសោឧបករណ៍នេះបាន​ទេ។ សម្រាប់ព័ត៌មានបន្ថែម សូមទាក់ទងអ្នកគ្រប់គ្រង​របស់​ស្ថាប័នអ្នក។"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">ដោះសោ​ដោយប្រើ Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">អ្នកអាច​ដាស់ និងដោះសោទូរសព្ទរបស់អ្នក ដោយគ្រាន់តែ​ប៉ះឧបករណ៍​ចាប់សញ្ញា Pixel Imprint ប៉ុណ្ណោះ។</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ប្រើ​ Pixel Imprint ដើម្បី​ដោះសោ​ទូរសព្ទ​របស់អ្នក</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Ajusta dinámicamente la pantalla en función del nivel de luz del ambiente</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint y contraseña</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint y patrón</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint y PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continuar sin Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Con Pixel Imprint, puedes desbloquear el teléfono con tu huella digital. Por razones de seguridad, esta opción requiere un método secundario de bloqueo de pantalla.</string>
+    <string name="lock_settings_picker_fingerprint_message">Elige un método de bloqueo de pantalla secundario para usar con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Además de desbloquear el teléfono, puedes usar Pixel Imprint para autorizar compras y el acceso a apps. <annotation id="url">Más información</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Usa tu huella digital para desbloquear el teléfono o aprobar compras.
+
+Nota: Es posible que la huella digital sea menos segura que un patrón o PIN seguros."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Con Pixel Imprint, puedes usar tu huella digital para autorizar compras y acceder a las apps.
+
+Ten cuidado, ya que todas las huellas digitales que agregues podrán realizar estas acciones.
+
+Nota: No puedes usar tu huella digital para desbloquear este dispositivo. Para obtener más información, comunícate con el administrador de la organización."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Desbloquear con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Solo tienes que tocar el sensor de Pixel Imprint para activar y desbloquear el teléfono.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Usa Pixel Imprint para desbloquear el teléfono</string>
+</resources>

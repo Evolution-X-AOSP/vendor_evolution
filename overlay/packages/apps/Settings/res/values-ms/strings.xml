@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Laraskan paparan secara dinamik berdasarkan tahap pencahayaan sekeliling</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Kata laluan</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Corak</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Teruskan tanpa Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Dengan Pixel Imprint, anda boleh membuka kunci telefon menggunakan cap jari. Untuk keselamatan, pilihan ini memerlukan kunci skrin sandaran.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pilih kunci skrin sandaran untuk digunakan dengan Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Selain membuka telefon, anda juga boleh menggunakan Pixel Imprint untuk mengizinkan pembelian dan akses apl. <annotation id="url">Ketahui lebih lanjut</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Gunakan cap jari anda untuk membuka kunci telefon atau membenarkan pembelian.
+
+Perhatian: Cap jari anda mungkin kurang selamat berbanding corak atau PIN yang kukuh."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Dengan Pixel Imprint, anda boleh menggunakan cap jari untuk membenarkan pembelian atau log masuk ke apl.
+
+Berhati-hati tentang cap jari yang anda tambahkan. Sebarang cap jari yang ditambahkan akan dapat melakukan perkara ini.
+
+Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini. Untuk mengetahui maklumat lanjut, hubungi pentadbir organisasi anda."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Buka kunci menggunakan Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Hanya sentuh penderia Pixel Imprint untuk membangkitkan dan membuka kunci telefon anda.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Gunakan Pixel Imprint untuk membuka kunci telefon anda</string>
+</resources>

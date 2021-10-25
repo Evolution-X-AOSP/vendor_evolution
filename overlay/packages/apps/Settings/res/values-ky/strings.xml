@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Айланадагы жарык деңгээлине жараша экрандын ак балансы автоматтык түрдө өзгөрүлүп турат</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Сырсөз</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Графикалык ачкыч</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN код</string>
+    <string name="fingerprint_unlock_skip_fingerprint">"Pixel Imprint'сиз улантуу"</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint аркылуу телефонуңуздун кулпусун манжаңыздын изи менен ачсаңыз болот. Коопсуздук максатында, кулпуну ачуунун дагы бир ыкмасын тандап коюңуз.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint менен кошо экранды кулпулоо ыкмасын тандаңыз.</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Pixel Imprint аркылуу телефонуңуздун экранын гана ачпастан, ар кандай нерселерди сатып алып, колдонмолорго уруксат бере аласыз. <annotation id="url">Кеңири маалымат</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Манжаңызды коюп экранды ачып, ар кандай нерселерди сатып ала аласыз.
+
+Эскертүү: Түзмөгүңүздү манжа изи менен коргоого караганда, графикалык ачкыч же PIN код менен коргоо бир кыйла коопсуз."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint менен манжа изиңизди кандайдыр бир нерсени сатып алып жатканыңызды ырастап же колдонмолорго кирүү үчүн пайдалана аласыз.
+
+Кимдир бирөөнүн манжа изин кошуп жатканыңызда этият болуңуз. Манжа издери кошулган адамдардын баары бул нерселерди аткара алышат.
+
+Эскертүү: Манжа изиңизди бул түзмөктүн кулпусун ачууга колдоно албайсыз. Көбүрөөк маалымат үчүн, ишканаңыздын администраторуна кайрылыңыз."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint менен кулпуну ачуу</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Телефонуңузду ойготуп жана кулпусун ачуу үчүн, жөн гана Pixel Imprint сенсорун басып коюңуз.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">"Телефондун кулпусун ачуу үчүн, Pixel Imprint'ти колдонуңуз"</string>
+</resources>

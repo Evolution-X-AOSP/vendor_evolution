@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ეკრანის დინამიკურად კორექტირება გარემომცველი განათების დონის მიხედვით</string>
+    <string name="display_white_balance_title">ემბიენტური ეკვალაიზერი</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + პაროლი</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + ნიმუში</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN-კოდი</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint-ის გარეშე გაგრძელება</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint-ის მეშვეობით შეგეძლებათ ტელეფონის განბლოკვა თითის ანაბეჭდით. უსაფრთხოების მოსაზრებებიდან გამომდინარე, ეს ვარიანტი საჭიროებს ეკრანის დაბლოკვის სარეზერვო მეთოდსაც.</string>
+    <string name="lock_settings_picker_fingerprint_message">აირჩიეთ ეკრანის დაბლოკვის სარეზერვო მეთოდი Pixel Imprint-თან გამოსაყენებლად</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">ტელეფონის განბლოკვის გარდა, Pixel Imprint-ის გამოყენება შეგიძლიათ შენაძენების ან აპებზე წვდომის ავტორიზაციისთვის. <annotation id="url">შეიტყვეთ მეტი</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"გამოიყენეთ თქვენი თითის ანაბეჭდი ტელეფონის განსაბლოკად ან შენაძენების დასადასტურებლად.
+
+გაითვალისწინეთ, რომ თითის ანაბეჭდის გამოყენება შეიძლება ნაკლებად საიმედო იყოს, ვიდრე ძლიერი განმბლოკავი ნიმუშით ან PIN-კოდით სარგებლობა."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint-ის მეშვეობით შეგეძლებათ შენაძენების ავტორიზაცია ან აპებში შესვლა თითის ანაბეჭდით.
+
+ყურადღება მიაქციეთ იმას, თუ ვის თითის ანაბეჭდებს დაამატებთ, ვინაიდან ზემოაღნიშნული ქმედებების შესრულება შეუძლია ერთ დამატებულ ანაბეჭდსაც.
+
+გაითვალისწინეთ, რომ ამ მოწყობილობის განსაბლოკად თითის ანაბეჭდს ვერ გამოიყენებთ. დამატებითი ინფორმაციისთვის დაუკავშირდით თქვენი ორგანიზაციის ადმინისტრატორს."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint-ით განბლოკვა</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">თქვენი ტელეფონის გამოსაღვიძებლად და განსაბლოკად, უბრალოდ, შეეხეთ Pixel Imprint-ის სენსორს.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">გამოიყენეთ Pixel Imprint თქვენი ტელეფონის განსაბლოკად</string>
+</resources>

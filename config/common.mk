@@ -15,27 +15,69 @@
 #
 
 # Enable updating of APEXes
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit vendor submodules
-#$(call inherit-product, vendor/evolution/config/apex.mk)
-#$(call inherit-product, vendor/evolution/config/apps.mk)
+$(call inherit-product, vendor/evolution/config/apex.mk)
+$(call inherit-product, vendor/evolution/config/audio.mk)
+$(call inherit-product, vendor/evolution/config/apps.mk)
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 $(call inherit-product, vendor/evolution/config/common_telephony.mk)
+$(call inherit-product, vendor/evolution/config/fonts.mk)
+$(call inherit-product, vendor/evolution/config/gfonts.mk)
+$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
+$(call inherit-product, vendor/evolution/config/textclassifier.mk)
 #$(call inherit-product, vendor/evolution/config/themes.mk)
 
 # Inherit from GMS product config
-#$(call inherit-product, vendor/gms/gms_full.mk)
+$(call inherit-product, vendor/gms/gms_full.mk)
 
 PRODUCT_BRAND ?= EvolutionX
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+# Gboard configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.bs_theme=true \
+    ro.com.google.ime.theme_id=5 \
+    ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    dalvik.vm.debug.alloc=0 \
-    ro.com.android.dataroaming=false \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    persist.sys.disable_rescue=true
+# SetupWizard configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.setupwizard.esim_cid_ignore=00000001 \
+    ro.setupwizard.rotation_locked=true \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    setupwizard.feature.device_default_dark_mode=true \
+    setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
+    setupwizard.feature.show_pixel_tos=true \
+    setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
+    setupwizard.theme=glif_v3_light
+
+# StorageManager configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.storage_manager.show_opt_in=false
+
+# OPA configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
+# Google Play services configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.clientidbase=android-google \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# CarrierSetup configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.carriersetup.vzw_consent_page=true
+
+# Use gestures by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
+
+# DRM Service
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    media.mediadrmservice.enable=true
 
 # Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
 # on supported devices with Deep Press input classifier HALs and models
@@ -106,9 +148,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
-# Do not include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
@@ -149,21 +188,15 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
-# Overlays
-#PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/evolution/overlay/common
-
-# Inherit art options
-include vendor/evolution/config/art.mk
+# Overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/evolution/overlay
 
 # Branding
 include vendor/evolution/config/branding.mk
 
 # OTA
-include vendor/evolution/config/ota.mk
-
-# Pixel Style
-#include vendor/pixelstyle/config.mk
+#include vendor/evolution/config/ota.mk
 
 # Plugins
 #include packages/apps/Plugins/plugins.mk

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Scherm wordt dynamisch aangepast op basis van het omgevingslicht</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + wachtwoord</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + patroon</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + pincode</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Doorgaan zonder Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Met Pixel Imprint kun je je telefoon ontgrendelen met je vingerafdruk. Uit beveiligingsoverwegingen is voor deze optie een extra schermvergrendeling vereist.</string>
+    <string name="lock_settings_picker_fingerprint_message">Kies een extra schermvergrendeling voor gebruik met Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Je kunt Pixel Imprint niet alleen gebruiken om je telefoon te ontgrendelen, maar ook om aankopen en app-toegang te autoriseren. <annotation id="url">Meer informatie</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Gebruik je vingerafdruk om je telefoon te ontgrendelen of aankopen goed te keuren.
+
+Opmerking: Je vingerafdruk is mogelijk minder veilig dan een sterk patroon of sterke pincode."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Met Pixel Imprint kun je je vingerafdruk gebruiken om aankopen te autoriseren of in te loggen bij apps.
+
+Wees voorzichtig met wie je toevoegt. Deze taken kunnen namelijk worden uitgevoerd met alle vingerafdrukken die zijn toegevoegd.
+
+Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendelen. Neem contact op met de beheerder van je organisatie voor meer informatie."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Ontgrendelen met Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Raak de Pixel Imprint-sensor aan om je telefoon te activeren en te ontgrendelen.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Gebruik Pixel Imprint om je telefoon te ontgrendelen</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ਆਲੇ-ਦੁਆਲੇ ਦੀ ਰੋਸ਼ਨੀ ਦੇ ਹਿਸਾਬ ਨਾਲ ਡਿਸਪਲੇ ਦੀ ਰੋਸ਼ਨੀ ਨੂੰ ਲੋੜ ਮੁਤਾਬਿਕ ਘੱਟ-ਵੱਧ ਕੀਤਾ ਜਾਂਦਾ ਹੈ</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + ਪਾਸਵਰਡ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + ਪੈਟਰਨ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + ਪਿੰਨ</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint ਬਿਨਾਂ ਜਾਰੀ ਰੱਖੋ</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint ਨਾਲ, ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਆਪਣੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਅਣਲਾਕ ਕਰ ਸਕਦੇ ਹੋ। ਸੁਰੱਖਿਆ ਲਈ, ਇਸ ਵਿਕਲਪ ਨੂੰ ਇੱਕ ਬੈਕਅੱਪ ਸਕ੍ਰੀਨ ਲਾਕ ਦੀ ਲੋੜ ਹੈ।</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint ਨਾਲ ਵਰਤਣ ਲਈ ਇੱਕ ਬੈਕਅੱਪ ਸਕ੍ਰੀਨ ਲਾਕ ਚੁਣੋ</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">"ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਅਣਲਾਕ ਕਰਨ ਤੋਂ ਇਲਾਵਾ, ਤੁਸੀਂ Pixel Imprint ਦੀ ਵਰਤੋਂ ਖਰੀਦਾਂ ਅਤੇ ਐਪ 'ਤੇ ਪਹੁੰਚ ਨੂੰ ਅਧਿਕਾਰਿਤ ਕਰਨ ਲਈ ਵੀ ਕਰ ਸਕਦੇ ਹੋ। "<annotation id="url">ਹੋਰ ਜਾਣੋ</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਅਣਲਾਕ ਕਰਨ ਜਾਂ ਖਰੀਦਾਂ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨ ਲਈ ਆਪਣੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਵਰਤੋਂ ਕਰੋ। 
+
+ਨੋਟ ਕਰੋ: ਤੁਹਾਡਾ ਫਿੰਗਰਪ੍ਰਿੰਟ ਇੱਕ ਮਜ਼ਬੂਤ ਪੈਟਰਨ ਜਾਂ ਪਿੰਨ ਤੋਂ ਘੱਟ ਸੁਰੱਖਿਅਤ ਹੋ ਸਕਦਾ ਹੈ।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint ਨਾਲ, ਤੁਸੀਂ ਖਰੀਦਾਂ ਨੂੰ ਅਧਿਕਾਰਿਤ ਕਰਨ ਜਾਂ ਐਪਾਂ ਵਿੱਚ ਸਾਈਨ-ਇਨ ਕਰਨ ਲਈ ਆਪਣੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦੇ ਹੋ।
+
+ਇਸ ਬਾਰੇ ਸਾਵਧਾਨ ਰਹੋ ਕਿ ਤੁਸੀਂ ਕਿਸ ਵਿਅਕਤੀ ਦੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਸ਼ਾਮਲ ਕਰ ਰਹੇ ਹੋ। ਸ਼ਾਮਲ ਕੀਤੇ ਗਏ ਕੋਈ ਵੀ ਫਿੰਗਰਪ੍ਰਿੰਟ ਇਹ ਚੀਜ਼ਾਂ ਕਰਨ ਦੇ ਯੋਗ ਹੋ ਜਾਣਗੇ।
+
+ਨੋਟ ਕਰੋ: ਤੁਸੀਂ ਇਸ ਡੀਵਾਈਸ ਨੂੰ ਅਣਲਾਕ ਕਰਨ ਲਈ ਆਪਣੇ ਫਿੰਗਰਪ੍ਰਿੰਟ ਦੀ ਵਰਤੋਂ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹੋ। ਜ਼ਿਆਦਾ ਜਾਣਕਾਰੀ ਲਈ, ਆਪਣੇ ਸੰਸਥਾ ਦੇ ਪ੍ਰਸ਼ਾਸਕ ਨੂੰ ਸੰਪਰਕ ਕਰੋ।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint ਨਾਲ ਅਣਲਾਕ ਕਰੋ</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਅਤੇ ਅਣਲਾਕ ਕਰਨ ਲਈ ਸਿਰਫ਼ Pixel Imprint ਸੈਂਸਰ ਨੂੰ ਸਪੱਰਸ਼ ਕਰੋ।</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ਆਪਣਾ ਫ਼ੋਨ ਅਣਲਾਕ ਕਰਨ ਲਈ Pixel Imprint ਵਰਤੋ</string>
+</resources>

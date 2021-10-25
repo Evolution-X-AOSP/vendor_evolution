@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 5.9.2
-EVO_CODENAME := Sanctuary
+EVO_BASE_VERSION := 6.0
+EVO_CODENAME := Snow
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
@@ -29,7 +29,7 @@ EVO_DATE_DAY := $(shell date -u +%d)
 EVO_DATE_HOUR := $(shell date -u +%H)
 EVO_DATE_MINUTE := $(shell date -u +%M)
 EVO_BUILD_DATE_UTC := $(shell date -d '$(EVO_DATE_YEAR)-$(EVO_DATE_MONTH)-$(EVO_DATE_DAY) $(EVO_DATE_HOUR):$(EVO_DATE_MINUTE) UTC' +%s)
-EVO_BUILD_DATE := $(EVO_DATE_YEAR)$(EVO_DATE_MONTH)$(EVO_DATE_DAY)
+EVO_BUILD_DATE := $(EVO_DATE_YEAR)$(EVO_DATE_MONTH)$(EVO_DATE_DAY)-$(EVO_DATE_HOUR)$(EVO_DATE_MINUTE)
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
@@ -37,7 +37,7 @@ EVO_PLATFORM_VERSION := $(PLATFORM_VERSION)
 
 TARGET_PRODUCT_SHORT := $(subst evolution_,,$(EVOLUTION_BUILD))
 
-EVO_VERSION_DISPLAY := $(EVO_BASE_VERSION)-$(EVO_CODENAME)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)-$(TARGET_PRODUCT_SHORT)
+EVO_VERSION_DISPLAY := $(EVO_CODENAME)-$(EVO_BASE_VERSION)-$(TARGET_PRODUCT_SHORT)-$(EVO_BUILD_DATE)-$(EVO_BUILD_TYPE)
 ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
     EVO_VERSION := $(TARGET_PRODUCT)-ota-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)
     EVO_DELTA_VERSION := $(TARGET_PRODUCT)-delta-$(BUILD_ID_LC)-$(shell date +%m%d%H%M)
@@ -48,7 +48,7 @@ endif
 
 EVO_VERSION_PROP := $(PLATFORM_VERSION)
 
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     org.evolution.version=$(EVO_VERSION) \
     org.evolution.version.prop=$(EVO_VERSION_PROP) \
     org.evolution.version.display=$(EVO_VERSION_DISPLAY) \

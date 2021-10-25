@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ปรับหน้าจอแบบไดนามิกตามระดับแสงรอบข้าง</string>
+    <string name="display_white_balance_title">การปรับแสงสีอัตโนมัติ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint และรหัสผ่าน</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint และรูปแบบ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint และ PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">ดำเนินการต่อโดยไม่ใช้ Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">เมื่อใช้ Pixel Imprint คุณจะปลดล็อกโทรศัพท์ได้ด้วยลายนิ้วมือ ตัวเลือกนี้ต้องใช้การล็อกหน้าจอสำรองเพื่อความปลอดภัย</string>
+    <string name="lock_settings_picker_fingerprint_message">เลือกการล็อกหน้าจอสำรองเพื่อใช้กับ Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">นอกเหนือจากการปลดล็อกโทรศัพท์ คุณยังใช้ Pixel Imprint เพื่อให้สิทธิ์การซื้อและการเข้าถึงแอปได้ <annotation id="url">ดูข้อมูลเพิ่มเติม</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ใช้ลายนิ้วมือเพื่อปลดล็อกโทรศัพท์หรืออนุมัติการซื้อ
+
+หมายเหตุ: ลายนิ้วมืออาจมีความปลอดภัยน้อยกว่ารูปแบบหรือ PIN ที่เดายาก"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint ช่วยให้คุณใช้ลายนิ้วมือเพื่อให้สิทธิ์การซื้อหรือลงชื่อเข้าใช้แอปได้
+
+โปรดระมัดระวังหากจะเพิ่มลายนิ้วมือของใคร เพราะทุกลายนิ้วมือที่คุณเพิ่มจะทำสิ่งเหล่านี้ได้
+
+หมายเหตุ: คุณใช้ลายนิ้วมือเพื่อปลดล็อกอุปกรณ์เครื่องนี้ไม่ได้ โปรดติดต่อผู้ดูแลระบบขององค์กรสำหรับข้อมูลเพิ่มเติม"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">ปลดล็อกด้วย Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">เพียงแตะเซ็นเซอร์ Pixel Imprint เพื่อปลุกระบบและปลดล็อกโทรศัพท์</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ใช้ Pixel Imprint ปลดล็อกโทรศัพท์</string>
+</resources>

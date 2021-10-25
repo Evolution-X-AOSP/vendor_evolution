@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Secara dinamis menyesuaikan tampilan berdasarkan tingkat cahaya di sekeliling</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Sandi</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Pola</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Lanjutkan tanpa Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Dengan Pixel Imprint, Anda dapat membuka kunci ponsel menggunakan sidik jari. Demi keamanan, opsi ini memerlukan kunci layar cadangan.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pilih kunci layar cadangan untuk digunakan dengan Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Selain membuka kunci ponsel, Anda juga dapat menggunakan Pixel Imprint untuk mengesahkan pembelian dan akses aplikasi. <annotation id="url">Pelajari lebih lanjut</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Gunakan sidik jari untuk membuka kunci ponsel atau menyetujui pembelian.
+
+Catatan: Sidik jari Anda mungkin kurang aman dibandingkan dengan PIN atau pola yang rumit."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Dengan Pixel Imprint, Anda dapat menggunakan sidik jari untuk mengesahkan pembelian atau login ke aplikasi.
+
+Berhati-hatilah dengan sidik jari yang ditambahkan. Sidik jari yang ditambahkan dapat melakukan semua ini.
+
+Catatan: Anda tidak dapat menggunakan sidik jari untuk membuka kunci perangkat. Untuk informasi selengkapnya, hubungi admin organisasi Anda."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Buka kunci dengan Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Cukup sentuh sensor Pixel Imprint untuk mengaktifkan dan membuka kunci ponsel.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Gunakan Pixel Imprint untuk membuka kunci ponsel</string>
+</resources>

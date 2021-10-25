@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">주변 조명에 따라 동적 디스플레이 조정</string>
+    <string name="display_white_balance_title">앰비언트 EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + 비밀번호</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + 패턴</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint 없이 계속하기</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint를 사용하면 지문을 사용하여 휴대전화를 잠금 해제할 수 있습니다. 이 옵션을 사용하려면 보안을 위해 백업 화면 잠금이 필요합니다.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint와 함께 사용할 백업 화면 잠금 선택</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Pixel Imprint를 사용하여 휴대전화의 잠금을 해제할 뿐 아니라 구매 및 앱 액세스를 승인할 수도 있습니다. <annotation id="url">자세히 알아보기</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"지문을 사용하여 휴대전화를 잠금 해제하거나 구매를 승인하세요.
+
+참고: 지문은 안전한 패턴 또는 PIN보다 보안 수준이 낮을 수 있습니다."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint를 사용하면 지문으로 구매를 승인하거나 앱에 로그인할 수 있습니다.
+
+지문을 추가할 사용자를 신중하게 결정하세요. 지문이 추가된 사용자라면 누구나 이러한 작업을 실행할 수 있습니다.
+
+참고: 이 기기는 지문으로 잠금 해제할 수 없습니다. 자세한 내용은 조직의 관리자에게 문의하세요."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint로 잠금 해제하기</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Pixel Imprint 센서를 터치하기만 하면 휴대전화의 절전 모드 및 잠금을 해제할 수 있습니다.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Pixel Imprint를 사용하여 휴대전화 잠금 해제</string>
+</resources>

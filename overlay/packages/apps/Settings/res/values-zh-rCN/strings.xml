@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">根据周围光线强度动态调整显示屏</string>
+    <string name="display_white_balance_title">屏幕智能调节</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + 密码</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + 图案</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN 码</string>
+    <string name="fingerprint_unlock_skip_fingerprint">不使用 Pixel Imprint 并继续</string>
+    <string name="fingerprint_unlock_title">借助 Pixel Imprint，您可以使用自己的指纹将手机解锁。为了安全起见，要使用此选项，您必须设置备用屏幕锁定方式。</string>
+    <string name="lock_settings_picker_fingerprint_message">请选择要与 Pixel Imprint 搭配使用的备用屏幕锁定方式</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">除解锁手机之外，您还可以使用 Pixel Imprint 授权购物交易及访问应用。<annotation id="url">了解详情</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"使用指纹解锁手机或批准购买交易。
+
+请注意：指纹的安全性可能不及安全系数高的图案或 PIN 码。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"借助 Pixel Imprint，您可以使用自己的指纹对购买交易进行授权或登录应用。
+
+请务必谨慎添加指纹，因为添加的任何指纹都能够用来执行上述操作。
+
+请注意：您无法使用指纹来解锁此设备。要了解详情，请与贵单位的管理员联系。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">使用 Pixel Imprint 解锁</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">只需触摸 Pixel Imprint 传感器即可唤醒和解锁手机。</string>
+    <string name="suggested_fingerprint_lock_settings_summary">使用 Pixel Imprint 来解锁您的手机</string>
+</resources>

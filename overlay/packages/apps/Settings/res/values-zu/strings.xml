@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Ilungisa ngamandla isibonisi esisuselwa kumaleveli aseduze okukhanya</string>
+    <string name="display_white_balance_title">I-Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">I-Pixel Imprint + Iphasiwedi</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">I-Pixel Imprint + Iphethini</string>
+    <string name="fingerprint_unlock_set_unlock_pin">I-Pixel Imprint + Iphinikhodi</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Qhubeka ngaphandle kwe-Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Nge-Pixel Imprint, ungavula ifoni yakho usebenzisa izigxivizo zeminwe yakho. Ngokuphepha, le nketho idinga ukukhiya kwesikrini okuyisipele.</string>
+    <string name="lock_settings_picker_fingerprint_message">Khetha ukukhiya isikrini kwesipele ukuze usebenzise nge-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Ngokungeziwe ekuvuleni ifoni yakho, ungaphinda usebenzise i-Pixel Imprint ukuze ugunyaze ukuthenga nokufinyelela kohlelo lokusebenza. <annotation id="url">Funda kabanzi</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Sebenzisa izigxivizo zominwe zakho ukuvula ifoni yakho noma uvume ukuthenga.
+
+Inothi: Isigxivizo sakho somunwe singaphepha kancane kunephethini eqinile nomai-PIN."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nge-Pixel Imprint, ungasebenzisa izigxivizo zeminwe zakho ukuze ugunyaze ukuthenga noma ungene ngemvume kuzinhlelo zokusebenza.
+
+Qaphela ukuthi ungeza izigxivizo zeminwe zikabani. Noma iziphi izigxivizo zeminwe ezingeziwe zizokwazi ukwenza lezi zinto.
+
+Yazi: Awukwazi ukusebenzisa izigxivizo zeminwe zakho ukuze uvule le divayisi. Ukuze uthole olunye ulwazi, xhumana nomqondisi wenhlangano yakho."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Vula nge-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">I-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">I-Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Vele uthinte inzwa ye-Pixel Imprint ukuze uvuse uphinde uvule ifoni yakho.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Sebenzisa i-Pixel Imprint ukuvula ifoni yakho</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Justerer skjermen dynamisk basert på lysnivået rundt</string>
+    <string name="display_white_balance_title">Automatisk lysjustering</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + passord</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + mønster</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN-kode</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Fortsett uten Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Med Pixel Imprint kan du bruke fingeravtrykket ditt til å låse opp telefonen. Av sikkerhetshensyn krever dette alternativet en reserveskjermlås.</string>
+    <string name="lock_settings_picker_fingerprint_message">Velg en reserveskjermlås for Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">I tillegg til å låse opp telefonen din kan du bruke Pixel Imprint til å autorisere kjøp og apptilgang. <annotation id="url">Finn ut mer</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Bruk fingeravtrykk til å låse opp telefonen eller godta kjøp.
+
+Merk: Fingeravtrykket ditt kan være mindre sikkert enn sterke mønstre eller PIN-koder."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Med Pixel Imprint kan du bruke fingeravtrykket ditt til å autorisere kjøp eller logge på apper.
+
+Vær forsiktig med hvem sine fingeravtrykk du legger til. Alle som legger til fingeravtrykkene sine, kan utføre disse handlingene.
+
+Merk: Du kan ikke bruke fingeravtrykket ditt til å låse opp denne enheten. Kontakt administratoren for organisasjonen din for å få mer informasjon."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Lås opp med Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Bare berør Pixel Imprint-sensoren for å vekke og låse opp telefonen.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Bruk Pixel Imprint til å låse opp telefonen din</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">"Ajusta dinàmicament la pantalla segons els nivells de llum de l'entorn"</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + contrasenya</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + patró</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continua sense Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint et permet desbloquejar el telèfon amb la teva empremta digital. Per motius de seguretat, cal un bloqueig de pantalla alternatiu per utilitzar aquesta opció.</string>
+    <string name="lock_settings_picker_fingerprint_message">Tria un bloqueig de pantalla alternatiu per utilitzar-lo amb Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">"A més d'utilitzar Pixel Imprint per desbloquejar el telèfon, també pots fer servir aquesta funció per autoritzar les compres i l'accés a les aplicacions. "<annotation id="url">Més informació</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Utilitza l'empremta digital per desbloquejar el telèfon o aprovar compres.
+
+Nota: és possible que l'empremta digital sigui menys segura que un bon patró o PIN."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint et permet utilitzar l'empremta digital per autoritzar compres o iniciar la sessió en aplicacions.
+
+Ves amb compte amb les empremtes dactilars d'altres persones que hi afegeixis, perquè totes podran dur a terme aquestes accions.
+
+Nota: No pots fer servir l'empremta digital per desbloquejar aquest dispositiu. Per obtenir més informació, contacta amb l'administrador de l'organització."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Desbloqueja amb Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Toca el sensor de Pixel Imprint per activar i desbloquejar el telèfon.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Fes servir Pixel Imprint per desbloquejar el telèfon</string>
+</resources>

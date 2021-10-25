@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">התאמה דינמית של התצוגה לפי רמות האור בסביבה</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">‏Pixel Imprint + סיסמה</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">‏Pixel Imprint + קו ביטול נעילה</string>
+    <string name="fingerprint_unlock_set_unlock_pin">‏Pixel Imprint + קוד גישה</string>
+    <string name="fingerprint_unlock_skip_fingerprint">‏המשך ללא Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">‏התכונה Pixel Imprint מאפשרת לבטל את נעילת הטלפון באמצעות טביעת אצבע. מטעמי אבטחה, אפשרות זו מחייבת נעילת מסך לגיבוי.</string>
+    <string name="lock_settings_picker_fingerprint_message">‏יש לבחור נעילת מסך לגיבוי לשימוש יחד עם Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">‏בנוסף לביטול נעילת הטלפון, ניתן להשתמש ב-Pixel Imprint גם לאישור רכישות ולגישה לאפליקציות. <annotation id="url">מידע נוסף</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"שימוש בטביעת אצבע כדי לבטל את הנעילה של הטלפון או לאשר רכישות.
+
+הערה: שימוש בטביעת אצבע יכול להיות פחות מאובטח משימוש בקו ביטול נעילה או בקוד גישה."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏התכונה Pixel Imprint מאפשרת לך להשתמש בטביעת אצבע כדי לאשר רכישות ולהיכנס לאפליקציות.
+
+יש לפעול בזהירות בהוספת טביעות אצבע. כל מי שטביעת האצבע שלו תתווסף יוכל לבצע את הפעולות האלו.
+
+הערה: לא ניתן להשתמש בטביעת אצבע כדי לבטל את הנעילה של המכשיר הזה. לקבלת מידע נוסף, יש לפנות למנהל המערכת של הארגון."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">‏ביטול נעילה בעזרת Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">‏צריך רק לגעת בחיישן של Pixel Imprint כדי להוציא את הטלפון ממצב שינה ולבטל את הנעילה שלו.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">‏יש להשתמש ב-Pixel Imprint כדי לבטל את נעילת הטלפון</string>
+</resources>

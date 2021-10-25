@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Динамички прилагођава екран на основу нивоа светлости у околини</string>
+    <string name="display_white_balance_title">Еквилајзер амбијента</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + лозинка</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + шаблон</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Настави без Pixel Imprint-а</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint вам омогућава да откључавате телефон помоћу отиска прста. Ова опција захтева резервни метод закључавања екрана из безбедносних разлога.</string>
+    <string name="lock_settings_picker_fingerprint_message">Изаберите резервну опцију закључавања екрана за коришћење са Pixel Imprint-ом</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Осим за откључавање телефона, можете да користите Pixel Imprint и за давање овлашћења за куповине и приступ апликацијама. <annotation id="url">Сазнајте више</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Откључавајте телефон или одобравајте куповине помоћу отиска прста.
+
+Напомена: Отисак прста може да буде мање безбедан од јаког шаблона или PIN-а."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Уз Pixel Imprint можете да користите отисак прста за давање овлашћења за куповине или пријављивање у апликације.
+
+Водите рачуна о томе чије отиске прстију додајете. Сви додати отисци прстију могу да обављају ове радње.
+
+Напомена: Не можете да користите отисак прста за откључавање овог уређаја. Ако желите више информација, обратите се администратору организације."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Откључајте Pixel Imprint-ом</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Само додирните Pixel Imprint сензор да бисте пробудили и откључали телефон.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Користите Pixel Imprint да бисте откључали телефон</string>
+</resources>

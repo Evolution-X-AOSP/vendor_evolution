@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Айналадағы жарық деңгейінің негізінде дисплейді автоматты түрде реттейді.</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + құпия сөз</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + өрнек</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN коды</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint пайдаланбау</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint көмегімен телефон құлпын саусақпен ашуға болады. Бұл опция қауіпсіздік мақсатында қосымша экран құлпын қажет етеді.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint мүмкіндігімен пайдаланатын қосымша экран құлпын таңдаңыз.</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Телефон құлпын ашумен қатар, Pixel Imprint функциясын сондай-ақ сатып алу әрекеттерін мақұлдау және қолданбаны пайдалануға рұқсат беру үшін қолдануға болады. <annotation id="url">Толығырақ</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Саусақ ізімен телефон құлпын ашуға не сатып алу әрекетін мақұлдауға болады.
+
+Ескертпе: қауіпсіздік тұрғысынан саусақ ізі күрделі өрнекке не PIN кодына қарағанда әлсіздеу болуы мүмкін."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint көмегімен сатып алу әрекеттерін мақұлдауға немесе қолданбаларға кіруге саусақ ізін пайдалана аласыз.
+
+Басқалардың саусақ іздерін енгізгенде, сақ болыңыз. Саусақ іздері енгізілген кез келген адам бұл әрекеттерді орындай алады.
+
+Ескертпе: бұл құрылғының құлпын ашу үшін саусақ ізін пайдалана алмайсыз. Қосымша ақпарат алу үшін ұйым әкімшісіне хабарласыңыз."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint арқылы құлыпты ашу</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Телефонды ұйқы режимінен шығарып, құлпын ашу үшін Pixel Imprint сканерін түртіңіз.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Телефон құлпын Pixel Imprint арқылы ашу</string>
+</resources>

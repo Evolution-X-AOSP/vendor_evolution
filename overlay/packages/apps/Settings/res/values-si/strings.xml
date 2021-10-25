@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">අවට ආලෝක මට්ටම් මත පදනම්ව සංදර්ශකය ගතිකව ගළපයි.</string>
+    <string name="display_white_balance_title">ස්ථානික EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + මුරපදය</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + රටාව</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN අංකය</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint නොමැතිව ඉදිරියට යන්න</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint මඟින්, ඔබට ඔබගේ ඇඟිලි සලකුණ භාවිතයෙන් ඔබගේ දුරකථනය අගුලු හැරිය හැක. ආරක්‍ෂාව සඳහා, මෙම විකල්පයට උපස්ථ තිර අගුලක් අවශ්‍යයි.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint සමඟ භාවිත කිරීමට උපස්ථ තිර අගුලක් තෝරන්න</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">ඔබේ දුරකථනය අගුලු හැරීමට අමතරව, ඔබට Pixel Imprint මිලදී ගැනීම්වලට සහ යෙදුම් ප්‍රවේශවලට අනුමැතිය දීම සඳහාද භාවිත කළ හැක. <annotation id="url">තවත් දැන ගන්න</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ඔබේ දුරකථනය අගුලු හැරීමට, හෝ මිල දී ගැනීම් අනුමත කිරීමට ඔබේ ඇඟිලි සලකුණ භාවිත කරන්න.
+
+සටහන: ඔබේ ඇඟිලි සලකුණ ප්‍රබල රටාවකට හෝ PIN අංකයකට වඩා ආරක්‍ෂාකාරී බව අඩු විය හැක."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint සමඟ, ඔබට ඔබේ ඇඟිලි සලකුණ මිල දී ගැනීම් අනුමත කිරීමට හෝ යෙදුම් වෙත පිරීමට භාවිත කළ හැක.
+
+ඔබ එක් කරන ඇඟිලි සලකුණු පිළිබඳ සැලකිලිමත් වන්න. එක් කරන ඕනෑම ඇඟිලි සලකුණකට මේ දේවලින් ඕනෑම එකක් කළ හැක.
+
+සටහන: ඔබට ඔබේ ඇඟිලි සලකුණු මෙම උපාංගය අගුලු හැරීමට භාවිත කළ නොහැක. තව තොරතුරු සඳහා, ඔබේ සංවිධානයෙහි පරිපාලක අමතන්න."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint මඟින් අගුලු හරින්න</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">ඔබේ දුරකථනය අවදි කර අගුලු හැරීමට Pixel Imprint සංවේදකය ස්පර්ශ කරන්න.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ඔබගේ දුරකථනය අගුලු හැරීමට Pixel Imprint භාවිත කරන්න</string>
+</resources>
