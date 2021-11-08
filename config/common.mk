@@ -197,7 +197,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 include vendor/evolution/config/branding.mk
 
 # OTA
-#include vendor/evolution/config/ota.mk
+include vendor/evolution/config/ota.mk
 
 # Plugins
 #include packages/apps/Plugins/plugins.mk
