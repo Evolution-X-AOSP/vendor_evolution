@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/audio/ui/reverse_charging_start.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/reverse_charging_start.ogg
 
 # Change default sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Fresh_start.ogg \
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Your_new_adventure.ogg \
     ro.config.notification_sound=Eureka.ogg \
-    ro.config.alarm_alert=Your_new_adventure.ogg
+    ro.config.alarm_alert=Fresh_start.ogg
