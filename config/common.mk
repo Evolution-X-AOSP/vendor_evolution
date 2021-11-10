@@ -208,3 +208,6 @@ include vendor/evolution/config/ota.mk
 USE_DEX2OAT_DEBUG := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Enforce RRO targets
+PRODUCT_ENFORCE_RRO_TARGETS := *
