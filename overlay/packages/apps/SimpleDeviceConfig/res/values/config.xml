@@ -22,6 +22,8 @@
 
         <!-- Use new privacy indicators for location -->
         <item>privacy/location_indicators_enabled=true</item>
+        <!-- Allow users to disable location indicators in Developer Options -->
+        <item>privacy/location_indicator_settings_enabled=true</item>
 
         <!-- Keep up to 7 days of permission usage history -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
