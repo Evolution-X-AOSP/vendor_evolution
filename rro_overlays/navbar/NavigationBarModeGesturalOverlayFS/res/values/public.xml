@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="bool" name="config_allowSeamlessRotationDespiteNavBarMoving" id="0x7f010000" />
+    <public type="bool" name="config_navBarAlwaysShowOnSideEdgeGesture" id="0x7f010001" />
+    <public type="bool" name="config_navBarCanMove" id="0x7f010002" />
+    <public type="bool" name="config_navBarNeedsScrim" id="0x7f010003" />
+    <public type="bool" name="config_navBarTapThrough" id="0x7f010004" />
+    <public type="dimen" name="config_backGestureInset" id="0x7f020000" />
+    <public type="dimen" name="navigation_bar_frame_height" id="0x7f020001" />
+    <public type="dimen" name="navigation_bar_gesture_height" id="0x7f020002" />
+    <public type="dimen" name="navigation_bar_height" id="0x7f020003" />
+    <public type="dimen" name="navigation_bar_height_landscape" id="0x7f020004" />
+    <public type="dimen" name="navigation_bar_width" id="0x7f020005" />
+    <public type="dimen" name="navigation_bar_frame_height_landscape" id="0x7f020006" />
+    <public type="integer" name="config_navBarInteractionMode" id="0x7f030000" />
+    <public type="integer" name="config_navBarOpacityMode" id="0x7f030001" />
+    <public type="string" name="navigation_bar_mode_title" id="0x7f040000" />
+</resources>

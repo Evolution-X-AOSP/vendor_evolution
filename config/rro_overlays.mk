@@ -17,6 +17,7 @@
 # Evolution X Overlays
 PRODUCT_PACKAGES += \
     EvolutionXConfigOverlay \
+    NavigationBarModeGesturalOverlayFS \
     PixelSetupWizardOverlayEvolutionX \
     SettingsGoogleOverlayEvolutionX
 
