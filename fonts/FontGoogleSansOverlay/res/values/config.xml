@@ -14,10 +14,10 @@
 <resources>
 
     <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">google-sans</string>
+    <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
 
     <!-- Name of a font family to use for medium body text. -->
-    <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-medium</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-text-medium</string>
 
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
     <string name="config_headlineFontFamily" translatable="false">google-sans</string>
