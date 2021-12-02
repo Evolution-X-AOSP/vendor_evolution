@@ -36,6 +36,46 @@ PRODUCT_PACKAGES += \
     Lexend-VF.ttf \
     Manrope-VF.ttf
 
+# Customization overlays
+PRODUCT_PACKAGES += \
+    FontGInterOverlay \
+    FontHarmonySansOverlay \
+    FontLinotteSourceOverlay \
+    FontManropeOverlay \
+    FontNotoSerifSource \
+    FontOnePlusSansOverlay \
+    FontOneplusSlateSourceOverlay \
+    FontAclonicaSourceOverlay \
+    FontAmaranteSourceOverlay \
+    FontAntipastoProSourceOverlay \
+    FontBariolSourceOverlay \
+    FontCagliostroSourceOverlay \
+    FontCoconSourceOverlay \
+    FontComfortaaSourceOverlay \
+    FontComicSansSourceOverlay \
+    FontCoolstorySourceOverlay \
+    FontEvolveSansSourceOverlay \
+    FontExotwoSourceOverlay \
+    FontFifa2018SourceOverlay \
+    FontFucekSourceOverlay \
+    FontGrandHotelSourceOverlay \
+    FontLGSmartGothicSourceOverlay \
+    FontLemonMilkSourceOverlay \
+    FontNokiaPureSourceOverlay \
+    FontNunitoSourceOverlay \
+    FontOdudaSourceOverlay \
+    FontOneUISansOverlay \
+    FontQuandoSourceOverlay \
+    FontRedressedSourceOverlay \
+    FontReemKufiSourceOverlay \
+    FontRosemarySourceOverlay \
+    FontSamsungOneSourceOverlay \
+    FontSimpleDaySourceOverlay \
+    FontSonySketchSourceOverlay \
+    FontStoropiaSourceOverlay \
+    FontSurferSourceOverlay \
+    FontUbuntuSourceOverlay
+
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/evolution/fonts/prebuilt,$(TARGET_COPY_OUT_PRODUCT)/fonts) \

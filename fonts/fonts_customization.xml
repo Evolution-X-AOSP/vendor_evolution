@@ -299,6 +299,64 @@
       </font>
     </family>
 
+    <family customizationType="new-named-family" name="oneuisans">
+    <font weight="100" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="100"/>
+    </font>
+    <font weight="100" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="100"/>
+    </font>
+    <font weight="200" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="200"/>
+    </font>
+    <font weight="200" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="200"/>
+    </font>
+    <font weight="300" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="300"/>
+    </font>
+    <font weight="300" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="300"/>
+    </font>
+    <font weight="400" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="400" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="500" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="500" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="600" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="600" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="700" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="700" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="700"/>
+    </font>
+    <font weight="800" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="800" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="900" style="normal">OneUIRoman-VF.ttf
+        <axis tag="wght" stylevalue="900"/>
+    </font>
+    <font weight="900" style="italic">OneUIItalic-VF.ttf
+        <axis tag="wght" stylevalue="900"/>
+    </font>
+    </family>
+    <alias name="oneuisans-medium" to="oneuisans" weight="500" />
+
     <family customizationType="new-named-family" name="harmonyos-sans">
       <font weight="100" style="normal">HarmonyOS-Sans-Thin.ttf</font>
       <font weight="100" style="italic">HarmonyOS-Sans-ThinItalic.ttf</font>
