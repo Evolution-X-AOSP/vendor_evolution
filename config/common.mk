@@ -215,3 +215,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Enforce RRO targets
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# GrapheneOS Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA ?= false
+ifeq ($(strip $(TARGET_BUILD_GRAPHENEOS_CAMERA)),true)
+PRODUCT_PACKAGES += \
+    GrapheneOS-Camera
+endif
