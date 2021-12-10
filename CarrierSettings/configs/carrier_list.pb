@@ -538,6 +538,9 @@ tmobile_cz
 
 a1_at
 23202
+
+goodspeed_zz
+23203"C5
 
 
 tmobile_at
@@ -919,6 +922,9 @@ TELENOR SE
 24024
 24024
 
+goodspeed_zz
+24042"C5
+
 google_5g_lab_tw
 24099
 .
@@ -1075,6 +1081,10 @@ tinkoff_ru
 
 26002
 26002
+
+dent_zz
+26003"
+3597bfd533
 
 26003
 26003
@@ -2157,8 +2167,12 @@ visible_us
 
 verizon_us
 311480
-
-	virgin_us
+
+metropcs_us
+311490"6D38
+
+
+tmobile_us
 311490
 2
 311500SPN=24-7 WIRELESS
@@ -2378,6 +2392,10 @@ $
 
 spectrum_data_us
 313450
+
+
+liberty_pr
+313790
 
 spectrum_cbrs_us
 314020
@@ -3806,12 +3824,18 @@ rakuten_jp
 
 softbank_jp
 44020
+
+uqmobile_jp
+44050"20
 
 kddi_jp
 44050
 
 kddi_jp
 44051"10
+
+uqmobile_jp
+44051"20
 
 povo_jp
 44051"26
@@ -5108,6 +5132,9 @@ Lycamobile
 
 732187
 732187
+
+wom_co
+732360
 
 73401
 73401
@@ -5179,4 +5206,4 @@ Lycamobile
 74810
 
 bics_be
-90158•ÛŽáo"”ÓÍ†
+90158˜ƒåšw"Ê»Â‹

@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     cellcommno_us.pb \
     cht_tw.pb \
     congstar_de.pb \
+    coriolis_fr.pb \
     cricket5g_us.pb \
     cricket_us.pb \
     cspire_us.pb \
@@ -82,6 +83,7 @@ PRODUCT_PACKAGES += \
     kena_it.pb \
     koodo_ca.pb \
     kpn_nl.pb \
+    liberty_pr.pb \
     linemo_jp.pb \
     luckymobile_ca.pb \
     metropcs_us.pb \
@@ -140,6 +142,7 @@ PRODUCT_PACKAGES += \
     tracfoneverizon_us.pb \
     tstar_tw.pb \
     twm_tw.pb \
+    uqmobile_jp.pb \
     uscc_us.pb \
     verizon_us.pb \
     verymobile_it.pb \
