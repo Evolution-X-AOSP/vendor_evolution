@@ -104,7 +104,7 @@
         <!-- Screen attention (Pixel 2019) -->
         <item>device_personalization_services/Attention__accel_sensor_enabled=false</item>
         <item>device_personalization_services/Attention__accel_sensor_threshold_mss=0.2</item>
-        <item>device_personalization_services/Attention__enabled=true</item>
+        <item>device_personalization_services/Attention__enabled=false</item>
         <item>device_personalization_services/Attention__margin_horizontal_px=1000</item>
         <item>device_personalization_services/Attention__margin_vertical_px=1000</item>
         <item>device_personalization_services/Attention__proximity_sensor_enabled=false</item>
