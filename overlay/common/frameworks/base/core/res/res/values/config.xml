@@ -164,7 +164,6 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
-    <!-- List of comma separated package names for which we the system will not show crash, ANR,
-         etc. dialogs. -->
-    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice</string>
+    <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui</string>
 </resources>
