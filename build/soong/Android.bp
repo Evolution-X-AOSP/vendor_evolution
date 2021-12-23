@@ -415,7 +415,7 @@ soong_config_module_type {
 }
 
 camera_boottime_timestamp {
-    name: "needs_camera_boottime",
+    name: "needs_camera_boottime_defaults",
     soong_config_variables: {
         needs_camera_boottime_timestamp: {
             cflags: ["-DTARGET_CAMERA_BOOTTIME_TIMESTAMP"],
