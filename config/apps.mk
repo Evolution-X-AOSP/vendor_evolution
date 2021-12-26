@@ -16,4 +16,5 @@
 # Apps
 PRODUCT_PACKAGES += \
     EvoEgg \
+    Papers \
     SimpleDeviceConfig
