@@ -785,7 +785,8 @@
 
     <!-- SamsungOne -->
     <family customizationType="new-named-family" name="samsungone">
-        <font weight="400" style="normal">SamsungOne.ttf</font>
+        <font weight="400" style="normal">SamsungOne-400.ttf</font>
+        <font weight="700" style="normal">SamsungOne-700.ttf</font>
     </family>
     <alias name="samsungone-semi-bold" to="samsungone" weight="600" />
     <alias name="samsungone-bold" to="samsungone" weight="700" />
