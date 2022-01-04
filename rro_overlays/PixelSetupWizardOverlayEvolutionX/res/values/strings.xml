@@ -17,15 +17,15 @@
 */
 -->
 <resources>
-    <string name="exit_to_action_in_initial_setup">com.google.android.apps.nexuslauncher/com.android.quickstep.action.GESTURE_ONBOARDING_ALL_SET</string>
-    <string name="demo_device_admin_component_name">com.google.android.retaildemo/.DemoDeviceAdminReceiver</string>
-    <string name="demo_device_admin_download_location">https://g.co/pixel/retaildemo</string>
-    <string name="demo_device_admin_signature_checksum">ZUfHPe4VDBA5gL_f_lXMmgEdeF3WlKX5mv2CBbyvH4A</string>
-    <string name="setup_compat_footer_button_font_family">google-sans-text-medium</string>
-    <string name="setup_design_content_font_family">google-sans-text</string>
-    <string name="setup_design_content_info_font_family">google-sans-text</string>
-    <string name="setup_design_description_font_family">google-sans-text</string>
-    <string name="setup_design_items_summary_font_family">google-sans-text</string>
-    <string name="setup_design_items_title_font_family">google-sans</string>
-    <string name="setup_design_layout_gravity">start</string>
+    <string name="exit_to_action_in_initial_setup" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.action.GESTURE_ONBOARDING_ALL_SET</string>
+    <string name="demo_device_admin_component_name" translatable="false">com.google.android.retaildemo/.DemoDeviceAdminReceiver</string>
+    <string name="demo_device_admin_download_location" translatable="false">https://g.co/pixel/retaildemo</string>
+    <string name="demo_device_admin_signature_checksum" translatable="false">ZUfHPe4VDBA5gL_f_lXMmgEdeF3WlKX5mv2CBbyvH4A</string>
+    <string name="setup_compat_footer_button_font_family" translatable="false">google-sans-text-medium</string>
+    <string name="setup_design_content_font_family" translatable="false">google-sans-text</string>
+    <string name="setup_design_content_info_font_family" translatable="false">google-sans-text</string>
+    <string name="setup_design_description_font_family" translatable="false">google-sans-text</string>
+    <string name="setup_design_items_summary_font_family" translatable="false">google-sans-text</string>
+    <string name="setup_design_items_title_font_family" translatable="false">google-sans</string>
+    <string name="setup_design_layout_gravity" translatable="false">start</string>
 </resources>

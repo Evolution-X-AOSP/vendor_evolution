@@ -82,4 +82,9 @@
         <item>vn</item>
         <item>za</item>
     </string-array>
+
+    <!-- The package names which can request thermal mitigation. -->
+    <string-array name="thermal_mitigation_allowlisted_packages" translatable="false">
+        <item>com.google.android.connectivitythermalpowermanager</item>
+    </string-array>
 </resources>

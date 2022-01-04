@@ -20,7 +20,6 @@
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
-
     <!-- Control the behavior when the user presses the power and volume up buttons together.
             0 - Nothing
             1 - Mute toggle
@@ -39,8 +38,8 @@
     <integer name="config_longPressOnPowerBehavior">1</integer>
 
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera:com.google.android.gms:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.dreamliner:com.google.android.apps.safetyhub:com.google.android.dialer</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.dreamliner:com.google.android.apps.safetyhub:com.google.android.dialer</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.android.apps.dreamliner</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.android.apps.dreamliner</string>
 </resources>

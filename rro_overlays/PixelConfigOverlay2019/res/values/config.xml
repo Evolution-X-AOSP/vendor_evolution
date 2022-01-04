@@ -40,5 +40,5 @@
         This service must be trusted, as it can be activated without explicit consent of the user.
         See android.service.rotationresolver.RotationResolverService.
    -->
-    <string name="config_defaultRotationResolverService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
+    <string name="config_defaultRotationResolverService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiRotationResolverService</string>
 </resources>
