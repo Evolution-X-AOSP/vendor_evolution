@@ -70,7 +70,6 @@ PRODUCT_PACKAGES += \
 # Customization overlays
 PRODUCT_PACKAGES += \
     FontGInterOverlay \
-    FontGoogleSansOverlay \
     FontHarmonySansOverlay \
     FontLinotteSourceOverlay \
     FontManropeOverlay \
