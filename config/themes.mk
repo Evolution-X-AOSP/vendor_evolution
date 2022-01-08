@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     XtendedClearSystemOverlay \
     XtendedClearSystemUIOverlay \
     PitchBlackSystemOverlay \
