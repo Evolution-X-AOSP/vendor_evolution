@@ -28,4 +28,5 @@
     <string name="setup_design_items_summary_font_family" translatable="false">google-sans-text</string>
     <string name="setup_design_items_title_font_family" translatable="false">google-sans</string>
     <string name="setup_design_layout_gravity" translatable="false">start</string>
+    <string name="bc_welcome_message">Welcome to your Pixel</string>
 </resources>
