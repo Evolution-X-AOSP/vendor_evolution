@@ -18,3 +18,8 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     Papers \
     SimpleDeviceConfig
+
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
