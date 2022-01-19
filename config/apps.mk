@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Evolution X Project
+# Copyright (C) 2019-2022 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,6 +20,15 @@ PRODUCT_PACKAGES += \
     Papers \
     SimpleDeviceConfig
 
+# GrapheneOS Camera
+TARGET_BUILD_GRAPHENEOS_CAMERA ?= false
+ifeq ($(strip $(TARGET_BUILD_GRAPHENEOS_CAMERA)),true)
+PRODUCT_PACKAGES += \
+    GrapheneOS-Camera
+endif
+
+# UDFPS Animations
+EXTRA_UDFPS_ANIMATIONS ?= false
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     UdfpsResources

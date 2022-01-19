@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019-2021 The Evolution X Project
+# Copyright (C) 2019-2022 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,24 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Inherit vendor submodules
-$(call inherit-product, vendor/evolution/config/apex.mk)
-$(call inherit-product, vendor/evolution/config/audio.mk)
-$(call inherit-product, vendor/evolution/config/apps.mk)
-$(call inherit-product, vendor/evolution/config/bootanimation.mk)
-$(call inherit-product, vendor/evolution/config/common_telephony.mk)
-$(call inherit-product, vendor/evolution/config/fonts.mk)
-$(call inherit-product, vendor/evolution/config/gfonts.mk)
-$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
-$(call inherit-product, vendor/evolution/config/textclassifier.mk)
-$(call inherit-product, vendor/evolution/config/themes.mk)
-
-# Inherit from GMS product config
-$(call inherit-product, vendor/gms/gms_full.mk)
 
 PRODUCT_BRAND ?= EvolutionX
 
@@ -96,9 +78,21 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
+# Turn off storage manager
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.storage_manager.enabled=false
+
+# Media
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.recorder.show_manufacturer_and_model=true
+
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Disable async MTE on system_server
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    arm64.memtag.process.system_server=off
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -111,11 +105,11 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
     vendor/evolution/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
     vendor/evolution/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.ota.allow_downgrade=true
 endif
-
-# Disable async MTE on system_server
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    arm64.memtag.process.system_server=off
+endif
 
 # Evolution X-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
@@ -141,22 +135,31 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# Power whitelist
-PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/custom-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/custom-power-whitelist.xml
-
 # Enable transitional log for Privileged permissions
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/evolution/config/permissions/custom-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/custom-power-whitelist.xml
 
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+# Disable Java debug info
+USE_DEX2OAT_DEBUG := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
@@ -165,13 +168,11 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
-# Turn off storage manager
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.storage_manager.enabled=false
+# Enforce RRO targets
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
-# Media
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.recorder.show_manufacturer_and_model=true
+# Evolution X customization
+TARGET_SUPPORTS_QUICK_TAP ?= false
 
 # Face Unlock
 #TARGET_FACE_UNLOCK_SUPPORTED ?= true
@@ -184,10 +185,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 #    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 #endif
 
-# Charger
-PRODUCT_PACKAGES += \
-    product_charger_res_images
-
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
@@ -197,29 +194,49 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/evolution/overlay
 
-# Branding
-include vendor/evolution/config/branding.mk
-
-# OTA
-include vendor/evolution/config/ota.mk
-
 # Plugins
-TARGET_SUPPORTS_QUICK_TAP ?= false
 #include packages/apps/Plugins/plugins.mk
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Inherit from apex config
+$(call inherit-product, vendor/evolution/config/apex.mk)
+
+# Inherit from apps config
+$(call inherit-product, vendor/evolution/config/apps.mk)
+
+# Inherit from audio config
+$(call inherit-product, vendor/evolution/config/audio.mk)
+
+# Inherit from bootanimation config
+$(call inherit-product, vendor/evolution/config/bootanimation.mk)
+
+# Inherit from our branding
+$(call inherit-product, vendor/evolution/config/branding.mk)
+
+# Inherit from common telephony config
+$(call inherit-product, vendor/evolution/config/common_telephony.mk)
+
+# Inherit from fonts config
+$(call inherit-product, vendor/evolution/config/fonts.mk)
+
+# Inherit from gfonts config
+$(call inherit-product, vendor/evolution/config/gfonts.mk)
+
+# Inherit from our ota config
+$(call inherit-product, vendor/evolution/config/ota.mk)
+
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/evolution/config/rro_overlays.mk)
+
+# Inherit from textclassifier config
+$(call inherit-product, vendor/evolution/config/textclassifier.mk)
+
+# Inherit from themes config
+$(call inherit-product, vendor/evolution/config/themes.mk)
+
+# Inherit from GMS product config
+$(call inherit-product, vendor/gms/gms_full.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
-
-# Disable Java debug info
-USE_DEX2OAT_DEBUG := false
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# Enforce RRO targets
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# GrapheneOS Camera
-TARGET_BUILD_GRAPHENEOS_CAMERA ?= false
-ifeq ($(strip $(TARGET_BUILD_GRAPHENEOS_CAMERA)),true)
-PRODUCT_PACKAGES += \
-    GrapheneOS-Camera
-endif
