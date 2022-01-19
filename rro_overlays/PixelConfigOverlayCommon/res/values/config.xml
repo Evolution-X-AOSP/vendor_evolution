@@ -42,7 +42,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Flag indicating whether the volume panel should show remote sessions. -->
-    <bool name="config_volumeShowRemoteSessions">false</bool>
+    <bool name="config_volumeAdjustmentForRemoteGroupSessions">false</bool>
 
     <!-- Corner radius for bottom sheet system dialogs -->
     <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
