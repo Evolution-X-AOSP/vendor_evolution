@@ -21,6 +21,7 @@
 
    <string-array name="udfps_icons">
         <item>udfps_icon_default</item>
+        <item>udfps_icon_evo</item>
         <item>udfps_icon_default_2</item>
         <item>udfps_icon_default_3</item>
         <item>udfps_icon_default_4</item>
