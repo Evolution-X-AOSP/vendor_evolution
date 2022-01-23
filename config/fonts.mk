@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     HarmonyOS-Sans-ThinItalic.ttf \
     HarmonyOS-Sans-Thin.ttf \
     Lexend-VF.ttf \
-    Manrope-VF.ttf \
+    Manrope-VF.ttf
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \

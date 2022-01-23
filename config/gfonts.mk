@@ -75,4 +75,33 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontNotoSerifSource \
     FontOnePlusSansOverlay \
-    FontOneplusSlateSourceOverlay
+    FontOneplusSlateSourceOverlay \
+    FontAclonicaSourceOverlay \
+    FontAmaranteSourceOverlay \
+    FontAntipastoProSourceOverlay \
+    FontBariolSourceOverlay \
+    FontCagliostroSourceOverlay \
+    FontCoconSourceOverlay \
+    FontComfortaaSourceOverlay \
+    FontComicSansSourceOverlay \
+    FontCoolstorySourceOverlay \
+    FontEvolveSansSourceOverlay \
+    FontExotwoSourceOverlay \
+    FontFifa2018SourceOverlay \
+    FontFucekSourceOverlay \
+    FontGrandHotelSourceOverlay \
+    FontLGSmartGothicSourceOverlay \
+    FontLemonMilkSourceOverlay \
+    FontNokiaPureSourceOverlay \
+    FontNunitoSourceOverlay \
+    FontOdudaSourceOverlay \
+    FontQuandoSourceOverlay \
+    FontRedressedSourceOverlay \
+    FontReemKufiSourceOverlay \
+    FontRosemarySourceOverlay \
+    FontSamsungOneSourceOverlay \
+    FontSimpleDaySourceOverlay \
+    FontSonySketchSourceOverlay \
+    FontStoropiaSourceOverlay \
+    FontSurferSourceOverlay \
+    FontUbuntuSourceOverlay
