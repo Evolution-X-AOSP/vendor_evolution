@@ -18,6 +18,7 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     GamingMode \
     Papers \
+    RepainterServicePriv \
     SimpleDeviceConfig
 
 # GrapheneOS Camera
