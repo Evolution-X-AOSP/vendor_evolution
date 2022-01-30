@@ -16,7 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.krypton.overlay.systemui.navbar.gestural"
+        package="com.evolution.overlay.systemui.navbar.gestural"
         android:versionCode="1"
         android:versionName="1.0">
     <overlay android:targetPackage="android"
