@@ -38,18 +38,4 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    XtendedClearSystemOverlay \
-    XtendedClearSystemUIOverlay \
-    PitchBlackSystemOverlay \
-    PitchBlackSystemUIOverlay \
-    SolarizedDarkSystemOverlay \
-    SolarizedDarkSystemUIOverlay \
-    BakedGreenSystemOverlay \
-    BakedGreenSystemUIOverlay \
-    ChocoXSystemOverlay \
-    ChocoXSystemUIOverlay \
-    MaterialOceanSystemOverlay \
-    MaterialOceanSystemUIOverlay \
-    DarkGreySystemOverlay \
-    DarkGreySystemUIOverlay
+    AndroidBlackThemeOverlay
