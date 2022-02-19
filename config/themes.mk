@@ -14,6 +14,18 @@
 # limitations under the License.
 #
 
+# Navbar styles
+PRODUCT_PACKAGES += \
+    NavbarAndroidOverlay \
+    NavbarAsusOverlay \
+    NavbarMotoOverlay \
+    NavbarNexusOverlay \
+    NavbarOldOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarSammyOverlay \
+    NavbarTecnoCamonOverlay
+
 # Statusbar Icons
 PRODUCT_PACKAGES += \
     StrokeSignalOverlay \
