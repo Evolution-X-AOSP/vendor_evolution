@@ -2,7 +2,7 @@
     package="com.android.system.navbar.asus"
     android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:targetPackage="com.android.systemui" android:priority="1"/>
+    <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.navbar" android:priority="1"/>
 
-    <application android:label="AsusNavbar" android:hasCode="false"/>
+    <application android:label="Asus" android:hasCode="false"/>
 </manifest>

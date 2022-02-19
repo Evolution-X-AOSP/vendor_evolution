@@ -13,8 +13,8 @@
 // limitations under the License.
 
 runtime_resource_overlay {
-    name: "NavbarStockOverlay",
+    name: "NavbarAndroidOverlay",
     product_specific: true,
     sdk_version: "current",
-    theme: "NavbarStock",
+    theme: "NavbarAndroid",
 }
