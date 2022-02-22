@@ -174,9 +174,6 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs
 
-# Enforce RRO targets
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Evolution X customization
 TARGET_SUPPORTS_QUICK_TAP ?= false
 
@@ -197,8 +194,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease
 
 # Overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/evolution/overlay
+    vendor/evolution/overlay/common
 
 # Plugins
 #include packages/apps/Plugins/plugins.mk
