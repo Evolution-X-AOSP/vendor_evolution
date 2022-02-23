@@ -21,13 +21,6 @@ PRODUCT_PACKAGES += \
     RepainterServicePriv \
     SimpleDeviceConfig
 
-# GrapheneOS Camera
-TARGET_BUILD_GRAPHENEOS_CAMERA ?= false
-ifeq ($(strip $(TARGET_BUILD_GRAPHENEOS_CAMERA)),true)
-PRODUCT_PACKAGES += \
-    GrapheneOS-Camera
-endif
-
 # UDFPS Animations
 EXTRA_UDFPS_ANIMATIONS ?= false
 ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
