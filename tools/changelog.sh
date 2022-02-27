@@ -26,9 +26,9 @@ echo "Generating changelog..."
 
 for i in $(seq 14);
 do
-export After_Date=`date --date="$i days ago" +%Y/%m/%d`
+export After_Date=$(/usr/bin/date --date="$i days ago" +%Y/%m/%d)
 k=$(expr $i - 1)
-	export Until_Date=`date --date="$k days ago" +%Y/%m/%d`
+	export Until_Date=$(/usr/bin/date --date="$k days ago" +%Y/%m/%d)
 
 	# Line with after --- until was too long for a small ListView
 	echo '=======================' >> $Changelog;
@@ -40,6 +40,3 @@ k=$(expr $i - 1)
 	repo forall -c '. $formatter_script' >> $Changelog
 	echo >> $Changelog;
 done
-
-# Copy the said changelog to OUT as TEMP, to be renamed by tasks
-cp $Changelog $out/
