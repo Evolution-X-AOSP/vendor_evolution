@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Exports
 DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
@@ -11,6 +11,7 @@ then
 	rm -f $Changelog
 fi
 
+# Assuming this script is run from TOP of workspace
 export formatter_script=$(realpath vendor/evolution/tools/changelog_repo_formatter.sh)
 
 touch $Changelog
@@ -35,5 +36,5 @@ k=$(expr $i - 1)
 	echo >> $Changelog;
 done
 
-cp $Changelog $out/system/etc/
+# Copy the said changelog to OUT as TEMP, to be renamed by tasks
 cp $Changelog $out/
