@@ -17,6 +17,8 @@
 # limitations under the License.
 #
 
+ifeq ($(PROD_CERTS),)
+
 OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_VERSION)-unsigned.zip
 
 $(OTA_PACKAGE_TARGET): $(BRO)
@@ -37,6 +39,8 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 
 .PHONY: evolution
 evolution: otatools brillo_update_payload checkvintf $(OTA_PACKAGE_TARGET)
+
+endif
 
 ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
 
