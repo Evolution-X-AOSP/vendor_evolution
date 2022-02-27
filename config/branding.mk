@@ -60,6 +60,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 $(call inherit-product-if-exists, vendor/evolution/build/target/product/security/evolution_security.mk)
 
+# If PROD_CERTS is set or not, append prop.
+ifneq ($(PROD_CERTS),)
+    PRODUCT_PRODUCT_PROPERTIES += org.evolution.key_type=signed
+else
+    PRODUCT_PRODUCT_PROPERTIES += org.evolution.key_type=unsigned
+endif
+
 PRODUCT_HOST_PACKAGES += \
     sign_target_files_apks \
     ota_from_target_files
