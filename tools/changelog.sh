@@ -3,6 +3,11 @@
 # Exports
 DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
 out=$OUT_DIR/target/product/$DEVICE
+if [ -f $out ]; # The path does not exist
+then
+	echo "The path to create changelog does not exist, exiting..."
+	exit
+fi
 
 export Changelog=Changelog.txt
 
