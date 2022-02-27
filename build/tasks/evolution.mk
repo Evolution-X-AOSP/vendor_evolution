@@ -31,6 +31,9 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 
 	$(hide) $(MD5SUM) $(OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(OTA_PACKAGE_TARGET).md5sum
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(OTA_PACKAGE_TARGET)
+	@echo "Generating changelog for unsigned"
+	$(hide) ./vendor/evolution/tools/changelog.sh
+	$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/$(OTA_PACKAGE_TARGET).txt
 
 .PHONY: evolution
 evolution: otatools brillo_update_payload checkvintf $(OTA_PACKAGE_TARGET)
@@ -69,6 +72,9 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 
 	$(hide) $(MD5SUM) $(PROD_OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(PROD_OTA_PACKAGE_TARGET).md5sum
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(PROD_OTA_PACKAGE_TARGET)
+	@echo "Generating changelog for production"
+	$(hide) ./vendor/evolution/tools/changelog.sh
+	$(hide) mv $(PRODUCT_OUT)/Changelog.txt $(PRODUCT_OUT)/$(PROD_OTA_PACKAGE_TARGET).txt
 
 .PHONY: evolution-prod
 evolution-prod: otatools brillo_update_payload checkvintf $(PROD_OTA_PACKAGE_TARGET)
