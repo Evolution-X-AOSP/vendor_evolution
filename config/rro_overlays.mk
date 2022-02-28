@@ -16,11 +16,11 @@
 
 # Evolution X Overlays
 PRODUCT_PACKAGES += \
-    CustomPixelLauncherOverlay \
     EvolutionXConfigOverlay \
     NavigationBarModeGesturalOverlayFS \
     PixelSetupWizardOverlayEvolutionX \
-    SettingsGoogleOverlayEvolutionX
+    SettingsGoogleOverlayEvolutionX \
+    ThemedIconsOverlay
 
 # Google Overlays
 PRODUCT_PACKAGES += \
