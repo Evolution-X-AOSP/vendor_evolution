@@ -82,6 +82,18 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 .PHONY: evolution-prod
 evolution-prod: otatools brillo_update_payload checkvintf $(PROD_OTA_PACKAGE_TARGET)
 
+GEN_CHANGELOG := $(PROD_OTA_PACKAGE_TARGET).txt
+
+$(GEN_CHANGELOG): $(BRO)
+
+$(GEN_CHANGELOG):
+	@echo "Generating changelog for production"
+	$(hide) ./vendor/evolution/tools/changelog.sh
+	$(hide) mv Changelog.txt $(PROD_OTA_PACKAGE_TARGET).txt
+
+.PHONY: gen-changelog
+gen-changelog: $(GEN_CHANGELOG)
+
 ifneq ($(PREVIOUS_TARGET_FILES_PACKAGE),)
 
 INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_DELTA_VERSION)-dev.zip
