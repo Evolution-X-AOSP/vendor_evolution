@@ -164,7 +164,6 @@ PRODUCT_COPY_FILES += \
 
 # Disable Java debug info
 USE_DEX2OAT_DEBUG := false
-PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
 # Strip the local variable table and the local variable type table to reduce
