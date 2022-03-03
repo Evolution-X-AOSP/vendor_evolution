@@ -60,8 +60,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 $(call inherit-product-if-exists, vendor/evolution/build/target/product/security/evolution_security.mk)
 
-# If PROD_CERTS is set or not, append prop.
-ifneq ($(PROD_CERTS),)
+# Check signed
+EVO_SIGNED ?= false
+
+ifeq ($(EVO_SIGNED), true)
     PRODUCT_PRODUCT_PROPERTIES += org.evolution.key_type=signed
 else
     PRODUCT_PRODUCT_PROPERTIES += org.evolution.key_type=unsigned

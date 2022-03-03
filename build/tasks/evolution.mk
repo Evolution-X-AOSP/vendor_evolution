@@ -16,8 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-ifeq ($(PROD_CERTS),)
+ifneq ($(EVO_SIGNED), true)
 
 OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(EVO_VERSION)-unsigned.zip
 
