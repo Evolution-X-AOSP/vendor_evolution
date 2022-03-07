@@ -136,7 +136,7 @@
     <string name="config_defaultBugReportHandlerApp" translatable="false">com.google.android.apps.internal.betterbug</string>
 
     <!-- When true, enables the allowlisted app to upload profcollect reports. -->
-    <bool name="config_profcollectReportUploaderEnabled">false</bool>
+    <bool name="config_profcollectReportUploaderEnabled">true</bool>
 
     <!-- The package name for the system's content capture service.
          This service must be trusted, as it can be activated without explicit consent of the user.
