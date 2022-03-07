@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2020-2021 Haruka LLC.
 # Copyright (C) 2020-2021 Haruka Aita
-# Copyright (C) 2020-2021 The Evolution X Project
+# Copyright (C) 2020-2022 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 6.1
+EVO_BASE_VERSION := 6.2
 EVO_CODENAME := Snow
 
 # Set all versions
