@@ -178,7 +178,7 @@
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
     <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
-    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui,com.google.android.as</string>
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui,com.google.android.as,com.google.android.tts</string>
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
