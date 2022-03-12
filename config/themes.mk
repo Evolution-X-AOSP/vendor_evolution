@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     DaunSignalOverlay \
     DecSignalOverlay \
     DeepSignalOverlay \
+    DoraSignalOverlay \
     EqualSignalOverlay \
     FanSignalOverlay \
     GradiconSignalOverlay \
@@ -84,6 +85,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AcherusWiFiOverlay \
     BarsWiFiOverlay \
+    DoraWiFiOverlay \
     GradiconWiFiOverlay \
     InsideWiFiOverlay \
     NothingDotWiFiOverlay \
