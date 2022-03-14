@@ -1,18 +1,13 @@
-# Telephony
-IS_PHONE := true
-
-# World APN list
-PRODUCT_PACKAGES += \
-    apns-conf.xml
-
-# Telephony packages
-PRODUCT_PACKAGES += \
-    Stk
-
-# Tethering - allow without requiring a provisioning app
-# (for devices that check this)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    net.tethering.noprovisioning=true
-
 # Inherit full common Evolution X stuff
 $(call inherit-product, vendor/evolution/config/common_full.mk)
+
+# Required packages
+PRODUCT_PACKAGES += \
+    NavigationBarMode2ButtonOverlay
+
+# Enable support of one-handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
+
+# Inherit from telephony config
+$(call inherit-product, vendor/evolution/config/telephony.mk)

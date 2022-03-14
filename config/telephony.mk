@@ -14,6 +14,26 @@
 # limitations under the License.
 #
 
+# Telephony
+IS_PHONE := true
+
+# World APN list
+PRODUCT_PACKAGES += \
+    apns-conf.xml
+
+# Telephony packages
+PRODUCT_PACKAGES += \
+    Stk
+
+# Tethering - allow without requiring a provisioning app
+# (for devices that check this)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    net.tethering.noprovisioning=true
+
+# Disable mobile data in roaming by default.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.android.dataroaming=false
+
 # CarrierSettings, replace CarrierConfig
 ifeq ($(TARGET_CARRIER_SETTINGS), true)
 PRODUCT_PACKAGES += \
@@ -173,8 +193,4 @@ PRODUCT_PACKAGES += \
 # Other countries
 PRODUCT_PACKAGES += \
     others.pb
-
-# Disable mobile data in roaming by default.
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.android.dataroaming=false
 endif

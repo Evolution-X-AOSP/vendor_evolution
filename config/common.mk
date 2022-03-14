@@ -88,10 +88,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
-# Enable support of one-handed mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
 # Disable async MTE on system_server
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     arm64.memtag.process.system_server=off
@@ -198,6 +194,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
     SystemUI \
     NexusLauncherRelease
 
@@ -226,9 +223,6 @@ $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 
 # Inherit from our branding
 $(call inherit-product, vendor/evolution/config/branding.mk)
-
-# Inherit from common telephony config
-$(call inherit-product, vendor/evolution/config/common_telephony.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/evolution/config/fonts.mk)
