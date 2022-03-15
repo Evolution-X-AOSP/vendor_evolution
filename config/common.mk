@@ -209,8 +209,13 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+WITH_GOOGLE_APEX ?= true
+ifeq ($(WITH_GOOGLE_APEX),true)
 # Inherit from apex config
 $(call inherit-product, vendor/evolution/config/apex.mk)
+else
+$(call inherit-product, vendor/evolution/config/non_apex.mk)
+endif
 
 # Inherit from apps config
 $(call inherit-product, vendor/evolution/config/apps.mk)
