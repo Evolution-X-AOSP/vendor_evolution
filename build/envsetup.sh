@@ -384,9 +384,7 @@ function __detect_shell() {
     return
 }
 
-function mka() {
-    m -j$(nproc --all) "$@"
-}
+alias mka=m
 
 function cmka() {
     if [ ! -z "$1" ]; then
