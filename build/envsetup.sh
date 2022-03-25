@@ -20,8 +20,6 @@ Additional Evolution X functions:
 EOF
 }
 
-alias mka=m
-
 function mk_timer()
 {
     local start_time=$(date +"%s")
@@ -384,6 +382,10 @@ function __detect_shell() {
             ;;
     esac
     return
+}
+
+function mka() {
+    m
 }
 
 function cmka() {
