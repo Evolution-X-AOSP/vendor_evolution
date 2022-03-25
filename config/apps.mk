@@ -22,8 +22,8 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
 # UDFPS Animations
-#EXTRA_UDFPS_ANIMATIONS ?= false
-#ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-#PRODUCT_PACKAGES += \
-#    UdfpsResources
-#endif
+EXTRA_UDFPS_ANIMATIONS ?= false
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
