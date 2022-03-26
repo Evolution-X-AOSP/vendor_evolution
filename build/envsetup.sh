@@ -385,7 +385,7 @@ function __detect_shell() {
 }
 
 function mka() {
-    m
+    m "$@"
 }
 
 function cmka() {
