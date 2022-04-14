@@ -260,7 +260,7 @@
      disabled.
      Example: "com.android.translation/.TranslationService"
     -->
-    <string name="config_defaultTranslationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService</string>
+    <string name="config_defaultTranslationService" translatable="false"></string>
 
     <!-- The package name for the system's wallpaper effects generation service.
     This service returns wallpaper effects results.
