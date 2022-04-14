@@ -229,7 +229,7 @@
      disabled.
      Example: "com.android.translation/.TranslationService"
     -->
-    <string name="config_defaultTranslationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService</string>
+    <string name="config_defaultTranslationService" translatable="false"></string>
 
     <!-- The package name for the default wellbeing app.
          This package must be trusted, as it has the permissions to control other applications
