@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     FontFucekOverlay \
     FontGoogleSansOverlay \
     FontGrandHotelOverlay \
+    FontGoogleSansMediumOverlay \
     FontHarmonySansOverlay \
     FontInterSourceOverlay \
     FontJTLeonorOverlay \
