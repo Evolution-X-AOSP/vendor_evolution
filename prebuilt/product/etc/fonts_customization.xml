@@ -1372,4 +1372,19 @@
     <family customizationType="new-named-family" name="Roundheads">
         <font weight="300" style="normal">Roundheads.ttf</font>
     </family>
+
+    <family customizationType="new-named-family" name="googlesansmedium">
+         <font weight="400" style="normal">GoogleSansMedium.ttf</font>
+    </family>
+    <alias name="googlesansmedium-semi-bold" to="googlesansmedium" weight="600" />
+    <alias name="googlesansmedium-bold" to="googlesansmedium" weight="700" />
+    <alias name="times" to="googlesansmedium" />
+    <alias name="times new roman" to="googlesansmedium" />
+    <alias name="palatino" to="googlesansmedium" />
+    <alias name="georgia" to="googlesansmedium" />
+    <alias name="baskerville" to="googlesansmedium" />
+    <alias name="goudy" to="googlesansmedium" />
+    <alias name="fantasy" to="googlesansmedium" />
+    <alias name="ITC Stone Serif" to="googlesansmedium" />
+
 </fonts-modification>
