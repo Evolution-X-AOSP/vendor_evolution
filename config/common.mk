@@ -132,7 +132,8 @@ PRODUCT_COPY_FILES += \
 
 # Copy all Evolution X-specific init rc files
 PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
+    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc \
+    vendor/evolution/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/smartcharge-init.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
