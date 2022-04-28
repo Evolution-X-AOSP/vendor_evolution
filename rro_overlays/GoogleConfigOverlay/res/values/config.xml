@@ -29,9 +29,6 @@
     <!-- Component name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
 
-    <!-- Component name that should be granted Notification Assistant access -->
-    <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.ext.services/android.ext.services.notification.Assistant</string>
-
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
          without explicit consent of the user. If no autofill service with the
@@ -79,15 +76,6 @@
 
          AOSP does not configure a secondary location time zone provider. -->
      <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
-
-    <!-- The package name for the OEM custom system textclassifier service.
-         This service must be trusted, as it can be activated without explicit consent of the user.
-         Example: "com.android.textclassifier"
-         If this is empty, the default textclassifier service (i.e. config_servicesExtensionPackage)
-         will be used.
-         See android.view.textclassifier.TextClassificationManager.
-    -->
-    <string name="config_servicesExtensionPackage" translatable="false">com.google.android.ext.services</string>
 
     <!-- The name of the package that will hold the system activity recognizer role. -->
      <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>

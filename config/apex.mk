@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_SHIP_PREBUILT_APEX ?= false
+ifeq ($(TARGET_SHIP_PREBUILT_APEX),true)
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/evolution/apex/NetworkStack
 
@@ -24,6 +26,10 @@ MODULE_BUILD_FROM_SOURCE := false
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/evolution/apex
+
+# Apex Overlay
+PRODUCT_PACKAGES += \
+    ApexOverlay
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
@@ -52,3 +58,4 @@ PRODUCT_PACKAGES += \
 	com.google.android.tzdata3 \
 	com.google.android.wifi \
 	com.google.mainline.primary.libs
+endif
