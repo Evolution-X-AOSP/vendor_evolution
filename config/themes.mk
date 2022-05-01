@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     XperiaSignalOverlay \
     ZigZagSignalOverlay \
     WavySignalOverlay \
+    WeedWiFiOverlay \
     RoundSignalOverlay \
     InsideSignalOverlay \
     BarsSignalOverlay
