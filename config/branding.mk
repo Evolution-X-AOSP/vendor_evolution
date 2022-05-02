@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 6.3
+EVO_BASE_VERSION := 6.3.1
 EVO_CODENAME := Snow-v2
 
 # Set all versions
