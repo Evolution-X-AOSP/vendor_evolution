@@ -24,17 +24,22 @@ PRODUCT_PACKAGES += \
 # Google Overlays
 PRODUCT_PACKAGES += \
     CaptivePortalLoginOverlay \
-    CellBroadcastReceiverOverlay \
-    CellBroadcastServiceOverlay \
     GoogleConfigOverlay \
-    GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
-    NetworkStackOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
-    PixelTetheringOverlay \
     SystemUIGoogleOverlay
+
+# Google Apex Overlays
+ifeq ($(TARGET_SHIP_PREBUILT_APEX),true)
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiverOverlay \
+    CellBroadcastServiceOverlay \
+    GooglePermissionControllerOverlay \
+    NetworkStackOverlay \
+    PixelTetheringOverlay
+endif
