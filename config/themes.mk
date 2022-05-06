@@ -36,10 +36,6 @@ PRODUCT_PACKAGES += \
     InsideWiFiOverlay \
     BarsWiFiOverlay
 
-# Navbar
-PRODUCT_PACKAGES += \
-    NavigationBarModeGesturalOverlayFS
-
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
