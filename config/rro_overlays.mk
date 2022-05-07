@@ -18,8 +18,7 @@
 PRODUCT_PACKAGES += \
     EvolutionXConfigOverlay \
     PixelSetupWizardOverlayEvolutionX \
-    SettingsGoogleOverlayEvolutionX \
-    ThemedIconsOverlay
+    SettingsGoogleOverlayEvolutionX
 
 # Google Overlays
 PRODUCT_PACKAGES += \
