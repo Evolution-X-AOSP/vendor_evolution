@@ -16,6 +16,7 @@
 
 # Evolution X Overlays
 PRODUCT_PACKAGES += \
+    CustomPixelLauncherOverlay \
     EvolutionXConfigOverlay \
     PixelSetupWizardOverlayEvolutionX \
     SettingsGoogleOverlayEvolutionX
