@@ -30,16 +30,32 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AquariumSignalOverlay \
     BarsSignalOverlay \
+    ButterflySignalOverlay \
+    CircleSignalOverlay \
+    DaunSignalOverlay \
+    DecSignalOverlay \
     DeepSignalOverlay \
+    EqualSignalOverlay \
+    FanSignalOverlay \
     HuaweiSignalOverlay \
     InsideSignalOverlay \
     IosSignalOverlay \
+    MiniSignalOverlay \
+    OdinSignalOverlay \
     PillsSignalOverlay \
+    RelSignalOverlay \
+    RomanSignalOverlay \
     RoundSignalOverlay \
+    ScrollSignalOverlay \
+    SeaSignalOverlay \
     SneakySignalOverlay \
+    StackSignalOverlay \
     StrokeSignalOverlay \
+    WannuiSignalOverlay \
     WavySignalOverlay \
     WeedWiFiOverlay \
+    WindowsSignalOverlay \
+    WingSignalOverlay \
     XperiaSignalOverlay \
     ZigZagSignalOverlay
 
