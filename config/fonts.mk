@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     FontLGSmartGothicSourceOverlay \
     FontLemonMilkSourceOverlay \
     FontNokiaPureSourceOverlay \
+    FontNothingDotOverlay \
     FontNunitoSourceOverlay \
     FontOdudaSourceOverlay \
     FontOneUISansOverlay \

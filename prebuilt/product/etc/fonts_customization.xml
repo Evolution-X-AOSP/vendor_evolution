@@ -690,7 +690,19 @@
     <alias name="goudy" to="rosemary" />
     <alias name="fantasy" to="rosemary" />
     <alias name="ITC Stone Serif" to="rosemary" />
+    
+    <!-- NothingDot -->
+    <family customizationType="new-named-family" name="nothingdot">
+        <font weight="400" style="normal" postScriptName="Ndot-55">NDot55Caps.otf</font>
+    </family>
+    <alias name="nothingdot" to="nothingdot" weight="400" />
 
+    <!-- NothingDot -->
+    <family customizationType="new-named-family" name="nothingdot57">
+        <font weight="400" style="normal" postScriptName="Ndot-57">NDot57Caps.otf</font>
+    </family>
+    <alias name="nothingdot57" to="nothingdot57" weight="400" />
+    
     <!-- SonySketch -->
     <family customizationType="new-named-family" name="sonysketch">
         <font weight="300" style="normal">SonySketch.ttf</font>
