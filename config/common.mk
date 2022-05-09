@@ -245,7 +245,11 @@ endif
 $(call inherit-product, vendor/evolution/config/audio.mk)
 
 # Inherit from bootanimation config
+ifeq ($(TARGET_IS_PIXEL), true)
+$(call inherit-product, vendor/evolution/config/bootanimation_pixels.mk)
+else
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
+endif
 
 # Inherit from fonts config
 $(call inherit-product, vendor/evolution/config/fonts.mk)
