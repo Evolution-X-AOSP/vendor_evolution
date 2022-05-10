@@ -500,6 +500,7 @@
     <icon drawable="@drawable/themed_icon_relay" package="free.reddit.news" />
     <icon drawable="@drawable/themed_icon_relay" package="reddit.news" />
     <icon drawable="@drawable/themed_icon_remotedesktop" package="com.google.chromeremotedesktop" />
+        <icon drawable="@drawable/themed_icon_repainter" package="dev.kdrag0n.dyntheme" />
     <icon drawable="@drawable/themed_icon_resplash" package="com.b_lam.resplash" />
     <icon drawable="@drawable/themed_icon_retroarch" package="com.retroarch" />
     <icon drawable="@drawable/themed_icon_retro_music" package="code.name.monkey.retromusic" />
