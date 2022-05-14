@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cell broacast receiver package name -->
+    <string name="config_cell_broadcast_receiver_package" translatable="false">com.google.android.cellbroadcastreceiver</string>
+</resources>

@@ -29,7 +29,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Apex Overlay
 PRODUCT_PACKAGES += \
-    ApexOverlay
+    ApexOverlay \
+    ApexSettingsOverlay
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
