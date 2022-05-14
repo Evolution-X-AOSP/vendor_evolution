@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += \
     PixelDocumentsUIGoogleOverlay \
     SystemUIGoogleOverlay
 
+# Now Playing Overlay
+ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_DEVICE)),)
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay
+endif
+
 # Google Apex Overlays
 ifeq ($(TARGET_SHIP_PREBUILT_APEX),true)
 PRODUCT_PACKAGES += \
