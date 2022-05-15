@@ -166,4 +166,33 @@
 
     <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
     <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui</string>
+
+    <!-- List of system apps that are allowed to be locked with app lock.
+         Use with extreme caution. -->
+    <string-array name="config_appLockAllowedSystemApps" translatable="false">
+        <item>com.android.chrome</item>
+        <item>com.android.vending</item>
+        <item>com.google.android.apps.docs</item>
+        <item>com.google.android.apps.messaging</item>
+        <item>com.google.android.apps.nbu.files</item>
+        <item>com.google.android.apps.photos</item>
+        <item>com.google.android.apps.recorder</item>
+        <item>com.google.android.contacts</item>
+        <item>com.google.android.dialer</item>
+        <item>com.google.android.gm</item>
+        <item>com.google.android.keep</item>
+        <item>com.google.android.youtube</item>
+    </string-array>
+
+    <!-- These are system packages exempted from privacy indicator -->
+    <string-array name="config_indicatorExemptedPackageNames" translatable="false">
+        <item>com.android.bluetooth</item>
+        <item>com.android.networkstack.tethering</item>
+        <item>com.android.phone</item>
+        <item>com.android.systemui</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.settings.intelligence</item>
+        <item>com.mediatek.ims</item>
+        <item>org.pixelexperience.faceunlock</item>
+    </string-array>
 </resources>
