@@ -98,8 +98,8 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.sh \
-    vendor/evolution/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.functions \
+    vendor/evolution/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/evolution/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/evolution/prebuilt/common/bin/50-base.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-base.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
