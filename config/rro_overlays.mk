@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
     SystemUIGoogleOverlay
 
 # Now Playing Overlay
-ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_DEVICE)),)
+ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_PRODUCT_SHORT)),)
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 endif
