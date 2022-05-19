@@ -223,15 +223,15 @@ $(call inherit-product, vendor/evolution/config/apps.mk)
 # Inherit from audio config
 $(call inherit-product, vendor/evolution/config/audio.mk)
 
+# Inherit from our branding
+$(call inherit-product, vendor/evolution/config/branding.mk)
+
 # Inherit from bootanimation config
 ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_PRODUCT_SHORT)),)
 $(call inherit-product, vendor/evolution/config/bootanimation_pixels.mk)
 else
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 endif
-
-# Inherit from our branding
-$(call inherit-product, vendor/evolution/config/branding.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/evolution/config/fonts.mk)
