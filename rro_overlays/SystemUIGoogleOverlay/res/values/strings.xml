@@ -9,6 +9,6 @@
     <string name="config_preferredEmergencySosPackage">com.google.android.apps.safetyhub</string>
     <string name="launcher_overlayable_package">com.google.android.apps.nexuslauncher</string>
     <string name="quick_settings_tiles_default" translatable="false">
-        evolver,internet,wifi,cell,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,location,hotspot
+        internet,wifi,cell,bt,flashlight,dnd,alarm,airplane,nfc,controls,wallet,rotation,battery,cast,screenrecord,location,hotspot
     </string>
 </resources>
