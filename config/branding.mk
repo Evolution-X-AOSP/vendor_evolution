@@ -18,7 +18,7 @@
 
 # Versioning System
 EVO_BASE_VERSION := 6.4
-EVO_CODENAME := Snow-Relapse
+EVO_CODENAME := Omega
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
