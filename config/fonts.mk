@@ -60,6 +60,7 @@ PRODUCT_PACKAGES += \
     FontFifa2018SourceOverlay \
     FontFucekSourceOverlay \
     FontGrandHotelSourceOverlay \
+    FontJTLeonorOverlay \
     FontLGSmartGothicSourceOverlay \
     FontLemonMilkSourceOverlay \
     FontNokiaPureSourceOverlay \

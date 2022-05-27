@@ -691,6 +691,22 @@
     <alias name="fantasy" to="rosemary" />
     <alias name="ITC Stone Serif" to="rosemary" />
     
+    <!-- JTLeonor -->
+    <family customizationType="new-named-family" name="jtleonor">
+        <font weight="200" style="normal">JTLeonor-Light.ttf</font>
+        <font weight="300" style="normal">JTLeonor-Regular.ttf</font>
+        <font weight="400" style="normal">JTLeonor-Medium.ttf</font>
+        <font weight="500" style="normal">JTLeonor-DemiBold.ttf</font>
+        <font weight="600" style="normal">JTLeonor-SemiBold.ttf</font>
+        <font weight="700" style="normal">JTLeonor-Bold.ttf</font>
+    </family>
+    <alias name="jtleonor-light" to="jtleonor" weight="200" />
+    <alias name="jtleonor-regular" to="jtleonor" weight="300" />
+    <alias name="jtleonor-medium" to="jtleonor" weight="400" />
+    <alias name="jtleonor-demi-bold" to="jtleonor" weight="500" />
+    <alias name="jtleonor-semi-bold" to="jtleonor" weight="600" />
+    <alias name="jtleonor-bold" to="jtleonor" weight="700" />
+    
     <!-- NothingDot -->
     <family customizationType="new-named-family" name="nothingdot">
         <font weight="400" style="normal" postScriptName="Ndot-55">NDot55Caps.otf</font>
