@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     FontReemKufiSourceOverlay \
     FontRosemarySourceOverlay \
     FontSamsungOneSourceOverlay \
+    FontSanFranciscoDisplayProSourceOverlay \
     FontSimpleDaySourceOverlay \
     FontSonySketchSourceOverlay \
     FontStoropiaSourceOverlay \
