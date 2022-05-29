@@ -791,6 +791,22 @@
     <alias name="fantasy" to="storopia" />
     <alias name="ITC Stone Serif" to="storopia" />
 
+    <!-- San Francisco Pro -->
+    <family customizationType="new-named-family" name="sanfrancisco">
+        <font weight="400" style="normal">SanFranciscoDisplayPro.ttf</font>
+    </family>
+    <alias name="sanfrancisco-semi-bold" to="sanfrancisco" weight="600" />
+    <alias name="sanfrancisco-bold" to="sanfrancisco" weight="700" />
+    <alias name="times" to="sanfrancisco" />
+    <alias name="times new roman" to="sanfrancisco" />
+    <alias name="palatino" to="sanfrancisco" />
+    <alias name="georgia" to="sanfrancisco" />
+    <alias name="baskerville" to="sanfrancisco" />
+    <alias name="goudy" to="sanfrancisco" />
+    <alias name="fantasy" to="sanfrancisco" />
+    <alias name="ITC Stone Serif" to="sanfrancisco" />
+
+    <!-- Ubuntu -->
     <family customizationType="new-named-family" name="ubuntu">
         <font weight="400" style="normal">Ubuntu.ttf</font>
     </family>
