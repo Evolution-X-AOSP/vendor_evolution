@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
 
 # Statusbar Icons
 PRODUCT_PACKAGES += \
+    AcherusSignalOverlay \
     AquariumSignalOverlay \
     BarsSignalOverlay \
     ButterflySignalOverlay \
@@ -42,6 +43,8 @@ PRODUCT_PACKAGES += \
     IosSignalOverlay \
     MiniSignalOverlay \
     OdinSignalOverlay \
+    OutlineSignalOverlay \
+    PUISignalOverlay \
     PillsSignalOverlay \
     RelSignalOverlay \
     RomanSignalOverlay \
@@ -61,8 +64,10 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi Icons
 PRODUCT_PACKAGES += \
+    AcherusWiFiOverlay \
     BarsWiFiOverlay \
     InsideWiFiOverlay \
+    OutlineWiFiOverlay \
     RoundWiFiOverlay \
     SneakyWiFiOverlay \
     StrokeWiFiOverlay \
