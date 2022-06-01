@@ -194,7 +194,8 @@
         <item>com.google.android.googlequicksearchbox</item>
         <item>com.google.android.settings.intelligence</item>
         <item>com.mediatek.ims</item>
-        <item>org.pixelexperience.faceunlock</item>
         <item>com.qualcomm.qti.cne</item>
+        <item>com.shannon.imsservice</item>
+        <item>org.pixelexperience.faceunlock</item>
     </string-array>
 </resources>
