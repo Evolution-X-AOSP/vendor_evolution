@@ -91,8 +91,24 @@
         <item>jp.konami.epjCastlevania2</item>
     </string-array>
 
+    <!-- These are system packages exempted from privacy indicator -->
     <string-array name="config_locationExtraPackageNames">
+        <!-- Bluetooth -->
+        <item>com.android.bluetooth</item>
+        <item>com.android.networkstack.tethering</item>
+        <!-- TeleService -->
+        <item>com.android.phone</item>
+        <item>com.android.printspooler</item>
+        <item>com.android.systemui</item>
         <item>com.google.android.gms.location.history</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.settings.intelligence</item>
+        <item>com.mediatek.ims</item>
+        <!-- CneApp -->
+        <item>com.qualcomm.qti.cne</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
+        <item>org.pixelexperience.faceunlock</item>
     </string-array>
 
     <!-- the number of the max cached processes in the system. -->
@@ -182,20 +198,5 @@
         <item>com.google.android.gm</item>
         <item>com.google.android.keep</item>
         <item>com.google.android.youtube</item>
-    </string-array>
-
-    <!-- These are system packages exempted from privacy indicator -->
-    <string-array name="config_indicatorExemptedPackageNames" translatable="false">
-        <item>com.android.bluetooth</item>
-        <item>com.android.networkstack.tethering</item>
-        <item>com.android.phone</item>
-        <item>com.android.printspooler</item>
-        <item>com.android.systemui</item>
-        <item>com.google.android.googlequicksearchbox</item>
-        <item>com.google.android.settings.intelligence</item>
-        <item>com.mediatek.ims</item>
-        <item>com.qualcomm.qti.cne</item>
-        <item>com.shannon.imsservice</item>
-        <item>org.pixelexperience.faceunlock</item>
     </string-array>
 </resources>
