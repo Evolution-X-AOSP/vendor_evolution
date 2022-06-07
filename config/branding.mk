@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 6.4
+EVO_BASE_VERSION := 6.5
 EVO_CODENAME := Omega
 
 # Set all versions
