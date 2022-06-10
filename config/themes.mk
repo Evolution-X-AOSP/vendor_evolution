@@ -28,26 +28,31 @@ PRODUCT_PACKAGES += \
 
 # Statusbar Icons
 PRODUCT_PACKAGES += \
-    StrokeSignalOverlay \
+    AquariumSignalOverlay \
+    BarsSignalOverlay \
+    DeepSignalOverlay \
+    HuaweiSignalOverlay \
+    InsideSignalOverlay \
+    IosSignalOverlay \
+    PillsSignalOverlay \
+    RoundSignalOverlay \
     SneakySignalOverlay \
-    XperiaSignalOverlay \
-    ZigZagSignalOverlay \
+    StrokeSignalOverlay \
     WavySignalOverlay \
     WeedWiFiOverlay \
-    RoundSignalOverlay \
-    InsideSignalOverlay \
-    BarsSignalOverlay
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay
 
 # Wi-Fi Icons
 PRODUCT_PACKAGES += \
-    StrokeWiFiOverlay \
-    SneakyWiFiOverlay \
-    XperiaWiFiOverlay \
-    ZigZagWiFiOverlay \
-    WavyWiFiOverlay \
-    RoundWiFiOverlay \
+    BarsWiFiOverlay \
     InsideWiFiOverlay \
-    BarsWiFiOverlay
+    RoundWiFiOverlay \
+    SneakyWiFiOverlay \
+    StrokeWiFiOverlay \
+    WavyWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay
 
 # Themes
 PRODUCT_PACKAGES += \
