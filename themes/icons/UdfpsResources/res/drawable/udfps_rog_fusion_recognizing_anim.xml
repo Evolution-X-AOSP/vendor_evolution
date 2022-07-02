@@ -17,20 +17,20 @@
 
 <animation-list android:oneshot="false"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/asus_udfps_anim_1_01" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_02" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_03" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_04" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_05" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_06" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_07" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_08" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_09" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_10" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_11" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_12" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_13" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_14" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_15" android:duration="6" />
-    <item android:drawable="@drawable/asus_udfps_anim_1_16" android:duration="6" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_01" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_02" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_03" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_04" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_05" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_06" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_07" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_08" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_09" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_10" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_11" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_12" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_13" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_14" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_15" android:duration="75" />
+    <item android:drawable="@drawable/asus_udfps_anim_1_16" android:duration="75" />
 </animation-list>

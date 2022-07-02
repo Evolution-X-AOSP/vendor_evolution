@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/gt00" android:duration="32" />
+    <item android:drawable="@drawable/gt01" android:duration="32" />
+    <item android:drawable="@drawable/gt02" android:duration="32" />
+    <item android:drawable="@drawable/gt03" android:duration="32" />
+    <item android:drawable="@drawable/gt04" android:duration="32" />
+    <item android:drawable="@drawable/gt05" android:duration="32" />
+    <item android:drawable="@drawable/gt06" android:duration="32" />
+    <item android:drawable="@drawable/gt07" android:duration="32" />
+    <item android:drawable="@drawable/gt08" android:duration="32" />
+    <item android:drawable="@drawable/gt09" android:duration="32" />
+    <item android:drawable="@drawable/gt10" android:duration="32" />
+    <item android:drawable="@drawable/gt11" android:duration="32" />
+    <item android:drawable="@drawable/gt12" android:duration="32" />
+    <item android:drawable="@drawable/gt13" android:duration="32" />
+    <item android:drawable="@drawable/gt14" android:duration="32" />
+    <item android:drawable="@drawable/gt15" android:duration="32" />
+    <item android:drawable="@drawable/gt16" android:duration="32" />
+    <item android:drawable="@drawable/gt17" android:duration="32" />
+    <item android:drawable="@drawable/gt18" android:duration="32" />
+    <item android:drawable="@drawable/gt19" android:duration="32" />
+    <item android:drawable="@drawable/gt20" android:duration="32" />
+    <item android:drawable="@drawable/gt21" android:duration="32" />
+    <item android:drawable="@drawable/gt22" android:duration="32" />
+    <item android:drawable="@drawable/gt23" android:duration="32" />
+    <item android:drawable="@drawable/gt24" android:duration="32" />
+    <item android:drawable="@drawable/gt25" android:duration="32" />
+    <item android:drawable="@drawable/gt26" android:duration="32" />
+    <item android:drawable="@drawable/gt27" android:duration="32" />
+    <item android:drawable="@drawable/gt28" android:duration="32" />
+    <item android:drawable="@drawable/gt29" android:duration="32" />
+    <item android:drawable="@drawable/gt30" android:duration="32" />
+    <item android:drawable="@drawable/gt31" android:duration="32" />
+    <item android:drawable="@drawable/gt32" android:duration="32" />
+    <item android:drawable="@drawable/gt33" android:duration="32" />
+    <item android:drawable="@drawable/gt34" android:duration="32" />
+    <item android:drawable="@drawable/gt35" android:duration="32" />
+    <item android:drawable="@drawable/gt36" android:duration="32" />
+    <item android:drawable="@drawable/gt37" android:duration="32" />
+</animation-list>

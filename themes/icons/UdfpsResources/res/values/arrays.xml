@@ -82,6 +82,7 @@
         <item>cyber</item>
         <item>electronic</item>
         <item>fireworks</item>
+        <item>gt</item>
         <item>magic</item>
         <item>pacman</item>
         <item>scan</item>
@@ -121,6 +122,7 @@
         <item>cyber_anim_9</item>
         <item>electronic_anim_7</item>
         <item>fireworks_anim_18</item>
+        <item>gt21</item>
         <item>magic_anim_10</item>
         <item>pacman_anim_18</item>
         <item>scan_anim_12</item>
@@ -160,6 +162,7 @@
         <item>Cyber</item>
         <item>Electronic</item>
         <item>Fireworks</item>
+        <item>GT</item>
         <item>Magic</item>
         <item>Pacman</item>
         <item>Scan</item>
