@@ -357,6 +357,7 @@
     </family>
     <alias name="oneuisans-medium" to="oneuisans" weight="500" />
 
+    <!-- HarmonyOS Sans -->
     <family customizationType="new-named-family" name="harmonyos-sans">
       <font weight="100" style="normal">HarmonyOS-Sans-Thin.ttf</font>
       <font weight="100" style="italic">HarmonyOS-Sans-ThinItalic.ttf</font>
@@ -690,6 +691,7 @@
     <alias name="fantasy" to="rosemary" />
     <alias name="ITC Stone Serif" to="rosemary" />
 
+    <!-- SonySketch -->
     <family customizationType="new-named-family" name="sonysketch">
         <font weight="300" style="normal">SonySketch.ttf</font>
     </family>

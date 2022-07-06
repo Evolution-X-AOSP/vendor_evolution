@@ -14,8 +14,8 @@
 // limitations under the License.
 //
 runtime_resource_overlay {
-    name: "FontOneplusSlateSourceOverlay",
+    name: "FontOnePlusSlateSourceOverlay",
     sdk_version: "current",
     product_specific: true,
-    theme: "FontOneplusSlateSource",
+    theme: "FontOnePlusSlateSource",
 }

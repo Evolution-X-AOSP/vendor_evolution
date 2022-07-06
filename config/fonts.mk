@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontNotoSerifSource \
     FontOnePlusSansOverlay \
-    FontOneplusSlateSourceOverlay \
+    FontOnePlusSlateSourceOverlay \
     FontAclonicaSourceOverlay \
     FontAmaranteSourceOverlay \
     FontAntipastoProSourceOverlay \
@@ -78,5 +78,5 @@ PRODUCT_PACKAGES += \
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/evolution/fonts/prebuilt,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-    vendor/evolution/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+    $(call find-copy-subdir-files,*,vendor/evolution/prebuilt/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    vendor/evolution/prebuilt/product/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
