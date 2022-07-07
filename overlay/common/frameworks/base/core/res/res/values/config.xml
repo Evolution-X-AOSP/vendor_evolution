@@ -95,9 +95,6 @@
         <item>com.google.android.gms.location.history</item>
     </string-array>
 
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">48</integer>
-
     <!-- Whether to show estimate in QS header. Default to false in case there's not enough
      space -->
     <bool name="config_showBatteryEstimateQSBH">true</bool>
