@@ -68,6 +68,7 @@ PRODUCT_PACKAGES += \
     FontNunitoSourceOverlay \
     FontOdudaSourceOverlay \
     FontOneUISansOverlay \
+    FontProductSansVHOverlay \
     FontQuandoSourceOverlay \
     FontRedressedSourceOverlay \
     FontReemKufiSourceOverlay \
