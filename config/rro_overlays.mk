@@ -18,6 +18,7 @@
 PRODUCT_PACKAGES += \
     EvolutionXConfigOverlay \
     ImmersiveNavigationOverlay \
+    NetworkStackOverlay \
     PixelLauncherCustomOverlay \
     PixelSetupWizardOverlayEvolutionX \
     SettingsGoogleOverlayEvolutionX
@@ -48,6 +49,6 @@ PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     GooglePermissionControllerOverlay \
     MediaProviderOverlay \
-    NetworkStackOverlay \
+    NetworkStackGoogleOverlay \
     PixelTetheringOverlay
 endif
