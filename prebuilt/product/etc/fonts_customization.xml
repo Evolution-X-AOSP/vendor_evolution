@@ -729,6 +729,12 @@
     </family>
     <alias name="nothingdot57" to="nothingdot57" weight="400" />
     
+    <!-- NothingDot -->
+    <family customizationType="new-named-family" name="pixelwars">
+        <font weight="400" style="normal" postScriptName="pixelwars">pixelwars.ttf</font>
+    </family>
+    <alias name="pixelwars" to="pixelwars" weight="400" />
+    
     <!-- SonySketch -->
     <family customizationType="new-named-family" name="sonysketch">
         <font weight="300" style="normal">SonySketch.ttf</font>

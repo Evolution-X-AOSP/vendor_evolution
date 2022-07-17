@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">roboto-system</string>
+    <string name="config_bodyFontFamily" translatable="false">pixelwars</string>
     <!-- Name of a font family to use for medium body text. -->
     <string name="config_bodyFontFamilyMedium" translatable="false">nothingdot57</string>
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
@@ -25,7 +25,7 @@
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
     <string name="config_headlineFontFamilyMedium" translatable="false">nothingdot57</string>
     <!-- Name of a font family to use as light font. For theming purpose. -->
-    <string name="config_lightFontFamily" translatable="false">roboto-system</string>
+    <string name="config_lightFontFamily" translatable="false">pixelwars</string>
     <!-- Name of a font family to use as regular font. For theming purpose. -->
-    <string name="config_regularFontFamily" translatable="false">roboto-system</string>
+    <string name="config_regularFontFamily" translatable="false">pixelwars</string>
 </resources>
