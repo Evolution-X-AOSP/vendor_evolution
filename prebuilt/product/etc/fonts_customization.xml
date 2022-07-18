@@ -675,6 +675,22 @@
     <alias name="fantasy" to="reemkufi" />
     <alias name="ITC Stone Serif" to="reemkufi" />
 
+    <!-- Roboto Condensed -->
+    <family customizationType="new-named-family" name="robotocondensed">
+        <font weight="300" style="normal">RobotoCondensed-Light.ttf</font>
+        <font weight="300" style="italic">RobotoCondensed-LightItalic.ttf</font>
+        <font weight="400" style="normal">RobotoCondensed-Regular.ttf</font>
+        <font weight="400" style="italic">RobotoCondensed-Italic.ttf</font>
+        <font weight="500" style="normal">RobotoCondensed-Medium.ttf</font>
+        <font weight="500" style="italic">RobotoCondensed-MediumItalic.ttf</font>
+        <font weight="700" style="normal">RobotoCondensed-Bold.ttf</font>
+        <font weight="700" style="italic">RobotoCondensed-BoldItalic.ttf</font>
+    </family>
+    <alias name="robotocondensed-light" to="robotocondensed" weight="300" />
+    <alias name="robotocondensed-medium" to="robotocondensed" weight="500" />
+    <alias name="robotocondensed-semi-bold" to="robotocondensed" weight="600" />
+    <alias name="robotocondensed-bold" to="robotocondensed" weight="700" />
+
     <family customizationType="new-named-family" name="simpleday">
         <font weight="400" style="normal">SimpleDay.ttf</font>
     </family>
