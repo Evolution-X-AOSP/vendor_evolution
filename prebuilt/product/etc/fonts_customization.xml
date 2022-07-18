@@ -388,6 +388,7 @@
     <font weight="400" style="normal">ArbutusSlab-Regular.ttf</font>
   </family>
 
+  <!-- Lato -->
   <family customizationType="new-named-family" name="lato">
     <font weight="400" style="normal">Lato-Regular.ttf</font>
     <font weight="400" style="italic">Lato-Italic.ttf</font>
@@ -396,6 +397,7 @@
   </family>
   <alias name="lato-bold" to="lato" weight="700" />
 
+  <!-- Rubik -->
   <family customizationType="new-named-family" name="rubik">
     <font weight="400" style="normal">Rubik-Regular.ttf</font>
     <font weight="400" style="italic">Rubik-Italic.ttf</font>
@@ -414,7 +416,7 @@
   </family>
   <alias name="zilla-slab-semi-bold" to="zilla-slab-medium" weight="600" />
 
-  <family customizationType="new-named-family" name="lustria">-->
+  <family customizationType="new-named-family" name="lustria">
     <font weight="400" style="normal">Lustria-Regular.ttf</font>
   </family>
   <alias name="lustria" to="lustria" weight="400"/>
@@ -469,16 +471,19 @@
     </family>
     <alias name="manrope-medium" to="manrope" weight="600" />
 
+    <!-- Linotte -->
     <family customizationType="new-named-family" name="linotte">
     <font weight="300" style="normal">Linotte.ttf</font>
     </family>
     <alias name="linotte-semi-bold" to="linotte" weight="600" />
     <alias name="linotte-bold" to="linotte" weight="700" />
 
+    <!-- SlateFromOP -->
     <family customizationType="new-named-family" name="oneplusslate">
-    <font weight="300" style="normal">SlateFromOP-Light.ttf</font>
-    <font weight="400" style="normal">SlateFromOP-Regular.ttf</font>
+        <font weight="300" style="normal">SlateFromOP-Light.ttf</font>
+        <font weight="400" style="normal">SlateFromOP-Regular.ttf</font>
     </family>
+    <alias name="oneplusslate-semi-bold" to="oneplusslate" weight="600" />
     <alias name="oneplusslate-bold" to="oneplusslate" weight="600" />
 
     <family customizationType="new-named-family" name="op-sans">
@@ -503,6 +508,7 @@
     <alias name="op-sans-bold" to="op-sans" weight="700" />
     <alias name="op-sans-black" to="op-sans" weight="900" />
 
+    <!-- Aclonica -->
     <family customizationType="new-named-family" name="aclonica">
         <font weight="300" style="normal">Aclonica.ttf</font>
     </family>
@@ -517,6 +523,7 @@
     <alias name="fantasy" to="aclonica" />
     <alias name="ITC Stone Serif" to="aclonica" />
 
+    <!-- Amarante -->
     <family customizationType="new-named-family" name="amarante">
         <font weight="300" style="normal">Amarante.ttf</font>
     </family>
@@ -545,6 +552,7 @@
     <alias name="fantasy" to="antipastopro" />
     <alias name="ITC Stone Serif" to="antipastopro" />
 
+    <!-- Bariol -->
     <family customizationType="new-named-family" name="bariol">
         <font weight="300" style="normal">Bariol-Regular.ttf</font>
     </family>
@@ -559,6 +567,7 @@
     <alias name="fantasy" to="bariol" />
     <alias name="ITC Stone Serif" to="bariol" />
 
+    <!-- Cagliostro -->
     <family customizationType="new-named-family" name="cagliostro">
         <font weight="300" style="normal">Cagliostro-Regular.ttf</font>
     </family>
@@ -573,6 +582,7 @@
     <alias name="fantasy" to="cagliostro" />
     <alias name="ITC Stone Serif" to="cagliostro" />
 
+    <!-- Coolstory -->
     <family customizationType="new-named-family" name="coolstory">
         <font weight="300" style="normal">Coolstory-Regular.ttf</font>
     </family>
@@ -643,6 +653,7 @@
     <alias name="fantasy" to="oduda" />
     <alias name="ITC Stone Serif" to="oduda" />
 
+    <!-- ReemKufi -->
     <family customizationType="new-named-family" name="reemkufi">
         <font weight="400" style="normal">ReemKufi.ttf</font>
     </family>
@@ -673,6 +684,7 @@
     <alias name="fantasy" to="simpleday" />
     <alias name="ITC Stone Serif" to="simpleday" />
 
+    <!-- LGSmartGothic -->
     <family customizationType="new-named-family" name="lgsmartgothic">
         <font weight="300" style="normal">LGSmartGothic.ttf</font>
     </family>
@@ -687,6 +699,7 @@
     <alias name="fantasy" to="lgsmartgothic" />
     <alias name="ITC Stone Serif" to="lgsmartgothic" />
 
+    <!-- Rosemary -->
     <family customizationType="new-named-family" name="rosemary">
         <font weight="300" style="normal">Rosemary-Regular.ttf</font>
     </family>
@@ -750,6 +763,7 @@
     <alias name="fantasy" to="sonysketch" />
     <alias name="ITC Stone Serif" to="sonysketch" />
 
+    <!-- Surfer -->
     <family customizationType="new-named-family" name="surfer">
         <font weight="300" style="normal">Surfer.ttf</font>
     </family>
@@ -764,6 +778,7 @@
     <alias name="fantasy" to="surfer" />
     <alias name="ITC Stone Serif" to="surfer" />
 
+    <!-- SamsungOne -->
     <family customizationType="new-named-family" name="samsungone">
         <font weight="400" style="normal">SamsungOne.ttf</font>
     </family>
@@ -778,6 +793,7 @@
     <alias name="fantasy" to="samsungone" />
     <alias name="ITC Stone Serif" to="samsungone" />
 
+    <!-- Comic Sans -->
     <family customizationType="new-named-family" name="comicsans">
         <font weight="400" style="normal">Comic_Sans.ttf</font>
     </family>
@@ -792,6 +808,7 @@
     <alias name="fantasy" to="comicsans" />
     <alias name="ITC Stone Serif" to="comicsans" />
 
+    <!-- Comfortaa -->
     <family customizationType="new-named-family" name="comfortaa">
         <font weight="400" style="normal">Comfortaa.ttf</font>
     </family>
@@ -807,6 +824,7 @@
     <alias name="fantasy" to="comfortaa" />
     <alias name="ITC Stone Serif" to="comfortaa" />
 
+    <!-- Exotwo -->
     <family customizationType="new-named-family" name="exotwo">
         <font weight="400" style="normal">Exotwo.ttf</font>
     </family>
@@ -822,6 +840,7 @@
     <alias name="fantasy" to="exotwo" />
     <alias name="ITC Stone Serif" to="exotwo" />
 
+    <!-- Storopia -->
     <family customizationType="new-named-family" name="storopia">
         <font weight="400" style="normal">Storopia.ttf</font>
     </family>
@@ -868,6 +887,7 @@
     <alias name="fantasy" to="ubuntu" />
     <alias name="ITC Stone Serif" to="ubuntu" />
 
+    <!-- Nokia Pure -->
     <family customizationType="new-named-family" name="nokiapure">
         <font weight="400" style="normal">Nokia_Pure.ttf</font>
     </family>
@@ -884,6 +904,7 @@
     <alias name="fantasy" to="nokiapure" />
     <alias name="ITC Stone Serif" to="nokiapure" />
 
+    <!-- Fifa 2018 -->
     <family customizationType="new-named-family" name="fifa2018">
         <font weight="400" style="normal">Fifa_2018.ttf</font>
     </family>
@@ -900,6 +921,7 @@
     <alias name="fantasy" to="fifa2018" />
     <alias name="ITC Stone Serif" to="fifa2018" />
 
+    <!-- Cocon -->
     <family customizationType="new-named-family" name="cocon">
         <font weight="400" style="normal">Cocon.ttf</font>
     </family>
@@ -916,6 +938,7 @@
     <alias name="fantasy" to="cocon" />
     <alias name="ITC Stone Serif" to="cocon" />
 
+    <!-- Quando -->
     <family customizationType="new-named-family" name="quando">
         <font weight="400" style="normal">Quando.ttf</font>
     </family>
@@ -932,6 +955,7 @@
     <alias name="fantasy" to="quando" />
     <alias name="ITC Stone Serif" to="quando" />
 
+    <!-- GrandHotel -->
     <family customizationType="new-named-family" name="grandhotel">
         <font weight="400" style="normal">GrandHotel.ttf</font>
     </family>
@@ -948,6 +972,7 @@
     <alias name="fantasy" to="grandhotel" />
     <alias name="ITC Stone Serif" to="grandhotel" />
 
+    <!-- Redressed -->
     <family customizationType="new-named-family" name="redressed">
         <font weight="400" style="normal">Redressed.ttf</font>
     </family>
@@ -964,6 +989,7 @@
     <alias name="fantasy" to="redressed" />
     <alias name="ITC Stone Serif" to="redressed" />
 
+    <!-- Nunito -->
     <family customizationType="new-named-family" name="nunito">
         <font weight="400" style="normal">Nunito-Regular.ttf</font>
         <font weight="700" style="normal">Nunito-Bold.ttf</font>

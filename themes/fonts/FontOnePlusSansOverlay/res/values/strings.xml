@@ -16,8 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- OnePlus Sans font name -->
+    <!-- Headline / Body font OnePlus Sans overlay -->
     <string name="font_op_sans_overlay" translatable="false">OnePlus Sans</string>
-
 </resources>

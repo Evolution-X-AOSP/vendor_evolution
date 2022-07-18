@@ -16,6 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font Google Sans overlay -->
+    <!-- Headline / Body font Product Sans VH overlay -->
     <string name="font_productsansvh_overlay" translatable="false">Product Sans VH</string>
 </resources>

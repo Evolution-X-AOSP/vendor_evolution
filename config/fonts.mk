@@ -37,52 +37,55 @@ PRODUCT_PACKAGES += \
     Manrope-VF.ttf \
     RobotoFallback-VF.ttf
 
-# Customization overlays
+# Font overlays
 PRODUCT_PACKAGES += \
+    FontAclonicaOverlay \
+    FontAmaranteOverlay \
+    FontAntipastoProOverlay \
+    FontArbutusSourceOverlay \
+    FontArvoLatoOverlay \
+    FontBariolOverlay \
+    FontCagliostroOverlay \
+    FontCoconOverlay \
+    FontComfortaaOverlay \
+    FontComicSansOverlay \
+    FontCoolstoryOverlay \
+    FontEvolveSansOverlay \
+    FontExotwoOverlay \
+    FontFifa2018Overlay \
+    FontFucekOverlay \
     FontGInterOverlay \
+    FontGrandHotelOverlay \
     FontHarmonySansOverlay \
-    FontLinotteSourceOverlay \
-    FontManropeOverlay \
-    FontNotoSerifSource \
-    FontOnePlusSansOverlay \
-    FontOnePlusSlateSourceOverlay \
-    FontAclonicaSourceOverlay \
-    FontAmaranteSourceOverlay \
-    FontAntipastoProSourceOverlay \
-    FontBariolSourceOverlay \
-    FontCagliostroSourceOverlay \
-    FontCoconSourceOverlay \
-    FontComfortaaSourceOverlay \
-    FontComicSansSourceOverlay \
-    FontCoolstorySourceOverlay \
-    FontEvolveSansSourceOverlay \
-    FontExotwoSourceOverlay \
-    FontFifa2018SourceOverlay \
-    FontFucekSourceOverlay \
-    FontGrandHotelSourceOverlay \
     FontJTLeonorOverlay \
-    FontLGSmartGothicSourceOverlay \
-    FontLemonMilkSourceOverlay \
-    FontNokiaPureSourceOverlay \
-    FontNothingDotOverlay \
+    FontLGSmartGothicOverlay \
+    FontLemonMilkOverlay \
+    FontLinotteOverlay \
+    FontManropeOverlay \
+    FontNokiaPureOverlay \
     FontNothingDotHeadlineOverlay \
-    FontNunitoSourceOverlay \
-    FontOdudaSourceOverlay \
+    FontNothingDotOverlay \
+    FontNotoSerifSource \
+    FontNunitoOverlay \
+    FontOdudaOverlay \
+    FontOnePlusSansOverlay \
+    FontOnePlusSlateOverlay \
     FontOneUISansOverlay \
     FontProductSansVHOverlay \
-    FontQuandoSourceOverlay \
-    FontRedressedSourceOverlay \
-    FontReemKufiSourceOverlay \
-    FontRosemarySourceOverlay \
-    FontSamsungOneSourceOverlay \
-    FontSanFranciscoDisplayProSourceOverlay \
-    FontSimpleDaySourceOverlay \
-    FontSonySketchSourceOverlay \
-    FontStoropiaSourceOverlay \
-    FontSurferSourceOverlay \
-    FontUbuntuSourceOverlay
+    FontQuandoOverlay \
+    FontRedressedOverlay \
+    FontReemKufiOverlay \
+    FontRosemaryOverlay \
+    FontRubikRubikOverlay \
+    FontSamsungOneOverlay \
+    FontSanFranciscoDisplayProOverlay \
+    FontSimpleDayOverlay \
+    FontSonySketchOverlay \
+    FontStoropiaOverlay \
+    FontSurferOverlay \
+    FontUbuntuOverlay
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/evolution/prebuilt/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    $(call find-copy-subdir-files,*,vendor/evolution/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
     vendor/evolution/prebuilt/product/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
