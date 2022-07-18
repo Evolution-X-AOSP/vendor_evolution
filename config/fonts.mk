@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
     FontRedressedOverlay \
     FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
+    FontRobotoOverlay \
     FontRosemaryOverlay \
     FontRubikRubikOverlay \
     FontSamsungOneOverlay \
