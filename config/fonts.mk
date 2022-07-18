@@ -19,20 +19,8 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
-    GInterVF-Italic.ttf \
-    GInterVF-Roman.ttf \
-    HarmonyOS-Sans-BlackItalic.ttf \
-    HarmonyOS-Sans-Black.ttf \
-    HarmonyOS-Sans-BoldItalic.ttf \
-    HarmonyOS-Sans-Bold.ttf \
     HarmonyOS-Sans-Italic.ttf \
-    HarmonyOS-Sans-LightItalic.ttf \
-    HarmonyOS-Sans-Light.ttf \
-    HarmonyOS-Sans-MediumItalic.ttf \
-    HarmonyOS-Sans-Medium.ttf \
-    HarmonyOS-Sans-Regular.ttf \
-    HarmonyOS-Sans-ThinItalic.ttf \
-    HarmonyOS-Sans-Thin.ttf \
+    HarmonyOS-Sans.ttf \
     Lexend-VF.ttf \
     Manrope-VF.ttf \
     RobotoFallback-VF.ttf
@@ -54,7 +42,6 @@ PRODUCT_PACKAGES += \
     FontExotwoOverlay \
     FontFifa2018Overlay \
     FontFucekOverlay \
-    FontGInterOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
     FontJTLeonorOverlay \
