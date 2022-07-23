@@ -2782,6 +2782,7 @@
   <apn carrier="AL JA WAL MMS" mcc="420" mnc="01" apn="mms.net.sa" mmsc="http://mms.net.sa:8002" mmsproxy="10.1.1.1" mmsport="9201" type="mms" />
   <apn carrier="Mobily MMS" mcc="420" mnc="03" apn="mms1" mmsc="http://10.3.3.133:9090/was" mmsproxy="10.3.2.133" mmsport="9201" type="mms" />
   <apn carrier="Mobily" mcc="420" mnc="03" apn="web1" type="default,supl" />
+  <apn carrier="Mobily" mcc="420" mnc="03" apn="web2" type="default,supl" />
   <apn carrier="ZAIN-WAP" mcc="420" mnc="04" apn="zain" proxy="10.122.200.10" port="8080" type="default,supl" />
   <apn carrier="ZAIN-MMS" mcc="420" mnc="04" apn="zain" mmsproxy="10.122.200.10" mmsport="8080" mmsc="http:// 10.122.200.12:8002" type="mms" />
   <apn carrier="ZAIN-WEB" mcc="420" mnc="04" apn="zain" type="default,supl" />
