@@ -126,10 +126,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-sysconfig.xml
 
-# Evolution X-specific permissions
-PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/privapp-permissions-evolution-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-evolution-system_ext.xml
-
 # Copy all Evolution X-specific init rc files
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc \
