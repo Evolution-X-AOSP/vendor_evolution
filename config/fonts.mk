@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
     FontOnePlusSansOverlay \
     FontOnePlusSlateOverlay \
     FontOneUISansOverlay \
+    FontOppoSansOverlay \
     FontProductSansVHOverlay \
     FontQuandoOverlay \
     FontRedressedOverlay \
