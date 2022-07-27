@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
     FontLemonMilkOverlay \
     FontLinotteOverlay \
     FontManropeOverlay \
+    FontMiSansOverlay \
     FontNokiaPureOverlay \
     FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \

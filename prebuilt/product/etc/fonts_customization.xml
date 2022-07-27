@@ -1187,4 +1187,20 @@
     </font>
   </family>
   <alias name="opposans-medium" to="opposans" weight="500" />
+  
+    <family customizationType="new-named-family" name="misans">
+    <font weight="300" style="normal">MiLanProVF.ttf
+        <axis tag="wght" stylevalue="300"/>
+    </font>
+    <font weight="400" style="normal">MiLanProVF.ttf
+        <axis tag="wght" stylevalue="400"/>
+    </font>
+    <font weight="500" style="normal">MiLanProVF.ttf
+        <axis tag="wght" stylevalue="500"/>
+    </font>
+    <font weight="600" style="normal">MiLanProVF.ttf
+        <axis tag="wght" stylevalue="600"/>
+    </font>
+    </family>
+    <alias name="misans-medium" to="misans" weight="400" />
 </fonts-modification>
