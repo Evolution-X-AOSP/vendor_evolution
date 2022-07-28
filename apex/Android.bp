@@ -26,11 +26,32 @@ prebuilt_apex {
     prefer: true,
 }
 
+// Google com.google.android.adservices
+prebuilt_apex {
+    name: "com.google.android.adservices",
+    src: "com.google.android.adservices.apex",
+    overrides: ["com.android.adservices"],
+    owner: "google",
+    prefer: true,
+}
+
 // Google com.google.android.appsearch.apex
 prebuilt_apex {
     name: "com.google.android.appsearch",
     src: "com.google.android.appsearch.apex",
     overrides: ["com.android.appsearch"],
+    owner: "google",
+    prefer: true,
+}
+
+// Google com.google.android.bluetooth
+prebuilt_apex {
+    name: "com.google.android.bluetooth",
+    src: "com.google.android.bluetooth.apex",
+    overrides: ["com.android.btservices"],
+    required: ["android.hardware.bluetooth@1.1",
+               "android.hardware.bluetooth.audio@2.1",
+               "android.hardware.bluetooth.audio-V2-ndk"],
     owner: "google",
     prefer: true,
 }
@@ -116,6 +137,15 @@ prebuilt_apex {
     prefer: true,
 }
 
+// Google com.google.android.ondevicepersonalization
+prebuilt_apex {
+    name: "com.google.android.ondevicepersonalization",
+    src: "com.google.android.ondevicepersonalization.apex",
+    overrides: ["com.android.ondevicepersonalization"],
+    owner: "google",
+    prefer: true,
+}
+
 // Google com.google.android.os.statsd
 prebuilt_apex {
     name: "com.google.android.os.statsd",
@@ -161,15 +191,6 @@ prebuilt_apex {
     prefer: true,
 }
 
-// Google com.google.android.telephony
-prebuilt_apex {
-    name: "com.google.android.telephony",
-    src: "com.google.android.telephony.apex",
-    overrides: ["com.android.telephony"],
-    owner: "google",
-    prefer: true,
-}
-
 // Google com.google.android.tethering
 prebuilt_apex {
     name: "com.google.android.tethering",
@@ -179,10 +200,10 @@ prebuilt_apex {
     prefer: true,
 }
 
-// Google com.google.android.tzdata2
+// Google com.google.android.tzdata4
 prebuilt_apex {
-    name: "com.google.android.tzdata3",
-    src: "com.google.android.tzdata3.apex",
+    name: "com.google.android.tzdata4",
+    src: "com.google.android.tzdata4.apex",
     overrides: ["com.android.tzdata"],
     owner: "google",
     prefer: true,
@@ -193,6 +214,15 @@ prebuilt_apex {
     name: "com.google.android.wifi",
     src: "com.google.android.wifi.apex",
     overrides: ["com.android.wifi"],
+    owner: "google",
+    prefer: true,
+}
+
+// Google com.google.android.uwb
+prebuilt_apex {
+    name: "com.google.android.uwb",
+    src: "com.google.android.uwb.apex",
+    overrides: ["com.android.uwb"],
     owner: "google",
     prefer: true,
 }
