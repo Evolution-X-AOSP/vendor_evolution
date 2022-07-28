@@ -52,6 +52,7 @@
     <string-array name="slice_whitelist_package_names">
         <item>com.google.android.gms</item>
         <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.apps.search.assistant.surfaces.voice.devapp</item>
     </string-array>
 
     <string-array name="enabled_networks_except_gsm_values">

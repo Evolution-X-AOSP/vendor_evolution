@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2021, Raphielscape LLC. and Haruka LLC.
+** Copyright 2022, Raphielscape LLC.
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,8 +17,5 @@
 */
 -->
 <resources>
-    <bool name="dynamic_color_enabled">true</bool>
-    <bool name="extended_partner_config_enabled">true</bool>
-    <bool name="setup_design_header_auto_size_enabled">true</bool>
-    <bool name="setup_design_items_divider_shown">false</bool>
+    <string name="config_default_cloud_provider_authority">com.google.android.apps.photos.cloudpicker</string>
 </resources>

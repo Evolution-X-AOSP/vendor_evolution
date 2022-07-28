@@ -36,6 +36,11 @@
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
 
+    <!-- The package name of the default captive portal login app. Must be granted the
+         POST_NOTIFICATIONS permission.
+    -->
+    <string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>
+
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
 
@@ -47,6 +52,10 @@
 
     <!-- The name of the package that will hold the music role by default. -->
     <string name="config_defaultMusic" translatable="false">com.google.android.music</string>
+
+    <!-- Component name that accepts settings intents for saved devices.
+             Used by FastPairSettingsFragment. -->
+    <string name="config_defaultNearbyFastPairSettingsDevicesComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.discovery.devices.SavedDevicesSettingsActivity</string>
 
     <!-- Component name that accepts ACTION_SEND intents for nearby (proximity-based) sharing.
          Used by ChooserActivity. -->
@@ -62,11 +71,28 @@
      -->
     <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
 
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent" translatable="false">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
+
+    <!-- The package name of the default search selector app. Must be granted the POST_NOTIFICATIONS
+         permission.
+    -->
+    <string name="config_defaultSearchSelectorPackageName" translatable="false">com.google.android.apps.setupwizard.searchselector</string>
+
     <!-- The name of the package that will hold the SMS role by default. -->
     <string name="config_defaultSms" translatable="false">com.google.android.apps.messaging</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <!--string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>-->
+
+    <!-- The name of the package that will hold the device management role -->
+    <string name="config_devicePolicyManagement" translatable="false">com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58</string>
+
+    <!-- The name of the package that will handle updating the device management role. -->
+    <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
+
+    <!-- The prefix of dream component names that are loggable. If empty, logs "other" for all. -->
+    <string name="config_loggable_dream_prefix" translatable="false">com.google.</string>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
@@ -83,6 +109,11 @@
     <!-- The names of the packages that will hold the automotive projection role. -->
      <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
 
+    <!-- System bluetooth stack package name -->
+    <string name="config_systemBluetoothStack" translatable="false">
+        com.android.bluetooth
+    </string>
+
     <!-- On-device package for providing companion device associations. -->
      <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
@@ -91,6 +122,12 @@
 
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
+
+    <!-- The name of the package that will hold the game service role. -->
+    <string name="config_systemGameService">com.google.android.gms</string>
+
+    <!-- System settings intelligence package name -->
+    <string name="config_systemSettingsIntelligence" translatable="false">com.google.android.settings.intelligence</string>
 
     <!-- The name of the package that will hold the speech recognizer role by default. -->
     <string name="config_systemSpeechRecognizer" translatable="false">com.google.android.tts</string>
@@ -103,11 +140,6 @@
 
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_package_name" translatable="false">com.google.android.deskclock</string>
-
-    <!-- List containing the allowed install sources for accessibility service. -->
-    <string-array name="config_accessibility_allowed_install_source" translatable="false">
-        <item>com.android.vending</item>
-    </string-array>
 
     <!-- Additional non-platform defined system settings exposed to Instant Apps -->
     <string-array name="config_allowedSecureInstantAppSettings" translatable="false">
@@ -216,4 +248,7 @@
 
          AOSP does not configure a secondary location time zone provider. -->
     <bool name="config_enableSecondaryLocationTimeZoneProvider">false</bool>
+
+    <!-- Flag indicating if help links for Settings app should be enabled. -->
+    <bool name="config_settingsHelpLinksEnabled">true</bool>
 </resources>

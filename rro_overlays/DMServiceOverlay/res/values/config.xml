@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2021, Raphielscape LLC. and Haruka LLC.
+** Copyright 2022, Raphielscape LLC. and Haruka LLC.
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,8 +17,5 @@
 */
 -->
 <resources>
-    <string name="exit_to_action_in_deferred_setup">com.google.android.setupwizard/com.google.android.setupwizard.OPTIONAL_SETUP</string>
-    <string name="demo_device_admin_component_name" translatable="false">com.google.android.retaildemo/.DemoDeviceAdminReceiver</string>
-    <string name="demo_device_admin_download_location" translatable="false">https://g.co/pixel/retaildemo</string>
-    <string name="demo_device_admin_signature_checksum" translatable="false">ZUfHPe4VDBA5gL_f_lXMmgEdeF3WlKX5mv2CBbyvH4A</string>
+    <bool name="config_omadm_metrics_enabled">true</bool>
 </resources>

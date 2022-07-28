@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2022, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="config_devinfo_language">English</string>
+    <string name="config_devinfo_manufacturer">GOOGLE</string>
+    <string name="config_omadm_metrics_app_package">com.google.android.apps.carrier.log</string>
+    <string name="config_omadm_metrics_class_name">com.google.android.apps.carrier.log.LogDataReceiver</string>
+    <string name="config_omadm_metrics_extra_log_bytes">com.google.android.apps.carrier.log.extra.LOG_BYTES</string>
+    <string name="config_omadm_metrics_extra_log_source">com.google.android.apps.carrier.log.extra.LOG_SOURCE</string>
+    <string name="config_omadm_metrics_intent_action">com.google.android.apps.carrier.log.action.LOG</string>
+
+    <string-array name="dm_account_info">
+        <item>Sprint, sprint, https://oma.ssprov.sprint.com/oma, URI, 443, , Sprint, HMAC, SPRINT, MTIzNDU=, MEID, SPRINT, MTIzNDU=, oma.ssprov.sprint.com, 80</item>
+        <item>VerizonLTE, com.vzwdmserver, https://4g2.vzwdm.com/, 1, 443, , VzWDMServer, DIGEST, 0000000000000000, abc123, e0e5e7eaebeb, ebe8efeeecec, 123abc, ,</item>
+        <item>w7, msvpcdp, https://mdm.uscc.net/southbound-connector/dm, URI, 443, , USC_DM_Server, DIGEST, 0000000000000000, dynamic, , , dynamic, ,</item>
+    </string-array>
+</resources>
