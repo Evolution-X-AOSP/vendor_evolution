@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 6.6
-EVO_CODENAME := Hellfire
+EVO_BASE_VERSION := 6.7
+EVO_CODENAME := Eve
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
