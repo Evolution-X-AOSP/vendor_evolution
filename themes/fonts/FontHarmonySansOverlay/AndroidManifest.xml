@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (C) 2021 Paranoid Android
+ * Copyright (c) 2019-2022, crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,6 @@
     <application android:label="@string/font_harmonyos_sans_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="harmonyos-sans,harmonyos-sans-medium" />
+            android:value="harmonyos-sans,harmonyos-sans-medium,harmonyos-sans-semi-bold,harmonyos-sans-bold,harmonyos-sans-light,harmonyos-sans-regular" />
     </application>
 </manifest>

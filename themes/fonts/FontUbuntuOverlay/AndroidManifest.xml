@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2019, The Android Open Source Project
+ * Copyright (c) 2019-2020, crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,6 @@
     <application android:label="@string/font_ubuntu_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="ubuntu,ubuntu-medium,ubuntu-semi-bold,ubuntu-bold" />
+            android:value="ubuntu" />
     </application>
 </manifest>

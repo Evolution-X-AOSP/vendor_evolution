@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Font overlays
 PRODUCT_PACKAGES += \
+    FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
     FontAntipastoProOverlay \
@@ -41,9 +42,12 @@ PRODUCT_PACKAGES += \
     FontEvolveSansOverlay \
     FontExotwoOverlay \
     FontFifa2018Overlay \
+    FontFluidSansOverlay \
     FontFucekOverlay \
+    FontGoogleSansOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
+    FontInterSourceOverlay \
     FontJTLeonorOverlay \
     FontLGSmartGothicOverlay \
     FontLemonMilkOverlay \
@@ -60,6 +64,7 @@ PRODUCT_PACKAGES += \
     FontOnePlusSlateOverlay \
     FontOneUISansOverlay \
     FontOppoSansOverlay \
+    FontOswaldOverlay \
     FontProductSansVHOverlay \
     FontQuandoOverlay \
     FontRedressedOverlay \
@@ -69,8 +74,8 @@ PRODUCT_PACKAGES += \
     FontRosemaryOverlay \
     FontRubikRubikOverlay \
     FontSamsungOneOverlay \
-    FontSanFranciscoDisplayProOverlay \
-    FontSimpleDayOverlay \
+    FontSanFranciscoDisplayProSourceOverlay \
+    FontSimpleDaySourceOverlay \
     FontSonySketchOverlay \
     FontStoropiaOverlay \
     FontSurferOverlay \

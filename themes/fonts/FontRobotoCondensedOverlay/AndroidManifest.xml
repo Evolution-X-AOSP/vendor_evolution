@@ -26,6 +26,6 @@
     <application android:label="@string/font_robotocondensed_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="robotocondensed,robotocondensed-semi-bold,robotocondensed-bold,robotocondensed-light,robotocondensed-medium" />
+            android:value="robotocondensed,robotocondensed-regular,robotocondensed-bold,robotocondensed-light,robotocondensed-medium" />
     </application>
 </manifest>

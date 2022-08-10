@@ -26,6 +26,6 @@
     <application android:label="@string/font_reemkufi_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="reemkufi,reemkufi-semi-bold,reemkufi-bold,reemkufi-light,reemkufi-medium" />
+            android:value="reemkufi" />
     </application>
 </manifest>

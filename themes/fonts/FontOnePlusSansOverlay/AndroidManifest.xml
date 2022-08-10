@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2019, The Android Open Source Project
+ * Copyright (c) 2019-2020, crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,16 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.theme.font.opsans"
+    package="com.android.theme.font.oneplussans"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="android"
         android:category="android.theme.customization.font"
         android:priority="1"/>
 
-    <application android:label="@string/font_op_sans_overlay" android:hasCode="false">
+    <application android:label="@string/font_oneplussans_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="op-sans,op-sans-regular,op-sans-medium" />
+            android:value="op-sans" />
     </application>
 </manifest>
