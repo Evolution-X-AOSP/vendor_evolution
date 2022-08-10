@@ -20,6 +20,9 @@
 EVO_BASE_VERSION := 6.7
 EVO_CODENAME := Eve
 
+# Custom security patch
+EVO_SECURITY_PATCH := 2022-08-05
+
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
 
@@ -56,6 +59,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     org.evolution.build_date=$(EVO_BUILD_DATE) \
     org.evolution.build_date_utc=$(EVO_BUILD_DATE_UTC) \
     org.evolution.build_type=$(EVO_BUILD_TYPE) \
+    org.evolution.build_security_patch=$(EVO_SECURITY_PATCH) \
     org.evolution.build_codename=$(EVO_CODENAME)
 
 $(call inherit-product-if-exists, vendor/evolution/build/target/product/security/evolution_security.mk)
