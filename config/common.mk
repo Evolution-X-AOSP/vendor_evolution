@@ -83,9 +83,16 @@ endif
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     arm64.memtag.process.system_server=off
 
-# Disable blur on app-launch
-PRODUCT_PRODUCT_PROPERTIES += \
+# Blur
+TARGET_ENABLE_BLUR ?= false
+ifeq ($(TARGET_ENABLE_BLUR), true)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+else
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.launcher.blur.appLaunch=0
+endif
 
 # Enable SystemUIDialog volume panel
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
