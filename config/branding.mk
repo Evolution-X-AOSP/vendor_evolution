@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 6.7
+EVO_BASE_VERSION := 7.0
 EVO_CODENAME := Eve
 
 # Custom security patch
