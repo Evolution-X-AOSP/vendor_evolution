@@ -16,14 +16,14 @@
 # Apps
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace \
     Papers \
     RepainterServicePriv \
     SimpleDeviceConfig
+#    GameSpace \
 
 # UDFPS Animations
-EXTRA_UDFPS_ANIMATIONS ?= false
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    UdfpsResources
-endif
+#EXTRA_UDFPS_ANIMATIONS ?= false
+#ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+#PRODUCT_PACKAGES += \
+#    UdfpsResources
+#endif

@@ -80,10 +80,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.usb.config=none
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
-# Turn off storage manager
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.storage_manager.enabled=false
-
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
@@ -91,10 +87,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Disable async MTE on system_server
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     arm64.memtag.process.system_server=off
-
-# Disable blur on app-launch
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -155,7 +147,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
-# Disable Java debug info
+# Do not include art debug targets
 USE_DEX2OAT_DEBUG := false
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
@@ -180,15 +172,15 @@ TARGET_SUPPORTS_QUICK_TAP ?= false
 TARGET_USES_MINI_GAPPS ?= false
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
+#TARGET_FACE_UNLOCK_SUPPORTED ?= true
+#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+#PRODUCT_PACKAGES += \
+#    FaceUnlockService
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+#endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -196,22 +188,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
 
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mkfs.ntfs \
-    mount.ntfs
-
 # Overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/evolution/overlay/common
-
-# Plugins
-#include packages/apps/Plugins/plugins.mk
-
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Inherit from apex config
 $(call inherit-product, vendor/evolution/config/apex.mk)
@@ -226,11 +206,7 @@ $(call inherit-product, vendor/evolution/config/audio.mk)
 $(call inherit-product, vendor/evolution/config/branding.mk)
 
 # Inherit from bootanimation config
-ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_PRODUCT_SHORT)),)
-$(call inherit-product, vendor/evolution/config/bootanimation_pixels.mk)
-else
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
-endif
 
 # Inherit from fonts config
 $(call inherit-product, vendor/evolution/config/fonts.mk)
