@@ -1,5 +1,4 @@
 #
-# Copyright (C) 2019-2022 Evolution X
 # Copyright (C) 2022 Raphielscape LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,8 +14,14 @@
 # limitations under the License.
 #
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES ?= 1080
+LOCAL_PATH := $(call my-dir)
 
-PRODUCT_PACKAGES += \
-    bootanimation
+include $(CLEAR_VARS)
+LOCAL_MODULE := bootanimation
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := bootanimation_$(TARGET_BOOT_ANIMATION_RES).zip
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/media/
+LOCAL_MODULE_STEM := bootanimation
+LOCAL_MODULE_SUFFIX := .zip
+include $(BUILD_PREBUILT)
