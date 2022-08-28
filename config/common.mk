@@ -237,4 +237,7 @@ else
 $(call inherit-product, vendor/gms/gms_full.mk)
 endif
 
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
