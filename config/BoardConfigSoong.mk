@@ -30,7 +30,6 @@ SOONG_CONFIG_evolutionGlobalVars += \
     disable_postrender_cleanup \
     has_hh_vsync_issue \
     has_legacy_camera_hal1 \
-    needs_netd_direct_connect_rule \
     camera_needs_client_info \
     camera_needs_client_info_lib \
     target_alternative_futex_waiters \
@@ -71,7 +70,6 @@ SOONG_CONFIG_evolutionGlobalVars_target_alternative_futex_waiters := $(TARGET_AL
 SOONG_CONFIG_evolutionGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_evolutionGlobalVars_has_hh_vsync_issue := $(TARGET_HAS_HH_VSYNC_ISSUE)
 SOONG_CONFIG_evolutionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
-SOONG_CONFIG_evolutionGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_evolutionGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
 SOONG_CONFIG_evolutionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_evolutionNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
