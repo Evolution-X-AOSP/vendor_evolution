@@ -27,7 +27,6 @@ SOONG_CONFIG_NAMESPACES += evolutionGlobalVars
 SOONG_CONFIG_evolutionGlobalVars += \
     additional_gralloc_10_usage_bits \
     bootloader_message_offset \
-    disable_postrender_cleanup \
     has_hh_vsync_issue \
     has_legacy_camera_hal1 \
     camera_needs_client_info \
@@ -67,7 +66,6 @@ endif
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_evolutionGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
-SOONG_CONFIG_evolutionGlobalVars_disable_postrender_cleanup := $(TARGET_DISABLE_POSTRENDER_CLEANUP)
 SOONG_CONFIG_evolutionGlobalVars_has_hh_vsync_issue := $(TARGET_HAS_HH_VSYNC_ISSUE)
 SOONG_CONFIG_evolutionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
 SOONG_CONFIG_evolutionGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
