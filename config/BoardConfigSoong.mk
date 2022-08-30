@@ -52,8 +52,7 @@ SOONG_CONFIG_evolutionQcomVars += \
     supports_hw_fde \
     supports_hw_fde_perf \
     uses_pre_uplink_features_netmgrd \
-    uses_qti_camera_device \
-    needs_camera_boottime_timestamp
+    uses_qti_camera_device
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
@@ -72,7 +71,6 @@ SOONG_CONFIG_evolutionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DIS
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_evolutionNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_evolutionQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
-SOONG_CONFIG_evolutionQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_evolutionQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_evolutionQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_evolutionQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
