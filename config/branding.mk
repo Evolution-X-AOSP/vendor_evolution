@@ -17,11 +17,11 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.0
+EVO_BASE_VERSION := 7.1
 EVO_CODENAME := Eve
 
 # Custom security patch
-EVO_SECURITY_PATCH := 2022-08-05
+EVO_SECURITY_PATCH := 2022-09-05
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
