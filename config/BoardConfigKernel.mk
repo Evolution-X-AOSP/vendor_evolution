@@ -27,6 +27,7 @@
 #                                                      aarch64-linux-android- for arm64
 #
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to true
+#   TARGET_KERNEL_LLVM_BINUTILS        = Use LLVM binutils, defaults to true
 #   TARGET_KERNEL_VERSION              = Reported kernel version in top level kernel
 #                                        makefile. Can be overriden in device trees
 #                                        in the event of prebuilt kernel.
@@ -181,9 +182,9 @@ KERNEL_MAKE_CMD := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/m
 KERNEL_MAKE_FLAGS += HOSTCC=$(CLANG_PREBUILTS)/bin/clang
 KERNEL_MAKE_FLAGS += HOSTCXX=$(CLANG_PREBUILTS)/bin/clang++
 
-# Use LLVM's substitutes for GNU binutils if compatible kernel version.
+# Use LLVM's substitutes for GNU binutils
 ifneq ($(TARGET_KERNEL_CLANG_COMPILE), false)
-ifneq (,$(filter 4.14 4.19 5.4 5.10, $(TARGET_KERNEL_VERSION)))
+ifneq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
     KERNEL_MAKE_FLAGS += LLVM=1 LLVM_IAS=1
     KERNEL_MAKE_FLAGS += LD=$(CLANG_PREBUILTS)/bin/ld.lld
     KERNEL_MAKE_FLAGS += AR=$(CLANG_PREBUILTS)/bin/llvm-ar
