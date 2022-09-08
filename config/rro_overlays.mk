@@ -33,11 +33,10 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
-    PixelDocumentsUIGoogleOverlay \
-    SystemUIGoogleOverlay
+    PixelDocumentsUIGoogleOverlay
 
 # Now Playing Overlay
-ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish oriole raven, $(TARGET_PRODUCT_SHORT)),)
+ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay, $(TARGET_DEVICE)),)
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
 endif
