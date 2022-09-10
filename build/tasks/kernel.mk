@@ -241,7 +241,6 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
         else ifeq ($(KERNEL_ARCH),x86)
             KERNEL_CLANG_TRIPLE ?= CLANG_TRIPLE=x86_64-linux-gnu-
         endif
-        PATH_OVERRIDE += LD_LIBRARY_PATH=$(TARGET_KERNEL_CLANG_PATH)/lib64:$$LD_LIBRARY_PATH
     endif
     PATH_OVERRIDE += PATH=$(TARGET_KERNEL_CLANG_PATH)/bin:$$PATH
     ifeq ($(KERNEL_CC),)
@@ -258,6 +257,11 @@ ifeq ($(TARGET_KERNEL_LLVM_BINUTILS), false)
     ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
         PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc):$$PATH
     endif
+endif
+
+# 5.10+ can fully compile without gcc
+ifeq (,$(filter 5.10, $(TARGET_KERNEL_VERSION)))
+    PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc):$$PATH
 endif
 
 # System tools are no longer allowed on 10+
