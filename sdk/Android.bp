@@ -1,6 +1,6 @@
 android_library_import {
     name: "androidx.preference_preference-ktx-nodeps",
-    aars: ["preference-ktx/preference-ktx-*.aar"],
+    aars: ["androidx/preference/preference-ktx/preference-ktx-*.aar"],
     sdk_version: "31",
     apex_available: [
         "//apex_available:platform",
@@ -23,7 +23,7 @@ android_library {
         "//apex_available:anyapex",
     ],
     min_sdk_version: "14",
-    manifest: "preference-ktx/AndroidManifest.xml",
+    manifest: "androidx/preference/preference-ktx/AndroidManifest.xml",
     static_libs: [
         "androidx.core_core-ktx",
         "androidx.fragment_fragment-ktx",
