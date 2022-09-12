@@ -15,16 +15,16 @@
 #
 
 # Navbar styles
-#PRODUCT_PACKAGES += \
-#    NavbarAndroidOverlay \
-#    NavbarAsusOverlay \
-#    NavbarMotoOverlay \
-#    NavbarNexusOverlay \
-#    NavbarOldOverlay \
-#    NavbarOnePlusOverlay \
-#    NavbarOneUiOverlay \
-#    NavbarSammyOverlay \
-#    NavbarTecnoCamonOverlay
+PRODUCT_PACKAGES += \
+    NavbarAndroidOverlay \
+    NavbarAsusOverlay \
+    NavbarMotoOverlay \
+    NavbarNexusOverlay \
+    NavbarOldOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarSammyOverlay \
+    NavbarTecnoCamonOverlay
 
 # Statusbar Icons
 PRODUCT_PACKAGES += \
