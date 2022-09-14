@@ -48,7 +48,7 @@
     <string name="config_defaultGallery" translatable="false">com.google.android.apps.photos</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.android.launcher3</string>
 
     <!-- The name of the package that will hold the music role by default. -->
     <string name="config_defaultMusic" translatable="false">com.google.android.music</string>
