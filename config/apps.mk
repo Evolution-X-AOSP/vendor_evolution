@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace \
     Papers \
-    RepainterServicePriv
+    RepainterServicePriv \
+    SimpleDeviceConfig
 
 # UDFPS Animations
 #EXTRA_UDFPS_ANIMATIONS ?= false

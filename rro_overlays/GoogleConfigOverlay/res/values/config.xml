@@ -83,7 +83,7 @@
     <string name="config_defaultSms" translatable="false">com.google.android.apps.messaging</string>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
+    <!--string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>-->
 
     <!-- The name of the package that will hold the device management role -->
     <string name="config_devicePolicyManagement" translatable="false">com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58</string>
