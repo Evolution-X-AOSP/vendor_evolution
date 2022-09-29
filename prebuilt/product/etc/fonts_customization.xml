@@ -340,6 +340,12 @@
     </family>
     <alias name="comicsans-regular" to="comicsans" weight="400" />
 
+    <!-- Cool Jazz -->
+    <family customizationType="new-named-family" name="cooljazz">
+        <font weight="300" style="normal">Cooljazz.ttf</font>
+    </family>
+    <alias name="cooljazz-light" to="cooljazz" weight="300" />
+
     <!-- Coolstory -->
     <family customizationType="new-named-family" name="coolstory">
         <font weight="300" style="normal">Coolstory-Regular.ttf</font>

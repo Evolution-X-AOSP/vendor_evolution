@@ -38,6 +38,7 @@ PRODUCT_PACKAGES += \
     FontCoconOverlay \
     FontComfortaaOverlay \
     FontComicSansOverlay \
+    FontCooljazzOverlay \
     FontCoolstoryOverlay \
     FontEvolveSansOverlay \
     FontExotwoOverlay \
