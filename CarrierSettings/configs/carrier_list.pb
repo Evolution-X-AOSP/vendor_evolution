@@ -945,6 +945,9 @@ onecall_no
 
 com4_no
 24209
+
+ice_no
+24214
 $
 lycamobile_no
 24223
@@ -5275,4 +5278,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480«£¾•"í—‹•
+999480¬£¾•"ßÂµ—
