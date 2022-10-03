@@ -15,6 +15,7 @@
 
 # Apps
 PRODUCT_PACKAGES += \
+    Aperture \
     EvoEgg \
     GameSpace \
     Papers \
