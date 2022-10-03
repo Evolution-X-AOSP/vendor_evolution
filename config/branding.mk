@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.1
-EVO_CODENAME := Eve
+EVO_BASE_VERSION := 7.2
+EVO_CODENAME := Unbound
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
