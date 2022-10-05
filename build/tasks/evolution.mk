@@ -32,6 +32,7 @@ $(OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) \
 	    $(BUILT_TARGET_FILES_PACKAGE) $@
 
 	$(hide) $(MD5SUM) $(OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(OTA_PACKAGE_TARGET).md5sum
+	@echo "Creating json OTA..."
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(OTA_PACKAGE_TARGET)
 	@echo "Generating changelog for unsigned"
 	$(hide) ./vendor/evolution/tools/changelog.sh
@@ -78,6 +79,7 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 	    $(SIGNED_TARGET_FILES_PACKAGE) $@
 
 	$(hide) $(MD5SUM) $(PROD_OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(PROD_OTA_PACKAGE_TARGET).md5sum
+	@echo "Creating json OTA..."
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(PROD_OTA_PACKAGE_TARGET)
 	@echo "Generating changelog for production"
 	$(hide) ./vendor/evolution/tools/changelog.sh
@@ -117,6 +119,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 	    $(SIGNED_TARGET_FILES_PACKAGE) $@
 
 	$(hide) $(MD5SUM) $(INCREMENTAL_OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(INCREMENTAL_OTA_PACKAGE_TARGET).md5sum
+	@echo "Creating json OTA..."
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(INCREMENTAL_OTA_PACKAGE_TARGET)
 
 .PHONY: incremental-ota
@@ -143,6 +146,7 @@ $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 	    $(SIGNED_TARGET_FILES_PACKAGE) $@
 
 	$(hide) $(MD5SUM) $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET) | sed "s|$(PRODUCT_OUT)/||" > $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET).md5sum
+	@echo "Creating json OTA..."
 	$(hide) ./vendor/evolution/tools/generate_json_build_info.sh $(INCREMENTAL_STABLE_OTA_PACKAGE_TARGET)
 
 .PHONY: stable-ota
