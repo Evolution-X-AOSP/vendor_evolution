@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+** Copyright 2022, Raphielscape LLC. and Haruka LLC.
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -62,6 +62,11 @@
     -->
     <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
 
+    <!-- Component names of the services which will keep critical code path warm -->
+    <string-array name="config_keep_warming_services" translatable="false">
+        <item>com.google.android.GoogleCamera/com.google.android.apps.camera.prewarm.NoOpPrewarmService</item>
+    </string-array>
+
     <!-- Package name(s) containing location provider support. These packages will be auto-granted
          several permissions by the system, and should be system packages. -->
     <string-array name="config_locationProviderPackageNames" translatable="false">
@@ -82,15 +87,15 @@
         <item>-0.349361641294833436</item>
     </string-array>
 
-    <!-- The list of packages to automatically opt out of refresh rates higher than 60hz because
-         of known compatibility issues. -->
-    <string-array name="config_highRefreshRateBlacklist">
-        <item>com.nianticlabs.pokemongo</item>
-        <item>com.google.android.documentsui</item>
-        <item>com.activision.callofduty.shooter</item>
-        <item>jp.konami.epjCastlevania2</item>
+    <!-- When each intermediate UDFPS enroll stage ends, as a fraction of total progress. -->
+    <string-array name="config_udfps_enroll_stage_thresholds">
+        <item>0.065</item>
+        <item>0.48</item>
+        <item>0.584</item>
+        <item>0.792</item>
     </string-array>
 
+    <!-- Sets the package name for location extra packages -->
     <string-array name="config_locationExtraPackageNames">
         <item>com.google.android.gms.location.history</item>
     </string-array>
