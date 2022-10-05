@@ -40,3 +40,6 @@ k=$(expr $i - 1)
 	repo forall -c '. $formatter_script' >> $Changelog
 	echo >> $Changelog;
 done
+
+cp $Changelog $OUT_DIR/target/product/$DEVICE/system/etc/$Changelog
+cp $Changelog $OUT_DIR/target/product/$DEVICE/
