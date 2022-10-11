@@ -15,6 +15,7 @@
 
 # Apps
 PRODUCT_PACKAGES += \
+    BatteryStatsViewer \
     EvoEgg \
     GameSpace \
     Papers \
