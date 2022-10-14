@@ -684,6 +684,7 @@
     <icon drawable="@drawable/themed_icon_nfsmw" name="MISSING" package="com.ea.games.nfs13_row"/>
     <icon drawable="@drawable/themed_icon_node_video" name="MISSING" package="com.shallwaystudio.nodevideo"/>
     <icon drawable="@drawable/themed_icon_noisefit" name="MISSING" package="com.noisefit"/>
+    <icon drawable="@drawable/themed_icon_nokoprint_mobile_printing" name="NokoPrint" package="com.nokoprint"/>
     <icon drawable="@drawable/themed_icon_nordvpn" name="NordVPN" package="com.nordvpn.android"/>
     <icon drawable="@drawable/themed_icon_notebook" name="Notebook" package="com.zoho.notebook"/>
     <icon drawable="@drawable/themed_icon_noteit" name="MISSING" package="me.bukovitz.noteit"/>
@@ -780,6 +781,7 @@
     <icon drawable="@drawable/themed_icon_powerdirector" name="PowerDirector" package="com.cyberlink.powerdirector.DRA140225_01"/>
     <icon drawable="@drawable/themed_icon_powertube" name="Powertube" package="ussr.razar.youtube_dl"/>
     <icon drawable="@drawable/themed_icon_prime_video" name="Amazon Prime Video" package="com.amazon.avod.thirdpartyclient"/>
+    <icon drawable="@drawable/themed_icon_profili_im" name="Profili Im" package="imperiamobile.org.albtelecom"/>
     <icon drawable="@drawable/themed_icon_progressbar95" name="MISSING" package="com.spookyhousestudios.progressbar95"/>
     <icon drawable="@drawable/themed_icon_project_themer" name="MISSING" package="com.drsants.eggproject"/>
     <icon drawable="@drawable/themed_icon_proton_vpn" name="Proton VPN" package="ch.protonvpn.android"/>
@@ -1002,6 +1004,7 @@
     <icon drawable="@drawable/themed_icon_topface" name="MISSING" package="com.topface.topface"/>
     <icon drawable="@drawable/themed_icon_tor_browser" name="Tor Browser" package="org.torproject.torbrowser"/>
     <icon drawable="@drawable/themed_icon_total_commander" name="Total Commander" package="com.ghisler.android.TotalCommander"/>
+    <icon drawable="@drawable/themed_touchvpn_vpn_proxy_privacy" name="TouchVPN" package="com.northghost.touchvpn"/>
     <icon drawable="@drawable/themed_icon_toweroffantasy" name="Tower of Fantasy" package="com.levelinfinite.hotta.gp"/>
     <icon drawable="@drawable/themed_icon_track24" name="Track24" package="net.track24.android"/>
     <icon drawable="@drawable/themed_icon_trebleinfo" name="Treble Info" package="tk.hack5.treblecheck"/>
