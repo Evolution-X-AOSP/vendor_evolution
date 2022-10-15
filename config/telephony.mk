@@ -104,6 +104,7 @@ PRODUCT_PACKAGES += \
     h3_se.pb \
     halebop_se.pb \
     homobile_it.pb \
+    ice_no.pb \
     idea_in.pb \
     idmobile_gb.pb \
     iliad_it.pb \
