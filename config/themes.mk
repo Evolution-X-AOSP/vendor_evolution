@@ -58,7 +58,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
     AndroidClearThemeOverlay \
-    AndroidVividThemeOverlay
+    AndroidVividThemeOverlay \
+    AndroidSnowPaintDropThemeOverlay \
+    AndroidEspressoThemeOverlay
 
 # UDFPS Resources
 EXTRA_UDFPS_ANIMATIONS ?= false
