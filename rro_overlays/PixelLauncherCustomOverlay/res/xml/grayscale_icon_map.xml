@@ -1005,7 +1005,7 @@
     <icon drawable="@drawable/themed_icon_topface" name="MISSING" package="com.topface.topface"/>
     <icon drawable="@drawable/themed_icon_tor_browser" name="Tor Browser" package="org.torproject.torbrowser"/>
     <icon drawable="@drawable/themed_icon_total_commander" name="Total Commander" package="com.ghisler.android.TotalCommander"/>
-    <icon drawable="@drawable/themed_touchvpn_vpn_proxy_privacy" name="TouchVPN" package="com.northghost.touchvpn"/>
+    <icon drawable="@drawable/themed_icon_touchvpn_vpn_proxy_privacy" name="TouchVPN" package="com.northghost.touchvpn"/>
     <icon drawable="@drawable/themed_icon_toweroffantasy" name="Tower of Fantasy" package="com.levelinfinite.hotta.gp"/>
     <icon drawable="@drawable/themed_icon_track24" name="Track24" package="net.track24.android"/>
     <icon drawable="@drawable/themed_icon_trebleinfo" name="Treble Info" package="tk.hack5.treblecheck"/>
