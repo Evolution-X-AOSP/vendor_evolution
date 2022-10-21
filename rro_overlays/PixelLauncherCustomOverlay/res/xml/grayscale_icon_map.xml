@@ -304,6 +304,7 @@
     <icon drawable="@drawable/themed_icon_deck_shop" name="Deck Shop for Clash Royale" package="pro.deckshop.app"/>
     <icon drawable="@drawable/themed_icon_deezer" name="Deezer" package="deezer.android.app"/>
     <icon drawable="@drawable/themed_icon_delivery_club" name="Delivery Club: Продукты на дом" package="com.deliveryclub"/>
+    <icon drawable="@drawable/themed_icon_desmos" name="Desmos" package="com.desmos.calculator"/>
     <icon drawable="@drawable/themed_icon_deutschebahn" name="DB Navigator" package="de.hafas.android.db"/>
     <icon drawable="@drawable/themed_icon_devcheck" name="DevCheck" package="flar2.devcheck"/>
     <icon drawable="@drawable/themed_icon_deviantart" name="DeviantArt" package="com.deviantart.android.damobile"/>
