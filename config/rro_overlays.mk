@@ -20,8 +20,7 @@ PRODUCT_PACKAGES += \
     ImmersiveNavigationOverlay \
     NetworkStackOverlay \
     PixelLauncherCustomOverlay \
-    PixelSetupWizardOverlayEvolutionX \
-    SettingsGoogleOverlayEvolutionX
+    PixelSetupWizardOverlayEvolutionX
 
 # Google Overlays
 PRODUCT_PACKAGES += \
@@ -33,7 +32,8 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
-    PixelDocumentsUIGoogleOverlay
+    PixelDocumentsUIGoogleOverlay \
+    SettingsGoogleOverlayPixel2022
 
 # Now Playing Overlay
 ifneq ($(filter blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)

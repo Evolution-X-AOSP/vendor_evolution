@@ -16,8 +16,8 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.settings.overlay.evolutionx">
-    <overlay android:isStatic="true" android:priority="10" android:targetPackage="com.android.settings" android:resourcesMap="@xml/overlays"/>
+    package="com.google.android.overlay.pixelconfig2021">
+    <overlay android:isStatic="true" android:priority="8" android:targetPackage="android"/>
 
-    <application android:hasCode="false" android:usesNonSdkApi="true"/>
+    <application android:hasCode="false"/>
 </manifest>
