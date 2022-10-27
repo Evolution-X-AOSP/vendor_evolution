@@ -15,5 +15,5 @@
 -->
 
 <permissions>
-    <feature name="android.sofware.nfc.beam" />
+    <feature name="android.software.nfc.beam" />
 </permissions>
