@@ -73,6 +73,7 @@
         <item>udfps_icon_spiderman</item>
         <item>udfps_icon_spiral_blue</item>
         <item>udfps_icon_sun_metro</item>
+        <item>udfps_icon_genshin_fire</item>
         <item>udfps_icon_transparent</item>
    </string-array>
 
@@ -113,6 +114,10 @@
         <item>udfps_rog_fusion_recognizing_anim</item>
         <item>udfps_rog_pulsar_recognizing_anim</item>
         <item>udfps_rog_supernova_recognizing_anim</item>
+        <item>udfps_genshin_fire_recognizing_anim</item>
+        <item>udfps_bubble_recognizing_anim</item>
+        <item>udfps_stardust_recognizing_anim</item>
+        <item>udfps_swirl_recognizing_anim</item>
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_previews">
@@ -152,6 +157,10 @@
         <item>asus_udfps_anim_1_10</item>
         <item>asus_udfps_anim_2_35</item>
         <item>asus_udfps_anim_3_25</item>
+        <item>udfps_genshin_fire_recognizing_anim_22</item>
+        <item>udfps_bubble_recognizing_anim_19</item>
+        <item>udfps_stardust_recognizing_anim_19</item>
+        <item>udfps_swirl_recognizing_anim_19</item>
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_titles">
@@ -191,6 +200,10 @@
         <item>Fusion</item>
         <item>Pulsar</item>
         <item>Supernova</item>
+        <item>Genshin fire</item>
+        <item>Bubble</item>
+        <item>Stardust</item>
+        <item>Swirl</item>
     </string-array>
 
 </resources>
