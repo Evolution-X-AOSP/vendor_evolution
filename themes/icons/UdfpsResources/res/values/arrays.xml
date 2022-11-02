@@ -78,7 +78,6 @@
    </string-array>
 
     <string-array translatable="false" name="udfps_animation_styles">
-        <item>aurora</item>
         <item>bloom</item>
         <item>cyber</item>
         <item>electronic</item>
@@ -100,7 +99,6 @@
         <item>udfps_miui_pulse_recognizing_white_anim</item>
         <item>udfps_miui_rhythm_recognizing_anim</item>
         <item>udfps_miui_star_cas_recognizing_anim</item>
-        <item>udfps_op_cosmos_recognizing_anim</item>
         <item>udfps_op_energy_recognizing_anim</item>
         <item>udfps_op_mclaren_recognizing_anim</item>
         <item>udfps_op_ripple_recognizing_anim</item>
@@ -121,7 +119,6 @@
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_previews">
-        <item>aurora_anim_21</item>
         <item>bloom_anim_14</item>
         <item>cyber_anim_9</item>
         <item>electronic_anim_7</item>
@@ -143,7 +140,6 @@
         <item>gxzw_pulse_recognizing_anim_white_18</item>
         <item>gxzw_rhythm_recognizing_anim_15</item>
         <item>gxzw_star_cas_recognizing_anim_30</item>
-        <item>udfps_op_cosmos_anim_60</item>
         <item>udfps_op_energy_anim_35</item>
         <item>udfps_op_mclaren_anim_45</item>
         <item>udfps_op_ripple_anim_30</item>
@@ -164,7 +160,6 @@
     </string-array>
 
     <string-array translatable="false" name="udfps_animation_titles">
-        <item>Aurora</item>
         <item>Bloom</item>
         <item>Cyber</item>
         <item>Electronic</item>
@@ -186,7 +181,6 @@
         <item>Pulse (White)</item>
         <item>Rhythm</item>
         <item>Starlight</item>
-        <item>Cosmos</item>
         <item>Energy</item>
         <item>McLaren</item>
         <item>Ripple</item>
