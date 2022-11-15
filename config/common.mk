@@ -147,6 +147,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SettingsGoogle \
     SystemUIGoogle
 
+# Don't compile SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
+
 # SystemUI
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
