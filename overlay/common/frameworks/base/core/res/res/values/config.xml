@@ -188,4 +188,52 @@
         <item>com.google.android.keep</item>
         <item>com.google.android.youtube</item>
     </string-array>
+    
+    <!-- Default list of files pinned by the Pinner Service -->
+    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>"/system/bin/surfaceflinger"</item>
+        <item>"/system/framework/framework.jar"</item>
+        <item>"/system/framework/services.jar"</item>
+        <item>"/system/framework/ext.jar"</item>
+        <item>"/system/lib/libEGL.so"</item>
+        <item>"/system/lib/libGLESv1_CM.so"</item>
+        <item>"/system/lib/libGLESv2.so"</item>
+        <item>"/system/lib/libGLESv3.so"</item>
+        <item>"/system/lib/libgui.so"</item>
+        <item>"/system/lib/libhwui.so"</item>
+        <item>"/system/lib/libui.so"</item>
+        <item>"/system/lib/libvulkan.so"</item>
+        <item>"/system/lib64/libEGL.so"</item>
+        <item>"/system/lib64/libGLESv1_CM.so"</item>
+        <item>"/system/lib64/libGLESv2.so"</item>
+        <item>"/system/lib64/libGLESv3.so"</item>
+        <item>"/system/lib64/libgui.so"</item>
+        <item>"/system/lib64/libhwui.so"</item>
+        <item>"/system/lib64/libui.so"</item>
+        <item>"/system/lib64/libvulkan.so"</item>
+        <item>"/system/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
+        <item>"/system/lib/libsurfaceflinger.so"</item>
+        <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>"/system/lib/libRScpp.so"</item>
+        <item>"/system/lib/libRS.so"</item>
+        <item>"/system/lib/libRS_internal.so"</item>
+        <item>"/system/lib/libbcinfo.so"</item>
+        <item>"/system/lib/libRSDriver.so"</item>
+        <item>"/system/lib/libRSCpuRef.so"</item>
+        <item>"/system/lib/libblas.so"</item>
+        <item>"/system/lib64/libRScpp.so"</item>
+        <item>"/system/lib64/libRS.so"</item>
+        <item>"/system/lib64/libRS_internal.so"</item>
+        <item>"/system/lib64/libbcinfo.so"</item>
+        <item>"/system/lib64/libRSDriver.so"</item>
+        <item>"/system/lib64/libRSCpuRef.so"</item>
+        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
+        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
+    </string-array>
+
+    <!-- True if home app should be pinned via Pinner Service -->
+    <bool name="config_pinnerHomeApp">true</bool>
+
+    <!-- Should the pinner service pin the Camera application? -->
+    <bool name="config_pinnerCameraApp">true</bool>
 </resources>
