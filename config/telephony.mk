@@ -34,6 +34,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/evolution/CarrierSettings/overlay
+
 # CarrierSettings, replace CarrierConfig
 ifeq ($(TARGET_CARRIER_SETTINGS), true)
 PRODUCT_PACKAGES += \
