@@ -75,6 +75,25 @@
         <item>udfps_icon_sun_metro</item>
         <item>udfps_icon_genshin_fire</item>
         <item>udfps_icon_transparent</item>
+        <item>GI_ALbedo</item>
+        <item>GI_Amber</item>
+        <item>GI_Ayaka</item>
+        <item>GI_Barbara</item>
+        <item>GI_Bennett</item>
+        <item>GI_Collei</item>
+        <item>GI_Cyno</item>
+        <item>GI_Diluc</item>
+        <item>GI_Eula</item>
+        <item>GI_Fischl</item>
+        <item>GI_Ganyu</item>
+        <item>GI_Jean</item>
+        <item>GI_Keqing</item>
+        <item>GI_Klee</item>
+        <item>GI_Mona</item>
+        <item>GI_Noel</item>
+        <item>GI_Sucrose</item>
+        <item>GI_Xiao</item>
+        <item>GI_Yoimiya</item>
    </string-array>
 
     <string-array translatable="false" name="udfps_animation_styles">
