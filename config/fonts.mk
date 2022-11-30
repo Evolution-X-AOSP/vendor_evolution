@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontMiSansOverlay \
     FontNokiaPureOverlay \
-    FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \
     FontNotoSerifSource \
     FontNunitoOverlay \
