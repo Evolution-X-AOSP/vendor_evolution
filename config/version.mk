@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.3
-EVO_CODENAME := Vengeance
+EVO_BASE_VERSION := 7.4
+EVO_CODENAME := Unholy
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
