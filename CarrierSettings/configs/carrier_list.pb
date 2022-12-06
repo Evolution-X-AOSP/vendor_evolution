@@ -264,6 +264,9 @@ Lycamobile
 coriolis_fr
 20827
 
+syma_fr
+20830208300
+
 orange5gdemo_fr
 20832
 
@@ -816,12 +819,9 @@ LYCAMOBILE
 
 	gigsky_us
 23801"6F
-
-tdc_dk
-238012380101
-$
-23801SPN=TELMORE
-23801TELMORE
+
+tdc_dk
+23801
 
 
 telenor_dk
@@ -1202,11 +1202,11 @@ Lycamobile
 
 vodafone_ie
 27201
-
-27202
+
+h3g27202_ie
 27202
-
-27203
+
+eir_ie
 27203
 
 h3_ie
@@ -4130,6 +4130,9 @@ lguplus_kr
 digi_my
 50210
 
+unifi_my
+50211
+
 maxis_my
 50212
 
@@ -4156,6 +4159,9 @@ lguplus_kr
 
 yes_my
 502152
+
+unifi_my
+502153
 
 digi_my
 50216
@@ -4325,6 +4331,9 @@ singtel_sg
 
 starhub_sg
 52505
+
+simba_sg
+52510
 
 52802
 52802
@@ -4742,6 +4751,9 @@ starhub_sg
 
 63601
 63601
+
+safaricom_et
+63602
 
 63701
 63701
@@ -5273,9 +5285,12 @@ Lycamobile
 
 74810
 74810
+
+ubigi_de
+90137Ubigi
 
 bics_be
 90158
 
 verizononsitelte_us
-999480¨£æÅï"ﬂ¬µó
+999480µÀîªú"¯ãßö
