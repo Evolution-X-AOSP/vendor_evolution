@@ -173,6 +173,11 @@ EXCLUDE_SYSTEMUI_TESTS := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
+# Themes
+PRODUCT_PACKAGES += \
+    EvolutionThemesStub \
+    ThemePicker
+
 # Overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
