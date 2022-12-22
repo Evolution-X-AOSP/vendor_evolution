@@ -322,13 +322,6 @@
          android.os.action.POWER_SAVE_MODE_CHANGED. -->
     <string name="config_powerSaveModeChangedListenerPackage" translatable="false">com.google.android.flipendo</string>
 
-    <!-- Component name for the activity that will be presenting the Recents UI, which will receive
-         special permissions for API related to fetching and presenting recent tasks. The default
-         configuration uses Launcehr3QuickStep as default launcher and points to the corresponding
-         recents component. When using a different default launcher, change this appropriately or
-         use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
-    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
-
     <!-- The package name for the default retail demo app.
          This package must be trusted, as it has the permissions to query the usage stats on the
          device.
