@@ -39,7 +39,7 @@
     <!-- The package name of the default captive portal login app. Must be granted the
          POST_NOTIFICATIONS permission.
     -->
-    <string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>
+    <!-- string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>-->
 
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
