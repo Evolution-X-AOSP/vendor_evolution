@@ -25,7 +25,6 @@ PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/evolution/apex/NetworkStack
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.
 MODULE_BUILD_FROM_SOURCE := false
-DISABLE_DEXPREOPT_CHECK := true
 
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
@@ -45,30 +44,6 @@ PRODUCT_PACKAGES += \
 # ModuleMetadata
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
-
-# ART Mainline Module
-ifeq ($(MAINLINE_INCLUDE_ART_MODULE),true)
-PRODUCT_PACKAGES += \
-    com.google.android.art
-endif
-
-# Bluetooth Mainline Module
-ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
-PRODUCT_PACKAGES += \
-    com.google.android.bluetooth
-endif
-
-# UWB Mainline Module
-ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
-PRODUCT_PACKAGES += \
-    com.google.android.uwb
-endif
-
-# WIFI Mainline Module
-ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
-PRODUCT_PACKAGES += \
-    com.google.android.wifi
-endif
 
 # Google Apexes
 PRODUCT_PACKAGES += \

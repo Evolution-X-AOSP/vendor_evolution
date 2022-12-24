@@ -33,6 +33,7 @@ prebuilt_apex {
     apex_name: "com.android.adservices",
     src: "com.google.android.adservices.apex",
     exported_bootclasspath_fragments: ["com.android.adservices-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.adservices-systemserverclasspath-fragment"],
     overrides: ["com.android.adservices"],
     owner: "google",
     prefer: true,
@@ -45,6 +46,7 @@ prebuilt_apex {
     src: "com.google.android.appsearch.apex",
     overrides: ["com.android.appsearch"],
     exported_bootclasspath_fragments: ["com.android.appsearch-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.appsearch-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -52,7 +54,7 @@ prebuilt_apex {
 // Google com.google.android.bluetooth
 prebuilt_apex {
     name: "com.google.android.bluetooth",
-    apex_name: "com.android.bluetooth",
+    apex_name: "com.android.btservices",
     src: "com.google.android.bluetooth.apex",
     overrides: ["com.android.btservices"],
     required: ["android.hardware.bluetooth@1.1",
@@ -69,6 +71,7 @@ prebuilt_apex {
     src: "com.google.android.art.apex",
     overrides: ["com.android.art"],
     exported_bootclasspath_fragments: ["art-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["art-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -122,6 +125,7 @@ prebuilt_apex {
     src: "com.google.android.media.apex",
     overrides: ["com.android.media"],
     exported_bootclasspath_fragments: ["com.android.media-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.media-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -175,6 +179,7 @@ prebuilt_apex {
     src: "com.google.android.os.statsd.apex",
     overrides: ["com.android.os.statsd"],
     exported_bootclasspath_fragments: ["com.android.os.statsd-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.os.statsd-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -186,6 +191,7 @@ prebuilt_apex {
     src: "com.google.android.permission.apex",
     overrides: ["com.android.permission"],
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -207,6 +213,7 @@ prebuilt_apex {
     src: "com.google.android.scheduling.apex",
     overrides: ["com.android.scheduling"],
     exported_bootclasspath_fragments: ["com.android.scheduling-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.scheduling-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -229,6 +236,7 @@ prebuilt_apex {
     src: "com.google.android.tethering.apex",
     overrides: ["com.android.tethering"],
     exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -250,6 +258,7 @@ prebuilt_apex {
     src: "com.google.android.wifi.apex",
     overrides: ["com.android.wifi"],
     exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }
@@ -261,6 +270,7 @@ prebuilt_apex {
     src: "com.google.android.uwb.apex",
     overrides: ["com.android.uwb"],
     exported_bootclasspath_fragments: ["com.android.uwb-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.uwb-systemserverclasspath-fragment"],
     owner: "google",
     prefer: true,
 }

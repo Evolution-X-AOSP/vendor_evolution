@@ -26,5 +26,27 @@ LOCAL_PRODUCT_MODULE := true
 LOCAL_MODULE_CLASS := APPS
 LOCAL_OVERRIDES_PACKAGES := ModuleMetadata
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
 
+# ART Mainline Module
+ifeq ($(MAINLINE_INCLUDE_ART_MODULE),true)
+LOCAL_REQUIRED_MODULES += \
+    com.google.android.art
+endif
+
+# Bluetooth Mainline Module
+ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
+LOCAL_REQUIRED_MODULES += \
+    com.google.android.bluetooth
+endif
+# UWB Mainline Module
+ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
+LOCAL_REQUIRED_MODULES += \
+    com.google.android.uwb
+endif
+
+# WIFI Mainline Module
+ifeq ($(MAINLINE_INCLUDE_WIFI_MODULE),true)
+LOCAL_REQUIRED_MODULES += \
+    com.google.android.wifi
+endif
+include $(BUILD_PREBUILT)
