@@ -45,6 +45,7 @@ PRODUCT_PACKAGES += \
     FontFifa2018Overlay \
     FontFluidSansOverlay \
     FontFucekOverlay \
+    FontGoogleSansOverlay \
     FontGrandHotelOverlay \
     FontHarmonySansOverlay \
     FontInterSourceOverlay \
