@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontMiSansOverlay \
     FontNokiaPureOverlay \
+    FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \
     FontNotoSerifSource \
     FontNunitoOverlay \
@@ -70,6 +71,7 @@ PRODUCT_PACKAGES += \
     FontRedressedOverlay \
     FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
+    FontRobotoOverlay \
     FontRosemaryOverlay \
     FontRubikRubikOverlay \
     FontSamsungOneOverlay \
