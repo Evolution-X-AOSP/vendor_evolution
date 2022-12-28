@@ -175,6 +175,9 @@
     <!-- When true, enables the allowlisted app to upload profcollect reports. -->
     <bool name="config_profcollectReportUploaderEnabled">true</bool>
 
+    <!-- Config for whether Safety Protection is enabled. -->
+    <bool name="config_safetyProtectionEnabled">true</bool>
+
     <!-- The package name for the system's content capture service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          If no service with the specified name exists on the device, content capture will be
