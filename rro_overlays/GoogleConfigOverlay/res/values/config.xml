@@ -200,13 +200,13 @@
         <item>com.google.android.gms</item>
     </string-array>
 
-    <!-- Messages that should not be shown to the user during face auth enrollment. This should be
-         used to hide messages that may be too chatty or messages that the user can't do much about.
-         Entries are defined in android.hardware.biometrics.face@1.0 types.hal -->
-    <integer-array name="config_face_acquire_enroll_ignorelist" translatable="false" >
+    <!-- Messages that should not be shown to the user during face authentication, on
+         BiometricPrompt. This should be used to hide messages that may be too chatty or messages
+         that the user can't do much about. Entries are defined in
+         android.hardware.biometrics.face@1.0 types.hal -->
+    <integer-array name="config_face_acquire_biometricprompt_ignorelist" translatable="false" >
         <item>1</item>
         <item>2</item>
-        <item>3</item>
         <item>4</item>
         <item>5</item>
         <item>6</item>
@@ -227,23 +227,6 @@
     <!-- Same as the above, but are defined by vendorCodes -->
     <integer-array name="config_face_acquire_vendor_enroll_ignorelist" translatable="false" >
         <item>13</item>
-    </integer-array>
-
-    <!-- Messages that should not be shown to the user during face authentication, on keyguard.
-         This includes both lockscreen and bouncer. This should be used to hide messages that may be
-         too chatty or messages that the user can't do much about. Entries are defined in
-         android.hardware.biometrics.face@1.0 types.hal -->
-    <integer-array name="config_face_acquire_keyguard_ignorelist" translatable="false" >
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>11</item>
-        <item>12</item>
-        <item>14</item>
-        <item>15</item>
-        <item>19</item>
     </integer-array>
 
     <string-array name="face_error_vendor">
