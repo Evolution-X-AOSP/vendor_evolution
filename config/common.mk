@@ -79,6 +79,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
 endif
 
+# Enable SystemUIDialog volume panel
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    sys.fflag.override.settings_volume_panel_in_systemui=true
+
 # Evolution X-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-sysconfig.xml
