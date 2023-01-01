@@ -163,8 +163,8 @@ endif
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     Launcher3QuickStep \
-    Settings \
-    SystemUI
+    SettingsGoogle \
+    SystemUIGoogle
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
@@ -230,5 +230,8 @@ $(call inherit-product, vendor/gms/gms_mini.mk)
 else
 $(call inherit-product, vendor/gms/gms_full.mk)
 endif
+
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
