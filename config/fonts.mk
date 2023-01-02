@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
-    FontAntipastoProOverlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontBariolOverlay \
