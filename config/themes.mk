@@ -148,4 +148,6 @@ PRODUCT_PACKAGES += \
     ClockFontNeptunCATOverlay \
     ClockFontProdeltCoOverlay \
     ClockFontRubikGlitchOverlay \
-    ClockFontTourneyMediumOverlay
+    ClockFontTourneyMediumOverlay \
+    ClockFontVG5000Overlay \
+    ClockFontOdibeeSansOverlay

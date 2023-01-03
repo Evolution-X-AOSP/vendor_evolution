@@ -349,6 +349,10 @@
         <font weight="300" style="normal">Cooljazz.ttf</font>
     </family>
     <alias name="cooljazz-light" to="cooljazz" weight="300" />
+    
+    <family customizationType="new-named-family" name="odibee-sans">
+        <font weight="300" style="normal">OdibeeSans-Regular.ttf</font>
+    </family>
 
     <!-- Coolstory -->
     <family customizationType="new-named-family" name="coolstory">
@@ -1038,6 +1042,9 @@
     </family>
     <family customizationType="new-named-family" name="punk-mono-extended">
         <font weight="500" style="normal">punk-mono-extendedmedium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="vg5000">
+        <font weight="300" style="normal">VG5000-Regular.ttf</font>
     </family>
     
   <!-- Circular-Std -->

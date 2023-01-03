@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
     FontGiganticFSHezaedrusOverlay \
     FontJicaletaOverlay \
     FontJustSansOverlay \
-    FontPunkMonoOverlay
+    FontPunkMonoOverlay \
+    FontVladivostokOverlay
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
