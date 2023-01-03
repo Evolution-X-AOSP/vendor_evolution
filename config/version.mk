@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.4
-EVO_CODENAME := Kaldereta
+EVO_BASE_VERSION := 7.5
+EVO_CODENAME := Menudo
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
