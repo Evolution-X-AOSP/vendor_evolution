@@ -949,4 +949,48 @@
     <family customizationType="new-named-family" name="vibur">
         <font weight="300" style="normal">Vibur.ttf</font>
     </family>
+
+    <!-- Fontage v4-->
+    <family customizationType="new-named-family" name="3d-isometric-black">
+        <font weight="700" style="normal">3DIsometric-Black.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="3d-isometric-bold">
+        <font weight="600" style="normal">3DIsometric-Bold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="baltic-bodden">
+        <font weight="300" style="normal">BalticBodden.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="baltic-coast">
+        <font weight="300" style="normal">BalticCoast.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="baltic-dune">
+        <font weight="300" style="normal">BalticDune.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="baltic-storm">
+        <font weight="300" style="normal">BalticStorm.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="cafe24-decoshadow">
+        <font weight="300" style="normal">Cafe24Decoshadow.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="forta">
+        <font weight="400" style="normal">Forta.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="museo-moderno">
+        <font weight="300" style="normal">MuseoModerno.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="mx-wasgard">
+        <font weight="300" style="normal">mx-wasgard.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="neptun-cat">
+        <font weight="400" style="normal">NeptunCAT.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="prodelt-co">
+        <font weight="300" style="normal">ProdeltCo.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="rubik-glitch">
+        <font weight="700" style="normal">Rubik-Glitch-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="tourney-medium">
+        <font weight="500" style="normal">Tourney-Medium.ttf</font>
+    </family>
 </fonts-modification>
