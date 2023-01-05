@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Exports
-DEVICE=$(echo $TARGET_PRODUCT | cut -d "_" -f2)
+DEVICE=$(echo $TARGET_PRODUCT | sed 's/evolution_//g')
 out=$OUT_DIR/target/product/$DEVICE
 if [ -f $out ]; # The path does not exist
 then
