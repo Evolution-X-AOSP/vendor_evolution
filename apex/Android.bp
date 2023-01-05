@@ -17,270 +17,433 @@
 soong_namespace {
 }
 
+soong_config_bool_variable {
+    name: "module_build_from_source",
+}
+
+soong_config_module_type {
+    name: "module_apex_prebuilt",
+    module_type: "prebuilt_apex",
+    config_namespace: "ANDROID",
+    bool_variables: ["module_build_from_source"],
+    properties: [
+        "prefer",
+    ],
+}
+
 // Google com.google.android.adbd
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.adbd",
     apex_name: "com.android.adbd",
+    owner: "google",
     src: "com.google.android.adbd.apex",
     overrides: ["com.android.adbd"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+       module_build_from_source: {
+           prefer: false
+       }
+    },
 }
 
 // Google com.google.android.adservices
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.adservices",
     apex_name: "com.android.adservices",
+    owner: "google",
     src: "com.google.android.adservices.apex",
+    overrides: ["com.android.adservices"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.adservices-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.adservices-systemserverclasspath-fragment"],
-    overrides: ["com.android.adservices"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.appsearch.apex
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.appsearch",
     apex_name: "com.android.appsearch",
+    owner: "google",
     src: "com.google.android.appsearch.apex",
     overrides: ["com.android.appsearch"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.appsearch-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.appsearch-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.bluetooth
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.bluetooth",
     apex_name: "com.android.btservices",
+    owner: "google",
     src: "com.google.android.bluetooth.apex",
     overrides: ["com.android.btservices"],
     required: ["android.hardware.bluetooth@1.1",
                "android.hardware.bluetooth.audio@2.1",
                "android.hardware.bluetooth.audio-V2-ndk"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.art
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.art",
     apex_name: "com.android.art",
+    owner: "google",
     src: "com.google.android.art.apex",
-    overrides: ["com.android.art"],
+    overrides: [
+        "com.android.art",
+        "com.android.art.debug",
+    ],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["art-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["art-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.cellbroadcast
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.cellbroadcast",
     apex_name: "com.android.cellbroadcast",
+    owner: "google",
     src: "com.google.android.cellbroadcast.apex",
     overrides: ["com.android.cellbroadcast"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.conscrypt
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.conscrypt",
     apex_name: "com.android.conscrypt",
+    required: [
+        "conscrypt.com.android.conscrypt",
+    ],
+    owner: "google",
     src: "com.google.android.conscrypt.apex",
     overrides: ["com.android.conscrypt"],
-    exported_bootclasspath_fragments: ["com.android.conscrypt-bootclasspath-fragment"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.conscrypt-bootclasspath-fragment"],
 }
 
 // Google com.google.android.extservices
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.extservices",
     apex_name: "com.android.extservices",
+    owner: "google",
     src: "com.google.android.extservices.apex",
     overrides: ["com.android.extservices"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.ipsec
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.ipsec",
     apex_name: "com.android.ipsec",
+    required: [
+        "android.net.ipsec.ike.com.android.ipsec",
+    ],
+    owner: "google",
     src: "com.google.android.ipsec.apex",
     overrides: ["com.android.ipsec"],
-    exported_bootclasspath_fragments: ["com.android.ipsec-bootclasspath-fragment"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.ipsec-bootclasspath-fragment"],
 }
 
 // Google com.google.android.media
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.media",
     apex_name: "com.android.media",
+    required: [
+        "updatable-media.com.android.media",
+    ],
+    owner: "google",
     src: "com.google.android.media.apex",
     overrides: ["com.android.media"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.media-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.media-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.media.swcodec
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.media.swcodec",
     apex_name: "com.android.swcodec",
+    owner: "google",
     src: "com.google.android.media.swcodec.apex",
     overrides: ["com.android.media.swcodec"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.mediaprovider
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.mediaprovider",
     apex_name: "com.android.mediaprovider",
+    required: [
+        "framework-mediaprovider.com.android.mediaprovider",
+    ],
+    owner: "google",
     src: "com.google.android.mediaprovider.apex",
     overrides: ["com.android.mediaprovider"],
-    exported_bootclasspath_fragments: ["com.android.mediaprovider-bootclasspath-fragment"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.mediaprovider-bootclasspath-fragment"],
 }
 
 // Google com.google.android.neuralnetworks
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.neuralnetworks",
     apex_name: "com.android.neuralnetworks",
+    owner: "google",
     src: "com.google.android.neuralnetworks.apex",
     overrides: ["com.android.neuralnetworks"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.ondevicepersonalization
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.ondevicepersonalization",
     apex_name: "com.android.ondevicepersonalization",
+    owner: "google",
     src: "com.google.android.ondevicepersonalization.apex",
     overrides: ["com.android.ondevicepersonalization"],
-    exported_bootclasspath_fragments: ["com.android.ondevicepersonalization-bootclasspath-fragment"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.ondevicepersonalization-bootclasspath-fragment"],
 }
 
 // Google com.google.android.os.statsd
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.os.statsd",
     apex_name: "com.android.os.statsd",
+    owner: "google",
     src: "com.google.android.os.statsd.apex",
     overrides: ["com.android.os.statsd"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.os.statsd-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.os.statsd-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.permission
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.permission",
     apex_name: "com.android.permission",
+    required: [
+        "framework-permission.com.android.permission",
+        "service-permission.com.android.permission",
+    ],
+    owner: "google",
     src: "com.google.android.permission.apex",
     overrides: ["com.android.permission"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.permission-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.resolv
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.resolv",
     apex_name: "com.android.resolv",
+    owner: "google",
     src: "com.google.android.resolv.apex",
     overrides: ["com.android.resolv"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.scheduling
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.scheduling",
     apex_name: "com.android.scheduling",
+    owner: "google",
     src: "com.google.android.scheduling.apex",
     overrides: ["com.android.scheduling"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.scheduling-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.scheduling-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.sdkext
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.sdkext",
     apex_name: "com.android.sdkext",
+    required: [
+        "framework-sdkextensions.com.android.sdkext",
+    ],
+    owner: "google",
     src: "com.google.android.sdkext.apex",
     overrides: ["com.android.sdkext"],
-    exported_bootclasspath_fragments: ["com.android.sdkext-bootclasspath-fragment"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.sdkext-bootclasspath-fragment"],
 }
 
 // Google com.google.android.tethering
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.tethering",
     apex_name: "com.android.tethering",
+    required: [
+        "framework-tethering.com.android.tethering",
+    ],
+    owner: "google",
     src: "com.google.android.tethering.apex",
     overrides: ["com.android.tethering"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.tethering-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.tzdata4
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.tzdata4",
     apex_name: "com.android.tzdata",
+    owner: "google",
     src: "com.google.android.tzdata4.apex",
     overrides: ["com.android.tzdata"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.wifi
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.wifi",
     apex_name: "com.android.wifi",
+    required: [
+        "framework-wifi.com.android.wifi",
+        "service-wifi.com.android.wifi",
+    ],
+    owner: "google",
     src: "com.google.android.wifi.apex",
     overrides: ["com.android.wifi"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.android.uwb
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.android.uwb",
     apex_name: "com.android.uwb",
+    owner: "google",
     src: "com.google.android.uwb.apex",
     overrides: ["com.android.uwb"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
     exported_bootclasspath_fragments: ["com.android.uwb-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.uwb-systemserverclasspath-fragment"],
-    owner: "google",
-    prefer: true,
 }
 
 // Google com.google.mainline.primary.libs
-prebuilt_apex {
+module_apex_prebuilt {
     name: "com.google.mainline.primary.libs",
     apex_name: "com.mainline.primary.libs",
+    owner: "google",
     src: "com.google.mainline.primary.libs.apex",
     overrides: ["com.mainline.primary.libs"],
-    owner: "google",
     prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
