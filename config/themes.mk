@@ -71,6 +71,8 @@ endif
 
 # Lockscreen clock fonts
 PRODUCT_PACKAGES += \
+    ClockFontGoogleSansOverlay \
+    ClockFontNothingDotOverlay \
     ClockFontAdventProOverlay \
     ClockFontBigNoodleTiltingOverlay \
     ClockFontCherrySwashOverlay \
