@@ -150,4 +150,10 @@ PRODUCT_PACKAGES += \
     ClockFontTourneyMediumOverlay \
     ClockFontVG5000Overlay \
     ClockFontOdibeeSansOverlay \
-    ClockFontPermanentMarkerOverlay
+    ClockFontPermanentMarkerOverlay \
+    ClockFontArcadeInterlacedOverlay \
+    ClockFontDotComOverlay \
+    ClockFontKarmaticArcadeOverlay \
+    ClockFontLiquidCrystalOverlay \
+    ClockFontV5PRFOverlay \
+    ClockFontZeroFourOverlay

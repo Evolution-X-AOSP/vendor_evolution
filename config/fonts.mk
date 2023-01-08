@@ -89,7 +89,8 @@ PRODUCT_PACKAGES += \
     FontJicaletaOverlay \
     FontJustSansOverlay \
     FontPunkMonoOverlay \
-    FontVladivostokOverlay
+    FontVladivostokOverlay \
+    FontDotComOverlay
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
