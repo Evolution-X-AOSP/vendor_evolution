@@ -923,6 +923,9 @@
     <family customizationType="new-named-family" name="alien-league">
         <font weight="300" style="normal">AlienLeague-Regular.ttf</font>
     </family>
+    <family customizationType="new-named-family" name="arcadeinterlaced">
+        <font weight="300" style="normal">ArcadeInterlaced.ttf</font>
+    </family>
     <family customizationType="new-named-family" name="bignoodle-italic">
         <font weight="300" style="normal">BigNoodleTilting-Italic.ttf</font>
     </family>
@@ -935,6 +938,12 @@
     <family customizationType="new-named-family" name="ginora-sans">
         <font weight="300" style="normal">GinoraSans-Regular.ttf</font>
     </family>
+    <family customizationType="new-named-family" name="karmaticarcade">
+        <font weight="300" style="normal">KarmaticArcade.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="liquidcrystal">
+        <font weight="300" style="normal">LiquidCrystal-Bold.ttf</font>
+    </family>
     <family customizationType="new-named-family" name="riviera">
         <font weight="300" style="normal">Riviera-Regular.ttf</font>
     </family>
@@ -946,6 +955,9 @@
     </family>
     <family customizationType="new-named-family" name="unionfont">
         <font weight="300" style="normal">Union-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="v5prophit">
+        <font weight="300" style="normal">V5PRF.ttf</font>
     </family>
     <family customizationType="new-named-family" name="vibur">
         <font weight="300" style="normal">Vibur.ttf</font>
@@ -1189,4 +1201,7 @@
       <axis tag="wght" stylevalue="700"/>
     </font>
   </family>
+    <family customizationType="new-named-family" name="zerofour">
+        <font weight="300" style="normal">ZeroFour.ttf</font>
+    </family>
 </fonts-modification>
