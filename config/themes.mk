@@ -85,4 +85,36 @@ PRODUCT_PACKAGES += \
     ClockFontGinoraSansOverlay \
     ClockFontRivieraOverlay \
     ClockFontSedgwickAveOverlay \
-    ClockFontUnionOverlay
+    ClockFontUnionOverlay \
+    ClockFontAccuratistOverlay \
+    ClockFontAclonicaOverlay \
+    ClockFontAmaranteOverlay \
+    ClockFontBariolOverlay \
+    ClockFontCagliostroOverlay \
+    ClockFontCoconOverlay \
+    ClockFontComfortaaOverlay \
+    ClockFontComicSansOverlay \
+    ClockFontCoolstoryOverlay \
+    ClockFontExotwoOverlay \
+    ClockFontFifa2018Overlay \
+    ClockFontGrandHotelOverlay \
+    ClockFontHarmonySansOverlay \
+    ClockFontLatoOverlay \
+    ClockFontLGSmartGothicOverlay \
+    ClockFontLinotteOverlay \
+    ClockFontNokiaPureOverlay \
+    ClockFontNunitoOverlay \
+    ClockFontOneplusSansOverlay \
+    ClockFontOneplusSlateOverlay \
+    ClockFontOswaldOverlay \
+    ClockFontQuandoOverlay \
+    ClockFontRedressedOverlay \
+    ClockFontReemKufiOverlay \
+    ClockFontRobotoCondensedOverlay \
+    ClockFontRosemaryOverlay \
+    ClockFontRubikOverlay \
+    ClockFontSamsungOneOverlay \
+    ClockFontSonySketchOverlay \
+    ClockFontStoropiaOverlay \
+    ClockFontSurferOverlay \
+    ClockFontUbuntuOverlay
