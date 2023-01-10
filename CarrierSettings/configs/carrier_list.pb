@@ -384,8 +384,8 @@ Lycamobile
 "
 21601SPN=DJUICE
 21601DJUICE
-
-21601
+
+	yettel_hu
 21601
 
 
@@ -436,6 +436,60 @@ telekom_hu
 
 22005
 22005
+ 
+tango_us
+2220122201307130
+ 
+tango_us
+2220122201307131
+ 
+tango_us
+2220122201307132
+ 
+tango_us
+2220122201307133
+ 
+tango_us
+2220122201307134
+ 
+tango_us
+2220122201307135
+ 
+tango_us
+2220122201307136
+ 
+tango_us
+2220122201307137
+ 
+tango_us
+2220122201307138
+!
+tango_us
+22201222013071390
+!
+tango_us
+22201222013071391
+!
+tango_us
+22201222013071392
+!
+tango_us
+22201222013071393
+!
+tango_us
+22201222013071394
+ 
+tango_us
+2220122201309670
+ 
+tango_us
+2220122201344000
+ 
+tango_us
+2220122201344001
+ 
+tango_us
+2220122201344002
 
 	gigsky_us
 22201GigSky
@@ -789,6 +843,9 @@ LYCAMOBILE
 
 23450
 23450
+
+tango_us
+23453
 
 23455
 23455
@@ -872,9 +929,8 @@ $
  
 24005SPN=TELIA
 24005TELIA
-
-
-telenor_se
+
+vimla_se
 24006
 
 sky_gb
@@ -1161,6 +1217,9 @@ telekom_de
 
 mvno_de
 26220
+
+1and1_de
+26223
 *
 truphone_zz
 26242"547275554B3030656E
@@ -1174,21 +1233,24 @@ Lycamobile
 
 google5glab_us
 262840
-
-26801
+
+	gibtel_gi
+26601
+
+vodafone_pt
 26801
-
-26803
+
+nos_pt
 26803
 $
 lycamobile_pt
 26804
 Lycamobile
-
-26806
+
+meo_pt
 26806
-
-27001
+
+post_lu
 27001
 
 mtx_lu
@@ -1220,6 +1282,9 @@ Lycamobile
 
 lycamobile_ie
 27213
+
+	virgin_ie
+27215
 
 	siminn_is
 27401
@@ -1860,6 +1925,30 @@ dishatt_us
 
 dishatt_us
 310410"3436
+
+
+dishatt_us
+310410"3438
+
+
+dishatt_us
+310410"3440
+
+
+dishatt_us
+310410"3442
+
+
+dishatt_us
+310410"3444
+
+
+dishatt_us
+310410"3446
+
+
+dishatt_us
+310410"3448
 
 attmvnos_us
 310410"4102
@@ -1944,13 +2033,38 @@ tmobile_us
 
 	inland_us
 310580
-
-metropcs_us
-310590"6D38
+(
+
+xfinity_us
+310590"BA01450000000000
+(
+
+xfinity_us
+310590"BA01640000000000
 
 
-tmobile_us
+verizon_us
 310590
+(
+
+xfinity_us
+310591"BA01450000000000
+(
+
+xfinity_us
+310591"BA01640000000000
+(
+
+xfinity_us
+310599"BA01450000000000
+(
+
+xfinity_us
+310599"BA01640000000000
+
+
+verizon_us
+310599
 
 
 cellcom_us
@@ -2024,9 +2138,18 @@ tmobile_us
 0
 310930SPN=COPPERVALLEY
 310930COPPERVALLEY
+(
+consumercellularatt_us
+310950"2AC9
+
+attmvnos_us
+310950"4102
 !
 redpocketatt_us
 310950"4201
+
+attmvnos_us
+310950"44FF
 
 
 att5gsa_us
@@ -2034,6 +2157,18 @@ att5gsa_us
 
 att5g_us
 310950"53FF
+
+attmvnos_us
+310950"62FF
+
+attmvnos_us
+310950"69FF
+ 
+tracfoneatt_us
+310950"DDFF
+ 
+tracfoneatt_us
+310950"DEFF
 
 att_us
 310950
@@ -2081,6 +2216,9 @@ $
 (
 311140SPN=SPROCKET
 311140SPROCKET
+(
+consumercellularatt_us
+311180"2AC9
 
 
 dishatt_us
@@ -2097,9 +2235,39 @@ dishatt_us
 
 dishatt_us
 311180"3436
+
+
+dishatt_us
+311180"3438
+
+
+dishatt_us
+311180"3440
+
+
+dishatt_us
+311180"3442
+
+
+dishatt_us
+311180"3444
+
+
+dishatt_us
+311180"3446
+
+
+dishatt_us
+311180"3448
+
+attmvnos_us
+311180"4102
 !
 redpocketatt_us
 311180"4201
+
+attmvnos_us
+311180"44FF
 
 
 att5gsa_us
@@ -2107,6 +2275,18 @@ att5gsa_us
 
 att5g_us
 311180"53FF
+
+attmvnos_us
+311180"62FF
+
+attmvnos_us
+311180"69FF
+ 
+tracfoneatt_us
+311180"DDFF
+ 
+tracfoneatt_us
+311180"DEFF
 
 att_us
 311180
@@ -2149,6 +2329,14 @@ att5gsa_us
 
 	cspire_us
 311230
+
+
+verizon_us
+311270
+
+
+verizon_us
+311280
 "
 311310SPN=LEACO
 311310LEACO
@@ -2162,7 +2350,7 @@ $
 311350SPN=NEMONT
 311350NEMONT
 
-311370
+gci_us
 311370
 
 311390
@@ -2211,6 +2399,10 @@ xfinity_us
 311480"BA01490000000000
 (
 
+xfinity_us
+311480"BA01640000000000
+(
+
 visible_us
 311480"BAE1000000000000
 )
@@ -2220,6 +2412,78 @@ visible_us
 
 verizon_us
 311480
+(
+
+xfinity_us
+311481"BA01450000000000
+(
+
+xfinity_us
+311481"BA01640000000000
+(
+
+xfinity_us
+311482"BA01450000000000
+(
+
+xfinity_us
+311482"BA01640000000000
+(
+
+xfinity_us
+311483"BA01450000000000
+(
+
+xfinity_us
+311483"BA01640000000000
+(
+
+xfinity_us
+311484"BA01450000000000
+(
+
+xfinity_us
+311484"BA01640000000000
+(
+
+xfinity_us
+311485"BA01450000000000
+(
+
+xfinity_us
+311485"BA01640000000000
+(
+
+xfinity_us
+311486"BA01450000000000
+(
+
+xfinity_us
+311486"BA01640000000000
+(
+
+xfinity_us
+311487"BA01450000000000
+(
+
+xfinity_us
+311487"BA01640000000000
+(
+
+xfinity_us
+311488"BA01450000000000
+(
+
+xfinity_us
+311488"BA01640000000000
+(
+
+xfinity_us
+311489"BA01450000000000
+(
+
+xfinity_us
+311489"BA01640000000000
 
 metropcs_us
 311490"6D38
@@ -2336,6 +2600,9 @@ tmobile_us
 
 311740
 311740
+
+astca_as
+311780
 
 cellcommno_us
 311840"C1
@@ -2442,6 +2709,9 @@ $
 
 spectrumdata_us
 313450
+
+tango_us
+313770
 
 
 liberty_pr
@@ -2452,6 +2722,10 @@ liberty_pr
 
 xfinitymso_us
 314200
+
+
+xfinity_us
+314240
 
 	google_us
 315010
@@ -3708,8 +3982,9 @@ ymobile_ye
 dent_zz
 42501"
 3597BFD533
-
-42501
+
+
+partner_il
 42501
 
 42502
@@ -3729,8 +4004,9 @@ ymobile_ye
 
 42508
 42508
-
-42510
+
+
+partner_il
 42510
 
 42514
@@ -4144,18 +4420,12 @@ lguplus_kr
 
 digi_my
 502143
-
-	celcom_my
-502145
 
 digi_my
 502146
 
 maxis_my
 502147
-
-	celcom_my
-502148
 
 yes_my
 502152
@@ -4340,12 +4610,12 @@ starhub_sg
 
 52811
 52811
-
-53001
+
+vodafone_nz
 53001
-'
-53005IMSI=53005204
-5300553005204
+
+	skinny_nz
+53005Skinny
 
 spark_nz
 53005
@@ -5293,4 +5563,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480µË”»œ"ø‹§š
+999480¼ßÿ— "¿ØÉœ
