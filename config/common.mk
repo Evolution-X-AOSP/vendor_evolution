@@ -187,12 +187,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/evolution/overlay/common
 
-ifneq ($(wildcard vendor/google/modules/.),)
-# Flatten APEXs for performance
-OVERRIDE_TARGET_FLATTEN_APEX := true
-# This needs to be specified explicitly to override ro.apex.updatable=true from
-# # prebuilt vendors, as init reads /product/build.prop after /vendor/build.prop
-PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
+ifneq ($(TARGET_FLATTEN_APEX), true)
+$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.mk)
+else
+$(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
 
 # Inherit from apex config
