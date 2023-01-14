@@ -21,5 +21,11 @@ PRODUCT_PACKAGES += \
     Papers \
     ParallelSpace \
     RepainterServicePriv \
-    Seedvault \
+    Seedvault
+
+# TouchGestures
+TARGET_SUPPORTS_TOUCHGESTURES ?= false
+ifeq ($(TARGET_SUPPORTS_TOUCHGESTURES),true)
+PRODUCT_PACKAGES += \
     TouchGestures
+endif
