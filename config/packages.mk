@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
     Papers \
     ParallelSpace \
     RepainterServicePriv \
-    Seedvault
+    Seedvault \
+    SimpleDeviceConfig
 
 # TouchGestures
 TARGET_SUPPORTS_TOUCHGESTURES ?= false
