@@ -941,9 +941,6 @@
     <family customizationType="new-named-family" name="roadrage-sys">
         <font weight="300" style="normal">RoadRage-Regular.ttf</font>
     </family>
-    <family customizationType="new-named-family" name="sedgwick-ave">
-        <font weight="300" style="normal">SedgwickAveDisplay-Regular.ttf</font>
-    </family>
     <family customizationType="new-named-family" name="snowstorm-sys">
         <font weight="300" style="normal">Snowstorm-Regular.ttf</font>
     </family>
@@ -1045,6 +1042,9 @@
     </family>
     <family customizationType="new-named-family" name="vg5000">
         <font weight="300" style="normal">VG5000-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="permanent-marker">
+        <font weight="300" style="normal">PermanentMarker.ttf</font>
     </family>
     
   <!-- Circular-Std -->
