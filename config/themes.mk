@@ -100,7 +100,6 @@ PRODUCT_PACKAGES += \
     ClockFontBikoOverlay \
     ClockFontGinoraSansOverlay \
     ClockFontRivieraOverlay \
-    ClockFontSedgwickAveOverlay \
     ClockFontUnionOverlay \
     ClockFontAccuratistOverlay \
     ClockFontAclonicaOverlay \
@@ -150,7 +149,8 @@ PRODUCT_PACKAGES += \
     ClockFontRubikGlitchOverlay \
     ClockFontTourneyMediumOverlay \
     ClockFontVG5000Overlay \
-    ClockFontOdibeeSansOverlay
+    ClockFontOdibeeSansOverlay \
+    ClockFontPermanentMarkerOverlay
 
 # QS Panel
 PRODUCT_PACKAGES += \
