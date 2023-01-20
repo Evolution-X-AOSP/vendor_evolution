@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
     FontSonySketchOverlay \
     FontStoropiaOverlay \
     FontSurferOverlay \
-    FontUbuntuOverlay
+    FontUbuntuOverlay \
+    FontCircularStdOverlay
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += \
