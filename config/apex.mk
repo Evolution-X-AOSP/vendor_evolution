@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-TARGET_SHIP_PREBUILT_APEX ?= false
-ifeq ($(TARGET_SHIP_PREBUILT_APEX),true)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -67,4 +65,3 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
 	com.google.mainline.primary.libs
-endif

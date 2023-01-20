@@ -199,7 +199,9 @@ $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_
 endif
 
 # Inherit from apex config
+ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)
 $(call inherit-product, vendor/evolution/config/apex.mk)
+endif
 
 # Inherit from audio config
 $(call inherit-product, vendor/evolution/config/audio.mk)

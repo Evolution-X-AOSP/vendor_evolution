@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # Google Apex Overlays
-ifeq ($(TARGET_SHIP_PREBUILT_APEX),true)
+ifneq ($(filter blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)
 PRODUCT_PACKAGES += \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
