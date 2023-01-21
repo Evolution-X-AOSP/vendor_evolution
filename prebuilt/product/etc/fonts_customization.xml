@@ -994,6 +994,52 @@
         <font weight="500" style="normal">Tourney-Medium.ttf</font>
     </family>
     
+    <family customizationType="new-named-family" name="blazma">
+        <font weight="400" style="normal">Blazma-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="hyperwave">
+        <font weight="500" style="normal">HyperwaveDisplay.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="cardelina">
+        <font weight="300" style="normal">Cardelina.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="cookie-run">
+        <font weight="300" style="normal">CookieRun-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="cookie-run-bold">
+        <font weight="500" style="normal">CookieRun-Bold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="gemsbuck">
+        <font weight="500" style="normal">Gemsbuck01-Bold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="gigantic-fs">
+        <font weight="500" style="normal">GiganticFS.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="hezaedrus">
+        <font weight="300" style="normal">Hezaedrus-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="jicaleta">
+        <font weight="300" style="normal">Jicaleta-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="just-sans">
+        <font weight="300" style="normal">JUSTSansRegular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="just-sans-bold">
+        <font weight="500" style="normal">JUSTSansExBold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="punk-mono">
+        <font weight="300" style="normal">punk-mono-regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="punk-mono-oblique">
+        <font weight="300" style="normal">punk-mono-oblique.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="punk-mono-medium">
+        <font weight="500" style="normal">punk-mono-medium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="punk-mono-extended">
+        <font weight="500" style="normal">punk-mono-extendedmedium.ttf</font>
+    </family>
+    
   <!-- Circular-Std -->
   <family customizationType="new-named-family" name="circular-std">
     <font weight="400" style="normal">Circular-Std-Regular.ttf
