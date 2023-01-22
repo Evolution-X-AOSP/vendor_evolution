@@ -136,6 +136,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+# Support many users/work profiles
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.max_profiles=16 \
+    fw.max_users=32
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
