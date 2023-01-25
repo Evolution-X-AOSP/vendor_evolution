@@ -18,6 +18,7 @@
 PRODUCT_PACKAGES += \
     IconShapeIosOverlay \
     IconShapeLeafyOverlay \
+    IconShapeRiceBallsOverlay \
     IconShapeRohieMeowOverlay \
     IconShapeScrollOverlay
 
