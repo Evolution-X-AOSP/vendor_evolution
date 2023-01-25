@@ -21,7 +21,7 @@ EVO_BASE_VERSION := 7.6.1
 EVO_CODENAME := Adobo
 
 # Set all versions
-EVO_BUILD_TYPE ?= UNOFFICIAL
+EVO_BUILD_TYPE ?= COMMUNITY
 
 EVO_DATE_YEAR := $(shell date -u +%Y)
 EVO_DATE_MONTH := $(shell date -u +%m)
