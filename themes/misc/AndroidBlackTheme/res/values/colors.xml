@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+ * Copyright (C) 2022 Yet Another AOSP Project
  * Copyright (C) 2022 The LineageOS Project
  *
  * SPDX-License-Identifier: Apache-2.0
@@ -32,4 +33,8 @@
   <color name="system_neutral2_800">#171717</color>
   <color name="system_neutral2_900">#000000</color>
   <color name="system_neutral2_1000">#000000</color>
+
+  <color name="system_accent1_1000">#ff000000</color>
+  <color name="system_accent2_1000">#ff000000</color>
+  <color name="system_accent3_1000">#ff000000</color>
 </resources>
