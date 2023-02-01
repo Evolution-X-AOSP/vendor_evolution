@@ -1204,4 +1204,172 @@
     <family customizationType="new-named-family" name="zerofour">
         <font weight="300" style="normal">ZeroFour.ttf</font>
     </family>
+    <family customizationType="new-named-family" name="lovenessthree">
+        <font weight="300" style="normal">lovenessthree.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="NeonDisco">
+        <font weight="300" style="normal">NeonDisco.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="xtrusion">
+        <font weight="300" style="normal">xtrusion.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="AlphaClouds">
+        <font weight="300" style="normal">AlphaClouds.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="AlphaFlowers">
+        <font weight="300" style="normal">AlphaFlowers.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="AlphaWood">
+        <font weight="300" style="normal">AlphaWood.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="BigCheese">
+        <font weight="300" style="normal">BigCheese.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="BudmoJiggler">
+        <font weight="300" style="normal">BudmoJiggler.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="BunnyRabbits">
+        <font weight="300" style="normal">BunnyRabbits.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="CFBadNews">
+        <font weight="300" style="normal">CFBadNews.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="CFOneTwoTrees">
+        <font weight="300" style="normal">CFOneTwoTrees.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="CRACKMAN">
+        <font weight="300" style="normal">CRACKMAN.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ELRIOTT2">
+        <font weight="300" style="normal">ELRIOTT2.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="EasterBunny">
+        <font weight="300" style="normal">EasterBunny.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Fibography">
+        <font weight="300" style="normal">Fibography.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Hanged">
+        <font weight="300" style="normal">Hanged.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="HotSweat">
+        <font weight="300" style="normal">HotSweat.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="KGOnlyHope">
+        <font weight="300" style="normal">KGOnlyHope.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Karamuruh">
+        <font weight="300" style="normal">Karamuruh.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Kingthings">
+        <font weight="300" style="normal">Kingthings.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Klyukin">
+        <font weight="300" style="normal">Klyukin.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="LMSClifford">
+        <font weight="300" style="normal">LMSClifford.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="LittleBunny">
+        <font weight="300" style="normal">LittleBunny.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="MessingLettern">
+        <font weight="300" style="normal">MessingLettern.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="neon2">
+        <font weight="300" style="normal">neon2.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Pinewood">
+        <font weight="300" style="normal">Pinewood.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="PlaidEvent">
+        <font weight="300" style="normal">PlaidEvent.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="PlantsLetters">
+        <font weight="300" style="normal">PlantsLetters.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="QuickSouth">
+        <font weight="300" style="normal">QuickSouth.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="REMPONK">
+        <font weight="300" style="normal">REMPONK.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Romantiques">
+        <font weight="300" style="normal">Romantiques.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ScrapItUp">
+        <font weight="300" style="normal">ScrapItUp.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="SpaceGame">
+        <font weight="300" style="normal">SpaceGame.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="TH3MACHINE">
+        <font weight="300" style="normal">TH3MACHINE.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="VTKSDURA3d">
+        <font weight="300" style="normal">VTKSDURA3d.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ZnikomitNo24">
+        <font weight="300" style="normal">ZnikomitNo24.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ACFilmstrip">
+        <font weight="300" style="normal">ACFilmstrip.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Ampad3D2">
+        <font weight="300" style="normal">Ampad3D2.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="BetsyFlanagan">
+        <font weight="300" style="normal">BetsyFlanagan.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Cat">
+        <font weight="300" style="normal">Cat.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Concentrate">
+        <font weight="300" style="normal">Concentrate.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="DiscoMidnight">
+        <font weight="300" style="normal">DiscoMidnight.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="GautsMotelUpperRight">
+        <font weight="300" style="normal">GautsMotelUpperRight.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="NINJAS">
+        <font weight="300" style="normal">NINJAS.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="StandardHeader">
+        <font weight="300" style="normal">StandardHeader.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="frankfrt">
+        <font weight="300" style="normal">frankfrt.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="munsteria">
+        <font weight="300" style="normal">munsteria.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="AlmonteSnow">
+        <font weight="300" style="normal">AlmonteSnow.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Brandayolq">
+        <font weight="300" style="normal">Brandayolq.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="EditPoints">
+        <font weight="300" style="normal">EditPoints.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="EditPointsFilled">
+        <font weight="300" style="normal">EditPointsFilled.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Floorlight">
+        <font weight="300" style="normal">Floorlight.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Futurr">
+        <font weight="300" style="normal">Futurr.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="LowerAtmosphere">
+        <font weight="300" style="normal">LowerAtmosphere.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="MonbijouxClownpiece">
+        <font weight="300" style="normal">MonbijouxClownpiece.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="Roundheads">
+        <font weight="300" style="normal">Roundheads.ttf</font>
+    </family>
 </fonts-modification>
