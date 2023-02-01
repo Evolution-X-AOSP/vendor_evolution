@@ -156,7 +156,63 @@ PRODUCT_PACKAGES += \
     ClockFontKarmaticArcadeOverlay \
     ClockFontLiquidCrystalOverlay \
     ClockFontV5PRFOverlay \
-    ClockFontZeroFourOverlay
+    ClockFontZeroFourOverlay \
+    ClockFontxtrusionOverlay \
+    ClockFontNeonDiscoOverlay \
+    ClockFontlovenessthreeOverlay \
+    ClockFontAlphaCloudsOverlay \
+    ClockFontAlphaFlowersOverlay \
+    ClockFontAlphaWoodOverlay \
+    ClockFontBigCheeseOverlay \
+    ClockFontBudmoJigglerOverlay \
+    ClockFontBunnyRabbitsOverlay \
+    ClockFontCFBadNewsOverlay \
+    ClockFontCFOneTwoTreesOverlay \
+    ClockFontCRACKMANOverlay \
+    ClockFontELRIOTT2Overlay \
+    ClockFontEasterBunnyOverlay \
+    ClockFontFibographyOverlay \
+    ClockFontHangedOverlay \
+    ClockFontHotSweatOverlay \
+    ClockFontKGOnlyHopeOverlay \
+    ClockFontKaramuruhOverlay \
+    ClockFontKingthingsOverlay \
+    ClockFontKlyukinOverlay \
+    ClockFontLMSCliffordOverlay \
+    ClockFontLittleBunnyOverlay \
+    ClockFontMessingLetternOverlay \
+    ClockFontneon2Overlay \
+    ClockFontPinewoodOverlay \
+    ClockFontPlaidEventOverlay \
+    ClockFontPlantsLettersOverlay \
+    ClockFontQuickSouthOverlay \
+    ClockFontREMPONKOverlay \
+    ClockFontRomantiquesOverlay \
+    ClockFontScrapItUpOverlay \
+    ClockFontSpaceGameOverlay \
+    ClockFontTH3MACHINEOverlay \
+    ClockFontVTKSDURA3dOverlay \
+    ClockFontZnikomitNo24Overlay \
+    ClockFontACFilmstripOverlay \
+    ClockFontAmpad3D2Overlay \
+    ClockFontBetsyFlanaganOverlay \
+    ClockFontCatOverlay \
+    ClockFontConcentrateOverlay \
+    ClockFontDiscoMidnightOverlay \
+    ClockFontGautsMotelUpperRightOverlay \
+    ClockFontNINJASOverlay \
+    ClockFontStandardHeaderOverlay \
+    ClockFontfrankfrtOverlay \
+    ClockFontmunsteriaOverlay \
+    ClockFontAlmonteSnowOverlay \
+    ClockFontBrandayolqOverlay \
+    ClockFontEditPointsOverlay \
+    ClockFontEditPointsFilledOverlay \
+    ClockFontFloorlightOverlay \
+    ClockFontFuturrOverlay \
+    ClockFontLowerAtmosphereOverlay \
+    ClockFontMonbijouxClownpieceOverlay \
+    ClockFontRoundheadsOverlay
 
 # QS Panel
 PRODUCT_PACKAGES += \
