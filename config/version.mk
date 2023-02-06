@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2020-2021 Haruka LLC.
 # Copyright (C) 2020-2021 Haruka Aita
-# Copyright (C) 2019-2022 Evolution X
+# Copyright (C) 2019-2023 Evolution X
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.5
-EVO_CODENAME := Menudo
+EVO_BASE_VERSION := 7.6.1
+EVO_CODENAME := Adobo
 
 # Set all versions
 EVO_BUILD_TYPE ?= UNOFFICIAL
