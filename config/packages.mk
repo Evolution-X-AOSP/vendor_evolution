@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     GameSpace \
     Papers \
     RepainterServicePriv \
-    SimpleDeviceConfig
+    SimpleDeviceConfig \
+    Updates
 
 # TouchGestures
 TARGET_SUPPORTS_TOUCHGESTURES ?= false
