@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
 # Google Overlays
 PRODUCT_PACKAGES += \
     DMServiceOverlay \
+    FlipendoOverlay \
     GoogleConfigOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
@@ -33,21 +34,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
-    SettingsGoogleOverlayPixel2022
-
-# Now Playing Overlay
-ifneq ($(filter blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
-    NowPlayingOverlay
-endif
-
-# Google Apex Overlays
-ifneq ($(filter blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiverOverlay \
-    CellBroadcastServiceOverlay \
-    GooglePermissionControllerOverlay \
-    MediaProviderOverlay \
-    NetworkStackGoogleOverlay \
-    PixelTetheringOverlay
-endif
+    PixelSetupWizardOverlay2019 \
+    PixelSetupWizardOverlay2021 \
+    SettingsGoogleOverlayPixel2022 \
+    SystemUIGXOverlay

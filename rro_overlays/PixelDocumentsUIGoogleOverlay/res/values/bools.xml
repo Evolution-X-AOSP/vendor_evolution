@@ -2,6 +2,6 @@
 <resources>
     <bool name="config_button_all_caps">false</bool>
     <bool name="handle_view_downloads_intent">false</bool>
-    <bool name="is_launcher_enabled">true</bool>
+    <bool name="is_launcher_enabled">false</bool>
     <bool name="show_search_bar">true</bool>
 </resources>

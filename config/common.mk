@@ -213,11 +213,6 @@ else
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
 
-# Inherit from apex config
-ifneq ($(filter walleye taimen blueline crosshatch bonito sargo flame coral sunfish bramble redfin oriole raven bluejay panther cheetah, $(TARGET_DEVICE)),)
-$(call inherit-product, vendor/evolution/config/apex.mk)
-endif
-
 # Inherit from audio config
 $(call inherit-product, vendor/evolution/config/audio.mk)
 
@@ -237,7 +232,14 @@ $(call inherit-product, vendor/evolution/config/ota.mk)
 $(call inherit-product, vendor/evolution/config/packages.mk)
 
 # Inherit from rro_overlays config
+TARGET_IS_PIXEL ?= false
+ifeq ($(TARGET_IS_PIXEL), true)
+$(call inherit-product, vendor/evolution/config/rro_overlays_pixel.mk)
+else ifeq ($(TARGET_IS_PIXEL_7), true)
+$(call inherit-product, vendor/evolution/config/rro_overlays_pixel_7.mk)
+else
 $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
+endif
 
 # Inherit from textclassifier config
 $(call inherit-product, vendor/evolution/config/textclassifier.mk)

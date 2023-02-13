@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.google.android.systemui.overlay.pixelbatteryhealthconfig">
+
+    <overlay
+        android:targetPackage="com.android.systemui"
+        android:priority="1"
+        android:isStatic="true"/>
+    <application android:hasCode="false"/>
+</manifest>

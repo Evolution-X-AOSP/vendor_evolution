@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2022, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- Default value for Settings.ASSIST_LONG_PRESS_HOME_ENABLED -->
+    <!--bool name="config_assistLongPressHomeEnabledDefault">false</bool-->
+
+    <!-- Default value for Settings.ASSIST_TOUCH_GESTURE_ENABLED -->
+    <!--bool name="config_assistTouchGestureEnabledDefault">false</bool-->
+
+    <!-- Allow the gesture power + volume up to change the ringer mode while the device
+         is interactive. -->
+    <!--bool name="config_volumeHushGestureEnabled">false</bool-->
+
+    <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
+    <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
+
+    <!-- Colon separated list of package names that should be granted DND access -->
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.apps.dreamliner:com.google.android.GoogleCamera:com.google.android.gms:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool</string>
+
+    <!-- Control the default night mode to use when there is no other mode override set.
+         One of the following values (see UiModeManager.java):
+             0 - MODE_NIGHT_AUTO
+             1 - MODE_NIGHT_NO
+             2 - MODE_NIGHT_YES
+    -->
+    <integer name="config_defaultNightMode">2</integer>
+
+    <!-- Control the behavior when the user presses the power and volume up buttons together.
+            0 - Nothing
+            1 - Mute toggle
+            2 - Global actions menu
+    -->
+    <!--integer name="config_keyChordPowerVolumeUp">2</integer-->
+
+    <!-- Control the behavior when the user long presses the power button.
+            0 - Nothing
+            1 - Global actions menu
+            2 - Power off (with confirmation)
+            3 - Power off (without confirmation)
+            4 - Go to voice assist
+            5 - Go to assistant (Settings.Secure.ASSISTANT)
+    -->
+    <!--integer name="config_longPressOnPowerBehavior">5</integer-->
+</resources>
