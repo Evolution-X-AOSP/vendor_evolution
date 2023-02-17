@@ -134,3 +134,11 @@ PRODUCT_PACKAGES += \
     ClockFontStoropiaOverlay \
     ClockFontSurferOverlay \
     ClockFontUbuntuOverlay
+
+# QS Panel
+PRODUCT_PACKAGES += \
+    QSRoundedRectangle \
+    QSOutline \
+    QSTwoToneAccent \
+    QSShaded \
+    QSCyberPunk
