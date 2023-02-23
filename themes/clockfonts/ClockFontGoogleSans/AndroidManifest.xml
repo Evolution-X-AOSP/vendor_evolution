@@ -6,5 +6,5 @@
         android:category="android.theme.customization.lockscreen_clock_font"
         android:priority="1"/>
 
-    <application android:label="Google Sans" android:hasCode="false" android:icon="@mipmap/ic_launcher"/>
+    <application android:label="Google Sans Clock" android:hasCode="false" android:icon="@mipmap/ic_launcher"/>
 </manifest>
