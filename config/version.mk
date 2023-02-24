@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.6.1
-EVO_CODENAME := Adobo
+EVO_BASE_VERSION := 7.6.2
+EVO_CODENAME := Tapsilog
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
