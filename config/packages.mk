@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace \
     Papers \
+    ParallelSpace \
     RepainterServicePriv \
     SimpleDeviceConfig \
     Updates
