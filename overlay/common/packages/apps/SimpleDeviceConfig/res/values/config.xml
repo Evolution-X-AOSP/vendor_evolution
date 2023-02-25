@@ -41,7 +41,7 @@
         -->
 
         <!-- Now Playing (Pixel 2017+) -->
-        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=3038:https://storage.googleapis.com/music-iq-db/updatable_db_v3/20221218-030052/manifest.json</item>
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=244:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20230219-030030/manifest.json</item>
 
         <!-- Adaptive Sound (Pixel 2020) -->
         <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
