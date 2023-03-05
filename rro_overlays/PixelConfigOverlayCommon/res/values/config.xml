@@ -47,7 +47,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Flag indicating whether the volume panel should show remote sessions. -->
-    <!--bool name="config_volumeShowRemoteSessions">false</bool-->
+    <!--bool name="config_volumeAdjustmentForRemoteGroupSessions">false</bool-->
 
     <!-- Corner radius for bottom sheet system dialogs -->
     <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
@@ -197,7 +197,7 @@
     <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
     <!-- Colon separated list of package names that should be granted DND access -->
-    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.android.camera</string>
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool:com.android.camera</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo:com.android.launcher3</string>

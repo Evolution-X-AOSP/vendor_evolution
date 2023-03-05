@@ -23,6 +23,10 @@
     <!-- Class name for the default main Dialer activity -->
     <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
 
+    <!-- Whether or not to support device to device communication using RTP and DTMF communication
+         transports. -->
+    <bool name="config_use_device_to_device_communication">true</bool>
+
     <!-- Whether the device supports dialing emergency RTT calls when there's no SIM card installed
     -->
     <bool name="config_support_simless_emergency_rtt">true</bool>

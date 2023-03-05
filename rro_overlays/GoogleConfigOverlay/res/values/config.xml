@@ -44,6 +44,10 @@
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
 
+    <!-- The package name of the dock manager app. Must be granted the
+         POST_NOTIFICATIONS permission. -->
+    <string name="config_defaultDockManagerPackageName" translatable="false">com.google.android.apps.nest.dockmanager.app</string>
+
     <!-- The name of the package that will hold the gallery role by default. -->
     <string name="config_defaultGallery" translatable="false">com.google.android.apps.photos</string>
 
@@ -91,9 +95,6 @@
     <!-- The name of the package that will handle updating the device management role. -->
     <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
 
-    <!-- The prefix of dream component names that are loggable. If empty, logs "other" for all. -->
-    <string name="config_loggable_dream_prefix" translatable="false">com.google.</string>
-
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
@@ -111,7 +112,7 @@
 
     <!-- System bluetooth stack package name -->
     <string name="config_systemBluetoothStack" translatable="false">
-        com.android.bluetooth
+        com.google.android.bluetooth
     </string>
 
     <!-- The name of the package that will hold the call redirection role by default. -->
@@ -231,7 +232,7 @@
     </integer-array>
 
     <!-- Same as the above, but are defined by vendorCodes -->
-    <integer-array name="config_face_acquire_vendor_enroll_ignorelist" translatable="false" >
+    <integer-array name="config_face_acquire_enroll_ignorelist" translatable="false" >
         <item>13</item>
     </integer-array>
 
@@ -263,6 +264,14 @@
     <string-array name="config_locationProviderPackageNames" translatable="false">
         <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
+    </string-array>
+
+    <!-- The prefixes of dream component names that are loggable.
+         Matched against ComponentName#flattenToString() for dream components.
+         If empty, logs "other" for all. -->
+    <string-array name="config_loggable_dream_prefixes" translatable="false">
+        <item>com.google.</item>
+        <item>com.android.</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and

@@ -17,6 +17,14 @@
 */
 -->
 <resources>
+    <!-- Determines if the granting of temporary location permission to the default dialer
+         during an emergency call should be allowed. -->
+    <bool name="grant_location_permission_enabled">true</bool>
+
+    <!-- When set, Telecom will attempt to bind to the {@link CallDiagnosticService} implementation
+         defined by the app with this package name. -->
+    <string name="call_diagnostic_service_package_name">com.google.android.apps.scone</string>
+
     <!-- Class name for the default main Dialer activity -->
     <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
 </resources>

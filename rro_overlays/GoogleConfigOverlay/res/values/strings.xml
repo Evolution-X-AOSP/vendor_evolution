@@ -17,17 +17,10 @@
 */
 -->
 <resources>
-    <string name="face_acquired_pan_too_extreme">Position your face directly in front of the phone</string>
-    <string name="face_acquired_poor_gaze">Position your face directly in front of the phone</string>
-    <string name="face_acquired_roll_too_extreme">Position your face directly in front of the phone</string>
-    <string name="face_acquired_tilt_too_extreme">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_close">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_far">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_high">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_left">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_low">Position your face directly in front of the phone</string>
-    <string name="face_acquired_too_right">Position your face directly in front of the phone</string>
-    <string name="face_recalibrate_notification_content">Face unlock may not work until you re-enroll</string>
+    <string name="biometric_app_setting_name">Use face or fingerprint</string>
+    <string name="biometric_dialog_default_subtitle">Use your face or fingerprint to continue</string>
+    <string name="biometric_or_screen_lock_app_setting_name">Use face, fingerprint, or screen lock</string>
+    <string name="biometric_or_screen_lock_dialog_default_subtitle">Use your face, fingerprint, or screen lock to continue</string>
     <string name="face_recalibrate_notification_name">Face unlock</string>
     <string name="face_recalibrate_notification_title">Please re-enroll your face</string>
     <string name="harmful_app_warning_title">Play Protect warning</string>
