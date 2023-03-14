@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.6.2
-EVO_CODENAME := Tapsilog
+EVO_BASE_VERSION := 7.7
+EVO_CODENAME := Lechon
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
