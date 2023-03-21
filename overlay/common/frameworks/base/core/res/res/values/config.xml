@@ -233,8 +233,4 @@
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
-
-    <!-- The type of the light sensor to be used by the display framework for things like
-         auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
-    <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 </resources>
