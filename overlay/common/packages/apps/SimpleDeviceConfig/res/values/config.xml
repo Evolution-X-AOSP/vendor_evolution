@@ -166,9 +166,6 @@
         <item>device_personalization_services/NotificationAssistant__importance_model_version=1</item>
         <item>device_personalization_services/NotificationAssistant__max_importance_variance=0.5</item>
 
-        <!-- Pixel Launcher Overview -->
-        <item>device_personalization_services/Overview__enable_lens_r_overview_translate_action=true</item>
-
         <!-- Google Live Translate -->
         <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
         <item>device_personalization_services/Translate__copy_to_translate_enabled=true</item>
@@ -224,12 +221,6 @@
         <item>device_personalization_services/SmartRecPixelSearch__enable_search_on_files=false</item>
         <item>device_personalization_services/SmartRecPixelSearch__enable_spelling_correction=true</item>
         <item>device_personalization_services/SmartRecPixelSearch__spelling_checker_frequency_score_overrides_map={"8":-7}</item>
-
-        <!-- Pixel Launcher -->
-        <item>launcher/enable_one_search=true</item>
-        <item>launcher/ENABLE_LOCAL_RECOMMENDED_WIDGETS_FILTER=true</item>
-        <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
-        <item>launcher/ENABLE_WIDGETS_PICKER_AIAI_SEARCH=true</item>
 
         <!-- System Ui -->
         <item>systemui/clipboard_overlay_show_actions=true</item>
