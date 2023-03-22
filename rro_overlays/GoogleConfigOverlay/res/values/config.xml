@@ -111,9 +111,11 @@
      <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
 
     <!-- System bluetooth stack package name -->
+    <!--
     <string name="config_systemBluetoothStack" translatable="false">
         com.google.android.bluetooth
     </string>
+    -->
 
     <!-- The name of the package that will hold the call redirection role by default. -->
     <string name="config_defaultCallRedirection" translatable="false">com.google.android.dialer</string>

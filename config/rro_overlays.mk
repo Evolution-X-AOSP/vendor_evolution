@@ -34,7 +34,5 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
-    PixelSetupWizardOverlay2019 \
-    PixelSetupWizardOverlay2021 \
     SettingsGoogleOverlayPixel2022 \
     SystemUIGXOverlay
