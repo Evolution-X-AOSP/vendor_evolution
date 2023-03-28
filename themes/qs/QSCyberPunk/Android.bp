@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "QSCyberPunk",
-    theme: "QSCyberPunk",
-    product_specific: true,
-}
