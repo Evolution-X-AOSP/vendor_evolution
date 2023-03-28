@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "QSTwoToneAccent",
-    theme: "QSTwoToneAccent",
-    product_specific: true,
-}
