@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.7
-EVO_CODENAME := Lechon
+EVO_BASE_VERSION := 7.8
+EVO_CODENAME := Sisig
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
