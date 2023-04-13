@@ -143,9 +143,11 @@ PRODUCT_PACKAGES += \
     ClockFontGrandHotelOverlay \
     ClockFontHarmonySansOverlay \
     ClockFontLatoOverlay \
+    ClockFontLetteraOverlay \
     ClockFontLGSmartGothicOverlay \
     ClockFontLinotteOverlay \
     ClockFontNokiaPureOverlay \
+    ClockFontNothingDotHeadlineOverlay \
     ClockFontNunitoOverlay \
     ClockFontOneplusSansOverlay \
     ClockFontOneplusSlateOverlay \

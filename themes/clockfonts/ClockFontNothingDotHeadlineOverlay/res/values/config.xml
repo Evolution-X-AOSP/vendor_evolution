@@ -16,6 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font NothingDot overlay -->
-    <string name="font_nothingdot_overlay" translatable="false">NDot57</string>
+     <!-- Name of a font family to use for clock text. -->
+    <string name="config_clockFontFamily" translatable="false">NDot57-Aligned</string>
 </resources>

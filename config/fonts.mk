@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     FontJTLeonorOverlay \
     FontLGSmartGothicOverlay \
     FontLemonMilkOverlay \
+    FontLetteraOverlay \
     FontLinotteOverlay \
     FontManropeOverlay \
     FontMiSansOverlay \

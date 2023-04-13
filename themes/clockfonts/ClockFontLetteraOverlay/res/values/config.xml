@@ -1,6 +1,6 @@
 <!--
 /**
- * Copyright (c) 2022, riceDroid Android Project
+ * Copyright (c) 2023, rising Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,6 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font NothingDot overlay -->
-    <string name="font_nothingdot_overlay" translatable="false">NDot57</string>
+    <!-- Name of a font family to use for clock text. -->
+    <string name="config_clockFontFamily" translatable="false">Lettera</string>
 </resources>

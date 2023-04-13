@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Body font NothingDot overlay -->
-    <string name="font_nothingdot_overlay_headline" translatable="false">NothingDot Headline</string>
+    <string name="font_nothingdot_overlay_headline" translatable="false">NDot55</string>
 </resources>
