@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Icon Packs
+PRODUCT_PACKAGES += \
+    IconPackXperiaAndroidOverlay \
+    IconPackXperiaSystemUIOverlay
+
 # Icon shapes
 PRODUCT_PACKAGES += \
     IconShapeIosOverlay \
