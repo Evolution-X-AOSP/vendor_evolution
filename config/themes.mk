@@ -45,10 +45,12 @@ PRODUCT_PACKAGES += \
     DeepSignalOverlay \
     EqualSignalOverlay \
     FanSignalOverlay \
+    GradiconSignalOverlay \
     HuaweiSignalOverlay \
     InsideSignalOverlay \
     IosSignalOverlay \
     MiniSignalOverlay \
+    NothingDotSignalOverlay \
     OdinSignalOverlay \
     OutlineSignalOverlay \
     PUISignalOverlay \
@@ -73,7 +75,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AcherusWiFiOverlay \
     BarsWiFiOverlay \
+    GradiconWiFiOverlay \
     InsideWiFiOverlay \
+    NothingDotWiFiOverlay \
     OutlineWiFiOverlay \
     RoundWiFiOverlay \
     SneakyWiFiOverlay \
