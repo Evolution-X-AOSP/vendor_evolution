@@ -185,7 +185,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    NexusLauncherRelease \
+    Launcher3QuickStep \
     SettingsGoogle \
     SystemUIGoogle
 

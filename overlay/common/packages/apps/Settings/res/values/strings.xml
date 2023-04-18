@@ -32,8 +32,8 @@
     <string name="config_nearby_devices_slice_uri">content://com.google.android.gms.nearby.fastpair/device_status_list_item</string>
     <string name="config_settingsintelligence_log_action">com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER</string>
     <string name="config_settingsintelligence_package_name">com.google.android.settings.intelligence</string>
-    <string name="config_wallpaper_picker_class">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
-    <string name="config_wallpaper_picker_package">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaper_picker_class">com.android.wallpaper.picker.CategoryPickerActivity</string>
+    <string name="config_wallpaper_picker_package">com.android.wallpaper</string>
     <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
     <string name="oem_preferred_feedback_reporter">com.google.android.gms</string>
 

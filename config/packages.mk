@@ -21,7 +21,9 @@ PRODUCT_PACKAGES += \
     Papers \
     RepainterServicePriv \
     SimpleDeviceConfig \
-    Updates
+    ThemePicker \
+    Updates \
+    WallpaperPicker2
 
 # TouchGestures
 TARGET_SUPPORTS_TOUCHGESTURES ?= false
