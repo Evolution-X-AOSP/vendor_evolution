@@ -14,6 +14,11 @@
 # limitations under the License.
 #
 
+# Brightness slider styles
+PRODUCT_PACKAGES += \
+    BrightnessSliderFilledOverlay \
+    BrightnessSliderThinOverlay
+
 # Navbar styles
 PRODUCT_PACKAGES += \
     NavbarAndroidOverlay \

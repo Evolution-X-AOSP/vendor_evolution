@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LeafOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical|fill_horizontal">
+        <shape>
+            <size android:height="4.0dip" />
+            <corners android:radius="2.0dip" />
+            <solid android:color="?android:colorAccent" />
+        </shape>
+    </item>
+    <item android:gravity="end|center" android:drawable="@drawable/ic_brightness_thumb" />
+</layer-list>

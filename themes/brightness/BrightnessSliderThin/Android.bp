@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2023 The Leaf Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+runtime_resource_overlay {
+    name: "BrightnessSliderThinOverlay",
+    theme: "BrightnessSliderThin",
+    product_specific: true,
+}
