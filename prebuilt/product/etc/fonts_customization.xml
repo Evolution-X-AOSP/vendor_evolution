@@ -555,11 +555,13 @@
     
     <!-- SlateFromOP -->
     <family customizationType="new-named-family" name="oneplusslate">
-        <font weight="300" style="normal">SlateFromOP-Light.ttf</font>
-        <font weight="400" style="normal">SlateFromOP-Regular.ttf</font>
+        <font weight="300" style="normal">OnePlusSlate-Book.ttf</font>
+        <font weight="400" style="normal">OnePlusSlate-Regular.ttf</font>
+        <font weight="500" style="normal">OnePlusSlate-Medium.ttf</font>
     </family>
     <alias name="oneplusslate-light" to="oneplusslate" weight="300" />
     <alias name="oneplusslate-regular" to="oneplusslate" weight="400" />
+    <alias name="oneplusslate-medium" to="oneplusslate" weight="500" />
 
     <!-- Simple day -->
     <family customizationType="new-named-family" name="simpleday">
