@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.settings.overlay.clearcallingsettings2022">
+    android:allowBackup="false"
+    package="com.google.android.settings.overlay.clearcallingsettings2022">
 
     <overlay
         android:targetPackage="com.android.settings"

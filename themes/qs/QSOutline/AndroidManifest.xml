@@ -17,6 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.system.qs.outline"
+    android:allowBackup="false"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.qs_panel" android:priority="1"/>

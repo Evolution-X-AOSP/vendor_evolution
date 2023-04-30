@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.google.android.pixel.setupwizard.evolutionx.overlay">
+    android:allowBackup="false"
+    package="com.google.android.pixel.setupwizard.evolutionx.overlay">
 
     <overlay
         android:targetPackage="com.google.android.pixel.setupwizard"

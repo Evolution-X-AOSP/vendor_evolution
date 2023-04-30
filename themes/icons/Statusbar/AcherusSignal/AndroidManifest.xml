@@ -15,6 +15,7 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.systemui.signalbar_l" android:versionCode="1"
+    android:allowBackup="false"
     android:versionName="1.0">
     <overlay android:targetPackage="android" android:category="android.theme.customization.signal_icon" android:priority="1"/>
     <application android:label="Acherus" android:hasCode="false"/>

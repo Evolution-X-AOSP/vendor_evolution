@@ -19,6 +19,7 @@
     package="com.android.theme.font.misans">
 
     <overlay
+        android:allowBackup="false"
         android:category="android.theme.customization.font"
         android:priority="600"
         android:targetPackage="android" />
