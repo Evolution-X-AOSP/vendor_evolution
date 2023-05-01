@@ -177,4 +177,363 @@
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
+
+    <!-- Flag indicating which package name can access the persistent data partition -->
+    <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
+    <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.vending;com.android.settings;</string>
+
+    <!-- The component name, flattened to a string, for the default accessibility service to be
+         enabled by the accessibility shortcut. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no accessibility service with the specified name
+         exists on the device, the accessibility shortcut will be disabled by default. -->
+    <string name="config_defaultAccessibilityService" translatable="false">com.google.android.marvin.talkback/.TalkBackService</string>
+
+    <!-- Component name that should be granted Notification Assistant access -->
+    <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
+
+    <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default.
+    -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+
+    <!-- The package name of the dock manager app. Must be granted the
+         POST_NOTIFICATIONS permission. -->
+    <string name="config_defaultDockManagerPackageName" translatable="false">com.google.android.apps.nest.dockmanager.app</string>
+
+    <!-- Colon separated list of package names that should be granted Notification Listener access -->
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo:com.android.launcher3:co.aospa.glyph</string>
+
+    <!-- Component name that accepts settings intents for saved devices.
+             Used by FastPairSettingsFragment. -->
+    <string name="config_defaultNearbyFastPairSettingsDevicesComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.discovery.devices.SavedDevicesSettingsActivity</string>
+
+    <!-- Component name that accepts ACTION_SEND intents for nearby (proximity-based) sharing.
+         Used by ChooserActivity. -->
+    <string name="config_defaultNearbySharingComponent" translatable="false">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
+
+    <!-- The package name of the default network recommendation app.
+         A network recommendation provider must:
+             * Be granted the SCORE_NETWORKS permission.
+             * Be granted the ACCESS_COARSE_LOCATION permission.
+             * Include a Service for the android.net.scoring.RECOMMEND_NETWORKS action
+               protected by the BIND_NETWORK_RECOMMENDATION_SERVICE permission.
+         This must be set to a valid network recommendation app or empty.
+     -->
+    <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
+
+    <!-- The package name of the default search selector app. Must be granted the POST_NOTIFICATIONS
+         permission.
+    -->
+    <string name="config_defaultSearchSelectorPackageName" translatable="false">com.google.android.apps.setupwizard.searchselector</string>
+
+    <!-- The name of the package that will handle updating the device management role. -->
+    <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
+
+    <!-- Whether the secondary location time zone provider is enabled.
+         This setting is ignored if config_enableGeolocationTimeZoneDetection is false.
+         AOSP does not configure a secondary location time zone provider. -->
+    <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
+
+    <!-- The name of the package that will hold the system activity recognizer role. -->
+    <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
+
+    <!-- The names of the packages that will hold the automotive projection role. -->
+    <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
+
+    <!-- On-device package for providing companion device associations. -->
+    <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
+
+    <!-- The name of the package that will hold the game service role. -->
+    <string name="config_systemGameService">com.google.android.gms</string>
+
+    <!-- The name of the package that will hold the speech recognizer role by default. -->
+    <string name="config_systemSpeechRecognizer" translatable="false">com.google.android.tts</string>
+
+    <!-- The set of system packages on device that are queryable by any app regardless of the
+         contents of its manifest. -->
+    <string-array name="config_forceQueryablePackages" translatable="false">
+        <item>com.android.settings</item>
+        <item>com.google.android.gms</item>
+        <item>com.android.vending</item>
+    </string-array>
+
+    <!-- A list of potential packages, in priority order, that can supply rules to
+         AppIntegrityManager. These need to be apps on the system partition. -->
+    <string-array name="config_integrityRuleProviderPackages" translatable="false">
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
+    </string-array>
+
+    <!-- Indicates whether the system wide captions service should also support
+         call captioning.
+    -->
+    <bool name="config_systemCaptionsServiceCallsEnabled">true</bool>
+
+    <!-- An array of packages that need to be treated as type service in battery settings -->
+    <string-array name="config_batteryPackageTypeService" translatable="false">
+        <item>com.google.android.gms</item>
+        <item>com.google.android.apps.gcs</item>
+    </string-array>
+
+    <!-- The package name list for the system's cloudsearch service.
+          This service returns cloudsearch results.
+          This service must be trusted, as it can be activated without explicit consent of the user.
+          If no service with the specified name exists on the device, cloudsearch will be disabled.
+          Example: "com.android.intelligence/.CloudSearchService"
+          config_defaultCloudSearchServices is for the multiple provider case.
+    -->
+    <string-array name="config_defaultCloudSearchServices" translatable="false">
+        <item>com.android.vending/com.google.android.finsky.cloudsearch.PlayCloudSearchService</item>
+        <item>com.android.chrome/com.google.android.apps.chrome.cloudsearch.ChromeCloudSearchService</item>
+        <item>com.chrome.canary/com.google.android.apps.chrome.cloudsearch.ChromeCloudSearchService</item>
+        <item>com.chrome.dev/com.google.android.apps.chrome.cloudsearch.ChromeCloudSearchService</item>
+        <item>com.chrome.beta/com.google.android.apps.chrome.cloudsearch.ChromeCloudSearchService</item>
+    </string-array>
+
+    <!-- Names of packages that should not be suspended when personal use is blocked by policy. -->
+    <string-array name="config_packagesExemptFromSuspension" translatable="false">
+        <item>com.google.android.apps.wellbeing</item>
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
+        <item>com.android.systemui</item>
+        <item>com.android.settings</item>
+        <item>com.google.android.apps.pixelmigrate</item>
+        <item>com.google.android.apps.restore</item>
+    </string-array>
+
+    <!-- An array of packages that can make sound on the ringer stream in priority-only DND
+     mode -->
+    <string-array name="config_priorityOnlyDndExemptPackages" translatable="false">
+        <item>com.google.android.dialer</item>
+        <item>com.android.dialer</item>
+        <item>com.android.server.telecom</item>
+        <item>android</item>
+        <item>com.android.systemui</item>
+    </string-array>
+
+    <!-- Intent extra key for the event code int array while requesting ambient context consent. -->
+    <string name="config_ambientContextEventArrayExtraKey" translatable="false">EVENT_ARRAY</string>
+
+    <!-- Intent extra key for the caller's package name while requesting ambient context consent.
+     -->
+    <string name="config_ambientContextPackageNameExtraKey" translatable="false">PACKAGE_NAME</string>
+
+    <!-- Name of a font family to use for body text. -->
+    <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
+
+    <!-- Name of a font family to use for medium body text. -->
+    <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-text-medium</string>
+
+    <!-- Component name that accepts ACTION_SEND intents for requesting ambient context consent. -->
+    <string name="config_defaultAmbientContextConsentComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.ambientcontext.ui.ConsentActivity</string>
+
+    <!-- The component name for the default system AmbientContextEvent detection service.
+        This service must be trusted, as it can be activated without explicit consent of the user.
+        See android.service.ambientcontext.AmbientContextDetectionService.
+   -->
+    <string name="config_defaultAmbientContextDetectionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAmbientContextDetectionService</string>
+
+    <!-- The package name for the system's app prediction service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.intelligence/.AppPredictionService"
+    -->
+    <string name="config_defaultAppPredictionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
+
+    <!-- Component name that should be granted Notification Assistant access -->
+    <string name="config_defaultAssistantAccessComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.common.notification.service.AiAiNotificationAssistantService</string>
+
+    <!-- The package name for the system's augmented autofill service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, augmented autofill wil be
+         disabled.
+         Example: "com.android.augmentedautofill/.AugmentedAutofillService"
+    -->
+    <string name="config_defaultAugmentedAutofillService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
+
+    <!-- The package name for the default bug report handler app from power menu short press. This app must be whitelisted. -->
+    <string name="config_defaultBugReportHandlerApp" translatable="false">com.google.android.apps.internal.betterbug</string>
+
+    <!-- The package name for the system's content capture service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, content capture will be
+         disabled.
+         Example: "com.android.contentcapture/.ContentcaptureService"
+    -->
+    <string name="config_defaultContentCaptureService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentCaptureService</string>
+
+    <!-- The package name for the system's content suggestions service.
+         Provides suggestions for text and image selection regions in snapshots of apps and should
+         be able to classify the type of entities in those selections.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         If no service with the specified name exists on the device, content suggestions wil be
+         disabled.
+         Example: "com.android.contentsuggestions/.ContentSuggestionsService"
+    -->
+    <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
+
+    <!-- Colon separated list of package names that should be granted DND access -->
+    <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool:com.android.camera:com.android.dialer:com.android.settings.intelligence</string>
+
+    <!-- The component name, flattened to a string, for the default field classification service
+         to  enabled for a user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no field classification service with the
+         specified name exists on the device, field classification will be disabled by default.
+    -->
+    <string name="config_defaultFieldClassificationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService</string>
+
+    <!-- The package name for the system's speech recognition service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.speech/.RecognitionService"
+    -->
+    <string name="config_defaultMusicRecognitionService" translatable="false">com.google.android.googlequicksearchbox/com.google.android.apps.search.soundsearch.service.SoundSearchService</string>
+    <string name="config_defaultOnDeviceSpeechRecognitionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService</string>
+
+    <!-- The package name for the system's search ui service.
+     This service returns search results when provided with an input string.
+
+     This service must be trusted, as it can be activated without explicit consent of the user.
+     If no service with the specified name exists on the device, on device search wil be
+     disabled.
+     Example: "com.android.intelliegence/.SearchUiService"
+    -->
+    <string name="config_defaultSearchUiService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSearchUiService</string>
+
+    <!-- The component name for the default profile supervisor, which can be set as a profile owner
+    even after user setup is complete. The defined component should be used for supervision purposes
+    only. The component must be part of a system app. -->
+    <string name="config_defaultSupervisionProfileOwnerComponent" translatable="false">com.google.android.gms/.kids.account.receiver.ProfileOwnerReceiver</string>
+
+    <!-- The component name for the system-wide captions manager service.
+         This service must be trusted, as the system binds to it and keeps it running.
+         Example: "com.android.captions/.SystemCaptionsManagerService"
+    -->
+    <string name="config_defaultSystemCaptionsManagerService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
+
+    <!-- The package name for the OEM custom system textclassifier service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.textclassifier"
+         If this is empty, the default textclassifier service (i.e. config_servicesExtensionPackage)
+         will be used.
+         See android.view.textclassifier.TextClassificationManager.
+    -->
+    <string name="config_defaultTextClassifierPackage" translatable="false">com.google.android.as</string>
+
+    <!-- The package name for the system's wallpaper effects generation service.
+    This service returns wallpaper effects results.
+    This service must be trusted, as it can be activated without explicit consent of the user.
+    If no service with the specified name exists on the device, wallpaper effects
+    generation service will be disabled.
+    Example: "com.android.intelligence/.WallpaperEffectsGenerationService"
+    -->
+    <string name="config_defaultWallpaperEffectsGenerationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.wallpapereffects.AiAiWallpaperEffectsGenerationService</string>
+
+    <!-- The package name for the default wellbeing app.
+         This package must be trusted, as it has the permissions to control other applications
+         on the device.
+         Example: "com.android.wellbeing"
+     -->
+    <string name="config_defaultWellbeingPackage" translatable="false">@string/config_systemWellbeing</string>
+
+    <!-- Package name that provides Emergency Dialer -->
+    <string name="config_emergency_dialer_package" translatable="false">com.google.android.apps.safetyhub</string>
+
+    <!-- Intent key for the package name keys -->
+    <string name="config_feedbackIntentExtraKey" translatable="false">EXTRA_FEEDBACK_PSD_KEYS</string>
+
+    <!-- Intent key for package name values -->
+    <string name="config_feedbackIntentNameKey" translatable="false">EXTRA_FEEDBACK_PSD_VALUES</string>
+
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily" translatable="false">google-sans</string>
+
+    <!-- Name of the font family used for system surfaces where the font should use medium weight -->
+    <string name="config_headlineFontFamilyMedium" translatable="false">google-sans-medium</string>
+
+    <!-- Allows setting custom fontFeatureSettings on specific text. -->
+    <string name="config_headlineFontFeatureSettings" translatable="false">ss03</string>
+
+    <!-- Intent key for the package name keys -->
+    <string name="config_helpIntentExtraKey" translatable="false">EXTRA_PSD_KEYS</string>
+
+    <!-- Intent key for package name values -->
+    <string name="config_helpIntentNameKey" translatable="false">EXTRA_PSD_VALUES</string>
+
+    <!-- Name for the set of keys associating package names -->
+    <string name="config_helpPackageNameKey" translatable="false">genie-eng:app_pkg_name</string>
+
+    <!-- Name for the set of values of package names -->
+    <string name="config_helpPackageNameValue" translatable="false">com.google.android.settings.gphone</string>
+
+    <!-- The package name for the incident report approver app.
+        This app is usually PermissionController or an app that replaces it.  When
+        a bugreport or incident report with EXPLICT-level sharing flags is going to be
+        shared, this app will be sent the PENDING_INCIDENT_REPORTS_CHANGED broadcast.
+    -->
+    <string name="config_incidentReportApproverPackage" translatable="false">com.google.android.permissioncontroller</string>
+
+    <!-- Package name that will receive an explicit manifest broadcast for
+         android.os.action.POWER_SAVE_MODE_CHANGED. -->
+    <string name="config_powerSaveModeChangedListenerPackage" translatable="false">com.google.android.flipendo</string>
+
+    <!-- The package name for the default retail demo app.
+         This package must be trusted, as it has the permissions to query the usage stats on the
+         device.
+         Example: "com.google.android.retaildemo"
+     -->
+    <string name="config_retailDemoPackage" translatable="false">com.google.android.retaildemo</string>
+
+    <!-- The package signature hash for the default retail demo app.
+         This package must be trusted, as it has the permissions to query the usage stats on the
+         device.
+     -->
+    <string name="config_retailDemoPackageSignature" translatable="false">6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80</string>
+
+    <!-- Package name of the on-device intelligent processor for ambient audio.
+         Ambient audio is the sound surrounding the device captured by the DSP
+         or the microphone. In other words, the device is continuously
+         processing audio data in background. -->
+    <string name="config_systemAmbientAudioIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- The name of the package that will hold the app protection service role. -->
+    <string name="config_systemAppProtectionService" translatable="false">com.google.android.odad</string>
+
+    <!-- Package name of the on-device intelligent processor for audio. The
+         difference of 'ambient audio' and 'audio' is that in 'audio', the
+         user intentionally and consciously aware that the device is recording
+         or using the microphone.
+         -->
+    <string name="config_systemAudioIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- Chooser image editing activity.  Must handle ACTION_EDIT image/png intents.
+         If omitted, image editing will not be offered via Chooser.
+         This name is in the ComponentName flattened format (package/class) [DO NOT TRANSLATE]  -->
+    <string name="config_systemImageEditor" translatable="false">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
+
+    <!-- Package name of the on-device intelligent processor for notification.
+         -->
+    <string name="config_systemNotificationIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- The package name of the default supervision package. --> 
+    <string name="config_systemSupervision" translatable="false">com.google.android.gms.supervision</string>
+
+    <!-- Package name of the on-device intelligent processor for text. Examples
+        include providing autofill functionality based on incoming text
+        messages. -->
+    <string name="config_systemTextIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for system UI
+         features. Examples include the search functionality or the app
+         predictor. -->
+    <string name="config_systemUiIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for visual
+         features. Examples include the autorotate feature. -->
+    <string name="config_systemVisualIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- The name of the package that will hold the wellbeing role. -->
+    <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
 </resources>
