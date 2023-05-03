@@ -18,4 +18,13 @@
     <privapp-permissions package="com.google.android.gms">
         <permission name="android.permission.WRITE_DEVICE_CONFIG" />
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.providers.telephony">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
 </permissions>

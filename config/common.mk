@@ -107,9 +107,9 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc \
     vendor/evolution/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/smartcharge-init.rc
 
-# GMS Permissions
+# Extra Permissions
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/privapp-permissions-gms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-gms.xml
+    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-evolution.xml
 
 # LineageHW permission
 PRODUCT_COPY_FILES += \
