@@ -14,6 +14,13 @@
 # limitations under the License.
 #
 
+# Icon shapes
+PRODUCT_PACKAGES += \
+    IconShapeIosOverlay \
+    IconShapeLeafyOverlay \
+    IconShapeRohieMeowOverlay \
+    IconShapeScrollOverlay
+
 # Brightness slider styles
 PRODUCT_PACKAGES += \
     BrightnessSliderFilledOverlay \
