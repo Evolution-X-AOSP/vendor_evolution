@@ -176,6 +176,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Extra cmdline tools
+PRODUCT_PACKAGES += \
+    zstd
+
 # Evolution X customization
 TARGET_SUPPORTS_QUICK_TAP ?= false
 TARGET_USES_MINI_GAPPS ?= false
