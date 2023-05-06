@@ -17,7 +17,9 @@
 # Brightness slider styles
 PRODUCT_PACKAGES += \
     BrightnessSliderFilledOverlay \
-    BrightnessSliderThinOverlay
+    BrightnessSliderThinOverlay \
+    BrightnessSliderAcunOverlay \
+    BrightnessSliderBangOverlay
 
 # Navbar styles
 PRODUCT_PACKAGES += \
