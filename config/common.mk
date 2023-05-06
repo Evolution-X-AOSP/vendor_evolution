@@ -178,6 +178,7 @@ PRODUCT_PACKAGES += \
 
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
+    unrar \
     zstd
 
 # Evolution X customization
