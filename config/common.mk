@@ -172,6 +172,10 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libfuse-lite.so \
     system/%/libntfs-3g.so
 
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
+
 # Evolution X customization
 TARGET_SUPPORTS_QUICK_TAP ?= false
 TARGET_USES_MINI_GAPPS ?= false
