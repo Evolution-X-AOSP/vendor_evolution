@@ -659,3 +659,20 @@ camera_needs_camera_needs_depth_sensor_override {
         },
     },
 }
+
+soong_config_module_type {
+    name: "uses_oppo_camera",
+    module_type: "cc_defaults",
+    config_namespace: "evolutionGlobalVars",
+    bool_variables: ["uses_oppo_camera"],
+    properties: ["cppflags"],
+}
+
+uses_oppo_camera {
+    name: "uses_oppo_camera_defaults",
+    soong_config_variables: {
+        uses_oppo_camera: {
+            cppflags: ["-DUSES_OPPO_CAMERA"],
+        },
+    },
+}

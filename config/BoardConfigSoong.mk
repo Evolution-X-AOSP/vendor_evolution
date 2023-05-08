@@ -39,6 +39,7 @@ SOONG_CONFIG_evolutionGlobalVars += \
     camera_needs_client_info \
     camera_needs_client_info_lib \
     uses_oplus_camera \
+    uses_oppo_camera \
     uses_nothing_camera \
     target_alternative_futex_waiters \
     camera_uses_newer_hidl_override_format \
@@ -74,6 +75,7 @@ SOONG_CONFIG_evolutionGlobalVars_camera_needs_camera_needs_depth_sensor_override
 SOONG_CONFIG_evolutionGlobalVars_camera_uses_newer_hidl_override_format := $(TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT)
 SOONG_CONFIG_evolutionGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
+SOONG_CONFIG_evolutionGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
 SOONG_CONFIG_evolutionGlobalVars_has_hh_vsync_issue := $(TARGET_HAS_HH_VSYNC_ISSUE)
