@@ -28,6 +28,7 @@ SOONG_CONFIG_evolutionGlobalVars += \
     bootloader_message_offset \
     disable_bluetooth_le_read_buffer_size_v2 \
     disable_bluetooth_le_set_host_feature \
+    gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     has_hh_vsync_issue \
     has_legacy_camera_hal1 \
@@ -69,6 +70,7 @@ SOONG_CONFIG_evolutionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_C
 SOONG_CONFIG_evolutionGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
 SOONG_CONFIG_evolutionGlobalVars_needs_oplus_tag := $(TARGET_NEEDS_OPLUS_VENDOR_TAG)
 SOONG_CONFIG_evolutionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
+SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_evolutionQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_evolutionQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
@@ -78,6 +80,7 @@ SOONG_CONFIG_evolutionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMER
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
