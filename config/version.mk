@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9
-EVO_CODENAME := Kare-kare
+EVO_BASE_VERSION := 7.9.1
+EVO_CODENAME := Lumpia
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
