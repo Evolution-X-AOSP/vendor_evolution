@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.1
-EVO_CODENAME := Lumpia
+EVO_BASE_VERSION := 7.9.2
+EVO_CODENAME := Pancit
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
