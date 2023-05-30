@@ -45,7 +45,8 @@ SOONG_CONFIG_evolutionGlobalVars += \
     target_uses_prebuilt_dynamic_partitions \
     uses_camera_parameter_lib \
     uses_egl_display_array \
-    needs_oplus_tag
+    needs_oplus_tag \
+    include_miui_camera
 
 SOONG_CONFIG_NAMESPACES += evolutionQcomVars
 SOONG_CONFIG_evolutionQcomVars += \
@@ -63,6 +64,7 @@ endif
 # Soong bool variables
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
+SOONG_CONFIG_evolutionGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_target_alternative_futex_waiters := $(TARGET_ALTERNATIVE_FUTEX_WAITERS)
