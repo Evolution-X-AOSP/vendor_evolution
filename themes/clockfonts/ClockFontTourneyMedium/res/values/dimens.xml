@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Default line spacing multiplier between hours and minutes of the keyguard clock -->
-    <item name="keyguard_clock_line_spacing_scale" type="dimen" format="float">.8</item>
+    <item name="keyguard_clock_line_spacing_scale" type="dimen" format="float">.9</item>
 </resources>
