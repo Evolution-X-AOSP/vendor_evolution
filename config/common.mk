@@ -164,10 +164,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGES += \
     product_charger_res_images
 
-# Build Manifest
-PRODUCT_PACKAGES += \
-    build-manifest
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
