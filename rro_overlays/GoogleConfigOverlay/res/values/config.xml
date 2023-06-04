@@ -76,7 +76,7 @@
     <string name="config_defaultNetworkRecommendationProviderPackage" translatable="false">com.google.android.gms</string>
 
     <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent" translatable="false">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
+    <!--string name="config_defaultQrCodeComponent" translatable="false">com.google.android.gms/.mlkit.barcode.ui.PlatformBarcodeScanningActivityProxy</string>
 
     <!-- The package name of the default search selector app. Must be granted the POST_NOTIFICATIONS
          permission.
