@@ -214,6 +214,12 @@ TARGET_USES_PICO_GAPPS ?= false
 ifeq ($(TARGET_SUPPORTS_GOOGLE_BATTERY), false)
 PRODUCT_PACKAGES += \
     TurboAdapter_NoBatt
+
+PRODUCT_COPY_FILES += \
+    vendor/evolution/prebuilt/system_ext/lib64/libpowerstatshaldataprovider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerstatshaldataprovider.so
+
+PRODUCT_PACKAGES += \
+    LibPowerStatsSymLink_NoBatt
 endif
 
 # Face Unlock
