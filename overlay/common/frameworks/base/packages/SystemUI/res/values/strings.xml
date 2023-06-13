@@ -29,6 +29,11 @@
     <!-- Remote Copy default activity -->
     <string name="config_remoteCopyPackage">com.google.android.gms/.nearby.sharing.RemoteCopyShareSheetActivity</string>
 
+    <!-- ComponentName for the file browsing app that the system would expect to be used in work
+         profile. The icon for this app will be shown to the user when informing them that a
+         screenshot has been saved to work profile. If blank, a default icon will be shown. -->
+    <string name="config_sceenshotWorkProfileFilesApp">com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity</string>
+
     <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->

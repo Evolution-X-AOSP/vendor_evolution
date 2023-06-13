@@ -172,6 +172,9 @@
     <!-- The package name for the default bug report handler app from power menu short press. This app must be whitelisted. -->
     <string name="config_defaultBugReportHandlerApp" translatable="false">com.google.android.apps.internal.betterbug</string>
 
+    <!-- Whether to show weather on the lock screen by default. -->
+    <bool name="config_lockscreenWeatherEnabledByDefault">true</bool>
+
     <!-- When true, enables the allowlisted app to upload profcollect reports. -->
     <bool name="config_profcollectReportUploaderEnabled">true</bool>
 

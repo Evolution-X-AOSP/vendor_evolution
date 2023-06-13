@@ -95,6 +95,9 @@
     <!-- The name of the package that will handle updating the device management role. -->
     <string name="config_devicePolicyManagementUpdater" translatable="false">com.google.android.gms</string>
 
+    <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
+    <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
+
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
