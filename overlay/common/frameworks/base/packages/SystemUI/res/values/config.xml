@@ -109,6 +109,18 @@
         <item>com.android.systemui.clocks.numoverlap</item>
         <item>com.android.systemui.clocks.weather</item>
         <item>org.lineageos.settings</item>
+        <item>org.lineageos.settings.device</item>
+        <item>com.android.systemui.falcon</item>
+        <item>com.android.systemui.falcon.debug</item>
+        <item>com.android.systemui.falcon.one</item>
+        <item>com.android.systemui.falcon.two</item>
+        <item>com.android.systemui.falcon.three</item>
+        <item>com.android.systemui.falcon.four</item>
+        <item>com.android.systemui.falcon.five</item>
+        <item>com.android.systemui.falcon.six</item>
+        <item>com.android.systemui.falcon.seven</item>
+        <item>com.android.systemui.falcon.eight</item>
+        <item>com.android.systemui.falcon.nine</item>
     </string-array>
 
     <!-- Enable WLC/NFC conflicts -->
