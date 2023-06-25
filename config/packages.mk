@@ -15,7 +15,6 @@
 
 # Apps
 PRODUCT_PACKAGES += \
-    Aperture \
     EvoEgg \
     GameSpace \
     Papers \
@@ -25,6 +24,13 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     Updates \
     WallpaperPicker2
+
+# Whether the compiled build to be shipped with Aperture CAM
+TARGET_BUILD_APERTURE_CAMERA ?= true
+ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
+PRODUCT_PACKAGES += \
+    Aperture
+endif
 
 # TouchGestures
 TARGET_SUPPORTS_TOUCHGESTURES ?= false
