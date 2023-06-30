@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.3
-EVO_CODENAME := Bulalo
+EVO_BASE_VERSION := 7.9.4
+EVO_CODENAME := Tinola
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
