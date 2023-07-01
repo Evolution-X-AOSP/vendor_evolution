@@ -30,6 +30,8 @@ SOONG_CONFIG_evolutionGlobalVars += \
     disable_bluetooth_le_read_buffer_size_v2 \
     disable_bluetooth_le_set_host_feature \
     gralloc_handle_has_custom_content_md_reserved_size \
+    camera_needs_miui_camera_mode_support \
+    camera_needs_camera_needs_depth_sensor_override \
     gralloc_handle_has_reserved_size \
     has_hh_vsync_issue \
     has_legacy_camera_hal1 \
@@ -67,6 +69,8 @@ endif
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
+SOONG_CONFIG_evolutionGlobalVars_camera_needs_miui_camera_mode_support := $(TARGET_USES_MIUI_CAMERA)
+SOONG_CONFIG_evolutionGlobalVars_camera_needs_camera_needs_depth_sensor_override := $(TARGET_USES_DEPTHSENSOR_OVERRIDE)
 SOONG_CONFIG_evolutionGlobalVars_camera_uses_newer_hidl_override_format := $(TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT)
 SOONG_CONFIG_evolutionGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
