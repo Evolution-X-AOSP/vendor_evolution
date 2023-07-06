@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.4
-EVO_CODENAME := Tinola
+EVO_BASE_VERSION := 7.9.5
+EVO_CODENAME := Chicharon
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
