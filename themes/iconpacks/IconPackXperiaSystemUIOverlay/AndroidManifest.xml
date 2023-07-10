@@ -20,5 +20,5 @@
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="com.android.systemui" android:category="android.theme.customization.icon_pack.systemui" android:priority="1"/>
-    <application android:label="Xperia" android:hasCode="false"/>
+    <application android:label="Xperia" android:hasCode="false" android:allowBackup="false"/>
 </manifest>

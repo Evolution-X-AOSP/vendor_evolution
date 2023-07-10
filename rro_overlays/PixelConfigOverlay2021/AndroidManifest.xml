@@ -16,9 +16,8 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:allowBackup="false"
     package="com.google.android.overlay.pixelconfig2021">
     <overlay android:isStatic="true" android:priority="8" android:targetPackage="android"/>
 
-    <application android:hasCode="false"/>
+    <application android:hasCode="false" android:allowBackup="false"/>
 </manifest>

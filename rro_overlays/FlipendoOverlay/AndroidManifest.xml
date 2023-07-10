@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:allowBackup="false"
-    package="com.google.android.flipendo.overlay.pixel">
+          package="com.google.android.flipendo.overlay.pixel">
 
     <overlay
         android:targetPackage="com.google.android.flipendo"
         android:priority="1"
         android:isStatic="true"/>
-    <application android:hasCode="false"/>
+    <application android:hasCode="false" android:allowBackup="false"/>
 </manifest>

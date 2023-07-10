@@ -15,7 +15,6 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.theme.lockscreen_clock_font.lato"
-    android:allowBackup="false"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -25,6 +24,7 @@
         android:priority="1" />
 
     <application
+        android:allowBackup="false"
         android:hasCode="false"
         android:label="@string/font_lato_overlay">
         <meta-data

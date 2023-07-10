@@ -17,12 +17,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.evolution.overlay.immnav.gestural"
-        android:allowBackup="false"
         android:versionCode="1"
         android:versionName="1.0">
     <overlay android:targetPackage="android"
         android:category="com.android.internal.navigation_bar_mode"
         android:priority="1"/>
 
-    <application android:label="@string/immersive_navigation_mode_title" android:hasCode="false"/>
+    <application android:label="@string/immersive_navigation_mode_title" android:hasCode="false" android:allowBackup="false"/>
 </manifest>

@@ -16,5 +16,5 @@
 
     <application
         android:label="Thin"
-        android:hasCode="false"/>
+        android:hasCode="false" android:allowBackup="false"/>
 </manifest>

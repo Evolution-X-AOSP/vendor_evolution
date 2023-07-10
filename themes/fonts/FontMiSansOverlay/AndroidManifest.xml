@@ -19,13 +19,12 @@
     package="com.android.theme.font.misans">
 
     <overlay
-        android:allowBackup="false"
         android:category="android.theme.customization.font"
         android:priority="600"
         android:targetPackage="android" />
 
     <application
-        android:label="@string/font_mi_sans_overlay">
+        android:label="@string/font_mi_sans_overlay" android:allowBackup="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
             android:value="misans,misans-medium" />

@@ -23,7 +23,7 @@
         android:category="android.theme.customization.font"
         android:priority="1"/>
 
-    <application android:label="Lettera" android:hasCode="false">
+    <application android:label="Lettera" android:hasCode="false" android:allowBackup="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
             android:value="Lettera" />

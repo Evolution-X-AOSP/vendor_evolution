@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:allowBackup="false"
-    package="com.google.android.pixel.setupwizard.evolutionx.overlay">
+          package="com.google.android.pixel.setupwizard.evolutionx.overlay">
 
     <overlay
         android:targetPackage="com.google.android.pixel.setupwizard"
@@ -9,5 +8,5 @@
         android:isStatic="true"/>
     <application
         android:label="PixelSetupWizardOverlay"
-        android:hasCode="false"/>
+        android:hasCode="false" android:allowBackup="false"/>
 </manifest>
