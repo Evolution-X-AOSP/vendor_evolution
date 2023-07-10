@@ -243,3 +243,15 @@ PRODUCT_PACKAGES += \
     ClockFontLowerAtmosphereOverlay \
     ClockFontMonbijouxClownpieceOverlay \
     ClockFontRoundheadsOverlay
+
+# QS Panel
+PRODUCT_PACKAGES += \
+    QSOutline \
+    QSTwoToneAccent \
+    QSTwoToneAccentTrans \
+    QSShaded \
+    QSCyberPunk \
+    QSNeumorph \
+    QSReflected \
+    QSSurround \
+    QSThin

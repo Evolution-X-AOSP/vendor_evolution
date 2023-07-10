@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#99ffffff" />
+                    <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+                </shape>
+            </item>
+            <item
+                android:bottom="2.0dp"
+                android:start="2.0dp"
+                android:end="2.0dp"
+                android:top="2.0dp">
+                <shape>
+                    <solid android:color="#ffffffff" />
+                    <corners android:radius="@*android:dimen/harmful_app_name_padding_right" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>
+

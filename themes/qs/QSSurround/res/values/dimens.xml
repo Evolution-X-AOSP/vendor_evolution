@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_divider_height">3dp</dimen>
+    <dimen name="z_distance_between_notifications">3dp</dimen>
+    <dimen name="notification_children_container_divider_height">2dp</dimen>
+    <item name="notification_divider_alpha" format="float" type="dimen">0</item>
+    <dimen name="qs_quick_tile_size">60.0dp</dimen>
+    <dimen name="qs_tile_start_padding">20.0dp</dimen>
+    <dimen name="qs_label_container_margin">24.0dp</dimen>
+    <dimen name="qs_tile_height">60.0dp</dimen>
+    <dimen name="qs_tile_text_size">7sp</dimen>
+</resources>
