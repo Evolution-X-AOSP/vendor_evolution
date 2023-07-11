@@ -39,6 +39,7 @@ SOONG_CONFIG_evolutionGlobalVars += \
     uses_oplus_camera \
     uses_nothing_camera \
     target_alternative_futex_waiters \
+    camera_uses_newer_hidl_override_format \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
@@ -65,6 +66,7 @@ endif
 # Soong bool variables
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
+SOONG_CONFIG_evolutionGlobalVars_camera_uses_newer_hidl_override_format := $(TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT)
 SOONG_CONFIG_evolutionGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
