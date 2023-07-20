@@ -35,3 +35,17 @@ PRODUCT_PACKAGES += \
     PixelDocumentsUIGoogleOverlay \
     SettingsGoogleOverlayPixel2022 \
     SystemUIGXOverlay
+
+ifeq ($(TARGET_IS_PIXEL), true)
+PRODUCT_PACKAGES += \
+    NowPlayingOverlay \
+    PixelBatteryHealthOverlay \
+    PixelSetupWizardOverlay2019 \
+    PixelSetupWizardOverlay2021
+endif
+
+ifeq ($(TARGET_IS_PIXEL_7), true)
+PRODUCT_PACKAGES += \
+    ClearCallingSettingsOverlay2022 \
+    PixelConnectivityOverlay2022
+endif

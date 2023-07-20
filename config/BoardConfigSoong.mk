@@ -91,7 +91,7 @@ TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY ?= 0
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY ?= libcamera_parameters
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
 TARGET_USES_NOTHING_CAMERA ?= false
-TARGET_USES_OPLUS_CAMERATARGET_USES_OPLUS_CAMERA ?= false
+TARGET_USES_OPLUS_CAMERA ?= false
 
 # Soong value variables
 SOONG_CONFIG_evolutionGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)

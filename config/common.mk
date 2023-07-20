@@ -187,6 +187,13 @@ PRODUCT_PACKAGES += \
     zstd
 
 # Evolution X customization
+TARGET_IS_PIXEL ?= false
+TARGET_IS_PIXEL_6 ?= false
+TARGET_IS_PIXEL_7 ?= false
+TARGET_IS_PIXEL_7A ?= false
+TARGET_IS_PIXEL_FOLD ?= false
+TARGET_IS_PIXEL_TABLET ?= false
+TARGET_PIXEL_STAND_SUPPORTED ?= false
 TARGET_SUPPORTS_QUICK_TAP ?= false
 TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
@@ -246,14 +253,7 @@ $(call inherit-product, vendor/evolution/config/ota.mk)
 $(call inherit-product, vendor/evolution/config/packages.mk)
 
 # Inherit from rro_overlays config
-TARGET_IS_PIXEL ?= false
-ifeq ($(TARGET_IS_PIXEL), true)
-$(call inherit-product, vendor/evolution/config/rro_overlays_pixel.mk)
-else ifeq ($(TARGET_IS_PIXEL_7), true)
-$(call inherit-product, vendor/evolution/config/rro_overlays_pixel_7.mk)
-else
 $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
-endif
 
 # Inherit from textclassifier config
 $(call inherit-product, vendor/evolution/config/textclassifier.mk)
