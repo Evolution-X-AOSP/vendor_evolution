@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.5
-EVO_CODENAME := Chicharon
+EVO_BASE_VERSION := 7.9.6
+EVO_CODENAME := Pares
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
