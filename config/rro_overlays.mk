@@ -40,6 +40,7 @@ ifeq ($(TARGET_IS_PIXEL), true)
 PRODUCT_PACKAGES += \
     NowPlayingOverlay \
     PixelBatteryHealthOverlay \
+    PixelDisableLEDOverlay \
     PixelSetupWizardOverlay2019 \
     PixelSetupWizardOverlay2021
 endif
