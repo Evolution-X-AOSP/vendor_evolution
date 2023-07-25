@@ -49,3 +49,8 @@ PRODUCT_PACKAGES += \
     ClearCallingSettingsOverlay2022 \
     PixelConnectivityOverlay2022
 endif
+
+ifeq ($(TARGET_PIXEL_STAND_SUPPORTED), true)
+PRODUCT_PACKAGES += \
+    DreamlinerOverlay
+endif

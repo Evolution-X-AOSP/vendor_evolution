@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.overlay.dreamliner"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="com.android.systemui" android:priority="1" android:targetName="SystemUI" android:isStatic="true" />
+
+    <application android:label="DreamlinerOverlay" android:hasCode="false" android:allowBackup="false"/>
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <bool name="config_nfc_conflict_with_usb_audio">true</bool>
+    <bool name="config_nfc_conflict_with_wlc">true</bool>
+    <bool name="config_wlc_support_enabled">true</bool>
+    <string name="config_dockComponent">com.google.android.systemui.dreamliner.WirelessChargerImpl</string>
+</resources>
