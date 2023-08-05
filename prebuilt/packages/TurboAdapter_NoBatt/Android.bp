@@ -23,6 +23,7 @@ android_app {
         "TurboAdapter-core",
     ],
     srcs: [
+        "src/**/*.aidl",
         "src/**/*.java",
     ],
     defaults: ["platform_app_defaults"],
