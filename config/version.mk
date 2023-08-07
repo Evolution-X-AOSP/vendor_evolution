@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.6
-EVO_CODENAME := Pares
+EVO_BASE_VERSION := 7.9.7
+EVO_CODENAME := Pinakbet
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
