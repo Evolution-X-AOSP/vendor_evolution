@@ -20,7 +20,6 @@ PRODUCT_PACKAGES += \
     Papers \
     ParallelSpace \
     RepainterServicePriv \
-    SimpleDeviceConfig \
     ThemePicker \
     Updates \
     WallpaperPicker2

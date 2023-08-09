@@ -105,7 +105,7 @@
     <bool name="config_showBatteryEstimateQSBH">true</bool>
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
+    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
 
     <!-- Disable stock components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
