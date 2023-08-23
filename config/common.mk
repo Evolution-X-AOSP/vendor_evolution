@@ -266,15 +266,6 @@ $(call inherit-product, vendor/evolution/config/themes.mk)
 # Inherit from our version config
 $(call inherit-product, vendor/evolution/config/version.mk)
 
-# Inherit from GMS product config
-ifeq ($(TARGET_USES_MINI_GAPPS),true)
-$(call inherit-product, vendor/gms/gms_mini.mk)
-else ifeq ($(TARGET_USES_PICO_GAPPS),true)
-$(call inherit-product, vendor/gms/gms_pico.mk)
-else
-$(call inherit-product, vendor/gms/gms_full.mk)
-endif
-
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
