@@ -406,6 +406,12 @@
     <!-- LockScreen Clock fonts -->
 
     <!-- IOS font family -->
+    <family customizationType="new-named-family" name="sfroundedtime">
+      <font>SFRoundedTime-Medium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="sfsofttime-semibold">
+      <font>SFSoftTime-Semibold.ttf</font>
+    </family>
     <family customizationType="new-named-family" name="newyork-heavy-clock">
       <font>NewYork-Heavy.otf</font>
     </family>
