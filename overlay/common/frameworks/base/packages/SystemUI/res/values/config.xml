@@ -49,6 +49,7 @@
         <item>com.android.systemui.falcon.seven</item>
         <item>com.android.systemui.falcon.eight</item>
         <item>com.android.systemui.falcon.nine</item>
+        <item>org.lineageos.settings</item>
     </string-array>
 
     <!-- Control whether status bar should distinguish HSPA data icon form UMTS
