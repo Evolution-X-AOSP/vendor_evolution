@@ -1543,4 +1543,40 @@
     <alias name="fantasy" to="googlesansmedium" />
     <alias name="ITC Stone Serif" to="googlesansmedium" />
 
+    <family customizationType='new-named-family' name='oneplus-sans-TC'>
+        <font weight='400' style='normal'>NHGMYHOnePlusHK-W4.ttf</font>
+    </family>
+
+    <family customizationType='new-named-family' name='oneplus-sans-SC'>
+        <font weight='400' style='normal'>NHGMYHOnePlusPRC-W4.ttf</font>
+    </family>
+
+    <family customizationType='new-named-family' name='oneplus-sans-text'>
+        <font weight='100' style='normal'>OnePlusSansText-25Th.ttf</font>
+        <font weight='100' style='italic'>OnePlusSansText-26ThIt.ttf</font>
+        <font weight='200' style='normal'>OnePlusSansText-35ExLt.ttf</font>
+        <font weight='200' style='italic'>OnePlusSansText-36ExLtIt.ttf</font>
+        <font weight='300' style='normal'>OnePlusSansText-45Lt.ttf</font>
+        <font weight='300' style='italic'>OnePlusSansText-46LtIt.ttf</font>
+        <font weight='400' style='normal'>OnePlusSansText-55Rg.ttf</font>
+        <font weight='400' style='italic'>OnePlusSansText-56It.ttf</font>
+        <font weight='500' style='normal'>OnePlusSansText-65Md.ttf</font>
+        <font weight='500' style='italic'>OnePlusSansText-66MdIt.ttf</font>
+    </family>
+    <alias name='oneplus-sans-text-h4' to='oneplus-sans-text' weight='200' />
+    <alias name='oneplus-sans-text-h5' to='oneplus-sans-text' weight='300' />
+    <alias name='oneplus-sans-text-h6' to='oneplus-sans-text' weight='300' />
+    <alias name='oneplus-sans-text-subtitle' to='oneplus-sans-text' weight='300' />
+    <alias name='oneplus-sans-text-body-1' to='oneplus-sans-text' weight='300' />
+    <alias name='oneplus-sans-text-button' to='oneplus-sans-text' weight='500' />
+    <alias name='oneplus-sans-text-medium' to='oneplus-sans-text' weight='500' />
+    <alias name='oneplus-sans-text-description' to='oneplus-sans-text' weight='400' />
+
+    <family customizationType='new-named-family' name='oneplus-sans-display'>
+        <font weight='300' style='normal'>OnePlusSansDisplay-45Lt.ttf</font>
+        <font weight='300' style='italic'>OnePlusSansDisplay-46LtIt.ttf</font>
+    </family>
+    <alias name='oneplus-sans-display-h1' to='oneplus-sans-display' weight='300' />
+    <alias name='oneplus-sans-display-h2' to='oneplus-sans-display' weight='300' />
+    <alias name='oneplus-sans-display-h3' to='oneplus-sans-display' weight='300' />
 </fonts-modification>
