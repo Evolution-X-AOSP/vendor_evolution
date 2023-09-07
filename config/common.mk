@@ -103,8 +103,8 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-sysconfig.xml
 
 # Copy all Evolution X-specific init rc files
-PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
+#PRODUCT_COPY_FILES += \
+#    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
 
 # Extra Permissions
 PRODUCT_COPY_FILES += \

@@ -21,7 +21,7 @@ PRODUCT_PACKAGES += \
     ParallelSpace \
     RepainterServicePriv \
     ThemePicker \
-    Updates \
+#    Updates \
     WallpaperPicker2
 
 # Whether the compiled build to be shipped with Aperture CAM
