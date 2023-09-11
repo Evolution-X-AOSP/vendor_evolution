@@ -264,6 +264,9 @@ $(call inherit-product, vendor/evolution/config/packages.mk)
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
 
+# Inherit from textclassifier config
+$(call inherit-product, vendor/evolution/config/textclassifier.mk)
+
 # Inherit from themes config
 $(call inherit-product, vendor/evolution/config/themes.mk)
 
