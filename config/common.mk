@@ -166,7 +166,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Charger
 PRODUCT_PACKAGES += \
-    product_charger_res_images
+    product_charger_res_images \
+    product_charger_res_images_vendor
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
