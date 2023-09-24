@@ -263,11 +263,4 @@ PRODUCT_PACKAGES += \
 # QS Panel
 PRODUCT_PACKAGES += \
     QSOutline \
-    QSTwoToneAccent \
-    QSTwoToneAccentTrans \
-    QSShaded \
-    QSCyberPunk \
-    QSNeumorph \
-    QSReflected \
-    QSSurround \
-    QSThin
+    QSTwoToneAccent
