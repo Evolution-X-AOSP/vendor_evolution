@@ -640,35 +640,18 @@ needs_camera_boottime {
 }
 
 soong_config_module_type {
-    name: "camera_needs_miui_camera_mode_support",
+    name: "uses_miui_camera",
     module_type: "cc_defaults",
     config_namespace: "evolutionGlobalVars",
-    bool_variables: ["camera_needs_miui_camera_mode_support"],
+    bool_variables: ["uses_miui_camera"],
     properties: ["cppflags"],
 }
 
-camera_needs_miui_camera_mode_support {
-    name: "camera_needs_miui_camera_mode_support_defaults",
+uses_miui_camera {
+    name: "uses_miui_camera_defaults",
     soong_config_variables: {
-        camera_needs_miui_camera_mode_support: {
-            cppflags: ["-DCAMERA_NEEDS_MIUI_CAMERA_MODE_SUPPORT"],
-        },
-    },
-}
-
-soong_config_module_type {
-    name: "camera_needs_camera_needs_depth_sensor_override",
-    module_type: "cc_defaults",
-    config_namespace: "evolutionGlobalVars",
-    bool_variables: ["camera_needs_camera_needs_depth_sensor_override"],
-    properties: ["cppflags"],
-}
-
-camera_needs_camera_needs_depth_sensor_override {
-    name: "camera_needs_camera_needs_depth_sensor_override_defaults",
-    soong_config_variables: {
-        camera_needs_camera_needs_depth_sensor_override: {
-            cppflags: ["-DCAMERA_NEEDS_CAMERA_NEEDS_DEPTH_SENSOR_OVERRIDE"],
+        uses_miui_camera: {
+            cppflags: ["-DUSES_MIUI_CAMERA"],
         },
     },
 }
