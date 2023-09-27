@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     WallpaperPicker2
 
 # Whether the compiled build to be shipped with Aperture CAM
-TARGET_BUILD_APERTURE_CAMERA ?= false
+TARGET_BUILD_APERTURE_CAMERA ?= true
 ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
