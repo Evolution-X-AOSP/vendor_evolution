@@ -277,10 +277,10 @@ $(call inherit-product, vendor/evolution/config/version.mk)
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
-# Conditionally include firmware config.mk file
+# Conditionally inherit firmware
 TARGET_SHIPS_FIRMWARE ?= false
 ifeq ($(TARGET_SHIPS_FIRMWARE),true)
-$(call inherit-product, vendor/firmware/$(EVOLUTION_BUILD)/config.mk)
+$(call inherit-product, vendor/firmware/build/core/config.mk)
 endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
