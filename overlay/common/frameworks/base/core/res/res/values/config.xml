@@ -330,4 +330,8 @@
         <!-- Pixel Launcher -->
         <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
     </string-array>
+
+    <!-- Whether the lock screen is allowed to run its own live wallpaper,
+         different from the home screen wallpaper. -->
+    <bool name="config_independentLockscreenLiveWallpaper">true</bool>
 </resources>
