@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.8
-EVO_CODENAME := Lugaw
+EVO_BASE_VERSION := 8
+EVO_CODENAME := Tapa
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
