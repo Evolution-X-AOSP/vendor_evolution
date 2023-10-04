@@ -21,7 +21,7 @@
 
         To overlay this, make a copy of this file (including config_metadata_version) and add it to your overlay package.
         For example, the full path (from the root of your ROM tree) could be:
-            vendor/proton/overlay/packages/apps/RepainterServicePriv/res/values/config.xml
+            overlay/common/packages/apps/RepainterServicePriv/res/values/config.xml
     -->
 
     <!-- [DO NOT CHANGE] Config version, used by Repainter to determine how to interpret this config. -->

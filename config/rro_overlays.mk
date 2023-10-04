@@ -26,6 +26,8 @@ PRODUCT_PACKAGES += \
     DMServiceOverlay \
     FlipendoOverlay \
     GoogleConfigOverlay \
+    GoogleDeviceLockControllerOverlay \
+    GoogleHealthConnectOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
     PixelConfigOverlay2018 \

@@ -72,3 +72,12 @@ endif
 PRODUCT_HOST_PACKAGES += \
     sign_target_files_apks \
     ota_from_target_files
+
+ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
+
+EVO_OTA_VERSION_CODE := fourteen
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    org.evolution.ota.version_code=$(EVO_OTA_VERSION_CODE)
+
+endif

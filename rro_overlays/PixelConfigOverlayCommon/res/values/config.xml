@@ -88,19 +88,6 @@
         <item>com.chrome.beta/com.google.android.apps.chrome.cloudsearch.ChromeCloudSearchService</item>
     </string-array>
 
-    <!-- An array of packages for which notifications cannot be blocked.
-         Should only be used for core device functionality that must not be
-         rendered inoperative for safety reasons, like the phone dialer and
-         SMS handler. -->
-    <string-array name="config_nonBlockableNotificationPackages" translatable="false">
-        <item>com.google.android.deskclock:Firing</item>
-        <item>com.google.android.setupwizard</item>
-        <item>com.google.android.apps.pixelmigrate</item>
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.googlequicksearchbox:com.google.android.apps.gsa.plugins.podcastplayer.channel</item>
-        <item>com.google.android.cellbroadcastreceiver</item>
-    </string-array>
-
     <!-- List of packages that can use the Conversation space for their category messages
     notifications until they target R -->
     <string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false">
@@ -132,10 +119,6 @@
     <!-- Intent extra key for the caller's package name while requesting ambient context consent.
      -->
     <string name="config_ambientContextPackageNameExtraKey" translatable="false">PACKAGE_NAME</string>
-
-    <!-- The app which will handle routine based automatic battery saver, if empty the UI for
-         routine based battery saver will be hidden -->
-    <string name="config_batterySaverScheduleProvider" translatable="false">com.google.android.apps.turbo</string>
 
     <!-- Name of a font family to use for body text. -->
     <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
@@ -201,6 +184,13 @@
 
     <!-- Colon separated list of package names that should be granted DND access -->
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool:com.android.camera</string>
+
+    <!-- The component name, flattened to a string, for the default field classification service
+         to  enabled for a user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no field classification service with the
+         specified name exists on the device, field classification will be disabled by default.
+    -->
+    <string name="config_defaultFieldClassificationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AutofillFieldClassificationService</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo:com.android.launcher3:co.aospa.glyph</string>
@@ -279,7 +269,7 @@
          on the device.
          Example: "com.android.wellbeing"
      -->
-    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
+    <string name="config_defaultWellbeingPackage" translatable="false">@string/config_systemWellbeing</string>
 
     <!-- Package name that provides Emergency Dialer -->
     <string name="config_emergency_dialer_package" translatable="false">com.google.android.apps.safetyhub</string>
@@ -330,7 +320,7 @@
          configuration uses Launcehr3QuickStep as default launcher and points to the corresponding
          recents component. When using a different default launcher, change this appropriately or
          use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
-    <string name="config_recentsComponentName" translatable="false">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
+    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
 
     <!-- The package name for the default retail demo app.
          This package must be trusted, as it has the permissions to query the usage stats on the
@@ -350,7 +340,7 @@
          This launcher package must have an activity that supports multiple instances and has
          corresponding launch mode set in AndroidManifest.
          {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
-    <string name="config_secondaryHomePackage" translatable="false">com.android.launcher3</string>
+    <string name="config_secondaryHomePackage" translatable="false">com.google.android.apps.nexuslauncher</string>
 
     <!-- Package name of the on-device intelligent processor for ambient audio.
          Ambient audio is the sound surrounding the device captured by the DSP
@@ -393,6 +383,9 @@
     <!-- Package name of the on-device intelligent processor for visual
          features. Examples include the autorotate feature. -->
     <string name="config_systemVisualIntelligence" translatable="false">com.google.android.as</string>
+
+    <!-- The name of the package that will hold the wellbeing role. -->
+    <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
 
     <!-- Whether this device is supporting the microphone toggle -->
     <bool name="config_supportsMicToggle" translatable="false">true</bool>

@@ -29,7 +29,3 @@ PRODUCT_PACKAGES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
-
-# Disable mobile data in roaming by default.
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.android.dataroaming=false

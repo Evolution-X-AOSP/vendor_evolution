@@ -1,4 +1,9 @@
+# Allow vendor/extra to override any property by setting it first
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 PRODUCT_BRAND ?= EvolutionX
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -69,7 +74,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
 else
 # Enable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+endif
 
+ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Disable extra StrictMode features on all non-engineering builds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
 endif
@@ -103,12 +110,8 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/config/permissions/evolution-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/evolution-sysconfig.xml
 
 # Copy all Evolution X-specific init rc files
-#PRODUCT_COPY_FILES += \
-#    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
-
-# Extra Permissions
 PRODUCT_COPY_FILES += \
-    vendor/evolution/config/permissions/privapp-permissions-evolution.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-evolution.xml
+    vendor/evolution/prebuilt/common/etc/init/init.evolution-x-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.evolution-x-updater.rc
 
 # LineageHW permission
 PRODUCT_COPY_FILES += \
@@ -189,6 +192,7 @@ TARGET_IS_PIXEL ?= false
 TARGET_IS_PIXEL_6 ?= false
 TARGET_IS_PIXEL_7 ?= false
 TARGET_IS_PIXEL_7A ?= false
+TARGET_IS_PIXEL_8 ?= false
 TARGET_IS_PIXEL_FOLD ?= false
 TARGET_IS_PIXEL_TABLET ?= false
 TARGET_PIXEL_STAND_SUPPORTED ?= false
@@ -197,21 +201,21 @@ TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= true
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-endif
+#TARGET_FACE_UNLOCK_SUPPORTED ?= true
+#ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+#PRODUCT_PACKAGES += \
+#    FaceUnlockService
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+#endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Launcher3QuickStep \
-    SettingsGoogle \
-    SystemUIGoogle
+    NexusLauncherRelease \
+    Settings \
+    SystemUI
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
@@ -249,9 +253,6 @@ $(call inherit-product, vendor/evolution/config/fonts.mk)
 # Inherit from gfonts config
 $(call inherit-product, vendor/evolution/config/gfonts.mk)
 
-# Inherit from our ota config
-$(call inherit-product, vendor/evolution/config/ota.mk)
-
 # Inherit from packages config
 $(call inherit-product, vendor/evolution/config/packages.mk)
 
@@ -268,7 +269,7 @@ $(call inherit-product, vendor/evolution/config/themes.mk)
 $(call inherit-product, vendor/evolution/config/version.mk)
 
 # Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 
 # Call the BCR setup
 $(call inherit-product, vendor/bcr/bcr.mk)

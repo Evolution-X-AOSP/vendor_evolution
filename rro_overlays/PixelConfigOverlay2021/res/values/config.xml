@@ -27,6 +27,12 @@
          is interactive. -->
     <!--bool name="config_volumeHushGestureEnabled">false</bool-->
 
+    <!-- The list of packages to force slowJpegMode for Apps using Camera API1 -->
+    <string-array name="config_forceSlowJpegModeList">
+        <item>com.facebook.orca</item>
+        <item>com.skype.raider</item>
+    </string-array>
+
     <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
     <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
 

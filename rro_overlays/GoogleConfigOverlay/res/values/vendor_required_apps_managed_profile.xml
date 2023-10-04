@@ -38,5 +38,6 @@
         <item>com.google.android.volta</item>
         <item>com.google.android.as</item>
         <item>com.google.mds</item>
+        <item>com.google.android.apps.overlay</item>
     </string-array>
 </resources>
