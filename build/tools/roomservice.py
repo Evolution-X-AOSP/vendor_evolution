@@ -45,7 +45,7 @@ DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/evolution.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'tiramisu')
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'udc')
 custom_dependencies = "evolution.dependencies"
 org_manifest = "evo-devices"  # leave empty if org is provided in manifest
 org_display = "Evolution-X-Devices"  # needed for displaying
