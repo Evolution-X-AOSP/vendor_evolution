@@ -16,11 +16,11 @@
 # Apps
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace \
+#    GameSpace \
     Papers \
-    ParallelSpace \
+#    ParallelSpace \
     RepainterServicePriv \
-    ThemePicker \
+#    ThemePicker \
 #    Updates \
     WallpaperPicker2
 
