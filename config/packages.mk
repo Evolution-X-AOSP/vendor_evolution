@@ -16,20 +16,20 @@
 # Apps
 PRODUCT_PACKAGES += \
     EvoEgg \
-    GameSpace \
     Papers \
-    ParallelSpace \
-    RepainterServicePriv \
-    ThemePicker \
+    RepainterServicePriv
+#    GameSpace \
+#    ParallelSpace \
+#    ThemePicker \
 #    Updates \
-    WallpaperPicker2
+#    WallpaperPicker2
 
 # Whether the compiled build to be shipped with Aperture CAM
-TARGET_BUILD_APERTURE_CAMERA ?= true
-ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Aperture
-endif
+#TARGET_BUILD_APERTURE_CAMERA ?= true
+#ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
+#PRODUCT_PACKAGES += \
+#    Aperture
+#endif
 
 # TouchGestures
 TARGET_SUPPORTS_TOUCHGESTURES ?= false

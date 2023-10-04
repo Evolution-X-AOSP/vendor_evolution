@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     EvolutionXConfigOverlay \
     ImmersiveNavigationOverlay \
     NetworkStackOverlay \
+    NexusLauncherResOverlay \
     PixelSetupWizardOverlayEvolutionX
 
 # Google Overlays
@@ -26,6 +27,8 @@ PRODUCT_PACKAGES += \
     DMServiceOverlay \
     FlipendoOverlay \
     GoogleConfigOverlay \
+    GoogleDeviceLockControllerOverlay \
+    GoogleHealthConnectOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
     PixelConfigOverlay2018 \
