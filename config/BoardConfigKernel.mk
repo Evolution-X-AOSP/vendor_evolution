@@ -145,30 +145,30 @@ ifneq ($(KERNEL_NO_GCC), true)
     KERNEL_TOOLCHAIN_PATH_gcc := $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))
 
     ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
-        KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(KERNEL_TOOLCHAIN_PATH)"
+        KERNEL_CROSS_COMPILE := CROSS_COMPILE='$(KERNEL_TOOLCHAIN_PATH)'
     else
-        KERNEL_CROSS_COMPILE := CROSS_COMPILE="$(CCACHE_BIN) $(KERNEL_TOOLCHAIN_PATH)"
+        KERNEL_CROSS_COMPILE := CROSS_COMPILE='$(CCACHE_BIN) $(KERNEL_TOOLCHAIN_PATH)'
     endif
 
     # Needed for CONFIG_COMPAT_VDSO, safe to set for all arm64 builds
     ifeq ($(KERNEL_ARCH),arm64)
-        KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
-        KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+        KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32='$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)'
+        KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT='$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)'
     endif
 
     ifeq ($(TARGET_KERNEL_CLANG_COMPILE),false)
         ifeq ($(KERNEL_ARCH),arm)
             # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
-            KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+            KERNEL_MAKE_FLAGS += CFLAGS_MODULE='-fno-pic'
         endif
 
         ifeq ($(KERNEL_ARCH),arm64)
             # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
-            KERNEL_MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+            KERNEL_MAKE_FLAGS += CFLAGS_MODULE='-fno-pic'
         endif
     endif
 
-    KERNEL_MAKE_FLAGS += CPATH="/usr/include:/usr/include/x86_64-linux-gnu" HOSTLDFLAGS="-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld"
+    KERNEL_MAKE_FLAGS += CPATH='/usr/include:/usr/include/x86_64-linux-gnu' HOSTLDFLAGS='-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld'
 
     ifeq ($(KERNEL_ARCH),arm64)
         # Add 32-bit GCC to PATH so that arm-linux-androidkernel-as is available for CONFIG_COMPAT_VDSO
@@ -188,10 +188,10 @@ ifneq ($(KERNEL_NO_GCC), true)
     endif
 else
     ifeq ($(TARGET_KERNEL_CLANG_AOSP), true)
-        KERNEL_MAKE_FLAGS += HOSTCFLAGS="--sysroot=$(BUILD_TOP)/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot -I$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/include"
-        KERNEL_MAKE_FLAGS += HOSTLDFLAGS="--sysroot=$(BUILD_TOP)/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot -Wl,-rpath,$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -L $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -fuse-ld=lld --rtlib=compiler-rt"
+        KERNEL_MAKE_FLAGS += HOSTCFLAGS='--sysroot=$(BUILD_TOP)/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot -I$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/include'
+        KERNEL_MAKE_FLAGS += HOSTLDFLAGS='--sysroot=$(BUILD_TOP)/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8/sysroot -Wl,-rpath,$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -L $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -fuse-ld=lld --rtlib=compiler-rt'
     else
-        KERNEL_MAKE_FLAGS += HOSTLDFLAGS="-fuse-ld=lld"
+        KERNEL_MAKE_FLAGS += HOSTLDFLAGS='-fuse-ld=lld'
     endif
 
     TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-evolution/$(HOST_PREBUILT_TAG)/bin:$(TARGET_KERNEL_CLANG_PATH)/bin:$$PATH
