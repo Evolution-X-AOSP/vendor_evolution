@@ -16,13 +16,13 @@
 # Apps
 PRODUCT_PACKAGES += \
     EvoEgg \
-#    GameSpace \
     Papers \
+    RepainterServicePriv
+#    GameSpace \
 #    ParallelSpace \
-    RepainterServicePriv \
 #    ThemePicker \
 #    Updates \
-    WallpaperPicker2
+#    WallpaperPicker2
 
 # Whether the compiled build to be shipped with Aperture CAM
 TARGET_BUILD_APERTURE_CAMERA ?= true

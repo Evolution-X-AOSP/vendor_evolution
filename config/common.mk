@@ -215,10 +215,10 @@ TARGET_USES_PICO_GAPPS ?= false
 #endif
 
 # Dex preopt
-#PRODUCT_DEXPREOPT_SPEED_APPS += \
-#    Launcher3QuickStep \
-#    SettingsGoogle \
-#    SystemUIGoogle
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
+    Settings \
+    SystemUI
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true

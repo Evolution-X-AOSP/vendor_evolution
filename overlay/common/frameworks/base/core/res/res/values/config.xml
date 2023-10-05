@@ -60,7 +60,7 @@
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage" translatable="false">com.android.wallpaper</string>
+    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
 
     <!-- Component names of the services which will keep critical code path warm -->
     <string-array name="config_keep_warming_services" translatable="false">
