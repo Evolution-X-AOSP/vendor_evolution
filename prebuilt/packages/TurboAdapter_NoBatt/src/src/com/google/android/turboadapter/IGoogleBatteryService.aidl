@@ -14,4 +14,8 @@ interface IGoogleBatteryService {
     boolean setChargingDeadline(int i);
 
     boolean setProperty(int i, int i2, int i3);
+
+    boolean setStringProperty(int i, int i2, String str);
+
+    String getStringProperty(int i, int i2);
 }

@@ -21,14 +21,14 @@ public class GoogleBatteryService extends Service {
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
     public boolean onUnbind(Intent intent) {
         mBinder = null;
         return false;
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
     }
 
     public class GoogleBatteryProxyDummy extends IGoogleBatteryService.Stub {
@@ -64,6 +64,16 @@ public class GoogleBatteryService extends Service {
         @Override
         public boolean setProperty(int i, int i2, int i3) {
             return false;
+        }
+
+        @Override
+        public boolean setStringProperty(int i, int i2, String str) {
+            return false;
+        }
+
+        @Override
+        public String getStringProperty(int i, int i2) {
+            return null; // TODO: Correctly report dummy value
         }
     }
 }

@@ -10,9 +10,13 @@ public interface IGoogleBattery extends IInterface {
 
     int getProperty(int i, int i2) throws RemoteException;
 
+    String getStringProperty(int i, int i2) throws RemoteException;
+
     void setChargingDeadline(int i) throws RemoteException;
 
     void setProperty(int i, int i2, int i3) throws RemoteException;
+
+    void setStringProperty(int i, int i2, String str) throws RemoteException;
 
     public static abstract class Stub extends Binder implements IGoogleBattery {
         public static IGoogleBattery asInterface(IBinder iBinder) {
@@ -52,6 +56,16 @@ public interface IGoogleBattery extends IInterface {
             @Override
             public void setProperty(int i, int i2, int i3) throws RemoteException {
                 /* Do nothing */
+            }
+
+            @Override
+            public void setStringProperty(int i, int i2, String str) throws RemoteException {
+                /* Do nothing */
+            }
+
+            @Override
+            public String getStringProperty(int i, int i2) throws RemoteException {
+                return null;
             }
         }
     }
