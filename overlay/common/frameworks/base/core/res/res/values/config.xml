@@ -337,9 +337,6 @@
         <!-- Globally enable the new photo picker -->
         <item>storage_native_boot/take_over_get_content=true</item>
 
-        <!-- Allow more cached apps in the background -->
-        <item>activity_manager/max_cached_processes=64</item>
-
         <!-- ART heap compaction for cached apps -->
         <item>activity_manager/use_compaction=true</item>
 
@@ -357,9 +354,6 @@
     <!-- Whether the lock screen is allowed to run its own live wallpaper,
          different from the home screen wallpaper. -->
     <bool name="config_independentLockscreenLiveWallpaper">true</bool>
-
-    <!-- the number of the max cached processes in the system. -->
-    <integer name="config_customizedMaxCachedProcesses">48</integer>
 
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
