@@ -197,6 +197,7 @@ TARGET_IS_PIXEL_FOLD ?= false
 TARGET_IS_PIXEL_TABLET ?= false
 TARGET_PIXEL_STAND_SUPPORTED ?= false
 TARGET_SUPPORTS_QUICK_TAP ?= false
+TARGET_USES_LEGACY_BOOTANIMATION ?= false
 TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
 
@@ -247,7 +248,7 @@ $(call inherit-product, vendor/evolution/config/audio.mk)
 # Inherit from bootanimation config
 ifeq ($(TARGET_IS_PIXEL), true)
 $(call inherit-product, vendor/evolution/config/bootanimation_pixels.mk)
-else
+else ifneq ($(TARGET_USES_LEGACY_BOOTANIMATION), true)
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 endif
 
