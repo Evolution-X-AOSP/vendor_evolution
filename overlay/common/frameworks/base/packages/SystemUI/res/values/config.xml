@@ -130,4 +130,7 @@
 
     <!-- Whether or not lockscreen shortcuts can be customized -->
     <bool name="custom_lockscreen_shortcuts_enabled" translatable="false">true</bool>
+
+    <!-- Whether or not long-pressing on keyguard will display to customize lockscreen -->
+    <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
 </resources>
