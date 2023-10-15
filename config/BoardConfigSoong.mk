@@ -42,7 +42,7 @@ SOONG_CONFIG_evolutionGlobalVars += \
     uses_oppo_camera \
     uses_nothing_camera \
     target_alternative_futex_waiters \
-    camera_uses_newer_hidl_override_format \
+    camera_override_format_from_reserved \
     target_health_charging_control_charging_path \
     target_health_charging_control_charging_enabled \
     target_health_charging_control_charging_disabled \
@@ -81,7 +81,7 @@ SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_miui_camera_mode_support := $(TARGET_USES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_camera_needs_camera_needs_depth_sensor_override := $(TARGET_USES_DEPTHSENSOR_OVERRIDE)
-SOONG_CONFIG_evolutionGlobalVars_camera_uses_newer_hidl_override_format := $(TARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT)
+SOONG_CONFIG_evolutionGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
 SOONG_CONFIG_evolutionGlobalVars_include_miui_camera := $(TARGET_INCLUDES_MIUI_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_evolutionGlobalVars_uses_oppo_camera := $(TARGET_USES_OPPO_CAMERA)
@@ -104,6 +104,7 @@ SOONG_CONFIG_evolutionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMER
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
 TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED ?= 1

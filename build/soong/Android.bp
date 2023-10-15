@@ -72,22 +72,18 @@ aapt_version_code {
 }
 
 soong_config_module_type {
-    name: "camera_uses_newer_hidl_override_format",
+    name: "camera_override_format_from_reserved",
     module_type: "cc_defaults",
     config_namespace: "evolutionGlobalVars",
-    bool_variables: ["camera_uses_newer_hidl_override_format"],
-    properties: [
-        "cflags",
-        "cppflags",
-    ],
+    bool_variables: ["camera_override_format_from_reserved"],
+    properties: ["cppflags"],
 }
 
-camera_uses_newer_hidl_override_format {
-    name: "camera_uses_newer_hidl_override_format_defaults",
+camera_override_format_from_reserved {
+    name: "camera_override_format_from_reserved_defaults",
     soong_config_variables: {
-        camera_uses_newer_hidl_override_format: {
-            cflags: ["-DTARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT"],
-            cppflags: ["-DTARGET_CAMERA_USES_NEWER_HIDL_OVERRIDE_FORMAT"],
+        camera_override_format_from_reserved: {
+            cppflags: ["-DTARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED"],
         },
     },
 }
