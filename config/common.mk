@@ -145,7 +145,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Clean up packages cache to avoid wrong strings and resources
 PRODUCT_COPY_FILES += \
