@@ -259,7 +259,7 @@ $(call inherit-product, vendor/evolution/config/fonts.mk)
 $(call inherit-product, vendor/evolution/config/gfonts.mk)
 
 # Inherit from our ota config
-#$(call inherit-product, vendor/evolution/config/ota.mk)
+$(call inherit-product, vendor/evolution/config/ota.mk)
 
 # Inherit from packages config
 $(call inherit-product, vendor/evolution/config/packages.mk)

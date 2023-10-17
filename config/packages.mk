@@ -17,11 +17,11 @@
 PRODUCT_PACKAGES += \
     EvoEgg \
     Papers \
-    RepainterServicePriv
+    RepainterServicePriv \
+    Updates
 #    GameSpace \
 #    ParallelSpace \
 #    ThemePicker \
-#    Updates \
 #    WallpaperPicker2
 
 # Whether the compiled build to be shipped with Aperture CAM
