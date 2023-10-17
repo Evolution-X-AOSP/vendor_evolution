@@ -271,7 +271,7 @@ $(call inherit-product, vendor/evolution/config/rro_overlays.mk)
 $(call inherit-product, vendor/evolution/config/textclassifier.mk)
 
 # Inherit from themes config
-#$(call inherit-product, vendor/evolution/config/themes.mk)
+$(call inherit-product, vendor/evolution/config/themes.mk)
 
 # Inherit from our version config
 $(call inherit-product, vendor/evolution/config/version.mk)

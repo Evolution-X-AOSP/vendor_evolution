@@ -261,6 +261,6 @@ PRODUCT_PACKAGES += \
     ClockFontRoundheadsOverlay
 
 # QS Panel
-PRODUCT_PACKAGES += \
-    QSOutline \
-    QSTwoToneAccent
+#PRODUCT_PACKAGES += \
+#    QSOutline \
+#    QSTwoToneAccent
