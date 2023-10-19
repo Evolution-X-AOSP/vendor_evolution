@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:height="36dp" android:width="36dp" android:viewportWidth="36" android:viewportHeight="36">
+    <path android:fillColor="@drawable/res_0x7f02046e_themed_icon_sesame_search__0" android:pathData="M10.369,13.124h5.913c8.429,0 9.45,4.848 9.45,10.308c0,8.067 -3.464,10.308 -10.317,10.308h-5.046V13.124z"/>
+    <path android:fillColor="#ff000000" android:pathData="M25.731,2.33h-5.913c-5.989,0 -9.45,4.592 -9.45,9.765c0,6.451 4.519,9.765 10.317,9.765h5.046V2.33z"/>
+</vector>
