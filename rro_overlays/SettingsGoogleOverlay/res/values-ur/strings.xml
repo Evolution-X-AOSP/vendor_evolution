@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ارد گرد کی روشنی کے لیولز کی بنیاد پر ڈائینمک انداز سے ڈسپلے کو ایڈجسٹ کرتا ہے</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">‏Pixel Imprint + پاس ورڈ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">‏Pixel Imprint + پیٹرن</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">‏Pixel Imprint کے بغیر جاری رکھیں</string>
+    <string name="fingerprint_unlock_title">‏Pixel Imprint کے ساتھ آپ اپنا فنگر پرنٹ استعمال کر کے اپنا فون غیر مقفل کر سکتے ہیں۔ سیکیورٹی کیلئے، اس اختیار کو ایک بیک اپ اسکرین لاک درکار ہے۔</string>
+    <string name="lock_settings_picker_fingerprint_message">‏Pixel Imprint کے ساتھ استعمال کرنے کیلئے ایک بیک اپ اسکرین لاک منتخب کریں</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">‏اپنا فون غیر مقفل کرنے کے علاوہ، آپ Pixel Imprint کو خریداریوں اور ایپ تک رسائی کی اجازت دینے کیلئے بھی استعمال کر سکتے ہیں۔ <annotation id="url">مزید جانیں</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"‏اپنا فون غیرمقفل کرنے یا خریداریاں منظور کرنے کے لیے اپنے فنگر پرنٹ کا استعمال کریں۔
+
+نوٹ: ایک طاقتور پیٹرن یا PIN کی بنسبت آپ کا فنگر پرنٹ شاید کم محفوظ ہو۔"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏Pixel Imprint کے ساتھ، آپ اپنے فنگر پرنٹ کو خریداریوں کی اجازت دینے یا ایپس میں سائن ان کرنے کیلئے استعمال کر سکتے ہیں۔
+
+کسی کے فنگر پرنٹس شامل کرتے وقت محتاط رہیں۔ کسی بھی شامل کردہ فنگر پرنٹ سے یہ کام کیے جا سکتے ہیں۔
+
+نوٹ: آپ اس آلہ کو غیر مقفل کرنے کیلئے اپنا فنگر پرنٹ استعمال نہیں کر سکتے۔ مزید معلومات کیلئے اپنی تنظیم کے منتظم سے رابطہ کریں۔"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">‏Pixel Imprint کے ساتھ غیرمقفل کریں</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">‏اپنے فون کو جگانے اور غیر مقفل کرنے کیلئے Pixel Imprint سینسر کو ٹچ کریں۔</string>
+    <string name="suggested_fingerprint_lock_settings_summary">‏اپنا فون غیر مقفل کرنے کے لئے Pixel Imprint کا استعمال کریں</string>
+</resources>

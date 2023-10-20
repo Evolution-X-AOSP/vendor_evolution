@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Dynamicznie dostosowuje wyświetlacz na podstawie poziomu oświetlenia otoczenia</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + hasło</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + wzór</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + kod PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Kontynuuj bez Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint pozwala odblokować telefon odciskiem palca. Ze względów bezpieczeństwa ta opcja wymaga dodatkowej blokady ekranu.</string>
+    <string name="lock_settings_picker_fingerprint_message">Wybierz zapasową blokadę ekranu używaną z Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Za pomocą Pixel Imprint możesz odblokować telefon, autoryzować zakupy i logować się w aplikacjach. <annotation id="url">Więcej informacji</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Odblokowuj telefon i zatwierdzaj zakupy odciskiem palca.
+
+Uwaga: odcisk palca może być mniej bezpieczny niż skomplikowany wzór lub złożony kod PIN."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint pozwala autoryzować zakupy oraz logować się w aplikacjach za pomocą odcisku palca.
+
+Z rozwagą dodawaj odciski palców innych osób, bo każda z nich będzie mogła wykonywać wszystkie te czynności.
+
+Uwaga: nie możesz odblokowywać tego urządzenia odciskiem palca. Aby uzyskać więcej informacji, skontaktuj się z administratorem swojej organizacji."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Odblokowuj za pomocą Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Aby wybudzić lub odblokować telefon, dotknij czujnika Pixel Imprint.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Odblokuj telefon za pomocą Pixel Imprint</string>
+</resources>

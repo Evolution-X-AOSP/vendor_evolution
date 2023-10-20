@@ -1,123 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/*
-** Copyright 2022, Raphielscape LLC. and Haruka LLC.
-**
-** Licensed under the Apache License, Version 2.0 (the "License");
-** you may not use this file except in compliance with the License.
-** You may obtain a copy of the License at
-**
-**     http://www.apache.org/licenses/LICENSE-2.0
-**
-** Unless required by applicable law or agreed to in writing, software
-** distributed under the License is distributed on an "AS IS" BASIS,
-** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-** See the License for the specific language governing permissions and
-** limitations under the License.
-*/
+     Copyright (C) 2013 The CyanogenMod Project
+               (C) 2017 The LineageOS Project
+               (c) 2018 The PixelExperience Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
-<resources>
-    <!-- Flag indicating whether the assist disclosure can be disabled using
-         ASSIST_DISCLOSURE_ENABLED. -->
-    <bool name="config_allowDisablingAssistDisclosure">true</bool>
-
-    <!-- Whether to enable the biometric notification for dual-modality device that enrolled a
-         single biometric and experiences high FRR. -->
-    <bool name="config_biometricFrrNotificationEnabled">true</bool>
-
-    <!-- Whether to enable fused location provider overlay which allows fused location provider to
-         be replaced by an app at run-time. When disabled, only the
-         config_fusedLocationProviderPackageName package will be searched for fused location
-         provider, otherwise any system package is eligible. Anyone who wants to disable the overlay
-         mechanism can set it to false. -->
-    <bool name="config_enableFusedLocationOverlay">true</bool>
-
-    <!-- Whether to enable geocoder overlay which allows geocoder to be replaced
-         by an app at run-time. When disabled, only the
-         config_geocoderProviderPackageName package will be searched for
-         geocoder, otherwise any system package is eligible. Anyone who wants to
-         disable the overlay mechanism can set it to false.
-         -->
-    <bool name="config_enableGeocoderOverlay">true</bool>
-
-    <!-- Whether to enable geofence overlay which allows geofence to be replaced
-         by an app at run-time. When disabled, only the
-         config_geofenceProviderPackageName package will be searched for
-         geofence implementation, otherwise any system package is eligible. Anyone who
-         wants to disable the overlay mechanism can set it to false.
-         -->
-    <bool name="config_enableGeofenceOverlay">true</bool>
-
-    <!-- Whether to enable network location overlay which allows network location provider to be
-         replaced by an app at run-time. When disabled, only the
-         config_networkLocationProviderPackageName package will be searched for network location
-         provider, otherwise any system package is eligible. Anyone who wants to disable the overlay
-         mechanism can set it to false. -->
-    <bool name="config_enableNetworkLocationOverlay">true</bool>
-
-    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
-    <bool name="config_useRoundIcon">true</bool>
-
-    <!-- Package name for the device provisioning package. -->
-    <string name="config_deviceProvisioningPackage" translatable="false">com.google.android.apps.work.oobconfig</string>
-
-    <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
-         handle wallpaper cropping.
-    -->
-    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
-
-    <!-- Component names of the services which will keep critical code path warm -->
-    <string-array name="config_keep_warming_services" translatable="false">
-        <item>com.google.android.GoogleCamera/com.google.android.apps.camera.prewarm.NoOpPrewarmService</item>
-    </string-array>
-
-    <!-- Package name(s) containing location provider support. These packages will be auto-granted
-         several permissions by the system, and should be system packages. -->
-    <string-array name="config_locationProviderPackageNames" translatable="false">
-        <item>com.google.android.gms</item>
-        <item>com.android.location.fused</item>
-    </string-array>
-
-    <!-- Color temperature, supported by Night display. -->
-    <string-array name="config_nightDisplayColorTemperatureCoefficients">
-        <item>0.0</item>
-        <item>0.0</item>
-        <item>1.0</item>
-        <item>-0.000000014365268757</item>
-        <item>0.000255092801250106</item>
-        <item>-0.064156942434907716</item>
-        <item>-0.000000000910931179</item>
-        <item>0.000207598323269139</item>
-        <item>-0.349361641294833436</item>
-    </string-array>
-
-    <!-- When each intermediate UDFPS enroll stage ends, as a fraction of total progress. -->
-    <string-array name="config_udfps_enroll_stage_thresholds">
-        <item>0.065</item>
-        <item>0.48</item>
-        <item>0.584</item>
-        <item>0.792</item>
-    </string-array>
-
-    <!-- Sets the package name for location extra packages -->
-    <string-array name="config_locationExtraPackageNames">
-        <item>com.google.android.gms.location.history</item>
-    </string-array>
-
-    <!-- Whether to show estimate in QS header. Default to false in case there's not enough
-     space -->
-    <bool name="config_showBatteryEstimateQSBH">true</bool>
-
-    <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">com.google.android.gms</string>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Disable stock components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
-        <!-- Disable stock OTA components if installed -->
         <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.stats.service.DropBoxEntryAddedReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
@@ -127,7 +33,6 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.control.NotificationControl</item>
         <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
-        <!-- Disable Now Playing -->
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
@@ -137,19 +42,38 @@
         <item>com.google.android.dialer/com.android.dialer.rtt.settings.impl.gateway.RttSettingsDeepLink</item>
     </string-array>
 
+    <!-- These are system packages exempted from privacy indicator -->
+    <string-array name="config_indicatorExemptedPackageNames" translatable="false">
+        <item>com.android.bluetooth</item>
+        <item>com.android.networkstack.tethering</item>
+        <item>com.android.phone</item>
+        <item>com.android.printspooler</item>
+        <item>com.android.systemui</item>
+        <item>com.google.android.googlequicksearchbox</item>
+        <item>com.google.android.settings.intelligence</item>
+        <item>com.mediatek.ims</item>
+        <item>com.qualcomm.qti.cne</item>
+        <item>com.shannon.imsservice</item>
+        <item>org.pixelexperience.faceunlock</item>
+        <item>co.aospa.sense</item>
+    </string-array>
+
+    <bool name="config_cellBroadcastAppLinks">true</bool>
+
+    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
+         app standby.  These are not enabled by default because they require a standard
+         cloud-to-device messaging service for apps to interact correctly with the modes
+         (such as to be able to deliver an instant message to the device even when it is
+         dozing).  This should be enabled if you have such services and expect apps to
+         correctly use them when installed on your device.  Otherwise, keep this disabled
+         so that applications can still use their own mechanisms. -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
-
-    <!-- Control the default night mode to use when there is no other mode override set.
-         One of the following values (see UiModeManager.java):
-             0 - MODE_NIGHT_AUTO
-             1 - MODE_NIGHT_NO
-             2 - MODE_NIGHT_YES
-    -->
-    <integer name="config_defaultNightMode">2</integer>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
@@ -161,9 +85,22 @@
          2: gestures only for back, home and overview -->
     <integer name="config_navBarInteractionMode">2</integer>
 
-    <!-- Controls whether hints for gestural navigation are shown when the device is setup.
-         This should only be set when the device has gestural navigation enabled by default. -->
-    <bool name="config_showGesturalNavigationHints">true</bool>
+    <!-- If this is true, long press on power button will be available from a
+         non-interactive state. -->
+    <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
+
+    <!-- Whether or not to add a "people" notifications section -->
+    <bool name="config_usePeopleFiltering">true</bool>
+
+    <!-- Whether this device is supporting the microphone toggle -->
+    <bool name="config_supportsMicToggle">true</bool>
+
+    <!-- Whether this device is supporting the camera toggle -->
+    <bool name="config_supportsCamToggle">true</bool>
+
+    <!-- Package name that will receive an explicit manifest broadcast for
+         android.os.action.POWER_SAVE_MODE_CHANGED. -->
+    <string name="config_powerSaveModeChangedListenerPackage">com.google.android.flipendo</string>
 
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing
@@ -182,37 +119,33 @@
     -->
     <integer name="config_keyChordPowerVolumeUp">1</integer>
 
-    <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
-    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui,com.google.android.as,com.google.android.tts</string>
-
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/system/bin/surfaceflinger"</item>
-        <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
-    </string-array>
-
-    <!-- True if home app should be pinned via Pinner Service -->
-    <bool name="config_pinnerHomeApp">true</bool>
-
-    <!-- Should the pinner service pin the Camera application? -->
-    <bool name="config_pinnerCameraApp">true</bool>
-
-    <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily" translatable="false" />
+    <!-- Control the default night mode to use when there is no other mode override set.
+         One of the following values (see UiModeManager.java):
+             0 - MODE_NIGHT_AUTO
+             1 - MODE_NIGHT_NO
+             2 - MODE_NIGHT_YES
+    -->
+    <integer name="config_defaultNightMode">2</integer>
 
     <!-- Whether or not to enable the lock screen entry point for the QR code scanner. -->
     <bool name="config_enableQrCodeScannerOnLockScreen">true</bool>
 
-    <!-- Flag indicating whether notification and ringtone volumes 
-         are controlled together (aliasing is true) or not. -->
-    <bool name="config_alias_ring_notif_stream_types">false</bool>
+    <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui,com.google.android.as,com.google.android.tts</string>
+
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+
+    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
+    <bool name="config_unplugTurnsOnScreen">true</bool>
+
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
 
     <!-- Define device configs on boot -->
     <string-array name="global_device_configs_override">
+
         <!-- Machine learning back gesture (requires TensorFlow model) -->
         <item>systemui/use_back_gesture_ml_model=true</item>
         <item>systemui/back_gesture_ml_model_name=backgesture</item>
@@ -221,60 +154,51 @@
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
-        <!-- Enable the new and advanced Privacy Hub -->
-        <item>privacy/safety_center_is_enabled=true</item>
-
         <!-- Keep up to 7 days of permission usage history -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
         <item>privacy/privacy_dashboard_7_day_toggle=true</item>
 
-        <!-- Use new privacy indicators for location -->
-        <item>privacy/location_indicators_enabled=true</item>
+        <!-- Enable safety center -->
+        <item>privacy/safety_center_is_enabled=true</item>
 
-        <!-- Whether to show location indicators -->
+        <!-- Globally enable the new photo picker -->
+        <item>storage_native_boot/take_over_get_content=true</item>
+
+        <!-- Enable new location indicators -->
+        <item>privacy/location_access_check_enabled=true</item>
+        <item>privacy/location_accuracy_enabled=true</item>
         <item>privacy/location_indicator_settings_enabled=true</item>
+        <item>privacy/location_indicators_enabled=true</item>
+        <item>privacy/location_indicators_show_system=false</item>
+        <item>privacy/location_indicators_small_enabled=true</item>
 
-        <!-- Enable protected by android banner -->
-        <item>privacy/safety_protection_enabled=true</item>
+        <!-- Enable smart actions in the clipboard overlay -->
+        <item>systemui/clipboard_overlay_show_actions=true</item>
 
-        <!-- Enable permission hub v2 -->
-        <item>privacy/permissions_hub_enabled=true</item>
-        <item>privacy/permissions_hub_2_enabled=true</item>
+        <!-- Enable app cloning  -->
+        <item>app_cloning/cloned_apps_enabled=true</item>
+        <item>app_cloning/delete_all_app_clones_enabled=true</item>
+        <item>app_cloning/enable_app_cloning_building_blocks=true</item>
 
         <!--
             Device Personalization Services (AiAi)
         -->
 
+        <!-- Live Caption (Pixel 2017 + OEM) -->
+        <item>device_personalization_services/Captions__enable_augmented_modality=true</item>
+        <item>device_personalization_services/Captions__enable_augmented_modality_input=true</item>
+        <item>device_personalization_services/Captions__enable_augmented_modality_language_detection=true</item>
+        <item>device_personalization_services/Captions__enable_augmented_music=false</item>
+        <item>device_personalization_services/Captions__enable_language_detection=true</item>
+        <item>device_personalization_services/Captions__enable_new_model_version_advanced_2023=true</item>
+        <item>device_personalization_services/Captions__new_model_version_advanced_2023=20230808</item>
+        <item>device_personalization_services/Captions__enable_punctuations=true</item>
+        <item>device_personalization_services/Captions__allow_use_public_speech_recognition=true</item>
+
         <!-- Smartspace -->
-        <item>device_personalization_services/Cell__enable_cell=true</item>
-        <item>device_personalization_services/Cell__enable_smartspace_events=true</item>
-        <item>device_personalization_services/EchoSmartspace__check_notification_visibility=true</item>
-        <item>device_personalization_services/EchoSmartspace__doorbell_when_for_update_time=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_add_contextual_feedback_button_on_long_press=false</item>
-        <item>device_personalization_services/EchoSmartspace__enable_add_internal_feedback_button=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_agsa_settings_read=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_cross_feature_rank_dedup_twiddler=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_dimensional_logging=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_encode_subcard_into_smartspace_target_id=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_flight_landing_smartspace_aiai=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_hotel_smartspace_aiai=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_media_recs_for_driving=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_predictor_expiration=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_ring_channels_regex=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_ring_using_ui_template=true</item>
-        <item>device_personalization_services/EchoSmartspace__enable_travel_features_type_merge=true</item>
-        <item>device_personalization_services/EchoSmartspace__ring_channels_regex=4_ding_channel_notification\d+</item>
-        <item>device_personalization_services/EchoSmartspace__ring_lockscreen_delay_seconds=0</item>
-        <item>device_personalization_services/EchoSmartspace__ring_on_aod_only=true</item>
-        <item>device_personalization_services/EchoSmartspace__runtastic_check_pause_action=true</item>
-        <item>device_personalization_services/EchoSmartspace__runtastic_is_ongoing_default_true=true</item>
-        <item>device_personalization_services/EchoSmartspace__smartspace_enable_daily_forecast=true</item>
-        <item>device_personalization_services/EchoSmartspace__smartspace_enable_timely_reminder=true</item>
-        <item>device_personalization_services/EchoSmartspace__strava_check_stop_action=true</item>
         <item>device_personalization_services/Echo__smartspace_dedupe_fast_pair_notification=true</item>
-        <item>device_personalization_services/Echo__smartspace_doorbell_aiai_loading_screen=false</item>
-        <item>device_personalization_services/Echo__smartspace_doorbell_allowlist_packages=com.nest.android,com.google.android.apps.chromecast.app</item>
-        <item>device_personalization_services/Echo__smartspace_doorbell_loading_screen_state=4</item>
+        <item>device_personalization_services/Echo__smartspace_doorbell_aiai_loading_screen=true</item>
+        <item>device_personalization_services/Echo__smartspace_doorbell_loading_screen_state=2</item>
         <item>device_personalization_services/Echo__smartspace_enable_async_icon=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_battery_notification_parser=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_bedtime_active_predictor=true</item>
@@ -293,8 +217,6 @@
         <item>device_personalization_services/Echo__smartspace_enable_eta_lyft=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_food_delivery_eta=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_grocery=true</item>
-        <item>device_personalization_services/Echo__smartspace_enable_light_off_predictor=true</item>
-        <item>device_personalization_services/Echo__smartspace_enable_light_predictor=false</item>
         <item>device_personalization_services/Echo__smartspace_enable_media_wake_lock_acquire=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_nap=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_nudge=true</item>
@@ -304,64 +226,69 @@
         <item>device_personalization_services/Echo__smartspace_enable_paired_device_predictor=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_ridesharing_eta=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_safety_check_predictor=true</item>
+        <item>device_personalization_services/Echo__smartspace_enable_score_ranker=WEIGHTED</item>
         <item>device_personalization_services/Echo__smartspace_enable_score_ranker=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_sensitive_notification_twiddler=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_step_predictor=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_subcard_logging=true</item>
         <item>device_personalization_services/Echo__smartspace_gaia_twiddler=true</item>
-        <item>device_personalization_services/Echo__smartspace_outlook_event_source_of_truth=TEXT_ONLY</item>
-        <item>device_personalization_services/Echo__smartspace_package_delivery_card_delay_seconds=0</item>
         <item>device_personalization_services/Echo__smartspace_show_cross_device_timer_label=true</item>
         <item>device_personalization_services/Echo__smartspace_use_flashlight_action_chip=true</item>
         <item>device_personalization_services/Echo_smartspace__enable_flight_landing_smartspace_aiai=true</item>
         <item>device_personalization_services/Echo_smartspace__enable_hotel_smartspace_aiai=true</item>
         <item>device_personalization_services/Echo_smartspace__smartspace_enable_daily_forecast=true</item>
         <item>device_personalization_services/Echo_smartspace__smartspace_enable_timely_reminder=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_agsa_settings_read=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_cross_feature_rank_dedup_twiddler=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_encode_subcard_into_smartspace_target_id=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_fitbit_notifications=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_flight_landing_smartspace_aiai=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_hotel_smartspace_aiai=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_media_recs_for_driving=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_optin_bedtime_adjustment_provider=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_predictor_expiration=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_ring_channels_regex=true</item>
+        <item>device_personalization_services/EchoSmartspace__enable_weather_data_extras=true</item>
+        <item>device_personalization_services/EchoSmartspace__runtastic_check_pause_action=true</item>
+        <item>device_personalization_services/EchoSmartspace__smartspace_enable_cross_device_alarm=true</item>
+        <item>device_personalization_services/EchoSmartspace__smartspace_enable_daily_forecast=true</item>
+        <item>device_personalization_services/EchoSmartspace__smartspace_enable_timely_reminder=true</item>
+        <item>device_personalization_services/EchoSmartspace__smartspace_enable_tomorrow_forecast=true</item>
+        <item>device_personalization_services/EchoSmartspace__strava_check_stop_action=true</item>
+
+        <!-- Google Live Translate -->
+        <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
+        <item>device_personalization_services/Translate__copy_to_translate_enabled=true</item>
+        <item>device_personalization_services/Translate__replace_auto_translate_copied_text_enabled=true</item>
+        <item>device_personalization_services/Translate__translation_service_enabled=true</item>
+        <item>device_personalization_services/Translate__enable_chronicle_migration=true</item>
+        <item>device_personalization_services/Translate__use_translate_kit_streaming_api=true</item>
+
+        <!-- Pixel Launcher overview -->
+        <item>device_personalization_services/Overview__enable_lens_r_overview_long_press=true</item>
+        <item>device_personalization_services/Overview__enable_lens_r_overview_select_mode=true</item>
+        <item>device_personalization_services/Overview__enable_lens_r_overview_translate_action=true</item>
 
         <!-- Pixel Launcher -->
-        <item>launcher/ENABLE_LOCAL_RECOMMENDED_WIDGETS_FILTER=true</item>
         <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
-        <item>launcher/enable_quick_launch_v3_qsb=true</item>
-        <item>launcher/enable_quick_launch_v3_aa=true</item>
-        <item>launcher/gboard_update_enter_key=true</item>
-        <item>launcher/enable_web_suggest_on_default_browser=true</item>
+        <item>launcher/ENABLE_QUICK_LAUNCH_V2=true</item>
+        <item>launcher/GBOARD_UPDATE_ENTER_KEY=true</item>
+        <item>launcher/enable_one_search=true</item>
+        <item>launcher/enable_quick_launch_v2=true</item>
 
         <!-- System Ui -->
-        <item>systemui/clipboard_overlay_show_actions=true</item>
         <item>systemui/quick_access_wallet_enabled=true</item>
         <item>systemui/enable_screenshot_corner_flow=true</item>
         <item>systemui/enable_screenshot_notification_smart_actions=true</item>
         <item>systemui/enable_screenshot_scrolling=true</item>
-        <item>systemui/volume_separate_notification=true</item>
 
         <!-- Notifications -->
         <item>notification_assistant/generate_actions=true</item>
         <item>notification_assistant/generate_replies=true</item>
-
-        <!-- Globally enable the new photo picker -->
-        <item>storage_native_boot/take_over_get_content=true</item>
-
-        <!-- ART heap compaction for cached apps -->
-        <item>activity_manager/use_compaction=true</item>
-
-        <!-- App Cloning -->
-        <item>app_cloning/cloned_apps_enabled=true</item>
-        <item>app_cloning/delete_all_app_clones_enabled=true</item>
-        <item>app_cloning/enable_app_cloning_building_blocks=true</item>
 
         <!-- Adaptive Sound -->
         <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
         <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
         <item>device_personalization_services/AdaptiveAudio__use_silence_detector_state_bug_fix=true</item>
     </string-array>
-
-    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
-     vibrator is capable of subtle vibrations -->
-    <bool name="config_vibrateOnIconAnimation">true</bool>
-
-    <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
-    <bool name="config_unplugTurnsOnScreen">true</bool>
-
-    <!-- Default value for performant auth feature. -->
-    <bool name="config_performantAuthDefault">true</bool>
 </resources>

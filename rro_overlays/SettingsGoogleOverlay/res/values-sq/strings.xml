@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Rregullon në mënyrë dinamike ekranin bazuar në nivelet e dritës përreth</string>
+    <string name="display_white_balance_title">Balancuesi i ambientit</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Fjalëkalimi</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Motivi</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + Kodi PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Vazhdo pa Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Me Pixel Imprint, mund ta shkyçësh telefonin duke përdorur gjurmën e gishtit. Për siguri, ky opsion kërkon një kyçje rezervë të ekranit.</string>
+    <string name="lock_settings_picker_fingerprint_message">Zgjidh një kyçje rezervë të ekranit për ta përdorur me Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Përveç shkyçjes së telefonit, Pixel Imprint mund ta përdorësh edhe për të autorizuar blerjet dhe qasjen në aplikacione. <annotation id="url">Mëso më shumë</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Përdor gjurmën e gishtit për të shkyçur telefonin ose për të miratuar blerjet.
+
+Shënim. Gjurma e gishtit mund të jetë më pak e sigurt sesa një kod PIN ose një motiv i fortë."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Me Pixel Imprint, mund ta përdorësh gjurmën e gishtit për të autorizuar blerjet ose për t'u identifikuar tek aplikacionet.
+
+Ki kujdes se gjurmët e kujt shton. Çdo gjurmë gishti e shtuar do të mund t'i kryejë këto gjëra.
+
+Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur këtë pajisje. Për më shumë informacione, kontakto me administratorin e organizatës tënde."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Shkyçe me Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Thjesht prek sensorin e Pixel Imprint për të zgjuar dhe shkyçur telefonin.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Përdor Pixel Imprint për të shkyçur telefonin tënd</string>
+</resources>

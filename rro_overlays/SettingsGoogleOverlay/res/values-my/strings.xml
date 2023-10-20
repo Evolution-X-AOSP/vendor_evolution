@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ပတ်ဝန်းကျင်အလင်း အနည်းအများအပေါ် အခြေခံပြီး ဖန်သားပြင်ကို တဖြည်းဖြည်း ချိန်ညှိသည်</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + စကားဝှက်</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + ပုံစံ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + ပင်နံပါတ်</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint မသုံးဘဲ ရှေ့ဆက်ရန်</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint ဖြင့် သင်၏ လက်ဗွေကို အသုံးပြုပြီး သင့်ဖုန်းကို ဖွင့်နိုင်သည်။ လုံခြုံရေးအရ ဤနည်းလမ်းအတွက် ဖုန်းမျက်နှာပြင်လော့ခ်အရန်စနစ်တစ်ခု လိုအပ်သည်။</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint နှင့် တွဲသုံးရန် ဖန်သားပြင်လော့ခ် အရန်စနစ်တစ်ခု ရွေးပါ</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">သင့်ဖုန်းကို ဖွင့်ခြင်းအပြင် ဝယ်ယူမှုများနှင့် အက်ပ်အသုံးပြုမှုကို အတည်ပြုရန်အတွက် Pixel Imprint ကို အသုံးပြုနိုင်ပါသည်။ <annotation id="url">ပိုမိုလေ့လာရန်</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"သင်၏ လက်ဗွေကို အသုံးပြုပြီး သင့်ဖုန်းကို ဖွင့်ခြင်း သို့မဟုတ် ဝယ်ယူမှုများကို အတည်ပြုခြင်းတို့ ပြုလုပ်ပါ။
+
+မှတ်ချက်- သင်၏ လက်ဗွေသည် ခိုင်မာမှုရှိသော ပုံစံ သို့မဟုတ် ပင်နံပါတ်လောက် မလုံခြုံနိုင်ပါ။"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint ဖြင့် သင့်လက်ဗွေကို အသုံးပြုပြီး ဝယ်ယူမှုများကို ခွင့်ပြုပေးခြင်း သို့မဟုတ် အက်ပ်များသို့ လက်မှတ်ထိုးဝင်ခြင်းတို့ ပြုလုပ်နိုင်သည်။
+
+မည်သူ၏ လက်ဗွေအား ထည့်သွင်းမည်ကို သေချာစဉ်းစားပါ။ ထည့်သွင်းထားသည့် လက်ဗွေပိုင်ရှင်တိုင်းသည် ဤအရာများကို သုံးနိုင်ပါမည်။
+
+မှတ်ချက်- ဤစက်ပစ္စည်းကို ဖွင့်ရန် သင်၏လက်ဗွေကို သုံး၍မရပါ။ နောက်ထပ်အချက်အလက်များအတွက် သင့်အဖွဲ့အစည်း၏ စီမံခန့်ခွဲသူထံ ဆက်သွယ်ပါ။"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint ဖြင့်ဖွင့်ပါ</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">သင့်ဖုန်းကို နှိုးပြီး ဖွင့်ရန် Pixel Imprint အာရုံခံကိရိယာကိုသာ တို့လိုက်ပါ။</string>
+    <string name="suggested_fingerprint_lock_settings_summary">သင့်ဖုန်းကို ဖွင့်ရန် Pixel Imprint ကို သုံးပါ</string>
+</resources>

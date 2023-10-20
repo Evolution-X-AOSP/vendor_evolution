@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Axusta dinamicamente a pantalla en función dos niveis de luz que haxa derredor</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint e contrasinal</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint e padrón</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint e PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continuar sen Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Con Pixel Imprint podes desbloquear o teléfono utilizando a túa impresión dixital. Por motivos de seguranza, esta opción require un bloqueo de pantalla alternativo.</string>
+    <string name="lock_settings_picker_fingerprint_message">Escolle un método de bloqueo de pantalla alternativo para usar con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Ademais de desbloquear o teléfono, podes usar Pixel Imprint para autorizar as compras e o acceso ás aplicacións. <annotation id="url">Máis información</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Utiliza a impresión dixital para desbloquear o teléfono ou autorizar compras.
+
+Nota: A impresión dixital pode ser menos segura que un padrón ou un PIN fiable."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Con Pixel Imprint podes usar a túa impresión dixital para autorizar compras ou iniciar sesión nas aplicacións.
+
+Ten coidado coas impresións dixitais que engadas, pois poderán realizar as accións indicadas.
+
+Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo. Para obter máis información, contacta co administrador da túa organización."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Desbloquear con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Toca o sensor Pixel Imprint para activar e desbloquear o teléfono.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Utiliza Pixel Imprint para desbloquear o teléfono</string>
+</resources>

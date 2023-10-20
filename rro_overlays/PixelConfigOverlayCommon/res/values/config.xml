@@ -47,7 +47,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Flag indicating whether the volume panel should show remote sessions. -->
-    <!--bool name="config_volumeAdjustmentForRemoteGroupSessions">false</bool-->
+    <bool name="config_volumeAdjustmentForRemoteGroupSessions">false</bool>
 
     <!-- Corner radius for bottom sheet system dialogs -->
     <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
@@ -126,6 +126,9 @@
     <!-- Name of a font family to use for medium body text. -->
     <string name="config_bodyFontFamilyMedium" translatable="false">google-sans-text-medium</string>
 
+    <!-- Name of the font family to use in the default lockscreen clock -->
+    <string name="config_clockFontFamily" translatable="false">google-sans-clock</string>
+
     <!-- Component name that accepts ACTION_SEND intents for requesting ambient context consent. -->
     <string name="config_defaultAmbientContextConsentComponent" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.ambientcontext.ui.ConsentActivity</string>
 
@@ -203,6 +206,9 @@
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.pixel.exo:com.android.launcher3:co.aospa.glyph</string>
 
+    <!-- Component name for the default module metadata provider on this device -->
+    <!--string name="config_defaultModuleMetadataProvider" translatable="false">com.google.android.modulemetadata</string-->
+
     <!-- The package name for the system's speech recognition service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          Example: "com.android.speech/.RecognitionService"
@@ -261,7 +267,7 @@
      disabled.
      Example: "com.android.translation/.TranslationService"
     -->
-    <string name="config_defaultTranslationService" translatable="false"></string>
+    <string name="config_defaultTranslationService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiTranslationService</string>
 
     <!-- The package name for the system's wallpaper effects generation service.
     This service returns wallpaper effects results.

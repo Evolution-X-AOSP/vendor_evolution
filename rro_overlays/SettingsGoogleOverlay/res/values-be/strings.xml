@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Дынамічна рэгулюе яркасць дысплэя ў залежнасці ад узроўню асветленасці наваколля</string>
+    <string name="display_white_balance_title">Адаптыўная яркасць</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + пароль</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + узор разблакіроўкі</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN-код</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Працягнуць без Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">З Pixel Imprint вы можаце разблакіраваць тэлефон адбіткам пальца. У мэтах бяспекі для гэтага варыянта патрабуецца дадатковы спосаб блакіроўкі экрана.</string>
+    <string name="lock_settings_picker_fingerprint_message">Выберыце дадатковы спосаб блакіроўкі экрана для выкарыстання з Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Акрамя разблакіроўкі тэлефона вы можаце выкарыстоўваць Pixel Imprint для аўтарызацыі купляў і доступу да праграм. <annotation id="url">Даведацца больш</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Для разблакіроўкі тэлефона ці ўхвалення куплі можна карыстацца адбіткам пальца.
+
+Заўвага. Выкарыстанне адбітка пальца можа быць менш бяспечным, чым складаны ўзор разблакіроўкі або PIN-код."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"З Pixel Imprint вы можаце выкарыстаць свой адбітак пальца, каб аўтарызаваць куплю ці ўвайсці ў праграму.
+
+Уважліва сачыце за тым, чые адбіткі пальцаў вы дадаяце. Гэтыя дзеянні будуць даступныя для ўсіх уладальнікаў дададзеных адбіткаў пальцаў.
+
+Заўвага. Вы не можаце выкарыстоўваць адбітак пальца для разблакіроўкі гэтай прылады. Каб атрымаць дадатковую інфармацыю, звяжыцеся з адміністратарам арганізацыі."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Разблакіроўка з дапамогай Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Проста дакраніцеся да датчыка Pixel Imprint, каб абудзіць і разблакіраваць тэлефон.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Для разблакіроўкі тэлефона выкарыстайце Pixel Imprint</string>
+</resources>

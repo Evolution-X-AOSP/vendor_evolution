@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">"Ajuste dynamiquement l'écran en fonction des niveaux de luminosité environnants"</string>
+    <string name="display_white_balance_title">Correction de la luminosité ambiante</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + mot de passe</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + schéma</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + NIP</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continuer sans Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">"Grâce à Pixel Imprint, vous pouvez déverrouiller votre téléphone avec votre empreinte digitale. Pour plus de sécurité, cette option exige un verrouillage d'écran secondaire."</string>
+    <string name="lock_settings_picker_fingerprint_message">"Choisissez un mode de verrouillage d'écran alternatif à utiliser avec Pixel Imprint"</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">"Vous pouvez utiliser Pixel Imprint pour déverrouiller votre téléphone, mais aussi pour autoriser des achats et l'accès aux applications. "<annotation id="url">En savoir plus</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Utilisez votre empreinte digitale pour déverrouiller votre téléphone ou autoriser les achats.
+
+Remarque : Vos empreintes digitales peuvent être moins sécurisées qu'un schéma ou un NIP fiables."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint utilise vos empreintes digitales pour activer et déverrouiller votre téléphone, autoriser des achats ou vous connecter à des applications.
+
+Choisissez avec soin les personnes dont vous ajoutez les empreintes digitales. Toutes les personnes ajoutées sur votre téléphone peuvent effectuer ces opérations.
+
+Remarque : Vous ne pouvez pas utiliser vos empreintes digitales pour déverrouiller cet appareil. Pour en savoir plus, communiquez avec l'administrateur de votre organisation."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Déverrouiller avec Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Il suffit de toucher le capteur Pixel Imprint pour réactiver et déverrouiller votre téléphone.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Utilisez Pixel Imprint pour déverrouiller votre téléphone</string>
+</resources>

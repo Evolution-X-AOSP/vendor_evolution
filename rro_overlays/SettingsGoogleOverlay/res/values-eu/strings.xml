@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Doitu pantaila dinamikoki inguruko argi-mailaren arabera</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + pasahitza</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + eredua</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN kodea</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Egin aurrera Pixel Imprint erabili gabe</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint-ekin, hatz-marka erabilita desblokea dezakezu telefonoa. Segurtasuna bermatzeko, pantaila blokeatzeko ordezko metodo bat konfiguratu behar da.</string>
+    <string name="lock_settings_picker_fingerprint_message">Aukeratu pantaila blokeatzeko ordezko metodo bat, Pixel Imprint-ekin erabiltzeko</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Telefonoa desblokeatzeaz gain, erosketak baimentzeko eta aplikazioetan sartzeko ere erabil dezakezu Pixel Imprint. <annotation id="url">Lortu informazio gehiago</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Erabili hatz-marka telefonoa desblokeatzeko eta erosketak baimentzeko.
+
+Oharra: baliteke hatz-markak ez izatea eredu edo PIN kode konplexuak bezain seguruak."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint erabilita, erosketak baimentzeko edo aplikazioetan saioa hasteko erabil dezakezu hatz-marka.
+
+Erne noren hatz-markak gehitzen dituzun; gehitzen duzun edozein hatz-markarekin egin ahal izango baitira ekintza horiek.
+
+Oharra: ezin duzu erabili hatz-marka gailua desblokeatzeko. Informazio gehiago lortzeko, jarri erakundearen administratzailearekin harremanetan."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Desblokeatu gailua Pixel Imprint erabilita</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Sakatu Pixel Imprint-en sentsorea telefonoa esnarazi eta desblokeatzeko.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Erabili Pixel Imprint telefonoa desblokeatzeko</string>
+</resources>

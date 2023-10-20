@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Էկրանի դինամիկ կարգավորում՝ կախված շրջապատի լուսավորության մակարդակից</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + գաղտնաբառ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + նախշ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN կոդ</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Շարունակել առանց Pixel Imprint-ի</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint-ը թույլ է տալիս ապակողպել հեռախոսը մատնահետքի օգնությամբ: Անվտանգության նկատառումներից ելնելով՝ այս ընտրանքը պահանջում է էկրանի կողպման լրացուցիչ տարբերակ։</string>
+    <string name="lock_settings_picker_fingerprint_message">Ընտրեք էկրանի կողպման լրացուցիչ տարբերակ՝ Pixel Imprint-ի հետ օգտագործելու համար</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Բացի հեռախոսը ապակողպելուց, Pixel Imprint-ը կարող եք նաև օգտագործել գնումները հաստատելու և հավելվածներ մուտք գործելու համար: <annotation id="url">Իմանալ ավելին</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Օգտագործեք ձեր մատնահետքը՝ հեռախոսն ապակողպելու կամ գնումները թույլատրելու համար:
+
+Նշում. ապակողպման հուսալի նախշը կամ PIN կոդը կարող է մատնահետքից ավելի ապահով լինել:"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint-ը թույլ է տալիս օգտագործել ձեր մատնահետքը՝ գնումները թույլատրելու և հավելվածներ մուտք գործելու համար:
+
+Զգույշ եղեք մատնահետքեր ավելացնելիս: Ցանկացած ավելացված մատնահետք կարող է կատարել այս բոլոր գործողությունները:
+
+Նշում․ այս սարքն ապակողպելու համար չեք կարող օգտագործել ձեր մատնահետքը: Մանրամասների համար կապվեք ձեր կազմակերպության ադմինիստրատորի հետ։"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Ապակողպում Pixel Imprint-ի միջոցով</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Հեռախոսը քնի ռեժիմից հանելու և ապակողպելու համար պարզապես հպեք Pixel Imprint-ի սենսորին:</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Հեռախոսն ապակողպելու համար օգտագործեք Pixel Imprint-ը</string>
+</resources>

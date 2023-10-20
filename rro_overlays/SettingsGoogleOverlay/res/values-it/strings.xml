@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Regola il display in modo dinamico in base ai livelli di luminosità circostanti</string>
+    <string name="display_white_balance_title">Equalizzatore ambientale</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + password</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + sequenza</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continua senza Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Con Pixel Imprint puoi sbloccare il telefono usando la tua impronta. Per motivi di sicurezza, questa opzione richiede un blocco schermo alternativo.</string>
+    <string name="lock_settings_picker_fingerprint_message">Scegli un blocco schermo alternativo da utilizzare con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Oltre che per sbloccare il telefono, puoi usare Pixel Imprint anche per autorizzare gli acquisti e accedere alle app. <annotation id="url">Ulteriori informazioni</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Usa la tua impronta per sbloccare il telefono o approvare gli acquisti.
+
+Nota: la tua impronta potrebbe essere meno sicura di una sequenza o un PIN complessi."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Con Pixel Imprint puoi usare la tua impronta per autorizzare gli acquisti o accedere alle app.
+
+Scegli con attenzione chi aggiungere: le operazioni sopra elencate possono essere svolte con qualsiasi impronta aggiunta.
+
+Nota: non puoi usare la tua impronta per sbloccare questo dispositivo. Per ulteriori informazioni, contatta l'amministratore dell'organizzazione."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Sblocca con Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Tocca il sensore Pixel Imprint per riattivare e sbloccare il telefono.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Usa Pixel Imprint per sbloccare il telefono</string>
+</resources>

@@ -40,9 +40,10 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
+    PixelFwOverlay \
     PixelLauncherCustomOverlay \
     PixelSetupWizardOverlay \
-    SettingsGoogleOverlayPixel2022 \
+    SettingsGoogleOverlay \
     SettingsProviderOverlay \
     SystemUIGoogleOverlay \
     TeleServiceOverlay \

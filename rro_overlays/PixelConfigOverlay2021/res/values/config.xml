@@ -21,11 +21,11 @@
     <!--bool name="config_assistLongPressHomeEnabledDefault">false</bool-->
 
     <!-- Default value for Settings.ASSIST_TOUCH_GESTURE_ENABLED -->
-    <!--bool name="config_assistTouchGestureEnabledDefault">false</bool-->
+    <bool name="config_assistTouchGestureEnabledDefault">false</bool>
 
     <!-- Allow the gesture power + volume up to change the ringer mode while the device
          is interactive. -->
-    <!--bool name="config_volumeHushGestureEnabled">false</bool-->
+    <bool name="config_volumeHushGestureEnabled">false</bool>
 
     <!-- The list of packages to force slowJpegMode for Apps using Camera API1 -->
     <string-array name="config_forceSlowJpegModeList">
@@ -52,7 +52,7 @@
             1 - Mute toggle
             2 - Global actions menu
     -->
-    <!--integer name="config_keyChordPowerVolumeUp">2</integer-->
+    <integer name="config_keyChordPowerVolumeUp">2</integer>
 
     <!-- Control the behavior when the user long presses the power button.
             0 - Nothing

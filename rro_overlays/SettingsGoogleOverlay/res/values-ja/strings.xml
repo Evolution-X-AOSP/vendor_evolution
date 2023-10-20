@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">周囲の明るさのレベルに基づいてディスプレイを動的に調整します</string>
+    <string name="display_white_balance_title">アンビエント EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + パスワード</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + パターン</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint を設定せずに続行</string>
+    <string name="fingerprint_unlock_title">Pixel Imprint では、指紋認証でスマートフォンのロックを解除できます。セキュリティ上の理由により、Pixel Imprint を使用する際は予備の画面ロックを選択する必要があります。</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprint で使用する予備の画面ロックを選択してください</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Pixel Imprint を使用すると、スマートフォンのロックを解除できるだけでなく、購入やアプリのアクセスを許可することもできます。<annotation id="url">詳細</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"スマートフォンのロック解除や購入の承認に指紋を使用します。
+
+注: 指紋は、複雑なパターンや PIN よりも安全面で劣る場合があります。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Pixel Imprint では、指紋認証で購入の承認やアプリへのログインを行えます。
+
+こうした操作は、登録したどの指紋でも行えるため、誰の指紋を登録するかについては十分にご注意ください。
+
+注: 指紋を使ってこのデバイスのロックを解除することはできません。詳しくは、組織の管理者にお問い合わせください。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint でロック解除</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Pixel Imprint センサーに触れるだけでスマートフォンを復帰させてロックを解除できます。</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Pixel Imprint でスマートフォンのロックを解除できます</string>
+</resources>

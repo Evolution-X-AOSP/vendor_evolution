@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Nagsasaayos ng display sa dynamic na paraan batay sa mga antas ng ilaw sa paligid</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Password</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Pattern</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Magpatuloy nang walang Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Sa Pixel Imprint, maaari mong i-unlock ang iyong telepono gamit ang fingerprint mo. Para sa seguridad, kinakailangan ng opsyong ito ng backup na lock ng screen.</string>
+    <string name="lock_settings_picker_fingerprint_message">Pumili ng backup na lock ng screen na gagamitin sa Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Bilang karagdagan sa pag-unlock ng iyong telepono, maaari mo ring gamitin ang Pixel Imprint para pahintulutan ang mga pagbili at pag-access ng app. <annotation id="url">Matuto pa</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Gamitin ang iyong fingerprint para i-unlock ang telepono mo o aprubahan ang mga pagbili.
+
+Tandaan: Maaaring hindi gaanong secure ang iyong fingerprint kaysa sa mahirap hulaang pattern o PIN."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Sa Pixel Imprint, maaari mong gamitin ang iyong fingerprint para pahintulutan ang mga pagbili o mag-sign in sa mga app.
+
+Maging maingat kung kaninong mga fingerprint ang idaragdag mo. Magagawa ng anumang idinagdag na fingerprint ang mga bagay na ito.
+
+Tandaan: Hindi mo maaaring gamitin ang iyong fingerprint para i-unlock ang device na ito. Para sa higit pang impormasyon, makipag-ugnayan sa admin ng iyong organisasyon."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">I-unlock gamit ang Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Pindutin lang ang sensor ng Pixel Imprint para i-wake at i-unlock ang iyong telepono.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Gamitin ang Pixel Imprint para i-unlock ang iyong telepono</string>
+</resources>

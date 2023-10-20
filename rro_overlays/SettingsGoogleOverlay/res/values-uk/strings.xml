@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Динамічно коригує баланс білого на екрані залежно від рівня освітлення навколо</string>
+    <string name="display_white_balance_title">Корекція освітлення</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + пароль</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + ключ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN-код</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Продовжити без Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">За допомогою Pixel Imprint ви можете розблоковувати телефон відбитком пальця. З міркувань безпеки для цього потрібно налаштувати резервний спосіб блокування екрана.</string>
+    <string name="lock_settings_picker_fingerprint_message">Виберіть резервний спосіб розблокування екрана на додачу до Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">За допомогою Pixel Imprint ви можете не лише розблоковувати телефон, а й дозволяти покупки та входити в додатки. <annotation id="url">Докладніше</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Розблоковуйте телефон або схвалюйте покупки відбитком пальця.
+
+Примітка: відбиток пальця може бути менш надійним, ніж ключ чи PIN-код."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"За допомогою Pixel Imprint ви можете дозволяти покупки та входити в додатки, зісканувавши відбиток пальця.
+
+Обачно додавайте відбитки. Ці дії можна виконувати за допомогою будь-якого доданого відбитка пальця.
+
+Примітка: цей пристрій не можна розблоковувати відбитком пальця. Щоб дізнатися більше, зв’яжіться з адміністратором своєї організації."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Щоб активувати або розблокувати телефон, просто торкніться сканера Pixel Imprint.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Розблоковуйте телефон за допомогою Pixel Imprint</string>
+</resources>

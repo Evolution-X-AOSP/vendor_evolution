@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Settings intelligence package name -->
+    <string name="config_settingsintelligence_log_action">com.google.android.settings.intelligence.contextualcards.CARD_INTERACTION_RECEIVER</string>
+    
+    <!-- Settings intelligence interaction log intent action -->
+    <string name="config_settingsintelligence_package_name">com.google.android.settings.intelligence</string>
+
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_action">android.intent.action.SET_WALLPAPER</string>
+
+    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
+    <string name="config_styles_and_wallpaper_picker_class">com.android.customization.picker.CustomizationPickerActivity</string>
+
+    <!-- Action name for the wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_action">android.intent.action.MAIN</string>
+
+    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
+    <string name="config_wallpaper_picker_class">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
+    <string name="config_wallpaper_picker_package">com.google.android.apps.wallpaper</string>
+
+    <!-- Emergency app package name -->
+    <string name="config_emergency_package_name" translatable="false">
+        com.google.android.apps.safetyhub
+    </string>
+
+    <!-- Emergency app intent action -->
+    <string name="config_emergency_intent_action" translatable="false">
+	com.google.android.safetyhub.SAFETY_HUB
+    </string>
+
+    <!-- Grayscale settings intent -->
+    <string name="config_grayscale_settings_intent" translatable="false">intent:#Intent;action=com.google.android.apps.wellbeing.action.WIND_DOWN;launchFlags=0x10000000;end</string>
+
+
+    <!-- Uri to query non-public Slice Uris. -->
+    <string name="config_non_public_slice_query_uri" translatable="false">content://com.android.settings.slices/settings_internal_slices</string>
+
+    <!-- RTT setting intent action -->
+    <string name="config_rtt_setting_intent_action" translatable="false">com.android.dialer.rtt.settings.impl.gateway.ACTION_OPEN_RTT_SETTINGS</string>
+
+    <!-- Package name of dialer supports RTT setting-->
+    <string name="config_rtt_setting_package_name" translatable="false">com.google.android.dialer</string>
+
+    <!-- Authority of advanced device battery prediction -->
+    <string name="config_battery_prediction_authority" translatable="false">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
+
+    <string name="config_bluetooth_device_settings_uri">content://com.google.android.apps.wearables.maestro.companion/settings_slice?addr=%1$s</string>
+
+   <!-- Email address for the homepage contextual cards feedback -->
+    <string name="config_contextual_card_feedback_email">contextual-settings-homepage-feedback@google.com</string>
+
+    <string name="config_nearby_devices_slice_uri">content://com.google.android.gms.nearby.fastpair/device_status_list_item</string>
+
+    <!-- Google Packages -->
+    <string name="account_type">com.google</string>
+    <string name="account_confirmation_class">com.google.android.gms.auth.uiflows.factoryreset.PreFactoryResetActivity</string>
+    <string name="account_confirmation_package">com.google.android.gms</string>
+    <string name="oem_preferred_feedback_reporter">com.google.android.gms</string>
+</resources>

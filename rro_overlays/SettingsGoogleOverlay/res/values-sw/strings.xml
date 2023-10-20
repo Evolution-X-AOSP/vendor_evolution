@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">Hurekebisha skrini kiotomatiki kulingana na viwango vya mwangaza katika mazingira yake</string>
+    <string name="display_white_balance_title">Kirekebisha Mwangaza</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Nenosiri</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Mchoro</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Endelea bila kutumia Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">Ukiwa na Pixel Imprint, unaweza kufungua simu yako kwa kutumia alama yako ya kidole. Kwa ajili ya usalama, chaguo hili linahitaji mbinu mbadala ya kufunga skrini.</string>
+    <string name="lock_settings_picker_fingerprint_message">Chagua njia nyingine ya kufunga skrini utakayotumia pamoja na Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">Mbali na kufungua simu yako, unaweza pia kutumia Pixel Imprint kuidhinisha ununuzi na kufikia programu. <annotation id="url">Pata maelezo zaidi</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"Tumia alama ya kidole chako kufungua simu yako au kuidhinisha ununuzi.
+
+Kumbuka: Huenda utumiaji wa alama ya kidole usiwe na usalama thabiti ukilinganishwa na mchoro au PIN thabiti."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Ukiwa na Pixel Imprint, unaweza kutumia alama ya kidole chako kuidhinisha ununuzi au kuingia katika akaunti za programu.
+
+Kuwa makini unapoongeza alama za vidole. Alama yoyote ya kidole unayoongeza inaweza kufanya mojawapo ya shughuli zilizotajwa hapa.
+
+Kumbuka: Huwezi kutumia alama ya kidole chako kufungua kifaa hiki. Kwa maelezo zaidi, wasiliana na msimamizi wa shirika lako."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Tumia Pixel Imprint Kufungua</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">Gusa tu kitambuzi cha Pixel Imprint ili uwashe na kufungua skrini ya simu yako.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">Tumia Pixel Imprint kufungua simu yako</string>
+</resources>

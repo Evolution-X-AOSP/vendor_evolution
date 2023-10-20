@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- Content descriptions for each of the images in the avatar_images array. When overlaid
+         these values should be translated, but this empty array must not be translated or it may
+         replace the real descriptions with an empty array. -->
+    <string-array name="avatar_image_descriptions">
+        <item>@string/desc_ProfileIcons11</item>
+        <item>@string/desc_ProfileIcons15</item>
+        <item>@string/desc_ProfileIcons22</item>
+        <item>@string/desc_ProfileIcons7</item>
+        <item>@string/desc_ProfileIcons21</item>
+        <item>@string/desc_ProfileIcons10</item>
+        <item>@string/desc_ProfileIcons24</item>
+        <item>@string/desc_ProfileIcons5</item>
+        <item>@string/desc_ProfileIcons4</item>
+        <item>@string/desc_ProfileIcons6</item>
+        <item>@string/desc_ProfileIcons18</item>
+        <item>@string/desc_ProfileIcons9</item>
+        <item>@string/desc_ProfileIcons17</item>
+        <item>@string/desc_ProfileIcons8</item>
+        <item>@string/desc_ProfileIcons23</item>
+        <item>@string/desc_ProfileIcons19</item>
+        <item>@string/desc_ProfileIcons1</item>
+        <item>@string/desc_ProfileIcons14</item>
+        <item>@string/desc_ProfileIcons3</item>
+        <item>@string/desc_ProfileIcons16</item>
+        <item>@string/desc_ProfileIcons20</item>
+        <item>@string/desc_ProfileIcons12</item>
+        <item>@string/desc_ProfileIcons2</item>
+        <item>@string/desc_ProfileIcons13</item>
+    </string-array>
+
+    <!-- Images offered as options in the avatar picker. If populated, the avatar_image_descriptions
+         array must also be populated with a content description for each image. -->
+    <array name="avatar_images">
+        <item>@drawable/ProfileIcons10</item>
+        <item>@drawable/ProfileIcons11</item>
+        <item>@drawable/ProfileIcons12</item>
+        <item>@drawable/ProfileIcons13</item>
+        <item>@drawable/ProfileIcons14</item>
+        <item>@drawable/ProfileIcons15</item>
+        <item>@drawable/ProfileIcons16</item>
+        <item>@drawable/ProfileIcons17</item>
+        <item>@drawable/ProfileIcons18</item>
+        <item>@drawable/ProfileIcons19</item>
+        <item>@drawable/ProfileIcons1</item>
+        <item>@drawable/ProfileIcons20</item>
+        <item>@drawable/ProfileIcons21</item>
+        <item>@drawable/ProfileIcons22</item>
+        <item>@drawable/ProfileIcons23</item>
+        <item>@drawable/ProfileIcons24</item>
+        <item>@drawable/ProfileIcons2</item>
+        <item>@drawable/ProfileIcons3</item>
+        <item>@drawable/ProfileIcons4</item>
+        <item>@drawable/ProfileIcons5</item>
+        <item>@drawable/ProfileIcons6</item>
+        <item>@drawable/ProfileIcons7</item>
+        <item>@drawable/ProfileIcons8</item>
+        <item>@drawable/ProfileIcons9</item>
+    </array>
+
+    <!-- Controls can query 2 preferred applications for limited number of suggested controls.
+         This config value should contain a list of package names of thoses preferred applications.
+    -->
+    <string-array name="config_controlsPreferredPackages">
+        <item>com.google.android.apps.chromecast.app</item>
+    </string-array>
+
+    <!-- Audio product ID -->
+    <integer-array name="config_nfc_conflict_with_usb_audio_productid">
+        <item>0x00005034</item>
+    </integer-array>
+
+    <!-- Audio vendor ID -->
+    <integer-array name="config_nfc_conflict_with_usb_audio_vendorid">
+        <item>0x000018D1</item>
+    </integer-array>
+
+    <!-- SystemUI Plugins that can be loaded on user builds. -->
+    <string-array name="config_pluginAllowlist" translatable="false">
+        <item>com.android.systemui</item>
+        <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>com.android.systemui.clocks</item>
+        <item>com.android.systemui.clocks.debug</item>
+        <item>com.android.systemui.clocks.bignum</item>
+        <item>com.android.systemui.clocks.calligraphy</item>
+        <item>com.android.systemui.clocks.flex</item>
+        <item>com.android.systemui.clocks.growth</item>
+        <item>com.android.systemui.clocks.handwritten</item>
+        <item>com.android.systemui.clocks.inflate</item>
+        <item>com.android.systemui.clocks.metro</item>
+        <item>com.android.systemui.clocks.numoverlap</item>
+        <item>com.android.systemui.clocks.weather</item>
+    </string-array>
+
+    <!-- Control whether status bar should distinguish HSPA data icon form UMTS
+    data icon on devices -->
+    <bool name="config_hspa_data_distinguishable">true</bool>
+
+    <!-- Enable WLC/NFC conflicts -->
+    <bool name="config_nfc_conflict_with_usb_audio">true</bool>
+    <bool name="config_nfc_conflict_with_wlc">true</bool>
+</resources>

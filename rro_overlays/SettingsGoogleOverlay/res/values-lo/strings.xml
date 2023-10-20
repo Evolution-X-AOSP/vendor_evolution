@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">ປັບແຕ່ງການສະແດງຜົນໃຫ້ເອງໂດຍອ້າງອີງຈາກລະດັບແສງອ້ອມຂ້າງ</string>
+    <string name="display_white_balance_title">Ambient EQ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + ລະຫັດຜ່ານ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + ຮູບແບບປົດລັອກ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">ສືບຕໍ່ໂດຍບໍ່ໃຊ້ Pixel Imprint</string>
+    <string name="fingerprint_unlock_title">ດ້ວຍ Pixel Imprint, ທ່ານຈະສາມາດປົດລັອກໂລະສັບຂອງທ່ານດ້ວຍລາຍນິ້ວມືທ່ານໄດ້. ເພື່ອຄວາມປອດໄພ, ຕົວເລືອກນີ້ຈະຕ້ອງໃຊ້ວິທີລັອກໜ້າຈໍສຳຮອງນຳ.</string>
+    <string name="lock_settings_picker_fingerprint_message">ເລືອກການລັອກໜ້າຈໍສຳຮອງເພື່ອໃຊ້ກັບ Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">ນອກຈາກການປົດລັອກໂທລະສັບຂອງທ່ານແລ້ວ, ທ່ານຍັງສາມາດໃຊ້ Pixel Imprint ເພື່ອອະນຸມັດການຊື້ ແລະ ການເຂົ້າຫາແອັບໄດ້ນຳອີກ. <annotation id="url">ສຶກສາເພີ່ມເຕີມ</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"ໃຊ້ລາຍນິ້ວມືຂອງທ່ານເພື່ອປົດລັອກໂທລະສັບ ຫຼື ອະນຸມັດການສັ່ງຊື້.
+
+ໝາຍເຫດ: ນິ້ວມືຂອງທ່ານອາດມີຄວາມປອດໄພທີ່ໜ້ອຍກວ່າຮູບແບບປົດລັອກ ຫຼື ລະຫັດ PIN ທີ່ຍາກ."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"ດ້ວຍ Pixel Imprint, ທ່ານຈະສາມາດໃຊ້ລາຍນິ້ວມືຂອງທ່ານເພື່ອອະນຸມັດການສັ່ງຊື້ ຫຼື ເຂົ້າສູ່ລະບົບຫາແອັບຕ່າງໆໄດ້.
+
+ໃຫ້ລະມັດລະວັງລາຍນິ້ວມືທີ່ທ່ານເພີ່ມໃສ່. ລາຍມືໃດກໍຕາມທີ່ເພີ່ມໃສ່ຈະສາມາດເຮັດສິ່ງຕ່າງໆເຫຼົ່ານີ້ໄດ້.
+
+ໝາຍເຫດ: ທ່ານບໍ່ສາມາດໃຊ້ລາຍນິ້ວມືຂອງທ່ານເພື່ອປົດລັອກອຸປະກອນນີ້ໄດ້. ສຳລັບຂໍ້ມູນເພີ່ມເຕີມ, ກະລຸນາຕິດຕໍ່ຫາຜູ້ເບິ່ງແຍງລະບົບຂອງອົງກອນທ່ານ."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">ປົດລັອກດ້ວຍ Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">ພຽງແຕະໃສ່ເຊັນເຊີ Pixel Imprint ເພື່ອປຸກ ແລະ ປົດລັອກໂທລະສັບຂອງທ່ານ.</string>
+    <string name="suggested_fingerprint_lock_settings_summary">ໃຊ້ Pixel Imprint ເພື່ອປົດລັອກໂທລະສັບຂອງທ່ານ</string>
+</resources>

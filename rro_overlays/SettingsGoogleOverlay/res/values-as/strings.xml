@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright 2020, Raphielscape LLC. and Haruka LLC.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <string name="display_white_balance_summary">চৌপাশৰ পোহৰৰ মাত্ৰাৰ ওপৰত নিৰ্ভৰ কৰি পৰিৱৰ্তনশীলভাৱে ডিছপ্লে’ মিলাওক</string>
+    <string name="display_white_balance_title">এম্বিয়েণ্ট ইকিউ</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + পাছৱৰ্ড</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + আৰ্হি</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + পিন</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint অবিহনে অব্যাহত ৰাখক</string>
+    <string name="fingerprint_unlock_title">আপুনি Pixel Imprintৰ জৰিয়তে আপোনাৰ ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰি আপোনাৰ ফ’নটো আনলক কৰিব পাৰে৷ সুৰক্ষাৰ বাবে এই বিকল্পটোক এটা বেক আপ স্ক্ৰীণ লকৰ প্ৰয়োজন।</string>
+    <string name="lock_settings_picker_fingerprint_message">Pixel Imprintৰ সৈতে ব্যৱহাৰ কৰিবলৈ এটা বেক আপ স্ক্ৰীণ লক বাছনি কৰক</string>
+    <string name="security_settings_fingerprint_enroll_disclaimer">আপোনাৰ ফ’নটোৰ লক খোলাৰ উপৰিও আপুনি Pixel Imprintক ক্ৰয়ৰ অনুমোদন জনাবলৈ আৰু এপ্‌ এক্সেছত অনুমোদন জনাবলৈও ব্যৱহাৰ কৰিব পাৰে। <annotation id="url">অধিক জানক</annotation></string>
+    <string name="security_settings_fingerprint_enroll_introduction_message">"আপোনাৰ ফিংগাৰপ্ৰিণ্টটো ব্যৱহাৰ কৰি আপোনাৰ ফ’নটো আনলক কৰক বা ক্ৰয়ত অনুমোদন দিয়ক।
+
+টোকা: এটা জটিল আৰ্হি বা পিনতকৈ আপোনাৰ ফিংগাৰপ্ৰিণ্টটো কম সুৰক্ষিত হ’ব পাৰে।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"আপুনি Pixel Imprintৰ জৰিয়তে আপুনি ফিংগাৰপ্ৰিণ্টেৰে ক্ৰয়ৰ অনুমোদন জনাব বা এপত ছাইন ইন কৰিব পাৰে।
+
+আপুনি কাৰ ফিংগাৰপ্ৰিণ্ট যোগ কৰে তাকলৈ সাৱধান হওক। যোগ কৰা যিকোনো ফিংগাৰপ্ৰিণ্টে এই কামবোৰ কৰিব পাৰিব।
+
+টোকা: আপুনি এই ডিভাইচটো আনলক কৰিবলৈ আপোনাৰ ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰিব নোৱাৰিব। অধিক তথ্যৰ বাবে আপোনাৰ প্ৰতিষ্ঠানৰ প্ৰশাসকৰ সৈতে যোগাযোগ কৰক।"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprintৰ জৰিয়তে আনলক কৰক</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+    <string name="setup_fingerprint_enroll_finish_message">আপোনাৰ ফ’নটো সক্ৰিয় আৰু আনলক কৰিবলৈ মাত্ৰ Pixel Imprint ছেন্সৰটোত স্পৰ্শ কৰক।</string>
+    <string name="suggested_fingerprint_lock_settings_summary">আপোনাৰ ফ’নটো আনলক কৰিবলৈ Pixel Imprint ব্যৱহাৰ কৰক</string>
+</resources>
