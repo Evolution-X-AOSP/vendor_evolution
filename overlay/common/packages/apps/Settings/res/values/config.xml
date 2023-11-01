@@ -9,4 +9,11 @@
 
     <!-- Whether to show a preference item for mobile plan -->
     <bool name="config_show_mobile_plan">false</bool>
+
+    <string name="config_battery_prediction_authority">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
+    <string name="config_bluetooth_device_settings_uri">content://com.google.android.apps.wearables.maestro.companion/settings_slice?addr=%1$s</string>
+    <string name="config_bt_slice_extra_intent">com.google.android.gms.nearby.discovery.EXTRA_INTENT</string>
+    <string name="config_bt_slice_extra_pending_intent">com.google.android.gms.nearby.discovery.EXTRA_PENDING_INTENT</string>
+    <string name="config_bt_slice_intent_action">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_LAUNCH_INTENT</string>
+    <string name="config_bt_slice_pending_intent_action">com.google.android.gms.nearby.discovery.ACTION_LOG_SLICE_AND_SEND_PENDING_INTENT</string>
 </resources>
