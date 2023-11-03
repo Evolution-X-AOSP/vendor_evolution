@@ -277,6 +277,9 @@ $(call inherit-product, vendor/evolution/config/version.mk)
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
+# Call the BCR setup
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Conditionally inherit firmware
 TARGET_SHIPS_FIRMWARE ?= false
 ifeq ($(TARGET_SHIPS_FIRMWARE),true)
