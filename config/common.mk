@@ -9,19 +9,11 @@ PRODUCT_BRAND ?= EvolutionX
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.com.google.clientidbase=android-google
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google
-
 else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-
 endif
 
 # Gboard configuration
@@ -63,7 +55,7 @@ PRODUCT_PACKAGES += \
     BtHelper
 
 # Enable lockscreen live wallpaper
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     persist.wm.debug.lockscreen_live_wallpaper=true
 
 # Use gestures by default
@@ -81,19 +73,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=0
 else
 # Enable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
+PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=1
 endif
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Disable extra StrictMode features on all non-engineering builds
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
+PRODUCT_SYSTEM_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.ota.allow_downgrade=true
 endif
 
@@ -113,7 +105,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 endif
 
 # Enable SystemUIDialog volume panel
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
 
 # Evolution X-specific broadcast actions whitelist
@@ -143,7 +135,7 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/misc/keylayout/Vendor_2dc8_Product_6006.kl:$(TARGET_COPY_OUT_PRODUCT)/usr/keylayout/Vendor_2dc8_Product_6006.kl
 
 # Enforce privapp-permissions whitelist
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
@@ -156,7 +148,7 @@ PRODUCT_COPY_FILES += \
     vendor/evolution/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Support many users/work profiles
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.max_profiles=16 \
     fw.max_users=32
 
@@ -222,7 +214,7 @@ TARGET_USES_PICO_GAPPS ?= false
 #ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
 #PRODUCT_PACKAGES += \
 #    FaceUnlockService
-#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+#PRODUCT_SYSTEM_PROPERTIES += \
 #    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
 #PRODUCT_COPY_FILES += \
 #    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
@@ -238,7 +230,7 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 EXCLUDE_SYSTEMUI_TESTS := true
 
 # SystemUI
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 # Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
