@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8
-EVO_CODENAME := Tapa
+EVO_BASE_VERSION := 8.0.1
+EVO_CODENAME := Turon
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
