@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.0.1
+EVO_BASE_VERSION := 8.0.2
 EVO_CODENAME := Turon
 
 # Set all versions
