@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 7.9.9
-EVO_CODENAME := Tocino
+EVO_BASE_VERSION := 7.9.10
+EVO_CODENAME := Turon
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
