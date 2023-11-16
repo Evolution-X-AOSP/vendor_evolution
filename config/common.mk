@@ -211,7 +211,13 @@ TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
 
 # Include TurboAdapter without Google Battery support
-ifeq ($(TARGET_SUPPORTS_GOOGLE_BATTERY), false)
+ifeq ($(TARGET_SUPPORTS_GOOGLE_BATTERY), true)
+PRODUCT_PACKAGES += \
+    TurboAdapter
+else ifeq ($(TARGET_IS_PIXEL), true)
+PRODUCT_PACKAGES += \
+    TurboAdapter
+else
 PRODUCT_PACKAGES += \
     TurboAdapter_NoBatt
 
