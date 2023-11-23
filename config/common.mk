@@ -242,8 +242,8 @@ endif
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     NexusLauncherRelease \
-    Settings \
-    SystemUI
+    SettingsGoogle \
+    SystemUIGoogle
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
