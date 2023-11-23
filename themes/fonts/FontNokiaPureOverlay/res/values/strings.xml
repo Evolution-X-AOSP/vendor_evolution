@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Body font Nokia Pure overlay -->
-    <string name="font_nokiapure_overlay" translatable="false">Nokia Pure</string>
+    <string name="font_nokiapure_overlay" translatable="false">NokiaPure</string>
 </resources>

@@ -16,6 +16,6 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font San Francisco Display Pro overlay -->
-    <string name="font_sanfrancisco_source_overlay" translatable="false">San Francisco Display Pro</string>
+    <!-- Headline / Body font SanFranciscoDisplayPro overlay -->
+    <string name="font_sanfrancisco_source_overlay" translatable="false">SanFrancisco</string>
 </resources>
