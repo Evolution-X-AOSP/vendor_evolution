@@ -76,17 +76,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "SystemUIClocks-Metro",
-	owner: "google",
-	apk: "SystemUIClocks-Metro/SystemUIClocks-Metro.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "SystemUIClocks-Weather",
 	owner: "google",
 	apk: "SystemUIClocks-Weather/SystemUIClocks-Weather.apk",
