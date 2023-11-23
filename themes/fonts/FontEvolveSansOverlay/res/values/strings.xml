@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Body font Evolve Sans overlay -->
-    <string name="font_evolvesans_overlay" translatable="false">Evolve Sans</string>
+    <string name="font_evolvesans_overlay" translatable="false">EvolveSans</string>
 </resources>

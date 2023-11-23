@@ -16,5 +16,5 @@
 -->
 <resources>
     <!-- Headline / Inter overlay -->
-    <string name="font_opposans_overlay" translatable="false">Oppo Sans</string>
+    <string name="font_opposans_overlay" translatable="false">OppoSans</string>
 </resources>

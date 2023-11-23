@@ -14,6 +14,6 @@
 <resources>
 
     <!-- ProtonAOSP Mi Sans overlay -->
-    <string name="font_mi_sans_overlay" translatable="false">Mi Sans</string>
+    <string name="font_mi_sans_overlay" translatable="false">MiSans</string>
 
 </resources>

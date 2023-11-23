@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Body font Simple Day overlay -->
-    <string name="font_simpleday_source_overlay" translatable="false">Simple Day</string>
+    <string name="font_simpleday_source_overlay" translatable="false">SimpleDay</string>
 </resources>

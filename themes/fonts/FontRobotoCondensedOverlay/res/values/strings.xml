@@ -17,5 +17,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Headline / Body font Roboto Condensed overlay -->
-    <string name="font_robotocondensed_overlay" translatable="false">Roboto Condensed</string>
+    <string name="font_robotocondensed_overlay" translatable="false">RobotoCondensed</string>
 </resources>

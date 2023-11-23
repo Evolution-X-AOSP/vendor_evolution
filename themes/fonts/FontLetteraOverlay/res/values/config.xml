@@ -17,16 +17,16 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Name of a font family to use for body text. -->
-    <string name="config_bodyFontFamily" translatable="false">Lettera</string>
+    <string name="config_bodyFontFamily" translatable="false">lettera</string>
     <!-- Name of a font family to use for medium body text. -->
-    <string name="config_bodyFontFamilyMedium" translatable="false">Lettera</string>
+    <string name="config_bodyFontFamilyMedium" translatable="false">lettera</string>
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily" translatable="false">Lettera</string>
+    <string name="config_headlineFontFamily" translatable="false">lettera</string>
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
-    <string name="config_headlineFontFamilyMedium" translatable="false">Lettera-medium</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">lettera-medium</string>
     <!-- Name of a font family to use as light font. For theming purpose. -->
-    <string name="config_regularFontFamily" translatable="false">Lettera</string>
+    <string name="config_regularFontFamily" translatable="false">lettera</string>
     <!-- Name of a font family to use as light font. For theming purpose. -->
-    <string name="config_lightFontFamily" translatable="false">Lettera-light</string>
+    <string name="config_lightFontFamily" translatable="false">lettera-light</string>
     <!-- Name of a font family to use as regular font. For theming purpose. -->
 </resources>

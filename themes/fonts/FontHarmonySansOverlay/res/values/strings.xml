@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Headline / Body font Huawei HarmonyOS Sans overlay -->
-    <string name="font_harmonyos_sans_overlay" translatable="false">HarmonyOS Sans</string>
+<resources>
+    <!-- Huawei HarmonyOS Sans overlay -->
+    <string name="font_harmonyos_sans_overlay" translatable="false">HarmonyOSSans</string>
 </resources>

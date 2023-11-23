@@ -668,7 +668,7 @@
     <alias name="ndot" to="NDot55" />
     <alias name="ndot57" to="NDot57" />
     <alias name="ndot57-align" to="NDot57-Aligned" /> 
-    <family customizationType="new-named-family" name="Lettera">
+    <family customizationType="new-named-family" name="lettera">
         <font weight="400" style="normal" postScriptName="LetteraMonoLL-Regular">LetteraMonoLL-Regular.otf</font>
         <font weight="400" style="italic">LetteraMonoLL-Italic.otf</font>
         <font weight="300" style="normal">LetteraMonoLL-Light.otf</font>
