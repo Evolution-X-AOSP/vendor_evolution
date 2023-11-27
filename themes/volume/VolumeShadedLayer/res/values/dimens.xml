@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="global_actions_corner_radius">28.0dip</dimen>
+    <dimen name="notification_corner_radius">28.0dip</dimen>
+    <dimen name="notification_scrim_corner_radius">32.0dip</dimen>
+    <dimen name="ongoing_appops_chip_bg_corner_radius">28.0dip</dimen>
+    <dimen name="ongoing_call_chip_corner_radius">28.0dip</dimen>
+    <dimen name="qs_corner_radius">28.0dip</dimen>
+    <dimen name="qs_footer_action_corner_radius">28.0dip</dimen>
+    <dimen name="qs_security_footer_corner_radius">28.0dip</dimen>
+    <dimen name="rounded_slider_background_rounded_corner">32.0dip</dimen>
+    <dimen name="rounded_slider_corner_radius">28.0dip</dimen>
+    <dimen name="settingslib_dialogCornerRadius">28.0dip</dimen>
+    <dimen name="split_divider_corner_size">42.0dip</dimen>
+    <dimen name="volume_dialog_panel_width_half">28.0dip</dimen>
+    <dimen name="volume_ringer_drawer_item_size">42.0dip</dimen>
+    <dimen name="volume_ringer_drawer_item_size_half">21.0dip</dimen>
+    <dimen name="volume_dialog_slider_corner_radius">28.0dip</dimen>
+    <dimen name="volume_dialog_track_corner_radius">28.0dip</dimen>
+    <dimen name="abc_star_small">17.0dip</dimen>
+    <dimen name="volume_dialog_panel_transparent_padding_horizontal">8dp</dimen>
+    <dimen name="volume_dialog_panel_transparent_padding">20dp</dimen>
+    <dimen name="volume_dialog_ringer_rows_padding">7dp</dimen>
+    <dimen name="volume_dialog_stream_padding">12dp</dimen>
+    <dimen name="volume_dialog_panel_width">56dp</dimen>
+    <dimen name="volume_dialog_slider_width">42dp</dimen>
+    <dimen name="volume_dialog_slider_width_bg">2dp</dimen>
+    <dimen name="volume_dialog_slider_width_aosp">42dp</dimen>
+    <!-- (volume_dialog_panel_width - rounded_slider_icon_size) / 2 -->
+    <dimen name="volume_slider_icon_inset">11dp</dimen>
+    <dimen name="volume_dialog_track_width">42dp</dimen>
+    <dimen name="volume_dialog_ringer_size">42dp</dimen>
+    <dimen name="volume_dialog_ringer_icon_padding">20dp</dimen>
+    <dimen name="volume_dialog_caption_size">56dp</dimen>
+    <dimen name="volume_dialog_tap_target_size">42dp</dimen>
+    <dimen name="volume_dialog_spacer">4dp</dimen>
+    <dimen name="volume_dialog_row_margin_bottom">8dp</dimen>
+    <dimen name="volume_dialog_elevation">9dp</dimen>
+    <dimen name="volume_dialog_background_blur_radius">0dp</dimen>
+</resources>

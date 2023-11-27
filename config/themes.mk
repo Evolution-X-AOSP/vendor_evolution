@@ -256,6 +256,16 @@ PRODUCT_PACKAGES += \
     ClockFontMonbijouxClownpieceOverlay \
     ClockFontRoundheadsOverlay
 
+# Volume Styles
+PRODUCT_PACKAGES += \
+    VolumeDoubleLayer \
+    VolumeGradient \
+    VolumeNeumorph \
+    VolumeNeumorphOutline \
+    VolumeOutline \
+    VolumeShadedLayer \
+    VolumeAOSPRevamped
+
 # Utility Overlays
 PRODUCT_PACKAGES += \
     HideSmartSpace \
