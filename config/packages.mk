@@ -18,11 +18,7 @@ PRODUCT_PACKAGES += \
     EvoEgg \
     GameSpace \
     Papers \
-    RepainterServicePriv \
     Updates
-#    ParallelSpace \
-#    ThemePicker \
-#    WallpaperPicker2
 
 # Gramophone
 TARGET_INCLUDE_GRAMOPHONE ?= false
