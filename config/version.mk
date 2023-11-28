@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.0.2
-EVO_CODENAME := Turon
+EVO_BASE_VERSION := 8.0.3
+EVO_CODENAME := Pastillas
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
