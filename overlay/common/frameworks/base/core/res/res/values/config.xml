@@ -209,7 +209,6 @@
 
     <!-- Define device configs on boot -->
     <string-array name="global_device_configs_override">
- 
         <!-- Machine learning back gesture (requires TensorFlow model) -->
         <item>systemui/use_back_gesture_ml_model=true</item>
         <item>systemui/back_gesture_ml_model_name=backgesture</item>
@@ -218,31 +217,25 @@
         <!-- Don't pin camera app to save memory -->
         <item>runtime_native_boot/pin_camera=false</item>
 
+        <!-- Enable the new and advanced Privacy Hub -->
+        <item>privacy/safety_center_is_enabled=true</item>
+
         <!-- Keep up to 7 days of permission usage history -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
         <item>privacy/privacy_dashboard_7_day_toggle=true</item>
 
-        <!-- Globally enable the new photo picker -->
-        <item>storage_native_boot/take_over_get_content=true</item>
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
 
-        <!-- Pixel Launcher -->
-        <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
+        <!-- Whether to show location indicators -->
+        <item>privacy/location_indicator_settings_enabled=true</item>
 
-        <!-- System Ui -->
-        <item>systemui/clipboard_overlay_show_actions=true</item>
-        <item>systemui/quick_access_wallet_enabled=true</item>
-        <item>systemui/enable_screenshot_corner_flow=true</item>
-        <item>systemui/enable_screenshot_notification_smart_actions=true</item>
-        <item>systemui/enable_screenshot_scrolling=true</item>
+        <!-- Enable protected by android banner -->
+        <item>privacy/safety_protection_enabled=true</item>
 
-        <!-- Notifications -->
-        <item>notification_assistant/generate_actions=true</item>
-        <item>notification_assistant/generate_replies=true</item>
-
-       <!-- Enable app cloning  -->
-       <item>app_cloning/cloned_apps_enabled=true</item>
-       <item>app_cloning/delete_all_app_clones_enabled=true</item>
-       <item>app_cloning/enable_app_cloning_building_blocks=true</item>
+        <!-- Enable permission hub v2 -->
+        <item>privacy/permissions_hub_enabled=true</item>
+        <item>privacy/permissions_hub_2_enabled=true</item>
 
         <!--
             Device Personalization Services (AiAi)
@@ -276,7 +269,7 @@
         <item>device_personalization_services/EchoSmartspace__strava_check_stop_action=true</item>
         <item>device_personalization_services/Echo__smartspace_dedupe_fast_pair_notification=true</item>
         <item>device_personalization_services/Echo__smartspace_doorbell_aiai_loading_screen=false</item>
-        <item>device_personalization_services/Echo__smartspace_doorbell_allowlist_packages=com.nest.android, com.google.android.apps.chromecast.app</item>
+        <item>device_personalization_services/Echo__smartspace_doorbell_allowlist_packages=com.nest.android,com.google.android.apps.chromecast.app</item>
         <item>device_personalization_services/Echo__smartspace_doorbell_loading_screen_state=4</item>
         <item>device_personalization_services/Echo__smartspace_enable_async_icon=true</item>
         <item>device_personalization_services/Echo__smartspace_enable_battery_notification_parser=true</item>
@@ -322,7 +315,38 @@
         <item>device_personalization_services/Echo_smartspace__smartspace_enable_timely_reminder=true</item>
 
         <!-- Pixel Launcher -->
+        <item>launcher/ENABLE_LOCAL_RECOMMENDED_WIDGETS_FILTER=true</item>
         <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
+        <item>launcher/enable_quick_launch_v3_qsb=true</item>
+        <item>launcher/enable_quick_launch_v3_aa=true</item>
+        <item>launcher/gboard_update_enter_key=true</item>
+        <item>launcher/enable_web_suggest_on_default_browser=true</item>
+
+        <!-- System Ui -->
+        <item>systemui/clipboard_overlay_show_actions=true</item>
+        <item>systemui/quick_access_wallet_enabled=true</item>
+        <item>systemui/enable_screenshot_corner_flow=true</item>
+        <item>systemui/enable_screenshot_notification_smart_actions=true</item>
+        <item>systemui/enable_screenshot_scrolling=true</item>
+        <item>systemui/volume_separate_notification=true</item>
+
+        <!-- Notifications -->
+        <item>notification_assistant/generate_actions=true</item>
+        <item>notification_assistant/generate_replies=true</item>
+
+        <!-- Globally enable the new photo picker -->
+        <item>storage_native_boot/take_over_get_content=true</item>
+
+        <!-- Allow more cached apps in the background -->
+        <item>activity_manager/max_cached_processes=64</item>
+
+        <!-- ART heap compaction for cached apps -->
+        <item>activity_manager/use_compaction=true</item>
+
+        <!-- App Cloning -->
+        <item>app_cloning/cloned_apps_enabled=true</item>
+        <item>app_cloning/delete_all_app_clones_enabled=true</item>
+        <item>app_cloning/enable_app_cloning_building_blocks=true</item>
     </string-array>
 
     <!-- Whether the lock screen is allowed to run its own live wallpaper,
