@@ -347,6 +347,11 @@
         <item>app_cloning/cloned_apps_enabled=true</item>
         <item>app_cloning/delete_all_app_clones_enabled=true</item>
         <item>app_cloning/enable_app_cloning_building_blocks=true</item>
+
+        <!-- Adaptive Sound -->
+        <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
+        <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
+        <item>device_personalization_services/AdaptiveAudio__use_silence_detector_state_bug_fix=true</item>
     </string-array>
 
     <!-- Whether the lock screen is allowed to run its own live wallpaper,
