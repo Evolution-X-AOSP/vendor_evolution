@@ -24,6 +24,13 @@ PRODUCT_PACKAGES += \
 #    ThemePicker \
 #    WallpaperPicker2
 
+# ViMusic
+TARGET_BUILD_VIMUSIC ?= false
+ifeq ($(TARGET_BUILD_VIMUSIC),true)
+PRODUCT_PACKAGES += \
+    ViMusic
+endif
+
 # Whether the compiled build to be shipped with Aperture CAM
 TARGET_BUILD_APERTURE_CAMERA ?= true
 ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
