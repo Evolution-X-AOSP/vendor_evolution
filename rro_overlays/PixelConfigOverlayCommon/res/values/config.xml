@@ -320,7 +320,7 @@
          configuration uses Launcehr3QuickStep as default launcher and points to the corresponding
          recents component. When using a different default launcher, change this appropriately or
          use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
-    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+    <string name="config_recentsComponentName" translatable="false">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
 
     <!-- The package name for the default retail demo app.
          This package must be trusted, as it has the permissions to query the usage stats on the
@@ -340,7 +340,7 @@
          This launcher package must have an activity that supports multiple instances and has
          corresponding launch mode set in AndroidManifest.
          {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
-    <string name="config_secondaryHomePackage" translatable="false">com.google.android.apps.nexuslauncher</string>
+    <string name="config_secondaryHomePackage" translatable="false">com.android.launcher3</string>
 
     <!-- Package name of the on-device intelligent processor for ambient audio.
          Ambient audio is the sound surrounding the device captured by the DSP

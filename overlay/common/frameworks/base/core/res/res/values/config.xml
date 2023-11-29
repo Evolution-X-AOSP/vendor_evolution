@@ -60,7 +60,7 @@
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaperCropperPackage" translatable="false">com.android.wallpaper</string>
 
     <!-- Component names of the services which will keep critical code path warm -->
     <string-array name="config_keep_warming_services" translatable="false">
@@ -372,8 +372,8 @@
     <bool name="config_performantAuthDefault">true</bool>
 
     <!-- Launcher package name for overlaying icons. -->
-    <string name="launcher_overlayable_package" translatable="false">com.google.android.apps.nexuslauncher</string>
+    <string name="launcher_overlayable_package" translatable="false">com.android.launcher3</string>
 
     <!-- ThemePicker package name for overlaying icons. -->
-    <string name="themepicker_overlayable_package" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="themepicker_overlayable_package" translatable="false">com.android.wallpaper</string>
 </resources>
