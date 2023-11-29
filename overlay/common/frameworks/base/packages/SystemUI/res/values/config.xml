@@ -108,6 +108,10 @@
         <item>com.android.systemui.falcon.seven</item>
         <item>com.android.systemui.falcon.eight</item>
         <item>com.android.systemui.falcon.nine</item>
+        <item>com.android.systemui.falcon.ten</item>
+        <item>com.android.systemui.falcon.eleven</item>
+        <item>com.android.systemui.falcon.twelve</item>
+        <item>com.android.systemui.falcon.thirteen</item>
         <item>org.lineageos.settings</item>
     </string-array>
 
