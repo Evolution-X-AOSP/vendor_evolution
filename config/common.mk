@@ -284,6 +284,9 @@ else ifneq ($(TARGET_USES_LEGACY_BOOTANIMATION), true)
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 endif
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 # Clocks
 $(call inherit-product, vendor/evolution/config/clocks.mk)
 
