@@ -247,6 +247,9 @@ $(call inherit-product, vendor/evolution/config/audio.mk)
 # Inherit from bootanimation config
 $(call inherit-product, vendor/evolution/config/bootanimation.mk)
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/evolution/config/fonts.mk)
 
