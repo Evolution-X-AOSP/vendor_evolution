@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bc_welcome_message">Welcome to Evolution X</string>
+    <string name="deferred_setup_wizard_title">Finish setting up Evolution X</string>
+    <string name="device_name">Evolution X</string>
+    <string name="setup_wizard_title">Evolution X Setup</string>
+    <string name="demo_device_admin_component_name">com.google.android.retaildemo/.DemoDeviceAdminReceiver</string>
+    <string name="demo_device_admin_download_location">https://g.co/pixel/retaildemo</string>
+    <string name="demo_device_admin_signature_checksum">ZUfHPe4VDBA5gL_f_lXMmgEdeF3WlKX5mv2CBbyvH4A</string>
+    <string name="exit_to_action_in_initial_setup" translatable="false">com.android.launcher3/com.android.quickstep.action.GESTURE_ONBOARDING_ALL_SET</string>
+    <string name="exit_to_action_in_deferred_setup">com.google.android.setupwizard/com.google.android.setupwizard.OPTIONAL_SETUP</string>
+</resources>

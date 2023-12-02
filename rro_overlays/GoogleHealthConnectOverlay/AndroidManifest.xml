@@ -19,5 +19,5 @@
     package="com.android.healthconnect.overlay">
     <overlay android:isStatic="true" android:priority="0" android:targetName="HealthConnectStyles" android:targetPackage="com.google.android.healthconnect.controller"/>
 
-    <application android:hasCode="false"/>
+    <application android:hasCode="false" android:allowBackup="false"/>
 </manifest>

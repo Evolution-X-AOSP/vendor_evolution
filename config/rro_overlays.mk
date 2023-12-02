@@ -20,27 +20,41 @@ PRODUCT_PACKAGES += \
     ImmersiveNavigationOverlay \
     NetworkStackOverlay \
     PixelLauncherIconsOverlay \
-    PixelSetupWizardOverlayEvolutionX
 
 # Google Overlays
 PRODUCT_PACKAGES += \
+    AccessibilityMenuOverlay \
+    BuiltInPrintServiceOverlay \
+    CaptivePortalLoginOverlay \
+    CellBroadcastReceiverOverlay \
+    CellBroadcastServiceOverlay \
+    ClearCallingSettingsOverlay2022 \
+    ContactsProviderOverlay \
     DMServiceOverlay \
     FlipendoOverlay \
     GoogleConfigOverlay \
     GoogleDeviceLockControllerOverlay \
     GoogleHealthConnectOverlay \
     GoogleWebViewOverlay \
-    ManagedProvisioningPixelOverlay \
+    MediaProviderOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
+    PixelSetupWizardOverlay \
     SettingsGoogleOverlayPixel2022 \
-    SystemUIGXOverlay
+    SettingsProviderOverlay \
+    SystemUIGoogleOverlay \
+    TeleServiceOverlay \
+    TelecomOverlay \
+    TelephonyProviderOverlay \
+    WildlifeSettingsVpnOverlay2022 \
+    WildlifeSysuiVpnOverlay2022
 
 ifeq ($(TARGET_IS_PIXEL), true)
 PRODUCT_PACKAGES += \
+    ManagedProvisioningPixelOverlay \
     NowPlayingOverlay \
     PixelBatteryHealthOverlay \
     PixelDisableLEDOverlay \
@@ -50,7 +64,6 @@ endif
 
 ifeq ($(TARGET_IS_PIXEL_7), true)
 PRODUCT_PACKAGES += \
-    ClearCallingSettingsOverlay2022 \
     PixelConnectivityOverlay2022
 endif
 
