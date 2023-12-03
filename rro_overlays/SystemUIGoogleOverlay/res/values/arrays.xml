@@ -80,6 +80,18 @@
         <item>com.android.systemui.falcon.seven</item>
         <item>com.android.systemui.falcon.eight</item>
         <item>com.android.systemui.falcon.nine</item>
+        <item>com.android.systemui.falcon.ten</item>
+        <item>com.android.systemui.falcon.eleven</item>
+        <item>com.android.systemui.falcon.twelve</item>
+        <item>com.android.systemui.falcon.thirteen</item>
+        <item>com.android.systemui.clocks.bignum</item>
+        <item>com.android.systemui.clocks.calligraphy</item>
+        <item>com.android.systemui.clocks.flex</item>
+        <item>com.android.systemui.clocks.growth</item>
+        <item>com.android.systemui.clocks.inflate</item>
+        <item>com.android.systemui.clocks.metro</item>
+        <item>com.android.systemui.clocks.numoverlap</item>
+        <item>com.android.systemui.clocks.weather</item>
     </string-array>
     <string-array name="config_pluginWhitelist">
         <item>com.android.systemui</item>
