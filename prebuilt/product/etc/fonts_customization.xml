@@ -929,20 +929,26 @@
     <alias name="fluid-sans-bold" to="fluid-sans" weight="700" />
     
     <family customizationType="new-named-family" name="misans">
-    <font weight="300" style="normal">MiLanProVF.ttf
-        <axis tag="wght" stylevalue="300"/>
+    <font weight="340" style="normal">MiSansVF.ttf
+        <axis tag="wght" stylevalue="340"/>
     </font>
-    <font weight="400" style="normal">MiLanProVF.ttf
+    <font weight="400" style="normal">MiSansVF.ttf
         <axis tag="wght" stylevalue="400"/>
     </font>
-    <font weight="500" style="normal">MiLanProVF.ttf
-        <axis tag="wght" stylevalue="500"/>
+    <font weight="480" style="normal">MiSansVF.ttf
+        <axis tag="wght" stylevalue="480"/>
     </font>
-    <font weight="600" style="normal">MiLanProVF.ttf
-        <axis tag="wght" stylevalue="600"/>
+    <font weight="540" style="normal">MiSansVF.ttf
+        <axis tag="wght" stylevalue="540"/>
+    </font>
+    <font weight="630" style="normal">MiSansVF.ttf
+        <axis tag="wght" stylevalue="630"/>
+    </font>
+    <font weight="700" style="normal">MiSansVF.ttf
+        <axis tag="wght" stylevalue="700"/>
     </font>
     </family>
-    <alias name="misans-medium" to="misans" weight="400" />
+    <alias name="misans-medium" to="misans" weight="480" />
 
     <family customizationType="new-named-family" name="oneuisans">
     <font weight="100" style="normal">OneUIRoman-VF.ttf
