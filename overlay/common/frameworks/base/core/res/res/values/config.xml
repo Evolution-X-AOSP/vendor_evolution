@@ -21,6 +21,10 @@
          ASSIST_DISCLOSURE_ENABLED. -->
     <bool name="config_allowDisablingAssistDisclosure">true</bool>
 
+    <!-- Whether to enable the biometric notification for dual-modality device that enrolled a
+         single biometric and experiences high FRR. -->
+    <bool name="config_biometricFrrNotificationEnabled">true</bool>
+
     <!-- Whether to enable fused location provider overlay which allows fused location provider to
          be replaced by an app at run-time. When disabled, only the
          config_fusedLocationProviderPackageName package will be searched for fused location

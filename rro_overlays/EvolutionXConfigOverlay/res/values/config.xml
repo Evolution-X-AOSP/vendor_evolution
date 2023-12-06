@@ -20,6 +20,11 @@
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">false</bool>
 
+    <!-- Enables or disables support for repair mode. The feature creates a secure
+         environment to protect the user's privacy when the device is being repaired.
+         Off by default, since OEMs may have had a similar feature on their devices. -->
+    <bool name="config_repairModeSupported">false</bool>
+
     <!-- Name of a font family to use for body text. -->
     <string name="config_bodyFontFamily" translatable="false">google-sans-text</string>
 

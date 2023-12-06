@@ -18,7 +18,6 @@
 -->
 <resources>
     <string-array name="lock_task_allowlist" translatable="false">
-        <item>com.google.android.devicelockcontroller</item>
         <item>com.google.android.gms</item>
     </string-array>
     <integer name="check_in_server_port_number">443</integer>

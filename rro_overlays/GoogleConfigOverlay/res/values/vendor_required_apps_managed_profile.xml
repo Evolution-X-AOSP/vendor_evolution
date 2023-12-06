@@ -39,5 +39,6 @@
         <item>com.google.android.as</item>
         <item>com.google.mds</item>
         <item>com.google.android.apps.overlay</item>
+        <item>com.google.inputmethod.ink.strokes.showcase</item>
     </string-array>
 </resources>

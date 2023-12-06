@@ -123,6 +123,12 @@
          AOSP does not configure a secondary location time zone provider. -->
      <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
 
+    <!-- Intent action used when binding to the shared connectivity service -->
+    <string name="config_sharedConnectivityServiceIntentAction" translatable="false">com.google.android.gms.magictether.BIND</string>
+
+    <!-- Package name of the system service that implements the shared connectivity service -->
+    <string name="config_sharedConnectivityServicePackage" translatable="false">com.google.android.gms</string>
+
     <!-- The name of the package that will hold the system activity recognizer role. -->
      <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
 

@@ -66,21 +66,6 @@
     <integer-array name="config_nfc_conflict_with_usb_audio_vendorid">
         <item>0x000018D1</item>
     </integer-array>
-    <string-array name="config_pluginAllowlist">
-        <item>com.android.systemui</item>
-        <item>com.android.systemui.plugin.globalactions.wallet</item>
-        <item>com.android.systemui.falcon</item>
-        <item>com.android.systemui.falcon.debug</item>
-        <item>com.android.systemui.falcon.one</item>
-        <item>com.android.systemui.falcon.two</item>
-        <item>com.android.systemui.falcon.three</item>
-        <item>com.android.systemui.falcon.four</item>
-        <item>com.android.systemui.falcon.five</item>
-        <item>com.android.systemui.falcon.six</item>
-        <item>com.android.systemui.falcon.seven</item>
-        <item>com.android.systemui.falcon.eight</item>
-        <item>com.android.systemui.falcon.nine</item>
-    </string-array>
     <string-array name="config_pluginWhitelist">
         <item>com.android.systemui</item>
         <item>com.android.systemui.plugin.globalactions.wallet</item>
