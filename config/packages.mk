@@ -24,6 +24,13 @@ PRODUCT_PACKAGES += \
 #    ThemePicker \
 #    WallpaperPicker2
 
+# Gramophone
+TARGET_INCLUDE_GRAMOPHONE ?= false
+ifeq ($(TARGET_INCLUDE_GRAMOPHONE),true)
+PRODUCT_PACKAGES += \
+    Gramophone
+endif
+
 # ViMusic
 TARGET_BUILD_VIMUSIC ?= false
 ifeq ($(TARGET_BUILD_VIMUSIC),true)
