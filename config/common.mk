@@ -204,29 +204,10 @@ TARGET_IS_PIXEL_8 ?= false
 TARGET_IS_PIXEL_FOLD ?= false
 TARGET_IS_PIXEL_TABLET ?= false
 TARGET_PIXEL_STAND_SUPPORTED ?= false
-TARGET_SUPPORTS_GOOGLE_BATTERY ?= false
 TARGET_SUPPORTS_QUICK_TAP ?= false
 TARGET_USES_LEGACY_BOOTANIMATION ?= false
 TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
-
-# Include TurboAdapter without Google Battery support
-ifeq ($(TARGET_SUPPORTS_GOOGLE_BATTERY), true)
-PRODUCT_PACKAGES += \
-    TurboAdapter
-else ifeq ($(TARGET_IS_PIXEL), true)
-PRODUCT_PACKAGES += \
-    TurboAdapter
-else
-PRODUCT_PACKAGES += \
-    TurboAdapter_NoBatt
-
-PRODUCT_COPY_FILES += \
-    vendor/evolution/prebuilt/system_ext/lib64/libpowerstatshaldataprovider.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerstatshaldataprovider.so
-
-PRODUCT_PACKAGES += \
-    LibPowerStatsSymLink_NoBatt
-endif
 
 # Face Unlock
 ifeq ($(TARGET_SUPPORTS_64_BIT_APPS),true)
