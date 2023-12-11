@@ -29,4 +29,6 @@
     <string name="desc_ProfileIcons7">Playful illustration of five white, geometric flowers on an orange background</string>
     <string name="desc_ProfileIcons8">Playful illustration of three blueberries on a pink background</string>
     <string name="desc_ProfileIcons9">Playful illustration of a lemon with a black leaf on a green background</string>
+    <string name="config_appStoreAppLinkTemplate">https://play.google.com/store/apps/details?id=$packageName</string>
+    <string name="config_appStorePackageName">com.android.vending</string>
 </resources>
