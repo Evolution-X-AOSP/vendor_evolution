@@ -2844,6 +2844,8 @@
   <apn carrier="Ncell Internet" mcc="429" mnc="02" apn="web" type="default,supl" />
   <apn carrier="Ncell MMS" mcc="429" mnc="02" apn="mms" mmsc="http://192.168.19.15" mmsproxy="192.168.19.15" mmsport="8080" type="mms" />
   <apn carrier="Ncell WAP" mcc="429" mnc="02" apn="web" proxy="192.168.19.15" port="8080" type="default,supl" />
+  <apn carrier="Samantel" mcc="432" mnc="01" apn="samantel" type="default,supl" />
+  <apn carrier="Shatelmobile" mcc="432" mnc="08" apn="shatelmobile" type="default,supl" />
   <apn carrier="Rightel" mcc="432" mnc="20" apn="rightel"  type="default,supl" />
   <apn carrier="Rightel MMS" mcc="432" mnc="20" apn="RighTel-WAP" mmsc="http://10.200.40.55:38090/was" mmsproxy="10.200.39.10" mmsport="8080" type="mms" />
   <apn carrier="IR-MCI" mcc="432" mnc="11" apn="mcinet"  type="default,supl" />
