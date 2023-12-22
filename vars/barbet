@@ -1,0 +1,28 @@
+# Pixel 5a
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  device/google/redbull
+  device/google/barbet
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UQ1A.231205.014"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r13"
+readonly aosp_tag="android-14.0.0_r16"
+
+readonly build_number="11049176"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/barbet-uq1a.231205.014-factory-0297d8d7.zip"
+readonly image_sha256="0297d8d7eecc7a6180b5e54a3cd3014ff72fc181ba60eeec805e6d596467066d"
+
+readonly flash_url="https://flash.android.com/build/11049176?target=barbet-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/barbet-ota-uq1a.231205.014-27adb3f8.zip"
+readonly ota_sha256="27adb3f8efc5ea37e5111b5bb1557ae7cac9749d5d1401f5a288c9ed24cb2e57"
+
+readonly security_patch="2023-12-05"

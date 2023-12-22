@@ -1,0 +1,28 @@
+# Pixel 4a (5G)
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in barbet
+  device/google/bramble
+)
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UP1A.231105.001"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r1"
+readonly aosp_tag="android-14.0.0_r13"
+
+readonly build_number="10817346"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/bramble-up1a.231105.001-factory-98e180ca.zip"
+readonly image_sha256="98e180caf107c721657624aebebfe5b179cb7f692221099c6a5905d5546f59ae"
+
+readonly flash_url="https://flash.android.com/build/10817346?target=bramble-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/bramble-ota-up1a.231105.001-db54d066.zip"
+readonly ota_sha256="db54d0663e2fadd098b1c11e00e98a9e7acf7e66d46316ca7350d8be66c54894"
+
+readonly security_patch="2023-11-05"

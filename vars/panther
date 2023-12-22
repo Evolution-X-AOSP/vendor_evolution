@@ -1,0 +1,29 @@
+# Pixel 7
+
+# Usage: ${device_repos[@]}
+device_repos=(
+  # common repos in cheetah
+)
+
+readonly fbpk_version="v2"
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="UQ1A.231205.015"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly prev_aosp_tag="android-14.0.0_r14"
+readonly aosp_tag="android-14.0.0_r17"
+
+readonly build_number="11084887"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/panther-uq1a.231205.015-factory-9bc852a1.zip"
+readonly image_sha256="9bc852a1f625b68361d18911d2fbfbb55cd6b229135adf4619c49c7d77ed3f08"
+
+readonly flash_url="https://flash.android.com/build/11084887?target=panther-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/panther-ota-uq1a.231205.015-b2ebb00d.zip"
+readonly ota_sha256="b2ebb00d528079204265298aaecb0a51f8b46136942e7afd04f7e62c3034abf7"
+
+readonly security_patch="2023-12-05"
