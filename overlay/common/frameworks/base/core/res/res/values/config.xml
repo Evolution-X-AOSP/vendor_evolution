@@ -355,10 +355,6 @@
         <item>device_personalization_services/AdaptiveAudio__use_silence_detector_state_bug_fix=true</item>
     </string-array>
 
-    <!-- Whether the lock screen is allowed to run its own live wallpaper,
-         different from the home screen wallpaper. -->
-    <bool name="config_independentLockscreenLiveWallpaper">true</bool>
-
     <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>

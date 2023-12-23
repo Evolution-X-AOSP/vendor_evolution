@@ -54,9 +54,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     BtHelper
 
-# Enable lockscreen live wallpaper
+# Disable lockscreen live wallpaper
 PRODUCT_SYSTEM_PROPERTIES += \
-    persist.wm.debug.lockscreen_live_wallpaper=true
+    persist.wm.debug.lockscreen_live_wallpaper=false
 
 # Use gestures by default
 PRODUCT_PROPERTY_OVERRIDES += \
