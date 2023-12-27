@@ -298,10 +298,4 @@ $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 # Call the BCR setup
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-# Conditionally inherit firmware
-TARGET_SHIPS_FIRMWARE ?= false
-ifeq ($(TARGET_SHIPS_FIRMWARE),true)
-$(call inherit-product, vendor/firmware/build/core/config.mk)
-endif
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
