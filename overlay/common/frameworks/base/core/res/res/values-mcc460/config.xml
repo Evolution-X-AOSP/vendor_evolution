@@ -20,5 +20,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Remote server that can provide NTP responses. -->
-    <string translatable="false" name="config_ntpServer">ntp.ntsc.ac.cn</string>
+    <string-array translatable="false" name="config_ntpServers">
+        <item>ntp.ntsc.ac.cn</item>
+    </string-array>
 </resources>
