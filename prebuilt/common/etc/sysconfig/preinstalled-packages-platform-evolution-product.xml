@@ -22,6 +22,12 @@
     </install-in-user-type>
 
     <!-- System packages that should not be pre-installed on the CLONE profile. -->
+    <!-- Camera -->
+    <install-in-user-type package="com.android.camera">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
     <!-- Messages -->
     <install-in-user-type package="com.android.messaging">
         <install-in user-type="FULL" />
@@ -52,8 +58,66 @@
         <install-in user-type="PROFILE" />
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
     </install-in-user-type>
-    <!-- Android Auto (due to shipping stub on vanilla) -->
-    <install-in-user-type package="com.google.android.projection.gearhead">
+    <!-- Eleven (Music) -->
+    <install-in-user-type package="org.lineageos.eleven">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Jelly (Browser) -->
+    <install-in-user-type package="org.lineageos.jelly">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Recorder -->
+    <install-in-user-type package="org.lineageos.recorder">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- FM radio -->
+    <install-in-user-type package="com.caf.fmradio">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Launcher -->
+    <install-in-user-type package="com.android.launcher3">
+        <!-- Unfortunately some things (eg recents) look specifically for launcher in user 0 -->
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="FULL" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Data restore -->
+    <install-in-user-type package="com.google.android.apps.restore">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Google assistant -->
+    <install-in-user-type package="com.google.android.apps.googleassistant">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <install-in-user-type package="com.google.android.euicc">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.stk">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <install-in-user-type package="com.android.cellbroadcastreceiver.module">
+        <install-in user-type="FULL" />
+        <install-in user-type="PROFILE" />
+        <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
+    </install-in-user-type>
+    <!-- Updater -->
+    <install-in-user-type package="org.evolution.updater">
         <install-in user-type="FULL" />
         <install-in user-type="PROFILE" />
         <do-not-install-in user-type="android.os.usertype.profile.CLONE" />
