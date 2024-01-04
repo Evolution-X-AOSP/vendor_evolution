@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.1
-EVO_CODENAME := Yema
+EVO_BASE_VERSION := 8.2
+EVO_CODENAME := Tikoy
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
