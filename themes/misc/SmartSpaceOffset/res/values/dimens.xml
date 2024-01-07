@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="below_clock_padding_start_icons">150dp</dimen>
+</resources>

@@ -256,6 +256,11 @@ PRODUCT_PACKAGES += \
     ClockFontMonbijouxClownpieceOverlay \
     ClockFontRoundheadsOverlay
 
+# Utility Overlays
+PRODUCT_PACKAGES += \
+    HideSmartSpace \
+    SmartSpaceOffset
+
 # QS Panel
 #PRODUCT_PACKAGES += \
 #    QSOutline \
