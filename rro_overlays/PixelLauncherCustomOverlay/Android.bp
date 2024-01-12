@@ -1,6 +1,5 @@
 runtime_resource_overlay {
-    name: "PixelLauncherIconsOverlay",
-    theme: "PixelLauncherIconsOverlay",
+    name: "PixelLauncherCustomOverlay",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true

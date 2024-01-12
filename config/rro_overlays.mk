@@ -19,7 +19,6 @@ PRODUCT_PACKAGES += \
     EvolutionXConfigOverlay \
     ImmersiveNavigationOverlay \
     NetworkStackOverlay \
-    PixelLauncherIconsOverlay \
 
 # Google Overlays
 PRODUCT_PACKAGES += \
@@ -41,6 +40,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlayCommon \
     PixelDocumentsUIGoogleOverlay \
+    PixelLauncherCustomOverlay \
     PixelSetupWizardOverlay \
     SettingsGoogleOverlayPixel2022 \
     SettingsProviderOverlay \
