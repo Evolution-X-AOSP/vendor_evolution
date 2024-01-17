@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     ManagedProvisioningPixelOverlay \
     NowPlayingOverlay \
     PixelBatteryHealthOverlay \
+    PixelConfigCustomOverlay \
     PixelDisableLEDOverlay \
     PixelSetupWizardOverlay2019 \
     PixelSetupWizardOverlay2021
