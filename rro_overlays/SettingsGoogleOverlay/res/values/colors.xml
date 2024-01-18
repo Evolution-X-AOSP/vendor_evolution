@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="icon_launcher_setting_color">@*android:color/accent_device_default_light</color>
+</resources>
