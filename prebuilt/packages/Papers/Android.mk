@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The Evolution X Project
+# Copyright (C) 2021-2024 Evolution X
 #
 # Licensed under the Apache License, Version 2.0 (the License);
 # you may not use this file except in compliance with the License.
@@ -21,10 +21,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := Papers
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := Papers.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
-LOCAL_SYSTEM_EXT_MODULE := true
-LOCAL_DEX_PREOPT := false
 LOCAL_OPTIONAL_USES_LIBRARIES := com.sec.android.app.multiwindow
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
