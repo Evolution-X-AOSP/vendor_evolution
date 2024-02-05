@@ -258,6 +258,8 @@
         <item>device_personalization_services/EchoSmartspace__strava_check_stop_action=true</item>
 
         <!-- Notification Assistant (DPS) -->
+        <item>notification_assistant/generate_actions=true</item>
+        <item>notification_assistant/generate_replies=true</item>
         <item>device_personalization_services/NotificationAssistant__enable_service=true</item>
         <item>device_personalization_services/NotificationAssistant__enable_upgrade_importance=true</item>
         <item>device_personalization_services/NotificationAssistant__importance_model_download_url=https://www.gstatic.com/android/notifications/importance/v1/manifest.json</item>
@@ -266,7 +268,9 @@
         <item>device_personalization_services/NotificationAssistant__max_importance_variance=0.5</item>
 
         <!-- Google Live Translate -->
+        <item>device_personalization_services/SimpleStorage__disable_live_translate_dao_provider=false</item>
         <item>device_personalization_services/Translate__app_blocklist=com.google.android.talk</item>
+        <item>device_personalization_services/Translate__beta_audio_to_text_languages_in_live_caption=ja</item>
         <item>device_personalization_services/Translate__blue_chip_translate_enabled=true</item>
         <item>device_personalization_services/Translate__characterset_lang_detection_enabled=true</item>
         <item>device_personalization_services/Translate__copy_to_translate_enabled=true</item>
@@ -302,24 +306,24 @@
         <item>device_personalization_services/SmartDictation__enable_selection_filtering=true</item>
 
         <!-- Pixel Launcher -->
-        <item>launcher/enable_one_search=true</item>
         <item>launcher/ENABLE_LOCAL_RECOMMENDED_WIDGETS_FILTER=true</item>
         <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
         <item>launcher/ENABLE_WIDGETS_PICKER_AIAI_SEARCH=true</item>
         <item>launcher/ENABLE_QUICK_LAUNCH_V2=true</item>
         <item>launcher/GBOARD_UPDATE_ENTER_KEY=true</item>
+        <item>launcher/enable_one_search=true</item>
         <item>launcher/enable_quick_launch_v2=true</item>
-
-        <!-- Pixel Launcher (Circle to Search) -->
         <item>launcher/long_press_home_button_to_search=true</item>
         <item>launcher/long_press_home_button_to_search_mpr=true</item>
         <item>launcher/press_hold_nav_handle_to_search=true</item>
         <item>launcher/press_hold_nav_handle_to_search_mpr=true</item>
-        <item>launcher/ENABLE_SETTINGS_OSE_CUSTOMIZATIONS=true</item>
         <item>launcher/ENABLE_LONG_PRESS_NAV_HANDLE=true</item>
         <item>launcher/ENABLE_LONG_PRESS_NAV_HANDLE_MPR=true</item>
+        <item>launcher/ENABLE_SETTINGS_OSE_CUSTOMIZATIONS=true</item>
         <item>launcher/INVOKE_OMNI_LPH=true</item>
         <item>launcher/INVOKE_OMNI_LPH_MPR=true</item>
+        <item>launcher/LPNH_SLOP_PERCENTAGE=71</item>
+        <item>launcher/LPNH_TIMEOUT_MS=400</item>
 
         <!-- Pixel Launcher (Recents) -->
         <item>device_personalization_services/Overview__enable_barcode_detection=false</item>
@@ -341,10 +345,6 @@
         <item>systemui/enable_screenshot_corner_flow=true</item>
         <item>systemui/enable_screenshot_notification_smart_actions=true</item>
         <item>systemui/enable_screenshot_scrolling=true</item>
-
-        <!-- Notifications -->
-        <item>notification_assistant/generate_actions=true</item>
-        <item>notification_assistant/generate_replies=true</item>
 
         <!-- Privacy -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
