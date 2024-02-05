@@ -108,6 +108,7 @@
         <item>com.android.systemui.clocks.metro</item>
         <item>com.android.systemui.clocks.numoverlap</item>
         <item>com.android.systemui.clocks.weather</item>
+        <item>com.google.oslo</item>
     </string-array>
 
     <!-- Control whether status bar should distinguish HSPA data icon form UMTS
