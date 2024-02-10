@@ -354,5 +354,9 @@
         <item>privacy/privacy_dashboard_7_day_toggle=true</item>
         <item>privacy/warning_banner_enabled=true</item>
         <item>privacy/safety_protection_enabled=true</item>
+
+        <!-- Media Provider -->
+        <item>mediaprovider/cloud_media_feature_enabled=true</item>
+        <item>mediaprovider/cloud_media_enforce_provider_allowlist=false</item>
     </string-array>
 </resources>
