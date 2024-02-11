@@ -493,6 +493,11 @@
     </family>
     <alias name="grandhotel-regular" to="grandhotel" weight="400" />
 
+    <!-- Ios -->
+    <family customizationType="new-named-family" name="Ios">
+        <font weight="300" style="normal">ios.ttf</font>
+    </family>
+
     <!-- LGSmartGothic -->
     <family customizationType="new-named-family" name="lgsmartgothic">
         <font weight="300" style="normal">LGSmartGothic.ttf</font>

@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
     ClockFontFifa2018Overlay \
     ClockFontGrandHotelOverlay \
     ClockFontHarmonySansOverlay \
+    ClockFontIosOverlay \
     ClockFontLatoOverlay \
     ClockFontLetteraOverlay \
     ClockFontLGSmartGothicOverlay \
