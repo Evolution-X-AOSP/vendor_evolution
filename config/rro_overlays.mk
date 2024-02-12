@@ -56,7 +56,6 @@ ifeq ($(TARGET_IS_PIXEL), true)
 PRODUCT_PACKAGES += \
     ClearCallingSettingsOverlay2022 \
     ManagedProvisioningPixelOverlay \
-    NowPlayingOverlay \
     PixelBatteryHealthOverlay \
     PixelConfigCustomOverlay \
     PixelDisableLEDOverlay \
