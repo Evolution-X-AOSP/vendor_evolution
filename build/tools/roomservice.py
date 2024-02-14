@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # Copyright (C) 2012-2013, The CyanogenMod Project
 # Copyright (C) 2012-2015, SlimRoms Project
 # Copyright (C) 2016-2017, AOSiP
@@ -23,6 +23,9 @@ import json
 import netrc
 import os
 import sys
+import urllib.error
+import urllib.parse
+import urllib.request
 
 from xml.etree import ElementTree
 
