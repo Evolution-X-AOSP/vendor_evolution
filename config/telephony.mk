@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Call the BCR setup
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 # Telephony
 IS_PHONE := true
 
