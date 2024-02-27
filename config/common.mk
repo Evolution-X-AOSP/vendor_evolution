@@ -300,7 +300,4 @@ $(call inherit-product, vendor/evolution/config/version.mk)
 # Pixel Framework
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 
-# Call the BCR setup
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
