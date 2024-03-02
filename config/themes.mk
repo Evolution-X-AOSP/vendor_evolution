@@ -75,11 +75,41 @@ PRODUCT_PACKAGES += \
     StrokeSignalOverlay \
     WannuiSignalOverlay \
     WavySignalOverlay \
-    WeedWiFiOverlay \
     WindowsSignalOverlay \
     WingSignalOverlay \
     XperiaSignalOverlay \
-    ZigZagSignalOverlay
+    ZigZagSignalOverlay \
+        AiirOSignalOverlay \
+    	AuroraSignalOverlay \
+    BananaSignalOverlay \
+    	BoldSignalOverlay \
+    	CapsuleSignalOverlay \
+    DottedSignalOverlay \
+    	FaintUISignalOverlay \
+    	ForlornSignalOverlay \
+    	GlummySignalOverlay \
+    	HeartbeatSignalOverlay \
+    	HollowSignalOverlay \
+    	IOSSignalOverlay \
+    	JapaneseSignalOverlay \
+    	KoalaSignalOverlay \
+    	LineDotSignalOverlay \
+    	LinealSignalOverlay \
+    	LinearSignalOverlay \
+    	MicroWaveSignalOverlay \
+        NinjaSignalOverlay \
+        NothingDotSignalOverlay \
+    	NumberSignalOverlay \
+    	PlumpySignalOverlay \
+    ROGSignalOverlay \
+    	RouterSignalOverlay \
+    	ScaleSignalOverlay \
+        SharpSignalOverlay \
+        SleekSignalOverlay \
+    	SpiralSignalOverlay \
+    	TowerSignalOverlay \
+    	WaffleSignalOverlay \
+    	WindySignalOverlay
 
 # Wi-Fi Icons
 PRODUCT_PACKAGES += \
@@ -94,8 +124,36 @@ PRODUCT_PACKAGES += \
     SneakyWiFiOverlay \
     StrokeWiFiOverlay \
     WavyWiFiOverlay \
+    WeedWiFiOverlay \
     XperiaWiFiOverlay \
-    ZigZagWiFiOverlay
+    ZigZagWiFiOverlay \
+    AiirOWiFiOverlay \
+    AuroraWiFiOverlay \
+    BoldWiFiOverlay \
+    CapsuleWiFiOverlay \
+    FaintUIWiFiOverlay \
+    ForlornWiFiOverlay \
+    GlummyWiFiOverlay \
+    GradiconWiFiOverlay \
+    HollowWiFiOverlay \
+    IosWiFiOverlay \
+    JapaneseWiFiOverlay \
+    KoalaWiFiOverlay \
+    LandscapeWiFiOverlay \
+    LineDotWiFiOverlay \
+    LinealWiFiOverlay \
+    LinearWiFiOverlay \
+    MicroWaveWiFiOverlay \
+    NothingDotWiFiOverlay \
+    NumberWiFiOverlay \
+    PlumpyWiFiOverlay \
+    RouterWiFiOverlay \
+    ScaleWiFiOverlay \
+    SharpWiFiOverlay \
+    SpiralWiFiOverlay \
+    TowerWiFiOverlay \
+    WaffleWiFiOverlay \
+    WindyWiFiOverlay
 
 # Data icons
 PRODUCT_PACKAGES += \
