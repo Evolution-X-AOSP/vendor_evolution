@@ -333,6 +333,10 @@ PRODUCT_PACKAGES += \
     HideSmartSpace \
     SmartSpaceOffset
 
+# QS UI Style
+PRODUCT_PACKAGES += \
+    A11QSUI
+
 # QS Panel
 #PRODUCT_PACKAGES += \
 #    QSOutline \

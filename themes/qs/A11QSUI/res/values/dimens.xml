@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- A11 QS style -->  
+    <dimen name="custom_qs_panel_padding_top">24dp</dimen>
+    <dimen name="custom_notification_row_padding">0dp</dimen>
+    <dimen name="qs_tile_height">96dp</dimen>
+    <dimen name="qs_tile_margin_horizontal">20dp</dimen>
+    <dimen name="qs_footer_height">72dp</dimen>
+    <dimen name="qs_customize_internal_side_paddings">6dp</dimen>
+    <dimen name="qs_label_container_margin">0dp</dimen>
+    <dimen name="qs_quick_tile_size">55dp</dimen>
+    <dimen name="qs_tile_padding">10dp</dimen>
+    <dimen name="qs_tile_text_size">11sp</dimen>
+
+    <!-- QQS Brightness slider -->
+    <dimen name="qqs_top_brightness_margin_top">-16dp</dimen>
+    <dimen name="qqs_top_brightness_margin_bottom">40dp</dimen>
+    <dimen name="qqs_bottom_brightness_margin_top">4dp</dimen>
+    <dimen name="qqs_bottom_brightness_margin_bottom">-4dp</dimen>
+
+    <!-- QS Brightness slider -->
+    <dimen name="qs_top_brightness_margin_top">4dp</dimen>
+    <dimen name="qs_top_brightness_margin_bottom">20dp</dimen>
+    <dimen name="qs_bottom_brightness_margin_top">12dp</dimen>
+    <dimen name="qs_bottom_brightness_margin_bottom">4dp</dimen>
+
+    <dimen name="qs_panel_padding_top">84dp</dimen>
+    <dimen name="qqs_layout_padding_bottom">12dp</dimen>
+</resources>
