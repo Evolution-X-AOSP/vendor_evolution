@@ -21,7 +21,7 @@
         <shape android:shape="rectangle">
             <size android:height="@dimen/rounded_slider_height" />
             <corners android:radius="@dimen/rounded_slider_corner_radius" />
-            <solid android:color="@drawable/color_alpha_offstate" />
+            <solid android:color="@color/qs_translucent_brightness_bg" />
         </shape>
     </item>
     <item android:id="@android:id/progress"

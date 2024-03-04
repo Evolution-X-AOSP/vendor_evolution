@@ -6,7 +6,7 @@
         android:top="8.0dip"
         android:bottom="8.0dip">
         <shape android:tintMode="multiply">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             <solid android:color="@*android:color/system_neutral2_800" />
             <size
                 android:width="32.0dip"

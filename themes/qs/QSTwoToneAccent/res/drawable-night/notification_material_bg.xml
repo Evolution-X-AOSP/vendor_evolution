@@ -24,7 +24,7 @@
                 <padding
                     android:left="10dp"
                     android:right="10dp" />
-            <solid android:color="#F2332F30" />
+                <solid android:color="?androidprv:attr/colorSurface" />
        </shape>
     </item>
 </ripple>

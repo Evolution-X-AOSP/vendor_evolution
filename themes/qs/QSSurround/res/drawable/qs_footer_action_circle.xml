@@ -5,12 +5,12 @@
         <item android:id="@*android:id/mask">
             <shape android:shape="rectangle">
                 <solid android:color="#00000000" />
-                <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+                <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             </shape>
         </item>
         <item>
             <shape>
-                <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+                <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
                 <gradient
                     android:angle="0.0"
                     android:endColor="@*android:color/system_accent1_400"

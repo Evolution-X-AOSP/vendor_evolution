@@ -5,7 +5,7 @@
     <item>
         <shape android:tintMode="multiply" android:shape="rectangle">
             <solid android:color="@*android:color/system_accent1_600" />
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
         </shape>
     </item>
     <item
@@ -14,7 +14,7 @@
         android:end="40dp">
         <shape android:tintMode="src_atop" android:shape="rectangle">
             <solid android:color="@*android:color/system_accent1_0" />
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
         </shape>
     </item>
     <item
@@ -23,7 +23,7 @@
         android:start="40dp">
         <shape android:tintMode="src_atop" android:shape="rectangle">
             <solid android:color="@*android:color/system_accent1_0" />
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
         </shape>
     </item>
     </layer-list>

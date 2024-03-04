@@ -8,5 +8,5 @@
     <dimen name="qs_tile_start_padding">20.0dp</dimen>
     <dimen name="qs_label_container_margin">24.0dp</dimen>
     <dimen name="qs_tile_height">60.0dp</dimen>
-    <dimen name="qs_tile_text_size">7sp</dimen>
+    <dimen name="qs_tile_text_size">14sp</dimen>
 </resources>

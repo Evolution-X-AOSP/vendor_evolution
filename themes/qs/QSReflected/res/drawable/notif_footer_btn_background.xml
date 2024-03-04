@@ -9,7 +9,7 @@
                 android:startColor="@*android:color/system_accent1_400"
                 android:endColor="@*android:color/system_accent1_400"
                 android:angle="315.0" />
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
         </shape>
     </item>
     <item
@@ -18,7 +18,7 @@
         android:end="2dp">
         <shape android:shape="rectangle">
             <solid android:color="@*android:color/system_neutral2_0" />
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             <padding
                 android:left="20dp"
                 android:right="20dp" />

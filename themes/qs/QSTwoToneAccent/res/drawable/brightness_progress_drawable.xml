@@ -14,28 +14,28 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingMode="stack">
-    <!-- Background -->
-    <item android:id="@android:id/background" android:gravity="center_vertical|fill_horizontal">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+            android:paddingMode="stack" >
+    <item android:id="@android:id/background"
+        android:gravity="center_vertical|fill_horizontal">
         <shape android:shape="rectangle">
             <size android:height="@dimen/rounded_slider_height" />
             <corners android:radius="@dimen/rounded_slider_corner_radius" />
-            <solid android:color="@drawable/color_alpha_offstate" />
+            <solid android:color="@color/qs_translucent_brightness_bg" />
         </shape>
     </item>
-    
-    <!-- Progress Slider -->
-    <item android:id="@android:id/progress">
-        <clip xmlns:android="http://schemas.android.com/apk/res/android"
-            android:drawable="@drawable/brightness_progress_full_drawable"
-            android:clipOrientation="horizontal"
-            android:gravity="left">
-        </clip>
+    <item android:id="@android:id/progress"
+          android:gravity="center|fill_horizontal">
+            <com.android.systemui.util.RoundedCornerProgressDrawable
+                android:drawable="@drawable/brightness_progress_full_drawable"
+            />
     </item>
-    
-    <!-- Start Icon -->
-    <item android:gravity="start|center" android:drawable="@drawable/ic_brightness_low" android:start="18.0dip" />
-    
-    <!-- End Icon -->
-    <item android:gravity="end|center" android:drawable="@drawable/ic_brightness_full" android:end="18.0dip" />
+    <item
+        android:gravity="start|center"
+        android:drawable="@drawable/ic_brightness_low"
+        android:start="18.0dip" />
+    <item
+        android:gravity="end|center"
+        android:drawable="@drawable/ic_brightness_full"
+        android:end="18.0dip" />
 </layer-list>

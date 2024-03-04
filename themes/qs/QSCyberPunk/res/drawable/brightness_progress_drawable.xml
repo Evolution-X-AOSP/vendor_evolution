@@ -4,7 +4,7 @@
         android:id="@*android:id/background"
         android:gravity="fill_horizontal|center">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             <size android:height="12.0dip" />
             <solid android:color="@*android:color/system_neutral1_400" />
         </shape>

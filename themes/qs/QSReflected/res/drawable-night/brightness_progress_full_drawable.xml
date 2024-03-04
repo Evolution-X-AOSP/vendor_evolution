@@ -4,7 +4,7 @@
         android:id="@null"
         android:gravity="fill_horizontal|center">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             <size android:height="48.0dip" />
             <gradient
                 android:angle="0.0"
@@ -14,7 +14,7 @@
     </item>
     <item android:gravity="fill_horizontal|center">
         <shape android:shape="rectangle">
-            <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+            <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
             <size android:height="48.0dip" />
             <solid android:color="#40000000" />
         </shape>

@@ -5,7 +5,7 @@
             <item>
                 <shape android:tintMode="src_atop">
                     <solid android:color="@*android:color/system_neutral2_800" />
-                    <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+                    <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
                 </shape>
             </item>
             <item
@@ -20,10 +20,10 @@
             <item>
                 <shape android:tintMode="multiply">
                     <gradient
-                        android:angle="270.0"
-                        android:endColor="?android:colorSecondary"
-                        android:startColor="?android:colorPrimary" />
-                    <corners android:radius="@*android:dimen/harmful_app_name_padding_top" />
+                        android:angle="0.0"
+                        android:endColor="@*android:color/system_accent2_200"
+                        android:startColor="@*android:color/system_accent1_400" />
+                    <corners android:radius="@*android:dimen/autofill_dialog_corner_radius" />
                 </shape>
             </item>
             <item
