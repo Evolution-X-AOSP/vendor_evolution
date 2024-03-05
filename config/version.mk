@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.3
-EVO_CODENAME := Balut
+EVO_BASE_VERSION := 8.4
+EVO_CODENAME := Bopis
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
