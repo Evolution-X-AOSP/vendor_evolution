@@ -23,6 +23,9 @@
     <!-- Default value for Settings.ASSIST_TOUCH_GESTURE_ENABLED -->
     <bool name="config_assistTouchGestureEnabledDefault">false</bool>
 
+    <!-- Enable pause wallpaper rendering upon state change such as app launch -->
+    <bool name="config_pauseWallpaperRenderWhenStateChangeEnabled">true</bool>
+
     <!-- Allow the gesture power + volume up to change the ringer mode while the device
          is interactive. -->
     <bool name="config_volumeHushGestureEnabled">false</bool>
@@ -33,19 +36,16 @@
         <item>com.skype.raider</item>
     </string-array>
 
+    <!-- The list of packages to pause wallpaper rendering upon state change such as app launch -->
+    <string-array name="pause_wallpaper_render_when_state_change">
+        <item>com.google.android.GoogleCamera</item>
+    </string-array>
+
     <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
     <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
 
     <!-- Colon separated list of package names that should be granted DND access -->
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.apps.dreamliner:com.google.android.GoogleCamera:com.google.android.gms:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool:com.android.camera</string>
-
-    <!-- Control the default night mode to use when there is no other mode override set.
-         One of the following values (see UiModeManager.java):
-             0 - MODE_NIGHT_AUTO
-             1 - MODE_NIGHT_NO
-             2 - MODE_NIGHT_YES
-    -->
-    <integer name="config_defaultNightMode">2</integer>
 
     <!-- Control the behavior when the user presses the power and volume up buttons together.
             0 - Nothing
