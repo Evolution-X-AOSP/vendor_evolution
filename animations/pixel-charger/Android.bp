@@ -1,0 +1,57 @@
+//
+// Copyright (C) 2024 The hentaiOS Project and its Proprietors.
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+//
+
+prebuilt_etc {
+    name: "vendor_evolution_charger_res_images_battery_fail.png",
+    src: "images/charger/battery_fail.png",
+    relative_install_path: "res/images/charger",
+    vendor: true,
+    filename: "battery_fail.png",
+}
+
+prebuilt_etc {
+    name: "vendor_evolution_charger_res_images_battery_scale.png",
+    src: "images/charger/battery_scale.png",
+    relative_install_path: "res/images/charger",
+    vendor: true,
+    filename: "battery_scale.png",
+}
+
+prebuilt_etc {
+    name: "vendor_evolution_charger_res_images_main_font.png",
+    src: "images/charger/main_font.png",
+    relative_install_path: "res/images/charger",
+    vendor: true,
+    filename: "main_font.png",
+}
+
+prebuilt_etc {
+    name: "vendor_evolution_charger_res_values_animations.txt",
+    src: "values/charger/animation.txt",
+    relative_install_path: "res/values/charger",
+    vendor: true,
+    filename: "animation.txt",
+}
+
+phony {
+    name: "charger_res_images_vendor_pixel",
+    required: [
+        "vendor_evolution_charger_res_images_battery_fail.png",
+        "vendor_evolution_charger_res_images_battery_scale.png",
+        "vendor_evolution_charger_res_images_main_font.png",
+        "vendor_evolution_charger_res_values_animations.txt",
+    ],
+}
