@@ -264,6 +264,9 @@ else
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
 
+# Inherit from animations config
+$(call inherit-product, vendor/evolution/config/animations.mk)
+
 # Inherit from audio config
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
 $(call inherit-product, vendor/evolution/config/audio.mk)
