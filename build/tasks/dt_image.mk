@@ -42,7 +42,7 @@ endif
 $(INSTALLED_DTIMAGE_TARGET): $(DTBTOOL) $(INSTALLED_KERNEL_TARGET)
 	$(build-dtimage-target)
 ifeq ($(strip $(BOARD_KERNEL_LZ4C_DT)),true)
-	prebuilts/tools-evolution/${HOST_OS}-x86/bin/lz4 -9 < $@ > $(LZ4_DT_IMAGE)
+	prebuilts/tools-evolution/${HOST_OS}-x86/bin/lz4c -c1 -y $@ $(LZ4_DT_IMAGE)
 	$(hide) $(ACP) $(LZ4_DT_IMAGE) $@
 endif
 	@echo "Made DT image: $@"
