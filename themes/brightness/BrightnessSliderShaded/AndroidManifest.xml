@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LeafOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.systemui.brightness_slider.shaded"
+    android:allowBackup="false"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <overlay
+        android:priority="1"
+        android:targetPackage="com.android.systemui"
+        android:category="android.theme.customization.brightness_slider" />
+
+    <application
+        android:label="Shaded"
+        android:hasCode="false"/>
+</manifest>

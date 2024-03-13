@@ -27,7 +27,20 @@ PRODUCT_PACKAGES += \
     BrightnessSliderFilledOverlay \
     BrightnessSliderThinOverlay \
     BrightnessSliderAcunOverlay \
-    BrightnessSliderBangOverlay
+    BrightnessSliderBangOverlay \
+    BrightnessSliderCyberpunkOverlay \
+    BrightnessSliderGradiantOverlay \
+    BrightnessSliderNeumorphOverlay \
+    BrightnessSliderOutlineOverlay \
+    BrightnessSliderShadedOverlay \
+    BrightnessSliderTranslucentOverlay \
+    BrightnessSliderLeafyOutlineOverlay \
+    BrightnessSliderMinimalThumbOverlay \
+    BrightnessSliderOldSchoolThumbOverlay \
+    BrightnessSliderRoundedClipOverlay \
+    BrightnessSliderThumbSliderOverlay \
+    BrightnessSliderLineOverlay \
+    BrightnessSliderLightyOverlay
 
 # Navbar styles
 PRODUCT_PACKAGES += \
