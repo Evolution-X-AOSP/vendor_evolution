@@ -1,0 +1,6 @@
+//
+runtime_resource_overlay {
+    name: "BrightnessSliderThumbSliderOverlay",
+    theme: "BrightnessSliderThumbSlider",
+    product_specific: true,
+}

@@ -1,0 +1,6 @@
+//
+runtime_resource_overlay {
+    name: "BrightnessSliderMinimalThumbOverlay",
+    theme: "BrightnessSliderMinimalThumb",
+    product_specific: true,
+}

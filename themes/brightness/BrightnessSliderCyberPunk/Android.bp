@@ -1,0 +1,6 @@
+//
+runtime_resource_overlay {
+    name: "BrightnessSliderCyberpunkOverlay",
+    theme: "BrightnessSliderCyberpunk",
+    product_specific: true,
+}
