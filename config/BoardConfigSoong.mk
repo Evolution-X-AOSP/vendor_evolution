@@ -67,6 +67,10 @@ SOONG_CONFIG_evolutionGlobalVars += \
     needs_oplus_tag \
     include_miui_camera
 
+SOONG_CONFIG_NAMESPACES += evolutionNvidiaVars
+SOONG_CONFIG_evolutionNvidiaVars += \
+    uses_nvidia_enhancements
+
 SOONG_CONFIG_NAMESPACES += evolutionQcomVars
 SOONG_CONFIG_evolutionQcomVars += \
     should_wait_for_qsee \
@@ -103,6 +107,7 @@ SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_custom_content_md_reserved_s
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_evolutionGlobalVars_sdmcore_has_is_display_hw_available_func := $(TARGET_SDMCORE_HAS_IS_DISPLAY_HW_AVAILABLE_FUNC)
 SOONG_CONFIG_evolutionGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
+SOONG_CONFIG_evolutionNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_evolutionQcomVars_qti_vibrator_use_effect_stream := $(TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM)
 SOONG_CONFIG_evolutionQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_evolutionQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
