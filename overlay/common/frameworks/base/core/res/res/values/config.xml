@@ -408,5 +408,12 @@
 	<item>device_personalization_services/WallpaperEffects__return_texturedmesh_with_error_status=true</item> 
 	<item>device_personalization_services/WallpaperEffects__use_gpu=true</item>
 	<item>device_personalization_services/WallpaperEffects__use_tpu=false</item>
+
+       <!-- Settings -->
+        <item>settings_ui/bt_slice_settings_enabled=true</item>
+        <item>settings_ui/bt_advanced_header_enabled=true</item>
+        <item>settings_ui/bt_near_by_suggestion_enabled=true</item>
+        <item>settings_ui/bt_le_audio_contact_sharing_enabled=true</item>
+
     </string-array>
 </resources>
