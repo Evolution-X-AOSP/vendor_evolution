@@ -32,7 +32,6 @@ PRODUCT_PACKAGES += \
     BrightnessSliderGradiantOverlay \
     BrightnessSliderNeumorphOverlay \
     BrightnessSliderOutlineOverlay \
-    BrightnessSliderShadedOverlay \
     BrightnessSliderTranslucentOverlay \
     BrightnessSliderLeafyOutlineOverlay \
     BrightnessSliderMinimalThumbOverlay \
