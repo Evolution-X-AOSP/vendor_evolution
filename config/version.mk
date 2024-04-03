@@ -17,8 +17,8 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.4
-EVO_CODENAME := Bopis
+EVO_BASE_VERSION := 8.5
+EVO_CODENAME := Sorbetes
 
 # Set all versions
 EVO_BUILD_TYPE ?= COMMUNITY
