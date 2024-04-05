@@ -244,6 +244,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.input.video_enabled=false
 
+# Workaround AOSP AM crash
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/evolution/overlay
 PRODUCT_PACKAGE_OVERLAYS += \
