@@ -6,35 +6,35 @@
  * SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-  <color name="system_neutral1_0">#FFFFFF</color>
-  <color name="system_neutral1_10">#FFFFFF</color>
-  <color name="system_neutral1_50">@android:color/system_accent2_50</color>
-  <color name="system_neutral1_100">@android:color/system_accent1_50</color>
-  <color name="system_neutral1_200">@android:color/system_accent1_50</color>
-  <color name="system_neutral1_300">@android:color/system_accent1_50</color>
-  <color name="system_neutral1_400">@android:color/system_accent1_100</color>
-  <color name="system_neutral1_500">#242424</color>
-  <color name="system_neutral1_600">#212121</color>
-  <color name="system_neutral1_700">#191919</color>
-  <color name="system_neutral1_800">#171717</color>
-  <color name="system_neutral1_900">#000000</color>
-  <color name="system_neutral1_1000">#000000</color>
+    <color name="system_neutral1_0">#ffffff</color>
+    <color name="system_neutral1_10">#fbfbfb</color>
+    <color name="system_neutral1_50">#ebebeb</color>
+    <color name="system_neutral1_100">#d9d9d9</color>
+    <color name="system_neutral1_200">#b6b6b6</color>
+    <color name="system_neutral1_300">#979797</color>
+    <color name="system_neutral1_400">#7a7a7a</color>
+    <color name="system_neutral1_500">#616161</color>
+    <color name="system_neutral1_600">#494949</color>
+    <color name="system_neutral1_700">#343434</color>
+    <color name="system_neutral1_800">#202020</color>
+    <color name="system_neutral1_900">#000000</color>
+    <color name="system_neutral1_1000">#000000</color>
 
-  <color name="system_neutral2_0">#FFFFFF</color>
-  <color name="system_neutral2_10">#FFFFFF</color>
-  <color name="system_neutral2_50">@android:color/system_accent2_50</color>
-  <color name="system_neutral2_100">@android:color/system_accent1_50</color>
-  <color name="system_neutral2_200">@android:color/system_accent2_100</color>
-  <color name="system_neutral2_300">@android:color/system_accent2_200</color>
-  <color name="system_neutral2_400">@android:color/system_accent2_300</color>
-  <color name="system_neutral2_500">#242424</color>
-  <color name="system_neutral2_600">#212121</color>
-  <color name="system_neutral2_700">#191919</color>
-  <color name="system_neutral2_800">#171717</color>
-  <color name="system_neutral2_900">#000000</color>
-  <color name="system_neutral2_1000">#000000</color>
+    <color name="system_neutral2_0">#ffffff</color>
+    <color name="system_neutral2_10">#fbfbfb</color>
+    <color name="system_neutral2_50">#ebebeb</color>
+    <color name="system_neutral2_100">#d9d9d9</color>
+    <color name="system_neutral2_200">#b6b6b6</color>
+    <color name="system_neutral2_300">#979797</color>
+    <color name="system_neutral2_400">#7a7a7a</color>
+    <color name="system_neutral2_500">#616161</color>
+    <color name="system_neutral2_600">#494949</color>
+    <color name="system_neutral2_700">#343434</color>
+    <color name="system_neutral2_800">#202020</color>
+    <color name="system_neutral2_900">#000000</color>
+    <color name="system_neutral2_1000">#000000</color>
 
-  <color name="system_accent1_1000">#ff000000</color>
-  <color name="system_accent2_1000">#ff000000</color>
-  <color name="system_accent3_1000">#ff000000</color>
+    <color name="system_accent1_1000">#ff000000</color>
+    <color name="system_accent2_1000">#ff000000</color>
+    <color name="system_accent3_1000">#ff000000</color>
 </resources>
