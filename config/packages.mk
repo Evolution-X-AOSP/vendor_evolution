@@ -49,3 +49,6 @@ PRODUCT_PACKAGES += \
     TouchGestures \
     TouchGesturesSettingsOverlay
 endif
+
+# Microsoft
+$(call inherit-product-if-exists, vendor/microsoft/packages.mk)
