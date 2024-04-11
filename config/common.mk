@@ -174,6 +174,11 @@ PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images \
+    product_charger_res_images_vendor
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
@@ -259,9 +264,6 @@ $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules.
 else
 $(call inherit-product-if-exists, vendor/partner_modules/build/mainline_modules_flatten_apex.mk)
 endif
-
-# Inherit from animations config
-$(call inherit-product, vendor/evolution/config/animations.mk)
 
 # Inherit from audio config
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
