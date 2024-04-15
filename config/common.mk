@@ -233,9 +233,7 @@ endif
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    NexusLauncherRelease \
-    Settings \
-    SystemUI
+    NexusLauncherRelease
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
@@ -304,6 +302,6 @@ $(call inherit-product, vendor/evolution/config/themes.mk)
 $(call inherit-product, vendor/evolution/config/version.mk)
 
 # Pixel Framework
-# $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
