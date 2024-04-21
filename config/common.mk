@@ -155,13 +155,24 @@ PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.max_profiles=16 \
     fw.max_users=32
 
-# Do not include art debug targets
+# Don't build debug for host or device
+ifeq ($(TARGET_BUILD_VARIANT), user)
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
-# Strip the local variable table and the local variable type table to reduce
-# the size of the system image. This has no bearing on stack traces, but will
-# leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+WITH_DEXPREOPT_DEBUG_INFO := false
+ART_BUILD_TARGET_NDEBUG := false
+ART_BUILD_TARGET_DEBUG := false
+ART_BUILD_HOST_NDEBUG := false
+ART_BUILD_HOST_DEBUG := false
+USE_DEX2OAT_DEBUG := false
+endif
+
+# Disable debug infos
+ifeq ($(TARGET_BUILD_VARIANT), user)
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    dalvik.vm.dex2oat-minidebuginfo=false
+endif
 
 # Enable whole-program R8 Java optimizations for SystemUI and system_server,
 # but also allow explicit overriding for testing and development.
@@ -237,9 +248,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
-
-# Reduce system server verbosity.
-PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 
 # SystemUI
 PRODUCT_SYSTEM_PROPERTIES += \
