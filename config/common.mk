@@ -5,6 +5,11 @@ $(call inherit-product-if-exists, vendor/extras/evolution.mk)
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
+# GMS
+ifeq ($(WITH_GMS),true)
+$(call inherit-product-if-exists, vendor/pixel-style/config/common.mk)
+endif
+
 PRODUCT_BRAND ?= EvolutionX
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -130,7 +135,6 @@ PRODUCT_COPY_FILES += \
 
 # Config
 PRODUCT_PACKAGES += \
-    SimpleDeviceConfig \
     SimpleSettingsConfig
 
 # Extra tools in Lineage
@@ -213,9 +217,14 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 # SetupWizard
+ifeq ($(WITH_GMS),true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    setupwizard.theme=glif_v3_light
+else
 PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.theme=glif_v4 \
     setupwizard.feature.day_night_mode_enabled=true
+endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \

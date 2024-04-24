@@ -16,3 +16,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.settings.large_screen_opt.enabled=true
 
 $(call inherit-product, vendor/lineage/config/wifionly.mk)
+
+# GMS
+WITH_GMS ?= true
+ifeq ($(WITH_GMS),true)
+$(call inherit-product-if-exists, vendor/gms/gms_full_tablet_wifionly.mk)
+endif
