@@ -7,6 +7,12 @@ ifneq ($(filter $(EVOLUTION_BUILD),$(shell cat vendor/evolution/vars/pixels | gr
 TARGET_IS_PIXEL := true
 endif
 
+# Pixel-specific configs
+ifeq ($(TARGET_IS_PIXEL),true)
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+PRODUCT_USE_SCUDO := true
+endif
+
 PRODUCT_BRAND ?= EvolutionX
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -216,7 +222,6 @@ PRODUCT_PACKAGES += \
     zstd
 
 # Evolution X customization
-TARGET_IS_PIXEL ?= false
 TARGET_IS_PIXEL_6 ?= false
 TARGET_IS_PIXEL_7 ?= false
 TARGET_IS_PIXEL_7A ?= false
