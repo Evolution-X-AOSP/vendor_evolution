@@ -1,6 +1,12 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Pixels or Non-Pixels
+TARGET_IS_PIXEL ?= false
+ifneq ($(filter $(EVOLUTION_BUILD),$(shell cat vendor/evolution/vars/pixels | grep '  ')),)
+TARGET_IS_PIXEL := true
+endif
+
 PRODUCT_BRAND ?= EvolutionX
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
