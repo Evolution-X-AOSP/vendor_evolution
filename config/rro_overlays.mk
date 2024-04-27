@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
     WildlifeSettingsVpnOverlay2022 \
     WildlifeSysuiVpnOverlay2022
 
-ifeq ($(TARGET_IS_PIXEL), true)
+ifneq ($(filter google, $(PRODUCT_BRAND)),)
 PRODUCT_PACKAGES += \
     ClearCallingSettingsOverlay2022 \
     ManagedProvisioningPixelOverlay \
@@ -63,12 +63,12 @@ PRODUCT_PACKAGES += \
     PixelSetupWizardOverlay2021
 endif
 
-ifeq ($(TARGET_IS_PIXEL_7), true)
+ifneq ($(filter bluejay panther cheetah lynx felix tangorpro shiba husky, $(EVOLUTION_DEVICE)),)
 PRODUCT_PACKAGES += \
     PixelConnectivityOverlay2022
 endif
 
-ifeq ($(TARGET_PIXEL_STAND_SUPPORTED), true)
+ifneq ($(filter flame coral redfin oriole raven panther cheetah lynx felix shiba husky, $(EVOLUTION_DEVICE)),)
 PRODUCT_PACKAGES += \
     DreamlinerOverlay
 endif

@@ -13,13 +13,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Evolution X packages
+PRODUCT_PACKAGES += \
+    EvoEgg
+
+ifeq ($(EVO_BUILD_TYPE),OFFICIAL)
+PRODUCT_PACKAGES += \
+    Updates
+endif
+
+# Papers
+TARGET_INCLUDES_PAPERS ?= true
+ifeq ($(TARGET_INCLUDES_PAPERS),true)
+PRODUCT_PACKAGES += \
+    Papers
+endif
+
 # Apps
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
-    EvoEgg \
-    GameSpace \
-    Papers \
-    Updates
+    GameSpace
 
 # Gramophone
 TARGET_INCLUDE_GRAMOPHONE ?= false
@@ -37,9 +50,13 @@ endif
 
 # Whether the compiled build to be shipped with Aperture CAM
 TARGET_BUILD_APERTURE_CAMERA ?= true
+ifeq ($(TARGET_IS_PIXEL),false)
+ifneq ($(PRODUCT_NO_CAMERA),true)
 ifeq ($(TARGET_BUILD_APERTURE_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
+endif
+endif
 endif
 
 # TouchGestures
@@ -49,6 +66,3 @@ PRODUCT_PACKAGES += \
     TouchGestures \
     TouchGesturesSettingsOverlay
 endif
-
-# Microsoft
-$(call inherit-product-if-exists, vendor/microsoft/packages.mk)
