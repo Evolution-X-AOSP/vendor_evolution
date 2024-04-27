@@ -17,7 +17,7 @@
 #
 
 # Versioning System
-EVO_BASE_VERSION := 8.5
+EVO_BASE_VERSION := 8.5-AOSP
 EVO_CODENAME := Sorbetes
 
 # Set all versions
